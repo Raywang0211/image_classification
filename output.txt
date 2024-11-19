@@ -1,0 +1,10 @@
+0: train
+1: plane
+2: cycle
+3: truck
+4: helicopter
+5: scooty
+6: bus
+7: car
+8: bike
+9: boat
