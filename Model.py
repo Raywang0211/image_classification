@@ -10,7 +10,8 @@ from torchvision import transforms
 from torch.utils.tensorboard import SummaryWriter
 import torch
 
-from MyDataset import MyImageDataset
+# from MyDataset import MyImageDataset
+from .MyDataset import MyImageDataset # for build .DLL
 import matplotlib.pyplot as plt
 from PIL import Image
 import numpy as np
@@ -303,8 +304,10 @@ class MyModel():
             s1 = time.time()
             output = self.model(img_tensor)
             _, predicted_class = torch.max(output, 1)
-            print("class = ", predicted_class[0])
+            result = str(predicted_class[0].item())
+            print("class = ", result)
         print("InferenceTime:",time.time()-s1)
+        return result
 
     
     
@@ -331,7 +334,7 @@ if __name__=="__main__":
     # inference single image
     model = "/home/trx50/project/image_classification/ft_model.pth"
     filename = "/home/trx50/project/mytrainingGUI/projects/Myproject/Dataset/mark/Mark (1).jpg"
-    MM.start_inference_single(filename, model)
+    result = MM.start_inference_single(filename, model)
     
     
 
