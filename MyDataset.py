@@ -8,6 +8,7 @@ class MyImageDataset(Dataset):
     def __init__(self, root_dir, transform=None):
         self.root_dir = root_dir
         self.transform = transform
+        self.image_name = []
         self.image_paths = []
         self.labels = []
         self.label_name= []
@@ -18,6 +19,7 @@ class MyImageDataset(Dataset):
             class_path = os.path.join(root_dir, class_dir)
             self.label_name.append(class_dir)
             for img_file in os.listdir(class_path):
+                self.image_name.append(img_file)
                 self.image_paths.append(os.path.join(class_path, img_file))
                 self.labels.append(label)
 
@@ -28,11 +30,12 @@ class MyImageDataset(Dataset):
         img_path = self.image_paths[idx]
         image = Image.open(img_path).convert("RGB")
         label = self.labels[idx]
+        image_name = self.image_name[idx]
 
         if self.transform:
             image = self.transform(image)
 
-        return image, label, self.label_name
+        return image, label
     
     def save_label_pare(self):
         my_dict = {i: self.label_name[i] for i in range(len(self.label_name))}

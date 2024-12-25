@@ -1,10 +1,5 @@
-0: train
-1: plane
-2: cycle
-3: truck
-4: helicopter
-5: scooty
-6: bus
-7: car
-8: bike
-9: boat
+0: 膜邊
+1: 燈板上異物
+2: 異物
+3: 毛絲
+4: Mark

@@ -1,19 +1,18 @@
-# from torchvision.models import mobilenet_v3_small
-# from torchvision.models import MobileNet_V3_Small_Weights
+import torchvision.models as models
+from torchvision.models import mobilenet_v3_small
+from torchvision.models import MobileNet_V3_Small_Weights
 from torchvision.models import efficientnet_v2_l
 from torchvision.models import EfficientNet_V2_L_Weights
-from torch.utils.data import random_split
 from torch import nn
-
+from MyDataset import MyImageDataset
 from torch.utils.data import DataLoader
 from torchvision import transforms
-from torch.utils.tensorboard import SummaryWriter
-import torch
-
-from MyDataset import MyImageDataset
 import matplotlib.pyplot as plt
+import torch
 from PIL import Image
+from torch.utils.tensorboard import SummaryWriter
 import numpy as np
+import cv2
 import time
 
 class MyModel():
@@ -21,14 +20,24 @@ class MyModel():
         self.output_class = output_class
         self.batch_size = batch_size
         self.learningrate = lr
-        self.writer = SummaryWriter("./log") # for tensor board
+        self.writer = SummaryWriter("./log")
         self.training_device = "cuda:0"
-        self.iterate_time = 0 # for estimate training time
-        self.data_split_rate = 0.8
-        self.train_size = 0
-        self.val_size = 0
+        self.iterate_time = 0
         print(f"Using {self.training_device} device")
 
+    # def load_model(self):
+    #     # Load model
+    #     self.model = mobilenet_v3_small(weights=MobileNet_V3_Small_Weights.DEFAULT)
+    #     self.model.classifier = nn.Sequential(
+    #         nn.Linear(576, 1024),  # 第一層全連接層：1024 -> 512
+    #         nn.ReLU(),             # ReLU 激活函數
+    #         nn.Dropout(0.5),       # Dropout 防止過擬合
+    #         nn.Linear(1024, 256),  # 第二層全連接層：512 -> 2（假設是 2 類分類）
+    #         nn.ReLU(),             # ReLU 激活函數
+    #         nn.Dropout(0.5),       # Dropout 防止過擬合
+    #         nn.Linear(256, self.output_class)
+    #     )
+    #     print(self.model)
 
     def load_model(self):
         # Load model
@@ -42,22 +51,24 @@ class MyModel():
             nn.Dropout(0.5),
             nn.Linear(256, self.output_class)
         )
-        for name, param in self.model.named_parameters():
-            if param.numel() == 0:
-                print(f"Layer {name} has zero parameters")
         # print(self.model)
 
     def model_freeze(self):
-        """
-        unfreeze last few layer for transfer learning 
-        """
-
+        layers = 0
+        # for name, param in self.model.named_parameters():
+        #     layers+=1
+        #     print(f"Layer: {name} | Size: {param.size()} | Requires Grad: {param.requires_grad}")
+        # print("layers = ",layers)
         for param in self.model.parameters():
             param.requires_grad = False
 
         for param in self.model.classifier[0:].parameters():
             param.requires_grad = True
 
+        # for name, param in self.model.named_parameters():
+        #     layers+=1
+        #     print(f"Layer: {name} | Size: {param.size()} | Requires Grad: {param.requires_grad}")
+        # print("layers = ",layers)
     
     def load_single_img(self, image_path):
         """
@@ -76,46 +87,7 @@ class MyModel():
         return input_tensor
     
     
-    # def load_dataset(self, root_dir_train, root_dir_test):
-    #     """
-    #     setup train and valadation data loader
-    #     train data with augmentation
-        
-    #     """
-
-    #     train_augmentation = transforms.Compose(
-    #         [
-    #             transforms.Resize((224,224)),
-    #             transforms.RandomRotation(15), 
-    #             transforms.ToTensor(),
-    #             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
-    #         ]
-    #     )
-    #     test_augmentation = transforms.Compose(
-    #         [
-    #             transforms.Resize((224,224)),
-    #             transforms.ToTensor(),
-    #             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
-    #         ]
-    #     )
-
-    #     train = MyImageDataset(root_dir_train,transform=train_augmentation)
-    #     train.save_label_pare() # save train label and class name pare
-    #     test = MyImageDataset(root_dir_test, transform=test_augmentation)
-    #     self.train_loader = DataLoader(train, batch_size=self.batch_size, shuffle=True)
-    #     self.val_loader = DataLoader(test, batch_size=self.batch_size)
-
-    #     # image, label = train[5]
-    #     # image_np = image.permute(1, 2, 0).numpy()
-    #     # image_np = (image_np * 255).astype(np.uint8)
-    #     # print(image_np.shape)
-    #     # print(label)
-    #     # plt.figure("123")
-    #     # plt.imshow(image_np)
-    #     # plt.show()
-
-
-    def load_dataset(self, root_dir_train):
+    def load_dataset(self, root_dir_train, root_dir_test):
         """
         setup train and valadation data loader
         train data with augmentation
@@ -130,19 +102,28 @@ class MyModel():
                 transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
             ]
         )
+        test_augmentation = transforms.Compose(
+            [
+                transforms.Resize((224,224)),
+                transforms.ToTensor(),
+                transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+            ]
+        )
 
-        full_train = MyImageDataset(root_dir_train, transform=train_augmentation)
-        self.train_size = int(self.data_split_rate * len(full_train))
-        self.val_size = len(full_train) - self.train_size
-        train_dataset, val_dataset = random_split(full_train, [self.train_size, self.val_size])
-        
-        
-        full_train.save_label_pare() # save train label and class name pare
-        self.train_loader = DataLoader(train_dataset, batch_size=self.batch_size, shuffle=True)
-        self.val_loader = DataLoader(val_dataset, batch_size=self.batch_size, shuffle=False)
-        print(f"Train dataset size: {len(train_dataset)}")
-        print(f"Validation dataset size: {len(val_dataset)}")
+        train = MyImageDataset(root_dir_train,transform=train_augmentation)
+        train.save_label_pare() # save train label and class name pare
+        test = MyImageDataset(root_dir_test, transform=test_augmentation)
+        self.train_loader = DataLoader(train, batch_size=self.batch_size, shuffle=True)
+        self.val_loader = DataLoader(test, batch_size=self.batch_size)
 
+        # image, label = train[5]
+        # image_np = image.permute(1, 2, 0).numpy()
+        # image_np = (image_np * 255).astype(np.uint8)
+        # print(image_np.shape)
+        # print(label)
+        # plt.figure("123")
+        # plt.imshow(image_np)
+        # plt.show()
 
 
     def load_testdata(self, root_dir_test):
@@ -179,7 +160,7 @@ class MyModel():
             loss.backward()
             optimizer.step()
             optimizer.zero_grad()
-            print("123-123",batch)
+            
             if batch % 100 == 0:
                 loss, current = loss.item(), (batch + 1) * len(X)  
                 print(f"loss: {loss:>7f}  [{current:>5d}/{size:>5d}]")
@@ -204,51 +185,61 @@ class MyModel():
     
     
     def inference_test(self, dataloader, model, loss_fn):
-        """
-        batch inference calculate acc
-        """
         size = len(dataloader.dataset)
         num_batches = len(dataloader)
         model = model.to(self.training_device)
         model.eval()
         test_loss, correct = 0, 0
-            
         with torch.no_grad():
-            
-            # for batch in dataloader:
-            #     print(len(batch))
-            #     # print(batch)
-            #     print(len(batch[1]))
-            #     print(batch[1])
-            #     print(len(batch[2]))
-            #     print(batch[2])
-                
-            
-            
-            
-            for X, y, image_name in dataloader:
+            for X, y in dataloader:
                 X, y = X.to(self.training_device), y.to(self.training_device)
                 pred = model(X)
                 probabilities = torch.softmax(pred,dim = 1)
                 test_loss += loss_fn(pred, y).item()
                 correct += (pred.argmax(1) == y).type(torch.float).sum().item()
-                
         test_loss /= num_batches
         correct /= size 
         print(f"Test Error: \n Accuracy: {(100*correct):>0.1f}%, Avg loss: {test_loss:>8f} \n")
         return (100*correct)
     
+    # def inference_image(self, image):
+    #     self.load_model()
+    #     self.model = self.model.to(self.training_device)
+    #     self.model.eval()
+        
+    #     preprocess = transforms.Compose(            [
+    #             transforms.Resize((224,224)),
+    #             transforms.ToTensor(),
+    #             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+    #         ])
+    #     input_tensor = preprocess(image)
+    #     input_batch = input_tensor.unsqueeze(0) 
+    #     with torch.no_grad():
+    #         input_batch = input_batch.to(self.training_device)
+    #         output = self.model(input_batch)
+    #     probabilities = torch.nn.functional.softmax(output[0], dim=0)
+    #     print(len(probabilities))
+    #     print(max(probabilities))
+
+    #     # Read the categories
+    #     with open("imagenet_classes.txt", "r") as f:
+    #         categories = [s.strip() for s in f.readlines()]
+    #     # Show top categories per image
+    #     top5_prob, top5_catid = torch.topk(probabilities, 5)
+    #     for i in range(top5_prob.size(0)):
+    #         print(categories[top5_catid[i]], top5_prob[i].item())
+                
+    
     
     def save_model(self, model_name):
         model_name = model_name + ".pth"
         torch.save(self.model.state_dict(), model_name)
-        print("save model")
     
-    def start_train(self,train_dataset, epoch, model_name):
+    def start_train(self,train_dataset, val_dataset, epoch, model_name):
         self.load_model()
         self.model_freeze()
 
-        self.load_dataset(train_dataset)
+        self.load_dataset(train_dataset, val_dataset)
         self.init_loss_optimizer()
         self.acc_pre = 0
         for t in range(epoch):
@@ -258,9 +249,8 @@ class MyModel():
             
             if t%20==0:
                 acc = self.validation(self.val_loader, self.model, self.loss_fn)
-                if self.acc_pre<= acc:
+                if self.acc_pre>= acc:
                     self.save_model(model_name)
-                    self.acc_pre = acc
                 
                 self.writer.add_scalar("accuracy", acc, t)
                 
@@ -273,19 +263,19 @@ class MyModel():
         
 
 
-    def start_inference(self, model_path, test_Dataset):
+    def start_inference(self, test_Dataset):
         """
         batch inference
         """
 
         self.load_model()
-        self.model.load_state_dict(torch.load(model_path, weights_only=True))
+        self.model.load_state_dict(torch.load('model_weight.pth', weights_only=True))
         self.init_loss_optimizer()
         self.load_testdata(test_Dataset)
         acc = self.inference_test(self.val_loader, self.model, self.loss_fn)
         print(acc)
     
-    def start_inference_single(self, test_image, model_path):
+    def start_inference_single(self, test_image):
         """
         single inference
         
@@ -294,44 +284,44 @@ class MyModel():
         img_tensor = self.load_single_img(test_image)
         
         self.load_model()
-        self.model.load_state_dict(torch.load(model_path, weights_only=True))
+        self.model.load_state_dict(torch.load('model_weight.pth', weights_only=True))
         self.model.to(self.training_device)
         self.model.eval()
         
         with torch.no_grad():  # 關閉梯度計算以加速推論
             
-            s1 = time.time()
-            output = self.model(img_tensor)
-            _, predicted_class = torch.max(output, 1)
-            print("class = ", predicted_class[0])
-        print("InferenceTime:",time.time()-s1)
+            for i in range(1000):
+                s1 = time.time()
+                output = self.model(img_tensor)
+                _, predicted_class = torch.max(output, 1)
+                print("class = ", predicted_class)
 
-    
+        
     
     
 
 if __name__=="__main__":
-    output_class = 5
+    output_class = 10
     batch_size = 100
     lr = 0.0001
     save_model_name = "ft_model"
     MM = MyModel(output_class, batch_size, lr)
     
-    # root_dir_train = "data/SLT03缺點圖片收集"
+    # root_dir_train = "/home/trx50/project/image_classification/data/vechicles/train"
     # root_dir_test = "/home/trx50/project/image_classification/data/vechicles/test"
-    # epoch = 10
-    # MM.start_train(root_dir_train, epoch, save_model_name)
-    # model_path = "/home/trx50/project/image_classification/ft_model_01.pth"
+    # MM.load_dataset(root_dir_train,root_dir_test)
+    # train_layer = 100
+    # epoch = 500
+    # MM.start_train(root_dir_train, root_dir_test, epoch, save_model_name)
+    
     # batch inference
     # test = "/home/trx50/project/image_classification/data/vechicles/test"
-    # test = "data/ttt"
-    # MM.start_inference(model_path, test)
+    # MM.start_inference(test)
     
     
     # inference single image
-    model = "/home/trx50/project/image_classification/ft_model.pth"
-    filename = "/home/trx50/project/mytrainingGUI/projects/Myproject/Dataset/mark/Mark (1).jpg"
-    MM.start_inference_single(filename, model)
+    filename = "/home/trx50/project/image_classification/data/vechicles/train/truck/images (22).jpg"
+    MM.start_inference_single(filename)
     
     
 

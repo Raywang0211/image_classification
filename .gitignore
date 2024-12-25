@@ -48,3 +48,6 @@ coverage.xml
 *.py,cover
 .h
 log/*
+data/*
+__pycache__/*.pyc
+*.pth
