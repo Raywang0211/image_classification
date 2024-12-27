@@ -18,7 +18,7 @@ import numpy as np
 import time
 
 class MyModel():
-    def __init__(self, output_class, batch_size=100, lr=0.01):
+    def __init__(self, output_class, batch_size=100, lr=0.01, inference_model=None):
         self.output_class = output_class
         self.batch_size = batch_size
         self.learningrate = lr
@@ -28,6 +28,8 @@ class MyModel():
         self.data_split_rate = 0.8
         self.train_size = 0
         self.val_size = 0
+        if inference_model!=None:
+            self.load_inference_model(inference_model)
         print(f"Using {self.training_device} device")
 
 
@@ -286,19 +288,25 @@ class MyModel():
         acc = self.inference_test(self.val_loader, self.model, self.loss_fn)
         print(acc)
     
-    def start_inference_single(self, test_image, model_path):
+    
+    def load_inference_model(self, model_path):
+        """
+        preload model for inference
+
+        """
+        self.load_model()
+        self.model.load_state_dict(torch.load(model_path, weights_only=True))
+        self.model.to(self.training_device)
+        self.model.eval()
+        
+    
+    def start_inference_single(self, test_image):
         """
         single inference
         
         """
         
         img_tensor = self.load_single_img(test_image)
-        
-        self.load_model()
-        self.model.load_state_dict(torch.load(model_path, weights_only=True))
-        self.model.to(self.training_device)
-        self.model.eval()
-        
         with torch.no_grad():  # 關閉梯度計算以加速推論
             
             s1 = time.time()
@@ -318,7 +326,9 @@ if __name__=="__main__":
     batch_size = 100
     lr = 0.0001
     save_model_name = "ft_model"
-    MM = MyModel(output_class, batch_size, lr)
+    model = "C:\\Users\\USER\\Desktop\\project\\ft_model.pth"
+    # if you only want to inference just add model, 
+    MM = MyModel(output_class, batch_size, lr, model)
     
     # root_dir_train = "data/SLT03缺點圖片收集"
     # root_dir_test = "/home/trx50/project/image_classification/data/vechicles/test"
@@ -331,9 +341,12 @@ if __name__=="__main__":
     # MM.start_inference(model_path, test)
     
     # inference single image
-    model = "C:\\Users\\USER\\Desktop\\project\\ft_model.pth"
+    
     filename = "C:\\Users\\USER\\Desktop\\project\\image_classification\\data\\2024-12-12_缺點圖片收集\\毛絲\\3649.jpg"
-    result = MM.start_inference_single(filename, model)
+    result = MM.start_inference_single(filename)
+    result = MM.start_inference_single(filename)
+    result = MM.start_inference_single(filename)
+    result = MM.start_inference_single(filename)
     
     
 

@@ -3,12 +3,12 @@
 /* BEGIN: Cython Metadata
 {
     "distutils": {
-        "name": "Model",
+        "name": "AImodelInference",
         "sources": [
-            "Model.py"
+            "AImodelInference.py"
         ]
     },
-    "module_name": "Model"
+    "module_name": "AImodelInference"
 }
 END: Cython Metadata */
 
@@ -1228,8 +1228,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__Model
-#define __PYX_HAVE_API__Model
+#define __PYX_HAVE__AImodelInference
+#define __PYX_HAVE_API__AImodelInference
 /* Early includes */
 #ifdef _OPENMP
 #include <omp.h>
@@ -1479,7 +1479,7 @@ static const char *__pyx_filename;
 /* #### Code section: filename_table ### */
 
 static const char *__pyx_f[] = {
-  "Model.py",
+  "AImodelInference.py",
 };
 /* #### Code section: utility_code_proto_before_types ### */
 /* ForceInitThreads.proto */
@@ -2242,14 +2242,14 @@ static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 /* #### Code section: module_declarations ### */
 
-/* Module declarations from "Model" */
+/* Module declarations from "AImodelInference" */
 /* #### Code section: typeinfo ### */
 /* #### Code section: before_global_var ### */
-#define __Pyx_MODULE_NAME "Model"
-extern int __pyx_module_is_main_Model;
-int __pyx_module_is_main_Model = 0;
+#define __Pyx_MODULE_NAME "AImodelInference"
+extern int __pyx_module_is_main_AImodelInference;
+int __pyx_module_is_main_AImodelInference = 0;
 
-/* Implementation of "Model" */
+/* Implementation of "AImodelInference" */
 /* #### Code section: global_var ### */
 static PyObject *__pyx_builtin_print;
 static PyObject *__pyx_builtin_enumerate;
@@ -2277,14 +2277,13 @@ static const char __pyx_k_RGB[] = "RGB";
 static const char __pyx_k__11[] = "\n-------------------------------";
 static const char __pyx_k__13[] = ".";
 static const char __pyx_k__14[] = "*";
-static const char __pyx_k__43[] = "_";
-static const char __pyx_k__46[] = "?";
+static const char __pyx_k__44[] = "_";
+static const char __pyx_k__47[] = "?";
 static const char __pyx_k_acc[] = "acc";
 static const char __pyx_k_dim[] = "dim";
 static const char __pyx_k_doc[] = "__doc__";
 static const char __pyx_k_log[] = "./log";
 static const char __pyx_k_max[] = "max";
-static const char __pyx_k_plt[] = "plt";
 static const char __pyx_k_pth[] = ".pth";
 static const char __pyx_k_std[] = "std";
 static const char __pyx_k_sum[] = "sum";
@@ -2315,7 +2314,6 @@ static const char __pyx_k_type[] = "type";
 static const char __pyx_k_Epoch[] = "Epoch ";
 static const char __pyx_k_Image[] = "Image";
 static const char __pyx_k_Layer[] = "Layer ";
-static const char __pyx_k_Model[] = "Model";
 static const char __pyx_k_Using[] = "Using ";
 static const char __pyx_k_batch[] = "batch";
 static const char __pyx_k_class[] = "class = ";
@@ -2346,7 +2344,6 @@ static const char __pyx_k_loss_2[] = "loss";
 static const char __pyx_k_module[] = "__module__";
 static const char __pyx_k_name_2[] = "name";
 static const char __pyx_k_output[] = "output";
-static const char __pyx_k_pyplot[] = "pyplot";
 static const char __pyx_k_result[] = "result";
 static const char __pyx_k_test_2[] = "__test__";
 static const char __pyx_k_writer[] = "writer";
@@ -2367,7 +2364,6 @@ static const char __pyx_k_shuffle[] = "shuffle";
 static const char __pyx_k_softmax[] = "softmax";
 static const char __pyx_k_weights[] = "weights";
 static const char __pyx_k_Avg_loss[] = "%, Avg loss: ";
-static const char __pyx_k_Model_py[] = "Model.py";
 static const char __pyx_k_ToTensor[] = "ToTensor";
 static const char __pyx_k_accuracy[] = "accuracy";
 static const char __pyx_k_backward[] = "backward";
@@ -2398,7 +2394,6 @@ static const char __pyx_k_image_name[] = "image_name";
 static const char __pyx_k_image_path[] = "image_path";
 static const char __pyx_k_img_tensor[] = "img_tensor";
 static const char __pyx_k_load_model[] = "load_model";
-static const char __pyx_k_matplotlib[] = "matplotlib";
 static const char __pyx_k_model_name[] = "model_name";
 static const char __pyx_k_model_path[] = "model_path";
 static const char __pyx_k_parameters[] = "parameters";
@@ -2442,6 +2437,7 @@ static const char __pyx_k_RandomRotation[] = "RandomRotation";
 static const char __pyx_k_inference_test[] = "inference_test";
 static const char __pyx_k_root_dir_train[] = "root_dir_train";
 static const char __pyx_k_data_split_rate[] = "data_split_rate";
+static const char __pyx_k_inference_model[] = "inference_model";
 static const char __pyx_k_load_single_img[] = "load_single_img";
 static const char __pyx_k_load_state_dict[] = "load_state_dict";
 static const char __pyx_k_predicted_class[] = "predicted_class";
@@ -2449,11 +2445,11 @@ static const char __pyx_k_save_label_pare[] = "save_label_pare";
 static const char __pyx_k_save_model_name[] = "save_model_name";
 static const char __pyx_k_start_inference[] = "start_inference";
 static const char __pyx_k_training_device[] = "training_device";
+static const char __pyx_k_AImodelInference[] = "AImodelInference";
 static const char __pyx_k_CrossEntropyLoss[] = "CrossEntropyLoss";
 static const char __pyx_k_named_parameters[] = "named_parameters";
 static const char __pyx_k_torch_utils_data[] = "torch.utils.data";
 static const char __pyx_k_efficientnet_v2_l[] = "efficientnet_v2_l";
-static const char __pyx_k_matplotlib_pyplot[] = "matplotlib.pyplot";
 static const char __pyx_k_test_augmentation[] = "test_augmentation";
 static const char __pyx_k_MyModel_load_model[] = "MyModel.load_model";
 static const char __pyx_k_MyModel_save_model[] = "MyModel.save_model";
@@ -2463,6 +2459,7 @@ static const char __pyx_k_asyncio_coroutines[] = "asyncio.coroutines";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_torchvision_models[] = "torchvision.models";
 static const char __pyx_k_train_augmentation[] = "train_augmentation";
+static const char __pyx_k_AImodelInference_py[] = "AImodelInference.py";
 static const char __pyx_k_MyModel_start_train[] = "MyModel.start_train";
 static const char __pyx_k_Test_Error_Accuracy[] = "Test Error: \n Accuracy: ";
 static const char __pyx_k_Validation_Accuracy[] = "Validation: \n Accuracy: ";
@@ -2470,6 +2467,7 @@ static const char __pyx_k_has_zero_parameters[] = " has zero parameters";
 static const char __pyx_k_init_loss_optimizer[] = "init_loss_optimizer";
 static const char __pyx_k_MyModel_load_dataset[] = "MyModel.load_dataset";
 static const char __pyx_k_MyModel_model_freeze[] = "MyModel.model_freeze";
+static const char __pyx_k_load_inference_model[] = "load_inference_model";
 static const char __pyx_k_MyModel_load_testdata[] = "MyModel.load_testdata";
 static const char __pyx_k_MyModel_inference_test[] = "MyModel.inference_test";
 static const char __pyx_k_start_inference_single[] = "start_inference_single";
@@ -2479,24 +2477,26 @@ static const char __pyx_k_Validation_dataset_size[] = "Validation dataset size: 
 static const char __pyx_k_torch_utils_tensorboard[] = "torch.utils.tensorboard";
 static const char __pyx_k_EfficientNet_V2_L_Weights[] = "EfficientNet_V2_L_Weights";
 static const char __pyx_k_MyModel_init_loss_optimizer[] = "MyModel.init_loss_optimizer";
+static const char __pyx_k_MyModel_load_inference_model[] = "MyModel.load_inference_model";
 static const char __pyx_k_MyModel_start_inference_single[] = "MyModel.start_inference_single";
-static const char __pyx_k_home_trx50_project_image_classi[] = "/home/trx50/project/image_classification/ft_model.pth";
-static const char __pyx_k_home_trx50_project_mytrainingGU[] = "/home/trx50/project/mytrainingGUI/projects/Myproject/Dataset/mark/Mark (1).jpg";
+static const char __pyx_k_C_Users_USER_Desktop_project_ft[] = "C:\\Users\\USER\\Desktop\\project\\ft_model.pth";
+static const char __pyx_k_C_Users_USER_Desktop_project_ima[] = "C:\\Users\\USER\\Desktop\\project\\image_classification\\data\\2024-12-12_\347\274\272\351\273\236\345\234\226\347\211\207\346\224\266\351\233\206\\\346\257\233\347\265\262\\3649.jpg";
 /* #### Code section: decls ### */
-static PyObject *__pyx_pf_5Model_7MyModel___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_output_class, PyObject *__pyx_v_batch_size, PyObject *__pyx_v_lr); /* proto */
-static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_5Model_7MyModel_4model_freeze(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_5Model_7MyModel_6load_single_img(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_image_path); /* proto */
-static PyObject *__pyx_pf_5Model_7MyModel_8load_dataset(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_root_dir_train); /* proto */
-static PyObject *__pyx_pf_5Model_7MyModel_10load_testdata(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_root_dir_test); /* proto */
-static PyObject *__pyx_pf_5Model_7MyModel_12init_loss_optimizer(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_dataloader, PyObject *__pyx_v_model, PyObject *__pyx_v_loss_fn, PyObject *__pyx_v_optimizer); /* proto */
-static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_dataloader, PyObject *__pyx_v_model, PyObject *__pyx_v_loss_fn); /* proto */
-static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_dataloader, PyObject *__pyx_v_model, PyObject *__pyx_v_loss_fn); /* proto */
-static PyObject *__pyx_pf_5Model_7MyModel_20save_model(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_model_name); /* proto */
-static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_train_dataset, PyObject *__pyx_v_epoch, PyObject *__pyx_v_model_name); /* proto */
-static PyObject *__pyx_pf_5Model_7MyModel_24start_inference(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_model_path, PyObject *__pyx_v_test_Dataset); /* proto */
-static PyObject *__pyx_pf_5Model_7MyModel_26start_inference_single(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_test_image, PyObject *__pyx_v_model_path); /* proto */
+static PyObject *__pyx_pf_16AImodelInference_7MyModel___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_output_class, PyObject *__pyx_v_batch_size, PyObject *__pyx_v_lr, PyObject *__pyx_v_inference_model); /* proto */
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_2load_model(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_4model_freeze(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_6load_single_img(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_image_path); /* proto */
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_8load_dataset(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_root_dir_train); /* proto */
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_10load_testdata(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_root_dir_test); /* proto */
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_12init_loss_optimizer(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_dataloader, PyObject *__pyx_v_model, PyObject *__pyx_v_loss_fn, PyObject *__pyx_v_optimizer); /* proto */
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_16validation(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_dataloader, PyObject *__pyx_v_model, PyObject *__pyx_v_loss_fn); /* proto */
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_18inference_test(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_dataloader, PyObject *__pyx_v_model, PyObject *__pyx_v_loss_fn); /* proto */
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_20save_model(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_model_name); /* proto */
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_22start_train(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_train_dataset, PyObject *__pyx_v_epoch, PyObject *__pyx_v_model_name); /* proto */
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_24start_inference(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_model_path, PyObject *__pyx_v_test_Dataset); /* proto */
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_26load_inference_model(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_model_path); /* proto */
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_28start_inference_single(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_test_image); /* proto */
 /* #### Code section: late_includes ### */
 /* #### Code section: module_state ### */
 typedef struct {
@@ -2531,8 +2531,12 @@ typedef struct {
   PyObject *__pyx_kp_u_5d;
   PyObject *__pyx_kp_u_7f;
   PyObject *__pyx_kp_u_8f;
+  PyObject *__pyx_n_s_AImodelInference;
+  PyObject *__pyx_kp_s_AImodelInference_py;
   PyObject *__pyx_n_s_Adam;
   PyObject *__pyx_kp_u_Avg_loss;
+  PyObject *__pyx_kp_u_C_Users_USER_Desktop_project_ft;
+  PyObject *__pyx_kp_u_C_Users_USER_Desktop_project_ima;
   PyObject *__pyx_n_s_Compose;
   PyObject *__pyx_n_s_CrossEntropyLoss;
   PyObject *__pyx_n_s_DEFAULT;
@@ -2546,8 +2550,6 @@ typedef struct {
   PyObject *__pyx_kp_u_Layer;
   PyObject *__pyx_n_s_Linear;
   PyObject *__pyx_n_s_MM;
-  PyObject *__pyx_n_s_Model;
-  PyObject *__pyx_kp_s_Model_py;
   PyObject *__pyx_n_s_MyDataset;
   PyObject *__pyx_n_s_MyImageDataset;
   PyObject *__pyx_n_s_MyModel;
@@ -2555,6 +2557,7 @@ typedef struct {
   PyObject *__pyx_n_s_MyModel_inference_test;
   PyObject *__pyx_n_s_MyModel_init_loss_optimizer;
   PyObject *__pyx_n_s_MyModel_load_dataset;
+  PyObject *__pyx_n_s_MyModel_load_inference_model;
   PyObject *__pyx_n_s_MyModel_load_model;
   PyObject *__pyx_n_s_MyModel_load_single_img;
   PyObject *__pyx_n_s_MyModel_load_testdata;
@@ -2584,8 +2587,8 @@ typedef struct {
   PyObject *__pyx_kp_u__11;
   PyObject *__pyx_kp_u__13;
   PyObject *__pyx_n_s__14;
-  PyObject *__pyx_n_s__43;
-  PyObject *__pyx_n_s__46;
+  PyObject *__pyx_n_s__44;
+  PyObject *__pyx_n_s__47;
   PyObject *__pyx_kp_u__5;
   PyObject *__pyx_kp_u__6;
   PyObject *__pyx_kp_u__7;
@@ -2626,13 +2629,12 @@ typedef struct {
   PyObject *__pyx_n_s_full_train;
   PyObject *__pyx_n_s_gamma;
   PyObject *__pyx_kp_u_has_zero_parameters;
-  PyObject *__pyx_kp_u_home_trx50_project_image_classi;
-  PyObject *__pyx_kp_u_home_trx50_project_mytrainingGU;
   PyObject *__pyx_n_s_image;
   PyObject *__pyx_n_s_image_name;
   PyObject *__pyx_n_s_image_path;
   PyObject *__pyx_n_s_img_tensor;
   PyObject *__pyx_n_s_import;
+  PyObject *__pyx_n_s_inference_model;
   PyObject *__pyx_n_s_inference_test;
   PyObject *__pyx_n_s_init;
   PyObject *__pyx_n_s_init_loss_optimizer;
@@ -2645,6 +2647,7 @@ typedef struct {
   PyObject *__pyx_n_s_learningrate;
   PyObject *__pyx_n_s_load;
   PyObject *__pyx_n_s_load_dataset;
+  PyObject *__pyx_n_s_load_inference_model;
   PyObject *__pyx_n_s_load_model;
   PyObject *__pyx_n_s_load_single_img;
   PyObject *__pyx_n_s_load_state_dict;
@@ -2658,8 +2661,6 @@ typedef struct {
   PyObject *__pyx_n_s_lr_scheduler;
   PyObject *__pyx_n_s_main;
   PyObject *__pyx_n_u_main;
-  PyObject *__pyx_n_s_matplotlib;
-  PyObject *__pyx_n_s_matplotlib_pyplot;
   PyObject *__pyx_n_s_max;
   PyObject *__pyx_n_s_mean;
   PyObject *__pyx_n_s_metaclass;
@@ -2684,14 +2685,12 @@ typedef struct {
   PyObject *__pyx_n_s_output_class;
   PyObject *__pyx_n_s_param;
   PyObject *__pyx_n_s_parameters;
-  PyObject *__pyx_n_s_plt;
   PyObject *__pyx_n_s_pred;
   PyObject *__pyx_n_s_predicted_class;
   PyObject *__pyx_n_s_prepare;
   PyObject *__pyx_n_s_print;
   PyObject *__pyx_n_s_probabilities;
   PyObject *__pyx_kp_u_pth;
-  PyObject *__pyx_n_s_pyplot;
   PyObject *__pyx_n_s_qualname;
   PyObject *__pyx_n_s_random_split;
   PyObject *__pyx_n_s_range;
@@ -2784,35 +2783,36 @@ typedef struct {
   PyObject *__pyx_tuple__10;
   PyObject *__pyx_tuple__12;
   PyObject *__pyx_tuple__15;
-  PyObject *__pyx_tuple__16;
+  PyObject *__pyx_tuple__17;
   PyObject *__pyx_tuple__18;
-  PyObject *__pyx_tuple__19;
-  PyObject *__pyx_tuple__21;
-  PyObject *__pyx_tuple__23;
-  PyObject *__pyx_tuple__25;
-  PyObject *__pyx_tuple__27;
-  PyObject *__pyx_tuple__29;
-  PyObject *__pyx_tuple__31;
-  PyObject *__pyx_tuple__33;
-  PyObject *__pyx_tuple__35;
-  PyObject *__pyx_tuple__37;
-  PyObject *__pyx_tuple__39;
-  PyObject *__pyx_tuple__41;
-  PyObject *__pyx_tuple__44;
-  PyObject *__pyx_codeobj__17;
-  PyObject *__pyx_codeobj__20;
-  PyObject *__pyx_codeobj__22;
-  PyObject *__pyx_codeobj__24;
-  PyObject *__pyx_codeobj__26;
-  PyObject *__pyx_codeobj__28;
-  PyObject *__pyx_codeobj__30;
-  PyObject *__pyx_codeobj__32;
-  PyObject *__pyx_codeobj__34;
-  PyObject *__pyx_codeobj__36;
-  PyObject *__pyx_codeobj__38;
-  PyObject *__pyx_codeobj__40;
-  PyObject *__pyx_codeobj__42;
-  PyObject *__pyx_codeobj__45;
+  PyObject *__pyx_tuple__20;
+  PyObject *__pyx_tuple__22;
+  PyObject *__pyx_tuple__24;
+  PyObject *__pyx_tuple__26;
+  PyObject *__pyx_tuple__28;
+  PyObject *__pyx_tuple__30;
+  PyObject *__pyx_tuple__32;
+  PyObject *__pyx_tuple__34;
+  PyObject *__pyx_tuple__36;
+  PyObject *__pyx_tuple__38;
+  PyObject *__pyx_tuple__40;
+  PyObject *__pyx_tuple__42;
+  PyObject *__pyx_tuple__45;
+  PyObject *__pyx_codeobj__16;
+  PyObject *__pyx_codeobj__19;
+  PyObject *__pyx_codeobj__21;
+  PyObject *__pyx_codeobj__23;
+  PyObject *__pyx_codeobj__25;
+  PyObject *__pyx_codeobj__27;
+  PyObject *__pyx_codeobj__29;
+  PyObject *__pyx_codeobj__31;
+  PyObject *__pyx_codeobj__33;
+  PyObject *__pyx_codeobj__35;
+  PyObject *__pyx_codeobj__37;
+  PyObject *__pyx_codeobj__39;
+  PyObject *__pyx_codeobj__41;
+  PyObject *__pyx_codeobj__43;
+  PyObject *__pyx_codeobj__46;
 } __pyx_mstate;
 
 #if CYTHON_USE_MODULE_STATE
@@ -2860,8 +2860,12 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_kp_u_5d);
   Py_CLEAR(clear_module_state->__pyx_kp_u_7f);
   Py_CLEAR(clear_module_state->__pyx_kp_u_8f);
+  Py_CLEAR(clear_module_state->__pyx_n_s_AImodelInference);
+  Py_CLEAR(clear_module_state->__pyx_kp_s_AImodelInference_py);
   Py_CLEAR(clear_module_state->__pyx_n_s_Adam);
   Py_CLEAR(clear_module_state->__pyx_kp_u_Avg_loss);
+  Py_CLEAR(clear_module_state->__pyx_kp_u_C_Users_USER_Desktop_project_ft);
+  Py_CLEAR(clear_module_state->__pyx_kp_u_C_Users_USER_Desktop_project_ima);
   Py_CLEAR(clear_module_state->__pyx_n_s_Compose);
   Py_CLEAR(clear_module_state->__pyx_n_s_CrossEntropyLoss);
   Py_CLEAR(clear_module_state->__pyx_n_s_DEFAULT);
@@ -2875,8 +2879,6 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_kp_u_Layer);
   Py_CLEAR(clear_module_state->__pyx_n_s_Linear);
   Py_CLEAR(clear_module_state->__pyx_n_s_MM);
-  Py_CLEAR(clear_module_state->__pyx_n_s_Model);
-  Py_CLEAR(clear_module_state->__pyx_kp_s_Model_py);
   Py_CLEAR(clear_module_state->__pyx_n_s_MyDataset);
   Py_CLEAR(clear_module_state->__pyx_n_s_MyImageDataset);
   Py_CLEAR(clear_module_state->__pyx_n_s_MyModel);
@@ -2884,6 +2886,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_MyModel_inference_test);
   Py_CLEAR(clear_module_state->__pyx_n_s_MyModel_init_loss_optimizer);
   Py_CLEAR(clear_module_state->__pyx_n_s_MyModel_load_dataset);
+  Py_CLEAR(clear_module_state->__pyx_n_s_MyModel_load_inference_model);
   Py_CLEAR(clear_module_state->__pyx_n_s_MyModel_load_model);
   Py_CLEAR(clear_module_state->__pyx_n_s_MyModel_load_single_img);
   Py_CLEAR(clear_module_state->__pyx_n_s_MyModel_load_testdata);
@@ -2913,8 +2916,8 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_kp_u__11);
   Py_CLEAR(clear_module_state->__pyx_kp_u__13);
   Py_CLEAR(clear_module_state->__pyx_n_s__14);
-  Py_CLEAR(clear_module_state->__pyx_n_s__43);
-  Py_CLEAR(clear_module_state->__pyx_n_s__46);
+  Py_CLEAR(clear_module_state->__pyx_n_s__44);
+  Py_CLEAR(clear_module_state->__pyx_n_s__47);
   Py_CLEAR(clear_module_state->__pyx_kp_u__5);
   Py_CLEAR(clear_module_state->__pyx_kp_u__6);
   Py_CLEAR(clear_module_state->__pyx_kp_u__7);
@@ -2955,13 +2958,12 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_full_train);
   Py_CLEAR(clear_module_state->__pyx_n_s_gamma);
   Py_CLEAR(clear_module_state->__pyx_kp_u_has_zero_parameters);
-  Py_CLEAR(clear_module_state->__pyx_kp_u_home_trx50_project_image_classi);
-  Py_CLEAR(clear_module_state->__pyx_kp_u_home_trx50_project_mytrainingGU);
   Py_CLEAR(clear_module_state->__pyx_n_s_image);
   Py_CLEAR(clear_module_state->__pyx_n_s_image_name);
   Py_CLEAR(clear_module_state->__pyx_n_s_image_path);
   Py_CLEAR(clear_module_state->__pyx_n_s_img_tensor);
   Py_CLEAR(clear_module_state->__pyx_n_s_import);
+  Py_CLEAR(clear_module_state->__pyx_n_s_inference_model);
   Py_CLEAR(clear_module_state->__pyx_n_s_inference_test);
   Py_CLEAR(clear_module_state->__pyx_n_s_init);
   Py_CLEAR(clear_module_state->__pyx_n_s_init_loss_optimizer);
@@ -2974,6 +2976,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_learningrate);
   Py_CLEAR(clear_module_state->__pyx_n_s_load);
   Py_CLEAR(clear_module_state->__pyx_n_s_load_dataset);
+  Py_CLEAR(clear_module_state->__pyx_n_s_load_inference_model);
   Py_CLEAR(clear_module_state->__pyx_n_s_load_model);
   Py_CLEAR(clear_module_state->__pyx_n_s_load_single_img);
   Py_CLEAR(clear_module_state->__pyx_n_s_load_state_dict);
@@ -2987,8 +2990,6 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_lr_scheduler);
   Py_CLEAR(clear_module_state->__pyx_n_s_main);
   Py_CLEAR(clear_module_state->__pyx_n_u_main);
-  Py_CLEAR(clear_module_state->__pyx_n_s_matplotlib);
-  Py_CLEAR(clear_module_state->__pyx_n_s_matplotlib_pyplot);
   Py_CLEAR(clear_module_state->__pyx_n_s_max);
   Py_CLEAR(clear_module_state->__pyx_n_s_mean);
   Py_CLEAR(clear_module_state->__pyx_n_s_metaclass);
@@ -3013,14 +3014,12 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_output_class);
   Py_CLEAR(clear_module_state->__pyx_n_s_param);
   Py_CLEAR(clear_module_state->__pyx_n_s_parameters);
-  Py_CLEAR(clear_module_state->__pyx_n_s_plt);
   Py_CLEAR(clear_module_state->__pyx_n_s_pred);
   Py_CLEAR(clear_module_state->__pyx_n_s_predicted_class);
   Py_CLEAR(clear_module_state->__pyx_n_s_prepare);
   Py_CLEAR(clear_module_state->__pyx_n_s_print);
   Py_CLEAR(clear_module_state->__pyx_n_s_probabilities);
   Py_CLEAR(clear_module_state->__pyx_kp_u_pth);
-  Py_CLEAR(clear_module_state->__pyx_n_s_pyplot);
   Py_CLEAR(clear_module_state->__pyx_n_s_qualname);
   Py_CLEAR(clear_module_state->__pyx_n_s_random_split);
   Py_CLEAR(clear_module_state->__pyx_n_s_range);
@@ -3113,35 +3112,36 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_tuple__10);
   Py_CLEAR(clear_module_state->__pyx_tuple__12);
   Py_CLEAR(clear_module_state->__pyx_tuple__15);
-  Py_CLEAR(clear_module_state->__pyx_tuple__16);
+  Py_CLEAR(clear_module_state->__pyx_tuple__17);
   Py_CLEAR(clear_module_state->__pyx_tuple__18);
-  Py_CLEAR(clear_module_state->__pyx_tuple__19);
-  Py_CLEAR(clear_module_state->__pyx_tuple__21);
-  Py_CLEAR(clear_module_state->__pyx_tuple__23);
-  Py_CLEAR(clear_module_state->__pyx_tuple__25);
-  Py_CLEAR(clear_module_state->__pyx_tuple__27);
-  Py_CLEAR(clear_module_state->__pyx_tuple__29);
-  Py_CLEAR(clear_module_state->__pyx_tuple__31);
-  Py_CLEAR(clear_module_state->__pyx_tuple__33);
-  Py_CLEAR(clear_module_state->__pyx_tuple__35);
-  Py_CLEAR(clear_module_state->__pyx_tuple__37);
-  Py_CLEAR(clear_module_state->__pyx_tuple__39);
-  Py_CLEAR(clear_module_state->__pyx_tuple__41);
-  Py_CLEAR(clear_module_state->__pyx_tuple__44);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__17);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__20);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__22);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__24);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__26);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__28);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__30);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__32);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__34);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__36);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__38);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__40);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__42);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__45);
+  Py_CLEAR(clear_module_state->__pyx_tuple__20);
+  Py_CLEAR(clear_module_state->__pyx_tuple__22);
+  Py_CLEAR(clear_module_state->__pyx_tuple__24);
+  Py_CLEAR(clear_module_state->__pyx_tuple__26);
+  Py_CLEAR(clear_module_state->__pyx_tuple__28);
+  Py_CLEAR(clear_module_state->__pyx_tuple__30);
+  Py_CLEAR(clear_module_state->__pyx_tuple__32);
+  Py_CLEAR(clear_module_state->__pyx_tuple__34);
+  Py_CLEAR(clear_module_state->__pyx_tuple__36);
+  Py_CLEAR(clear_module_state->__pyx_tuple__38);
+  Py_CLEAR(clear_module_state->__pyx_tuple__40);
+  Py_CLEAR(clear_module_state->__pyx_tuple__42);
+  Py_CLEAR(clear_module_state->__pyx_tuple__45);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__16);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__19);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__21);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__23);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__25);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__27);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__29);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__31);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__33);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__35);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__37);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__39);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__41);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__43);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__46);
   return 0;
 }
 #endif
@@ -3167,8 +3167,12 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_kp_u_5d);
   Py_VISIT(traverse_module_state->__pyx_kp_u_7f);
   Py_VISIT(traverse_module_state->__pyx_kp_u_8f);
+  Py_VISIT(traverse_module_state->__pyx_n_s_AImodelInference);
+  Py_VISIT(traverse_module_state->__pyx_kp_s_AImodelInference_py);
   Py_VISIT(traverse_module_state->__pyx_n_s_Adam);
   Py_VISIT(traverse_module_state->__pyx_kp_u_Avg_loss);
+  Py_VISIT(traverse_module_state->__pyx_kp_u_C_Users_USER_Desktop_project_ft);
+  Py_VISIT(traverse_module_state->__pyx_kp_u_C_Users_USER_Desktop_project_ima);
   Py_VISIT(traverse_module_state->__pyx_n_s_Compose);
   Py_VISIT(traverse_module_state->__pyx_n_s_CrossEntropyLoss);
   Py_VISIT(traverse_module_state->__pyx_n_s_DEFAULT);
@@ -3182,8 +3186,6 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_kp_u_Layer);
   Py_VISIT(traverse_module_state->__pyx_n_s_Linear);
   Py_VISIT(traverse_module_state->__pyx_n_s_MM);
-  Py_VISIT(traverse_module_state->__pyx_n_s_Model);
-  Py_VISIT(traverse_module_state->__pyx_kp_s_Model_py);
   Py_VISIT(traverse_module_state->__pyx_n_s_MyDataset);
   Py_VISIT(traverse_module_state->__pyx_n_s_MyImageDataset);
   Py_VISIT(traverse_module_state->__pyx_n_s_MyModel);
@@ -3191,6 +3193,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_MyModel_inference_test);
   Py_VISIT(traverse_module_state->__pyx_n_s_MyModel_init_loss_optimizer);
   Py_VISIT(traverse_module_state->__pyx_n_s_MyModel_load_dataset);
+  Py_VISIT(traverse_module_state->__pyx_n_s_MyModel_load_inference_model);
   Py_VISIT(traverse_module_state->__pyx_n_s_MyModel_load_model);
   Py_VISIT(traverse_module_state->__pyx_n_s_MyModel_load_single_img);
   Py_VISIT(traverse_module_state->__pyx_n_s_MyModel_load_testdata);
@@ -3220,8 +3223,8 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_kp_u__11);
   Py_VISIT(traverse_module_state->__pyx_kp_u__13);
   Py_VISIT(traverse_module_state->__pyx_n_s__14);
-  Py_VISIT(traverse_module_state->__pyx_n_s__43);
-  Py_VISIT(traverse_module_state->__pyx_n_s__46);
+  Py_VISIT(traverse_module_state->__pyx_n_s__44);
+  Py_VISIT(traverse_module_state->__pyx_n_s__47);
   Py_VISIT(traverse_module_state->__pyx_kp_u__5);
   Py_VISIT(traverse_module_state->__pyx_kp_u__6);
   Py_VISIT(traverse_module_state->__pyx_kp_u__7);
@@ -3262,13 +3265,12 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_full_train);
   Py_VISIT(traverse_module_state->__pyx_n_s_gamma);
   Py_VISIT(traverse_module_state->__pyx_kp_u_has_zero_parameters);
-  Py_VISIT(traverse_module_state->__pyx_kp_u_home_trx50_project_image_classi);
-  Py_VISIT(traverse_module_state->__pyx_kp_u_home_trx50_project_mytrainingGU);
   Py_VISIT(traverse_module_state->__pyx_n_s_image);
   Py_VISIT(traverse_module_state->__pyx_n_s_image_name);
   Py_VISIT(traverse_module_state->__pyx_n_s_image_path);
   Py_VISIT(traverse_module_state->__pyx_n_s_img_tensor);
   Py_VISIT(traverse_module_state->__pyx_n_s_import);
+  Py_VISIT(traverse_module_state->__pyx_n_s_inference_model);
   Py_VISIT(traverse_module_state->__pyx_n_s_inference_test);
   Py_VISIT(traverse_module_state->__pyx_n_s_init);
   Py_VISIT(traverse_module_state->__pyx_n_s_init_loss_optimizer);
@@ -3281,6 +3283,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_learningrate);
   Py_VISIT(traverse_module_state->__pyx_n_s_load);
   Py_VISIT(traverse_module_state->__pyx_n_s_load_dataset);
+  Py_VISIT(traverse_module_state->__pyx_n_s_load_inference_model);
   Py_VISIT(traverse_module_state->__pyx_n_s_load_model);
   Py_VISIT(traverse_module_state->__pyx_n_s_load_single_img);
   Py_VISIT(traverse_module_state->__pyx_n_s_load_state_dict);
@@ -3294,8 +3297,6 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_lr_scheduler);
   Py_VISIT(traverse_module_state->__pyx_n_s_main);
   Py_VISIT(traverse_module_state->__pyx_n_u_main);
-  Py_VISIT(traverse_module_state->__pyx_n_s_matplotlib);
-  Py_VISIT(traverse_module_state->__pyx_n_s_matplotlib_pyplot);
   Py_VISIT(traverse_module_state->__pyx_n_s_max);
   Py_VISIT(traverse_module_state->__pyx_n_s_mean);
   Py_VISIT(traverse_module_state->__pyx_n_s_metaclass);
@@ -3320,14 +3321,12 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_output_class);
   Py_VISIT(traverse_module_state->__pyx_n_s_param);
   Py_VISIT(traverse_module_state->__pyx_n_s_parameters);
-  Py_VISIT(traverse_module_state->__pyx_n_s_plt);
   Py_VISIT(traverse_module_state->__pyx_n_s_pred);
   Py_VISIT(traverse_module_state->__pyx_n_s_predicted_class);
   Py_VISIT(traverse_module_state->__pyx_n_s_prepare);
   Py_VISIT(traverse_module_state->__pyx_n_s_print);
   Py_VISIT(traverse_module_state->__pyx_n_s_probabilities);
   Py_VISIT(traverse_module_state->__pyx_kp_u_pth);
-  Py_VISIT(traverse_module_state->__pyx_n_s_pyplot);
   Py_VISIT(traverse_module_state->__pyx_n_s_qualname);
   Py_VISIT(traverse_module_state->__pyx_n_s_random_split);
   Py_VISIT(traverse_module_state->__pyx_n_s_range);
@@ -3420,35 +3419,36 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_tuple__10);
   Py_VISIT(traverse_module_state->__pyx_tuple__12);
   Py_VISIT(traverse_module_state->__pyx_tuple__15);
-  Py_VISIT(traverse_module_state->__pyx_tuple__16);
+  Py_VISIT(traverse_module_state->__pyx_tuple__17);
   Py_VISIT(traverse_module_state->__pyx_tuple__18);
-  Py_VISIT(traverse_module_state->__pyx_tuple__19);
-  Py_VISIT(traverse_module_state->__pyx_tuple__21);
-  Py_VISIT(traverse_module_state->__pyx_tuple__23);
-  Py_VISIT(traverse_module_state->__pyx_tuple__25);
-  Py_VISIT(traverse_module_state->__pyx_tuple__27);
-  Py_VISIT(traverse_module_state->__pyx_tuple__29);
-  Py_VISIT(traverse_module_state->__pyx_tuple__31);
-  Py_VISIT(traverse_module_state->__pyx_tuple__33);
-  Py_VISIT(traverse_module_state->__pyx_tuple__35);
-  Py_VISIT(traverse_module_state->__pyx_tuple__37);
-  Py_VISIT(traverse_module_state->__pyx_tuple__39);
-  Py_VISIT(traverse_module_state->__pyx_tuple__41);
-  Py_VISIT(traverse_module_state->__pyx_tuple__44);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__17);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__20);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__22);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__24);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__26);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__28);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__30);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__32);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__34);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__36);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__38);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__40);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__42);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__45);
+  Py_VISIT(traverse_module_state->__pyx_tuple__20);
+  Py_VISIT(traverse_module_state->__pyx_tuple__22);
+  Py_VISIT(traverse_module_state->__pyx_tuple__24);
+  Py_VISIT(traverse_module_state->__pyx_tuple__26);
+  Py_VISIT(traverse_module_state->__pyx_tuple__28);
+  Py_VISIT(traverse_module_state->__pyx_tuple__30);
+  Py_VISIT(traverse_module_state->__pyx_tuple__32);
+  Py_VISIT(traverse_module_state->__pyx_tuple__34);
+  Py_VISIT(traverse_module_state->__pyx_tuple__36);
+  Py_VISIT(traverse_module_state->__pyx_tuple__38);
+  Py_VISIT(traverse_module_state->__pyx_tuple__40);
+  Py_VISIT(traverse_module_state->__pyx_tuple__42);
+  Py_VISIT(traverse_module_state->__pyx_tuple__45);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__16);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__19);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__21);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__23);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__25);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__27);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__29);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__31);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__33);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__35);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__37);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__39);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__41);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__43);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__46);
   return 0;
 }
 #endif
@@ -3484,8 +3484,12 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_kp_u_5d __pyx_mstate_global->__pyx_kp_u_5d
 #define __pyx_kp_u_7f __pyx_mstate_global->__pyx_kp_u_7f
 #define __pyx_kp_u_8f __pyx_mstate_global->__pyx_kp_u_8f
+#define __pyx_n_s_AImodelInference __pyx_mstate_global->__pyx_n_s_AImodelInference
+#define __pyx_kp_s_AImodelInference_py __pyx_mstate_global->__pyx_kp_s_AImodelInference_py
 #define __pyx_n_s_Adam __pyx_mstate_global->__pyx_n_s_Adam
 #define __pyx_kp_u_Avg_loss __pyx_mstate_global->__pyx_kp_u_Avg_loss
+#define __pyx_kp_u_C_Users_USER_Desktop_project_ft __pyx_mstate_global->__pyx_kp_u_C_Users_USER_Desktop_project_ft
+#define __pyx_kp_u_C_Users_USER_Desktop_project_ima __pyx_mstate_global->__pyx_kp_u_C_Users_USER_Desktop_project_ima
 #define __pyx_n_s_Compose __pyx_mstate_global->__pyx_n_s_Compose
 #define __pyx_n_s_CrossEntropyLoss __pyx_mstate_global->__pyx_n_s_CrossEntropyLoss
 #define __pyx_n_s_DEFAULT __pyx_mstate_global->__pyx_n_s_DEFAULT
@@ -3499,8 +3503,6 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_kp_u_Layer __pyx_mstate_global->__pyx_kp_u_Layer
 #define __pyx_n_s_Linear __pyx_mstate_global->__pyx_n_s_Linear
 #define __pyx_n_s_MM __pyx_mstate_global->__pyx_n_s_MM
-#define __pyx_n_s_Model __pyx_mstate_global->__pyx_n_s_Model
-#define __pyx_kp_s_Model_py __pyx_mstate_global->__pyx_kp_s_Model_py
 #define __pyx_n_s_MyDataset __pyx_mstate_global->__pyx_n_s_MyDataset
 #define __pyx_n_s_MyImageDataset __pyx_mstate_global->__pyx_n_s_MyImageDataset
 #define __pyx_n_s_MyModel __pyx_mstate_global->__pyx_n_s_MyModel
@@ -3508,6 +3510,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_MyModel_inference_test __pyx_mstate_global->__pyx_n_s_MyModel_inference_test
 #define __pyx_n_s_MyModel_init_loss_optimizer __pyx_mstate_global->__pyx_n_s_MyModel_init_loss_optimizer
 #define __pyx_n_s_MyModel_load_dataset __pyx_mstate_global->__pyx_n_s_MyModel_load_dataset
+#define __pyx_n_s_MyModel_load_inference_model __pyx_mstate_global->__pyx_n_s_MyModel_load_inference_model
 #define __pyx_n_s_MyModel_load_model __pyx_mstate_global->__pyx_n_s_MyModel_load_model
 #define __pyx_n_s_MyModel_load_single_img __pyx_mstate_global->__pyx_n_s_MyModel_load_single_img
 #define __pyx_n_s_MyModel_load_testdata __pyx_mstate_global->__pyx_n_s_MyModel_load_testdata
@@ -3537,8 +3540,8 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_kp_u__11 __pyx_mstate_global->__pyx_kp_u__11
 #define __pyx_kp_u__13 __pyx_mstate_global->__pyx_kp_u__13
 #define __pyx_n_s__14 __pyx_mstate_global->__pyx_n_s__14
-#define __pyx_n_s__43 __pyx_mstate_global->__pyx_n_s__43
-#define __pyx_n_s__46 __pyx_mstate_global->__pyx_n_s__46
+#define __pyx_n_s__44 __pyx_mstate_global->__pyx_n_s__44
+#define __pyx_n_s__47 __pyx_mstate_global->__pyx_n_s__47
 #define __pyx_kp_u__5 __pyx_mstate_global->__pyx_kp_u__5
 #define __pyx_kp_u__6 __pyx_mstate_global->__pyx_kp_u__6
 #define __pyx_kp_u__7 __pyx_mstate_global->__pyx_kp_u__7
@@ -3579,13 +3582,12 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_full_train __pyx_mstate_global->__pyx_n_s_full_train
 #define __pyx_n_s_gamma __pyx_mstate_global->__pyx_n_s_gamma
 #define __pyx_kp_u_has_zero_parameters __pyx_mstate_global->__pyx_kp_u_has_zero_parameters
-#define __pyx_kp_u_home_trx50_project_image_classi __pyx_mstate_global->__pyx_kp_u_home_trx50_project_image_classi
-#define __pyx_kp_u_home_trx50_project_mytrainingGU __pyx_mstate_global->__pyx_kp_u_home_trx50_project_mytrainingGU
 #define __pyx_n_s_image __pyx_mstate_global->__pyx_n_s_image
 #define __pyx_n_s_image_name __pyx_mstate_global->__pyx_n_s_image_name
 #define __pyx_n_s_image_path __pyx_mstate_global->__pyx_n_s_image_path
 #define __pyx_n_s_img_tensor __pyx_mstate_global->__pyx_n_s_img_tensor
 #define __pyx_n_s_import __pyx_mstate_global->__pyx_n_s_import
+#define __pyx_n_s_inference_model __pyx_mstate_global->__pyx_n_s_inference_model
 #define __pyx_n_s_inference_test __pyx_mstate_global->__pyx_n_s_inference_test
 #define __pyx_n_s_init __pyx_mstate_global->__pyx_n_s_init
 #define __pyx_n_s_init_loss_optimizer __pyx_mstate_global->__pyx_n_s_init_loss_optimizer
@@ -3598,6 +3600,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_learningrate __pyx_mstate_global->__pyx_n_s_learningrate
 #define __pyx_n_s_load __pyx_mstate_global->__pyx_n_s_load
 #define __pyx_n_s_load_dataset __pyx_mstate_global->__pyx_n_s_load_dataset
+#define __pyx_n_s_load_inference_model __pyx_mstate_global->__pyx_n_s_load_inference_model
 #define __pyx_n_s_load_model __pyx_mstate_global->__pyx_n_s_load_model
 #define __pyx_n_s_load_single_img __pyx_mstate_global->__pyx_n_s_load_single_img
 #define __pyx_n_s_load_state_dict __pyx_mstate_global->__pyx_n_s_load_state_dict
@@ -3611,8 +3614,6 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_lr_scheduler __pyx_mstate_global->__pyx_n_s_lr_scheduler
 #define __pyx_n_s_main __pyx_mstate_global->__pyx_n_s_main
 #define __pyx_n_u_main __pyx_mstate_global->__pyx_n_u_main
-#define __pyx_n_s_matplotlib __pyx_mstate_global->__pyx_n_s_matplotlib
-#define __pyx_n_s_matplotlib_pyplot __pyx_mstate_global->__pyx_n_s_matplotlib_pyplot
 #define __pyx_n_s_max __pyx_mstate_global->__pyx_n_s_max
 #define __pyx_n_s_mean __pyx_mstate_global->__pyx_n_s_mean
 #define __pyx_n_s_metaclass __pyx_mstate_global->__pyx_n_s_metaclass
@@ -3637,14 +3638,12 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_output_class __pyx_mstate_global->__pyx_n_s_output_class
 #define __pyx_n_s_param __pyx_mstate_global->__pyx_n_s_param
 #define __pyx_n_s_parameters __pyx_mstate_global->__pyx_n_s_parameters
-#define __pyx_n_s_plt __pyx_mstate_global->__pyx_n_s_plt
 #define __pyx_n_s_pred __pyx_mstate_global->__pyx_n_s_pred
 #define __pyx_n_s_predicted_class __pyx_mstate_global->__pyx_n_s_predicted_class
 #define __pyx_n_s_prepare __pyx_mstate_global->__pyx_n_s_prepare
 #define __pyx_n_s_print __pyx_mstate_global->__pyx_n_s_print
 #define __pyx_n_s_probabilities __pyx_mstate_global->__pyx_n_s_probabilities
 #define __pyx_kp_u_pth __pyx_mstate_global->__pyx_kp_u_pth
-#define __pyx_n_s_pyplot __pyx_mstate_global->__pyx_n_s_pyplot
 #define __pyx_n_s_qualname __pyx_mstate_global->__pyx_n_s_qualname
 #define __pyx_n_s_random_split __pyx_mstate_global->__pyx_n_s_random_split
 #define __pyx_n_s_range __pyx_mstate_global->__pyx_n_s_range
@@ -3737,55 +3736,56 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_tuple__10 __pyx_mstate_global->__pyx_tuple__10
 #define __pyx_tuple__12 __pyx_mstate_global->__pyx_tuple__12
 #define __pyx_tuple__15 __pyx_mstate_global->__pyx_tuple__15
-#define __pyx_tuple__16 __pyx_mstate_global->__pyx_tuple__16
+#define __pyx_tuple__17 __pyx_mstate_global->__pyx_tuple__17
 #define __pyx_tuple__18 __pyx_mstate_global->__pyx_tuple__18
-#define __pyx_tuple__19 __pyx_mstate_global->__pyx_tuple__19
-#define __pyx_tuple__21 __pyx_mstate_global->__pyx_tuple__21
-#define __pyx_tuple__23 __pyx_mstate_global->__pyx_tuple__23
-#define __pyx_tuple__25 __pyx_mstate_global->__pyx_tuple__25
-#define __pyx_tuple__27 __pyx_mstate_global->__pyx_tuple__27
-#define __pyx_tuple__29 __pyx_mstate_global->__pyx_tuple__29
-#define __pyx_tuple__31 __pyx_mstate_global->__pyx_tuple__31
-#define __pyx_tuple__33 __pyx_mstate_global->__pyx_tuple__33
-#define __pyx_tuple__35 __pyx_mstate_global->__pyx_tuple__35
-#define __pyx_tuple__37 __pyx_mstate_global->__pyx_tuple__37
-#define __pyx_tuple__39 __pyx_mstate_global->__pyx_tuple__39
-#define __pyx_tuple__41 __pyx_mstate_global->__pyx_tuple__41
-#define __pyx_tuple__44 __pyx_mstate_global->__pyx_tuple__44
-#define __pyx_codeobj__17 __pyx_mstate_global->__pyx_codeobj__17
-#define __pyx_codeobj__20 __pyx_mstate_global->__pyx_codeobj__20
-#define __pyx_codeobj__22 __pyx_mstate_global->__pyx_codeobj__22
-#define __pyx_codeobj__24 __pyx_mstate_global->__pyx_codeobj__24
-#define __pyx_codeobj__26 __pyx_mstate_global->__pyx_codeobj__26
-#define __pyx_codeobj__28 __pyx_mstate_global->__pyx_codeobj__28
-#define __pyx_codeobj__30 __pyx_mstate_global->__pyx_codeobj__30
-#define __pyx_codeobj__32 __pyx_mstate_global->__pyx_codeobj__32
-#define __pyx_codeobj__34 __pyx_mstate_global->__pyx_codeobj__34
-#define __pyx_codeobj__36 __pyx_mstate_global->__pyx_codeobj__36
-#define __pyx_codeobj__38 __pyx_mstate_global->__pyx_codeobj__38
-#define __pyx_codeobj__40 __pyx_mstate_global->__pyx_codeobj__40
-#define __pyx_codeobj__42 __pyx_mstate_global->__pyx_codeobj__42
-#define __pyx_codeobj__45 __pyx_mstate_global->__pyx_codeobj__45
+#define __pyx_tuple__20 __pyx_mstate_global->__pyx_tuple__20
+#define __pyx_tuple__22 __pyx_mstate_global->__pyx_tuple__22
+#define __pyx_tuple__24 __pyx_mstate_global->__pyx_tuple__24
+#define __pyx_tuple__26 __pyx_mstate_global->__pyx_tuple__26
+#define __pyx_tuple__28 __pyx_mstate_global->__pyx_tuple__28
+#define __pyx_tuple__30 __pyx_mstate_global->__pyx_tuple__30
+#define __pyx_tuple__32 __pyx_mstate_global->__pyx_tuple__32
+#define __pyx_tuple__34 __pyx_mstate_global->__pyx_tuple__34
+#define __pyx_tuple__36 __pyx_mstate_global->__pyx_tuple__36
+#define __pyx_tuple__38 __pyx_mstate_global->__pyx_tuple__38
+#define __pyx_tuple__40 __pyx_mstate_global->__pyx_tuple__40
+#define __pyx_tuple__42 __pyx_mstate_global->__pyx_tuple__42
+#define __pyx_tuple__45 __pyx_mstate_global->__pyx_tuple__45
+#define __pyx_codeobj__16 __pyx_mstate_global->__pyx_codeobj__16
+#define __pyx_codeobj__19 __pyx_mstate_global->__pyx_codeobj__19
+#define __pyx_codeobj__21 __pyx_mstate_global->__pyx_codeobj__21
+#define __pyx_codeobj__23 __pyx_mstate_global->__pyx_codeobj__23
+#define __pyx_codeobj__25 __pyx_mstate_global->__pyx_codeobj__25
+#define __pyx_codeobj__27 __pyx_mstate_global->__pyx_codeobj__27
+#define __pyx_codeobj__29 __pyx_mstate_global->__pyx_codeobj__29
+#define __pyx_codeobj__31 __pyx_mstate_global->__pyx_codeobj__31
+#define __pyx_codeobj__33 __pyx_mstate_global->__pyx_codeobj__33
+#define __pyx_codeobj__35 __pyx_mstate_global->__pyx_codeobj__35
+#define __pyx_codeobj__37 __pyx_mstate_global->__pyx_codeobj__37
+#define __pyx_codeobj__39 __pyx_mstate_global->__pyx_codeobj__39
+#define __pyx_codeobj__41 __pyx_mstate_global->__pyx_codeobj__41
+#define __pyx_codeobj__43 __pyx_mstate_global->__pyx_codeobj__43
+#define __pyx_codeobj__46 __pyx_mstate_global->__pyx_codeobj__46
 /* #### Code section: module_code ### */
 
-/* "Model.py":21
+/* "AImodelInference.py":21
  * 
  * class MyModel():
- *     def __init__(self, output_class, batch_size=100, lr=0.01):             # <<<<<<<<<<<<<<
+ *     def __init__(self, output_class, batch_size=100, lr=0.01, inference_model=None):             # <<<<<<<<<<<<<<
  *         self.output_class = output_class
  *         self.batch_size = batch_size
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5Model_7MyModel_1__init__(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_1__init__(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_5Model_7MyModel_1__init__ = {"__init__", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5Model_7MyModel_1__init__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5Model_7MyModel_1__init__(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_16AImodelInference_7MyModel_1__init__ = {"__init__", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_16AImodelInference_7MyModel_1__init__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_1__init__(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -3796,11 +3796,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   PyObject *__pyx_v_output_class = 0;
   PyObject *__pyx_v_batch_size = 0;
   PyObject *__pyx_v_lr = 0;
+  PyObject *__pyx_v_inference_model = 0;
   #if !CYTHON_METH_FASTCALL
   CYTHON_UNUSED Py_ssize_t __pyx_nargs;
   #endif
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
-  PyObject* values[4] = {0,0,0,0};
+  PyObject* values[5] = {0,0,0,0,0};
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -3816,12 +3817,15 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   #endif
   __pyx_kwvalues = __Pyx_KwValues_FASTCALL(__pyx_args, __pyx_nargs);
   {
-    PyObject **__pyx_pyargnames[] = {&__pyx_n_s_self,&__pyx_n_s_output_class,&__pyx_n_s_batch_size,&__pyx_n_s_lr,0};
+    PyObject **__pyx_pyargnames[] = {&__pyx_n_s_self,&__pyx_n_s_output_class,&__pyx_n_s_batch_size,&__pyx_n_s_lr,&__pyx_n_s_inference_model,0};
     values[2] = __Pyx_Arg_NewRef_FASTCALL(((PyObject *)((PyObject *)__pyx_int_100)));
     values[3] = __Pyx_Arg_NewRef_FASTCALL(((PyObject *)((PyObject*)__pyx_float_0_01)));
+    values[4] = __Pyx_Arg_NewRef_FASTCALL(((PyObject *)Py_None));
     if (__pyx_kwds) {
       Py_ssize_t kw_args;
       switch (__pyx_nargs) {
+        case  5: values[4] = __Pyx_Arg_FASTCALL(__pyx_args, 4);
+        CYTHON_FALLTHROUGH;
         case  4: values[3] = __Pyx_Arg_FASTCALL(__pyx_args, 3);
         CYTHON_FALLTHROUGH;
         case  3: values[2] = __Pyx_Arg_FASTCALL(__pyx_args, 2);
@@ -3850,7 +3854,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
         }
         else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 21, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 2, 4, 1); __PYX_ERR(0, 21, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 2, 5, 1); __PYX_ERR(0, 21, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -3866,6 +3870,13 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           if (value) { values[3] = __Pyx_Arg_NewRef_FASTCALL(value); kw_args--; }
           else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 21, __pyx_L3_error)
         }
+        CYTHON_FALLTHROUGH;
+        case  4:
+        if (kw_args > 0) {
+          PyObject* value = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_inference_model);
+          if (value) { values[4] = __Pyx_Arg_NewRef_FASTCALL(value); kw_args--; }
+          else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 21, __pyx_L3_error)
+        }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
@@ -3873,6 +3884,8 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       }
     } else {
       switch (__pyx_nargs) {
+        case  5: values[4] = __Pyx_Arg_FASTCALL(__pyx_args, 4);
+        CYTHON_FALLTHROUGH;
         case  4: values[3] = __Pyx_Arg_FASTCALL(__pyx_args, 3);
         CYTHON_FALLTHROUGH;
         case  3: values[2] = __Pyx_Arg_FASTCALL(__pyx_args, 2);
@@ -3887,10 +3900,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
     __pyx_v_output_class = values[1];
     __pyx_v_batch_size = values[2];
     __pyx_v_lr = values[3];
+    __pyx_v_inference_model = values[4];
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 0, 2, 4, __pyx_nargs); __PYX_ERR(0, 21, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 0, 2, 5, __pyx_nargs); __PYX_ERR(0, 21, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -3900,11 +3914,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("Model.MyModel.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5Model_7MyModel___init__(__pyx_self, __pyx_v_self, __pyx_v_output_class, __pyx_v_batch_size, __pyx_v_lr);
+  __pyx_r = __pyx_pf_16AImodelInference_7MyModel___init__(__pyx_self, __pyx_v_self, __pyx_v_output_class, __pyx_v_batch_size, __pyx_v_lr, __pyx_v_inference_model);
 
   /* function exit code */
   {
@@ -3917,31 +3931,32 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5Model_7MyModel___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_output_class, PyObject *__pyx_v_batch_size, PyObject *__pyx_v_lr) {
+static PyObject *__pyx_pf_16AImodelInference_7MyModel___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_output_class, PyObject *__pyx_v_batch_size, PyObject *__pyx_v_lr, PyObject *__pyx_v_inference_model) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   PyObject *__pyx_t_2 = NULL;
   PyObject *__pyx_t_3 = NULL;
   unsigned int __pyx_t_4;
-  Py_ssize_t __pyx_t_5;
-  Py_UCS4 __pyx_t_6;
+  int __pyx_t_5;
+  Py_ssize_t __pyx_t_6;
+  Py_UCS4 __pyx_t_7;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 1);
 
-  /* "Model.py":22
+  /* "AImodelInference.py":22
  * class MyModel():
- *     def __init__(self, output_class, batch_size=100, lr=0.01):
+ *     def __init__(self, output_class, batch_size=100, lr=0.01, inference_model=None):
  *         self.output_class = output_class             # <<<<<<<<<<<<<<
  *         self.batch_size = batch_size
  *         self.learningrate = lr
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_output_class, __pyx_v_output_class) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
 
-  /* "Model.py":23
- *     def __init__(self, output_class, batch_size=100, lr=0.01):
+  /* "AImodelInference.py":23
+ *     def __init__(self, output_class, batch_size=100, lr=0.01, inference_model=None):
  *         self.output_class = output_class
  *         self.batch_size = batch_size             # <<<<<<<<<<<<<<
  *         self.learningrate = lr
@@ -3949,7 +3964,7 @@ static PyObject *__pyx_pf_5Model_7MyModel___init__(CYTHON_UNUSED PyObject *__pyx
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_batch_size, __pyx_v_batch_size) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
 
-  /* "Model.py":24
+  /* "AImodelInference.py":24
  *         self.output_class = output_class
  *         self.batch_size = batch_size
  *         self.learningrate = lr             # <<<<<<<<<<<<<<
@@ -3958,7 +3973,7 @@ static PyObject *__pyx_pf_5Model_7MyModel___init__(CYTHON_UNUSED PyObject *__pyx
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_learningrate, __pyx_v_lr) < 0) __PYX_ERR(0, 24, __pyx_L1_error)
 
-  /* "Model.py":25
+  /* "AImodelInference.py":25
  *         self.batch_size = batch_size
  *         self.learningrate = lr
  *         self.writer = SummaryWriter("./log") # for tensor board             # <<<<<<<<<<<<<<
@@ -3992,7 +4007,7 @@ static PyObject *__pyx_pf_5Model_7MyModel___init__(CYTHON_UNUSED PyObject *__pyx
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_writer, __pyx_t_1) < 0) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":26
+  /* "AImodelInference.py":26
  *         self.learningrate = lr
  *         self.writer = SummaryWriter("./log") # for tensor board
  *         self.training_device = "cuda:0"             # <<<<<<<<<<<<<<
@@ -4001,7 +4016,7 @@ static PyObject *__pyx_pf_5Model_7MyModel___init__(CYTHON_UNUSED PyObject *__pyx
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_training_device, __pyx_kp_u_cuda_0) < 0) __PYX_ERR(0, 26, __pyx_L1_error)
 
-  /* "Model.py":27
+  /* "AImodelInference.py":27
  *         self.writer = SummaryWriter("./log") # for tensor board
  *         self.training_device = "cuda:0"
  *         self.iterate_time = 0 # for estimate training time             # <<<<<<<<<<<<<<
@@ -4010,7 +4025,7 @@ static PyObject *__pyx_pf_5Model_7MyModel___init__(CYTHON_UNUSED PyObject *__pyx
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_iterate_time, __pyx_int_0) < 0) __PYX_ERR(0, 27, __pyx_L1_error)
 
-  /* "Model.py":28
+  /* "AImodelInference.py":28
  *         self.training_device = "cuda:0"
  *         self.iterate_time = 0 # for estimate training time
  *         self.data_split_rate = 0.8             # <<<<<<<<<<<<<<
@@ -4019,65 +4034,119 @@ static PyObject *__pyx_pf_5Model_7MyModel___init__(CYTHON_UNUSED PyObject *__pyx
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_data_split_rate, __pyx_float_0_8) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
 
-  /* "Model.py":29
+  /* "AImodelInference.py":29
  *         self.iterate_time = 0 # for estimate training time
  *         self.data_split_rate = 0.8
  *         self.train_size = 0             # <<<<<<<<<<<<<<
  *         self.val_size = 0
- *         print(f"Using {self.training_device} device")
+ *         if inference_model!=None:
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_train_size, __pyx_int_0) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
 
-  /* "Model.py":30
+  /* "AImodelInference.py":30
  *         self.data_split_rate = 0.8
  *         self.train_size = 0
  *         self.val_size = 0             # <<<<<<<<<<<<<<
- *         print(f"Using {self.training_device} device")
- * 
+ *         if inference_model!=None:
+ *             self.load_inference_model(inference_model)
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_val_size, __pyx_int_0) < 0) __PYX_ERR(0, 30, __pyx_L1_error)
 
-  /* "Model.py":31
+  /* "AImodelInference.py":31
  *         self.train_size = 0
  *         self.val_size = 0
+ *         if inference_model!=None:             # <<<<<<<<<<<<<<
+ *             self.load_inference_model(inference_model)
+ *         print(f"Using {self.training_device} device")
+ */
+  __pyx_t_1 = PyObject_RichCompare(__pyx_v_inference_model, Py_None, Py_NE); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely((__pyx_t_5 < 0))) __PYX_ERR(0, 31, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  if (__pyx_t_5) {
+
+    /* "AImodelInference.py":32
+ *         self.val_size = 0
+ *         if inference_model!=None:
+ *             self.load_inference_model(inference_model)             # <<<<<<<<<<<<<<
+ *         print(f"Using {self.training_device} device")
+ * 
+ */
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_load_inference_model); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 32, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_3 = NULL;
+    __pyx_t_4 = 0;
+    #if CYTHON_UNPACK_METHODS
+    if (likely(PyMethod_Check(__pyx_t_2))) {
+      __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_2);
+      if (likely(__pyx_t_3)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+        __Pyx_INCREF(__pyx_t_3);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_2, function);
+        __pyx_t_4 = 1;
+      }
+    }
+    #endif
+    {
+      PyObject *__pyx_callargs[2] = {__pyx_t_3, __pyx_v_inference_model};
+      __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_2, __pyx_callargs+1-__pyx_t_4, 1+__pyx_t_4);
+      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 32, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    }
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+    /* "AImodelInference.py":31
+ *         self.train_size = 0
+ *         self.val_size = 0
+ *         if inference_model!=None:             # <<<<<<<<<<<<<<
+ *             self.load_inference_model(inference_model)
+ *         print(f"Using {self.training_device} device")
+ */
+  }
+
+  /* "AImodelInference.py":33
+ *         if inference_model!=None:
+ *             self.load_inference_model(inference_model)
  *         print(f"Using {self.training_device} device")             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_5 = 0;
-  __pyx_t_6 = 127;
+  __pyx_t_6 = 0;
+  __pyx_t_7 = 127;
   __Pyx_INCREF(__pyx_kp_u_Using);
-  __pyx_t_5 += 6;
+  __pyx_t_6 += 6;
   __Pyx_GIVEREF(__pyx_kp_u_Using);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_kp_u_Using);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_training_device); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_training_device); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_FormatSimple(__pyx_t_2, __pyx_empty_unicode); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_FormatSimple(__pyx_t_2, __pyx_empty_unicode); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_6 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_3) > __pyx_t_6) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_3) : __pyx_t_6;
-  __pyx_t_5 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_3);
+  __pyx_t_7 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_3) > __pyx_t_7) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_3) : __pyx_t_7;
+  __pyx_t_6 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_3);
   PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_t_3);
   __pyx_t_3 = 0;
   __Pyx_INCREF(__pyx_kp_u_device);
-  __pyx_t_5 += 7;
+  __pyx_t_6 += 7;
   __Pyx_GIVEREF(__pyx_kp_u_device);
   PyTuple_SET_ITEM(__pyx_t_1, 2, __pyx_kp_u_device);
-  __pyx_t_3 = __Pyx_PyUnicode_Join(__pyx_t_1, 3, __pyx_t_5, __pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyUnicode_Join(__pyx_t_1, 3, __pyx_t_6, __pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":21
+  /* "AImodelInference.py":21
  * 
  * class MyModel():
- *     def __init__(self, output_class, batch_size=100, lr=0.01):             # <<<<<<<<<<<<<<
+ *     def __init__(self, output_class, batch_size=100, lr=0.01, inference_model=None):             # <<<<<<<<<<<<<<
  *         self.output_class = output_class
  *         self.batch_size = batch_size
  */
@@ -4089,7 +4158,7 @@ static PyObject *__pyx_pf_5Model_7MyModel___init__(CYTHON_UNUSED PyObject *__pyx
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("Model.MyModel.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -4097,7 +4166,7 @@ static PyObject *__pyx_pf_5Model_7MyModel___init__(CYTHON_UNUSED PyObject *__pyx
   return __pyx_r;
 }
 
-/* "Model.py":34
+/* "AImodelInference.py":36
  * 
  * 
  *     def load_model(self):             # <<<<<<<<<<<<<<
@@ -4106,15 +4175,15 @@ static PyObject *__pyx_pf_5Model_7MyModel___init__(CYTHON_UNUSED PyObject *__pyx
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5Model_7MyModel_3load_model(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_3load_model(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_5Model_7MyModel_3load_model = {"load_model", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5Model_7MyModel_3load_model, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5Model_7MyModel_3load_model(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_16AImodelInference_7MyModel_3load_model = {"load_model", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_16AImodelInference_7MyModel_3load_model, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_3load_model(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -4158,12 +4227,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 34, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 36, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "load_model") < 0)) __PYX_ERR(0, 34, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "load_model") < 0)) __PYX_ERR(0, 36, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 1)) {
       goto __pyx_L5_argtuple_error;
@@ -4174,7 +4243,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("load_model", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 34, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("load_model", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 36, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -4184,11 +4253,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("Model.MyModel.load_model", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.load_model", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5Model_7MyModel_2load_model(__pyx_self, __pyx_v_self);
+  __pyx_r = __pyx_pf_16AImodelInference_7MyModel_2load_model(__pyx_self, __pyx_v_self);
 
   /* function exit code */
   {
@@ -4201,7 +4270,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_2load_model(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_v_name = NULL;
   PyObject *__pyx_v_param = NULL;
   PyObject *__pyx_r = NULL;
@@ -4230,70 +4299,70 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("load_model", 1);
 
-  /* "Model.py":36
+  /* "AImodelInference.py":38
  *     def load_model(self):
  *         # Load model
  *         self.model = efficientnet_v2_l(weights=EfficientNet_V2_L_Weights.DEFAULT)             # <<<<<<<<<<<<<<
  *         self.model.classifier = nn.Sequential(
  *             nn.Linear(1280, 1024),
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_efficientnet_v2_l); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 36, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_efficientnet_v2_l); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 36, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_EfficientNet_V2_L_Weights); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 36, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_EfficientNet_V2_L_Weights); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_DEFAULT); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 36, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_DEFAULT); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_weights, __pyx_t_4) < 0) __PYX_ERR(0, 36, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_weights, __pyx_t_4) < 0) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 36, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_model, __pyx_t_4) < 0) __PYX_ERR(0, 36, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_model, __pyx_t_4) < 0) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Model.py":37
+  /* "AImodelInference.py":39
  *         # Load model
  *         self.model = efficientnet_v2_l(weights=EfficientNet_V2_L_Weights.DEFAULT)
  *         self.model.classifier = nn.Sequential(             # <<<<<<<<<<<<<<
  *             nn.Linear(1280, 1024),
  *             nn.ReLU(),
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_nn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 37, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_nn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Sequential); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 37, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Sequential); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":38
+  /* "AImodelInference.py":40
  *         self.model = efficientnet_v2_l(weights=EfficientNet_V2_L_Weights.DEFAULT)
  *         self.model.classifier = nn.Sequential(
  *             nn.Linear(1280, 1024),             # <<<<<<<<<<<<<<
  *             nn.ReLU(),
  *             nn.Dropout(0.5),
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_nn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 38, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_nn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Linear); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 38, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Linear); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple_, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 38, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple_, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "Model.py":39
+  /* "AImodelInference.py":41
  *         self.model.classifier = nn.Sequential(
  *             nn.Linear(1280, 1024),
  *             nn.ReLU(),             # <<<<<<<<<<<<<<
  *             nn.Dropout(0.5),
  *             nn.Linear(1024, 256),
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_nn); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 39, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_nn); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_ReLU); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 39, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_ReLU); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_5 = NULL;
@@ -4314,21 +4383,21 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
     PyObject *__pyx_callargs[2] = {__pyx_t_5, NULL};
     __pyx_t_3 = __Pyx_PyObject_FastCall(__pyx_t_6, __pyx_callargs+1-__pyx_t_7, 0+__pyx_t_7);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 39, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 41, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   }
 
-  /* "Model.py":40
+  /* "AImodelInference.py":42
  *             nn.Linear(1280, 1024),
  *             nn.ReLU(),
  *             nn.Dropout(0.5),             # <<<<<<<<<<<<<<
  *             nn.Linear(1024, 256),
  *             nn.ReLU(),
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_nn); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_nn); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 42, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_Dropout); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_Dropout); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 42, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_5 = NULL;
@@ -4349,37 +4418,37 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
     PyObject *__pyx_callargs[2] = {__pyx_t_5, __pyx_float_0_5};
     __pyx_t_6 = __Pyx_PyObject_FastCall(__pyx_t_8, __pyx_callargs+1-__pyx_t_7, 1+__pyx_t_7);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 40, __pyx_L1_error)
+    if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 42, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   }
 
-  /* "Model.py":41
+  /* "AImodelInference.py":43
  *             nn.ReLU(),
  *             nn.Dropout(0.5),
  *             nn.Linear(1024, 256),             # <<<<<<<<<<<<<<
  *             nn.ReLU(),
  *             nn.Dropout(0.5),
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_nn); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 41, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_nn); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_Linear); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 41, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_Linear); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__2, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 41, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__2, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "Model.py":42
+  /* "AImodelInference.py":44
  *             nn.Dropout(0.5),
  *             nn.Linear(1024, 256),
  *             nn.ReLU(),             # <<<<<<<<<<<<<<
  *             nn.Dropout(0.5),
  *             nn.Linear(256, self.output_class)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_nn); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 42, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_nn); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_ReLU); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 42, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_ReLU); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   __pyx_t_9 = NULL;
@@ -4400,21 +4469,21 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
     PyObject *__pyx_callargs[2] = {__pyx_t_9, NULL};
     __pyx_t_5 = __Pyx_PyObject_FastCall(__pyx_t_10, __pyx_callargs+1-__pyx_t_7, 0+__pyx_t_7);
     __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
-    if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 42, __pyx_L1_error)
+    if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 44, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
   }
 
-  /* "Model.py":43
+  /* "AImodelInference.py":45
  *             nn.Linear(1024, 256),
  *             nn.ReLU(),
  *             nn.Dropout(0.5),             # <<<<<<<<<<<<<<
  *             nn.Linear(256, self.output_class)
  *         )
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_nn); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 43, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_nn); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 45, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_Dropout); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 43, __pyx_L1_error)
+  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_Dropout); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 45, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   __pyx_t_9 = NULL;
@@ -4435,24 +4504,24 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
     PyObject *__pyx_callargs[2] = {__pyx_t_9, __pyx_float_0_5};
     __pyx_t_10 = __Pyx_PyObject_FastCall(__pyx_t_11, __pyx_callargs+1-__pyx_t_7, 1+__pyx_t_7);
     __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
-    if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 43, __pyx_L1_error)
+    if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 45, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
   }
 
-  /* "Model.py":44
+  /* "AImodelInference.py":46
  *             nn.ReLU(),
  *             nn.Dropout(0.5),
  *             nn.Linear(256, self.output_class)             # <<<<<<<<<<<<<<
  *         )
  *         for name, param in self.model.named_parameters():
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_nn); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 44, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_nn); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_Linear); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 44, __pyx_L1_error)
+  __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_Linear); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_output_class); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 44, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_output_class); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __pyx_t_13 = NULL;
   __pyx_t_7 = 0;
@@ -4473,7 +4542,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
     __pyx_t_11 = __Pyx_PyObject_FastCall(__pyx_t_12, __pyx_callargs+1-__pyx_t_7, 2+__pyx_t_7);
     __Pyx_XDECREF(__pyx_t_13); __pyx_t_13 = 0;
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 44, __pyx_L1_error)
+    if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 46, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
     __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
   }
@@ -4502,34 +4571,34 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 37, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "Model.py":37
+  /* "AImodelInference.py":39
  *         # Load model
  *         self.model = efficientnet_v2_l(weights=EfficientNet_V2_L_Weights.DEFAULT)
  *         self.model.classifier = nn.Sequential(             # <<<<<<<<<<<<<<
  *             nn.Linear(1280, 1024),
  *             nn.ReLU(),
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 37, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_t_1, __pyx_n_s_classifier, __pyx_t_4) < 0) __PYX_ERR(0, 37, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_t_1, __pyx_n_s_classifier, __pyx_t_4) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":46
+  /* "AImodelInference.py":48
  *             nn.Linear(256, self.output_class)
  *         )
  *         for name, param in self.model.named_parameters():             # <<<<<<<<<<<<<<
  *             if param.numel() == 0:
  *                 print(f"Layer {name} has zero parameters")
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 46, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_named_parameters); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 46, __pyx_L1_error)
+  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_named_parameters); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -4550,7 +4619,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
     PyObject *__pyx_callargs[2] = {__pyx_t_4, NULL};
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_11, __pyx_callargs+1-__pyx_t_7, 0+__pyx_t_7);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 46, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
   }
@@ -4559,9 +4628,9 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
     __pyx_t_14 = 0;
     __pyx_t_15 = NULL;
   } else {
-    __pyx_t_14 = -1; __pyx_t_11 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 46, __pyx_L1_error)
+    __pyx_t_14 = -1; __pyx_t_11 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 48, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
-    __pyx_t_15 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_11); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 46, __pyx_L1_error)
+    __pyx_t_15 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_11); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 48, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   for (;;) {
@@ -4570,28 +4639,28 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
         {
           Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_11);
           #if !CYTHON_ASSUME_SAFE_MACROS
-          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 46, __pyx_L1_error)
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 48, __pyx_L1_error)
           #endif
           if (__pyx_t_14 >= __pyx_temp) break;
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_11, __pyx_t_14); __Pyx_INCREF(__pyx_t_1); __pyx_t_14++; if (unlikely((0 < 0))) __PYX_ERR(0, 46, __pyx_L1_error)
+        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_11, __pyx_t_14); __Pyx_INCREF(__pyx_t_1); __pyx_t_14++; if (unlikely((0 < 0))) __PYX_ERR(0, 48, __pyx_L1_error)
         #else
-        __pyx_t_1 = __Pyx_PySequence_ITEM(__pyx_t_11, __pyx_t_14); __pyx_t_14++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 46, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PySequence_ITEM(__pyx_t_11, __pyx_t_14); __pyx_t_14++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       } else {
         {
           Py_ssize_t __pyx_temp = __Pyx_PyTuple_GET_SIZE(__pyx_t_11);
           #if !CYTHON_ASSUME_SAFE_MACROS
-          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 46, __pyx_L1_error)
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 48, __pyx_L1_error)
           #endif
           if (__pyx_t_14 >= __pyx_temp) break;
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_11, __pyx_t_14); __Pyx_INCREF(__pyx_t_1); __pyx_t_14++; if (unlikely((0 < 0))) __PYX_ERR(0, 46, __pyx_L1_error)
+        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_11, __pyx_t_14); __Pyx_INCREF(__pyx_t_1); __pyx_t_14++; if (unlikely((0 < 0))) __PYX_ERR(0, 48, __pyx_L1_error)
         #else
-        __pyx_t_1 = __Pyx_PySequence_ITEM(__pyx_t_11, __pyx_t_14); __pyx_t_14++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 46, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PySequence_ITEM(__pyx_t_11, __pyx_t_14); __pyx_t_14++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       }
@@ -4601,7 +4670,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 46, __pyx_L1_error)
+          else __PYX_ERR(0, 48, __pyx_L1_error)
         }
         break;
       }
@@ -4613,7 +4682,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 46, __pyx_L1_error)
+        __PYX_ERR(0, 48, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -4626,15 +4695,15 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
       __Pyx_INCREF(__pyx_t_4);
       __Pyx_INCREF(__pyx_t_10);
       #else
-      __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 46, __pyx_L1_error)
+      __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 48, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_10 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 46, __pyx_L1_error)
+      __pyx_t_10 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 48, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       #endif
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_5 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 46, __pyx_L1_error)
+      __pyx_t_5 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 48, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_16 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_5);
@@ -4642,7 +4711,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
       __Pyx_GOTREF(__pyx_t_4);
       index = 1; __pyx_t_10 = __pyx_t_16(__pyx_t_5); if (unlikely(!__pyx_t_10)) goto __pyx_L5_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_10);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_16(__pyx_t_5), 2) < 0) __PYX_ERR(0, 46, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_16(__pyx_t_5), 2) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
       __pyx_t_16 = NULL;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       goto __pyx_L6_unpacking_done;
@@ -4650,7 +4719,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __pyx_t_16 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 46, __pyx_L1_error)
+      __PYX_ERR(0, 48, __pyx_L1_error)
       __pyx_L6_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_name, __pyx_t_4);
@@ -4658,14 +4727,14 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
     __Pyx_XDECREF_SET(__pyx_v_param, __pyx_t_10);
     __pyx_t_10 = 0;
 
-    /* "Model.py":47
+    /* "AImodelInference.py":49
  *         )
  *         for name, param in self.model.named_parameters():
  *             if param.numel() == 0:             # <<<<<<<<<<<<<<
  *                 print(f"Layer {name} has zero parameters")
  *         # print(self.model)
  */
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_param, __pyx_n_s_numel); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 47, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_param, __pyx_n_s_numel); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 49, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __pyx_t_4 = NULL;
     __pyx_t_7 = 0;
@@ -4685,22 +4754,22 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
       PyObject *__pyx_callargs[2] = {__pyx_t_4, NULL};
       __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_10, __pyx_callargs+1-__pyx_t_7, 0+__pyx_t_7);
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 47, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 49, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     }
-    __pyx_t_17 = (__Pyx_PyInt_BoolEqObjC(__pyx_t_1, __pyx_int_0, 0, 0)); if (unlikely((__pyx_t_17 < 0))) __PYX_ERR(0, 47, __pyx_L1_error)
+    __pyx_t_17 = (__Pyx_PyInt_BoolEqObjC(__pyx_t_1, __pyx_int_0, 0, 0)); if (unlikely((__pyx_t_17 < 0))) __PYX_ERR(0, 49, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     if (__pyx_t_17) {
 
-      /* "Model.py":48
+      /* "AImodelInference.py":50
  *         for name, param in self.model.named_parameters():
  *             if param.numel() == 0:
  *                 print(f"Layer {name} has zero parameters")             # <<<<<<<<<<<<<<
  *         # print(self.model)
  * 
  */
-      __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
+      __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __pyx_t_18 = 0;
       __pyx_t_19 = 127;
@@ -4708,7 +4777,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
       __pyx_t_18 += 6;
       __Pyx_GIVEREF(__pyx_kp_u_Layer);
       PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_kp_u_Layer);
-      __pyx_t_10 = __Pyx_PyObject_FormatSimple(__pyx_v_name, __pyx_empty_unicode); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 48, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_FormatSimple(__pyx_v_name, __pyx_empty_unicode); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 50, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __pyx_t_19 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_10) > __pyx_t_19) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_10) : __pyx_t_19;
       __pyx_t_18 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_10);
@@ -4719,15 +4788,15 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
       __pyx_t_18 += 20;
       __Pyx_GIVEREF(__pyx_kp_u_has_zero_parameters);
       PyTuple_SET_ITEM(__pyx_t_1, 2, __pyx_kp_u_has_zero_parameters);
-      __pyx_t_10 = __Pyx_PyUnicode_Join(__pyx_t_1, 3, __pyx_t_18, __pyx_t_19); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 48, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyUnicode_Join(__pyx_t_1, 3, __pyx_t_18, __pyx_t_19); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 50, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_10); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_10); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "Model.py":47
+      /* "AImodelInference.py":49
  *         )
  *         for name, param in self.model.named_parameters():
  *             if param.numel() == 0:             # <<<<<<<<<<<<<<
@@ -4736,7 +4805,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
  */
     }
 
-    /* "Model.py":46
+    /* "AImodelInference.py":48
  *             nn.Linear(256, self.output_class)
  *         )
  *         for name, param in self.model.named_parameters():             # <<<<<<<<<<<<<<
@@ -4746,7 +4815,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
   }
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
 
-  /* "Model.py":34
+  /* "AImodelInference.py":36
  * 
  * 
  *     def load_model(self):             # <<<<<<<<<<<<<<
@@ -4770,7 +4839,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
   __Pyx_XDECREF(__pyx_t_11);
   __Pyx_XDECREF(__pyx_t_12);
   __Pyx_XDECREF(__pyx_t_13);
-  __Pyx_AddTraceback("Model.MyModel.load_model", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.load_model", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_name);
@@ -4780,7 +4849,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
   return __pyx_r;
 }
 
-/* "Model.py":51
+/* "AImodelInference.py":53
  *         # print(self.model)
  * 
  *     def model_freeze(self):             # <<<<<<<<<<<<<<
@@ -4789,16 +4858,16 @@ static PyObject *__pyx_pf_5Model_7MyModel_2load_model(CYTHON_UNUSED PyObject *__
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5Model_7MyModel_5model_freeze(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_5model_freeze(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_5Model_7MyModel_4model_freeze, "\n        unfreeze last few layer for transfer learning \n        ");
-static PyMethodDef __pyx_mdef_5Model_7MyModel_5model_freeze = {"model_freeze", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5Model_7MyModel_5model_freeze, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5Model_7MyModel_4model_freeze};
-static PyObject *__pyx_pw_5Model_7MyModel_5model_freeze(PyObject *__pyx_self, 
+PyDoc_STRVAR(__pyx_doc_16AImodelInference_7MyModel_4model_freeze, "\n        unfreeze last few layer for transfer learning \n        ");
+static PyMethodDef __pyx_mdef_16AImodelInference_7MyModel_5model_freeze = {"model_freeze", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_16AImodelInference_7MyModel_5model_freeze, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_16AImodelInference_7MyModel_4model_freeze};
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_5model_freeze(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -4842,12 +4911,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 51, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 53, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "model_freeze") < 0)) __PYX_ERR(0, 51, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "model_freeze") < 0)) __PYX_ERR(0, 53, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 1)) {
       goto __pyx_L5_argtuple_error;
@@ -4858,7 +4927,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("model_freeze", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 51, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("model_freeze", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 53, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -4868,11 +4937,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("Model.MyModel.model_freeze", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.model_freeze", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5Model_7MyModel_4model_freeze(__pyx_self, __pyx_v_self);
+  __pyx_r = __pyx_pf_16AImodelInference_7MyModel_4model_freeze(__pyx_self, __pyx_v_self);
 
   /* function exit code */
   {
@@ -4885,7 +4954,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5Model_7MyModel_4model_freeze(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_4model_freeze(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_v_param = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -4900,16 +4969,16 @@ static PyObject *__pyx_pf_5Model_7MyModel_4model_freeze(CYTHON_UNUSED PyObject *
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("model_freeze", 1);
 
-  /* "Model.py":56
+  /* "AImodelInference.py":58
  *         """
  * 
  *         for param in self.model.parameters():             # <<<<<<<<<<<<<<
  *             param.requires_grad = False
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 56, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_parameters); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 56, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_parameters); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -4930,7 +4999,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_4model_freeze(CYTHON_UNUSED PyObject *
     PyObject *__pyx_callargs[2] = {__pyx_t_2, NULL};
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
@@ -4939,9 +5008,9 @@ static PyObject *__pyx_pf_5Model_7MyModel_4model_freeze(CYTHON_UNUSED PyObject *
     __pyx_t_5 = 0;
     __pyx_t_6 = NULL;
   } else {
-    __pyx_t_5 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 56, __pyx_L1_error)
+    __pyx_t_5 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 58, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_6 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 56, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 58, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   for (;;) {
@@ -4950,28 +5019,28 @@ static PyObject *__pyx_pf_5Model_7MyModel_4model_freeze(CYTHON_UNUSED PyObject *
         {
           Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_3);
           #if !CYTHON_ASSUME_SAFE_MACROS
-          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 56, __pyx_L1_error)
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 58, __pyx_L1_error)
           #endif
           if (__pyx_t_5 >= __pyx_temp) break;
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_5); __Pyx_INCREF(__pyx_t_1); __pyx_t_5++; if (unlikely((0 < 0))) __PYX_ERR(0, 56, __pyx_L1_error)
+        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_5); __Pyx_INCREF(__pyx_t_1); __pyx_t_5++; if (unlikely((0 < 0))) __PYX_ERR(0, 58, __pyx_L1_error)
         #else
-        __pyx_t_1 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       } else {
         {
           Py_ssize_t __pyx_temp = __Pyx_PyTuple_GET_SIZE(__pyx_t_3);
           #if !CYTHON_ASSUME_SAFE_MACROS
-          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 56, __pyx_L1_error)
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 58, __pyx_L1_error)
           #endif
           if (__pyx_t_5 >= __pyx_temp) break;
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_5); __Pyx_INCREF(__pyx_t_1); __pyx_t_5++; if (unlikely((0 < 0))) __PYX_ERR(0, 56, __pyx_L1_error)
+        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_5); __Pyx_INCREF(__pyx_t_1); __pyx_t_5++; if (unlikely((0 < 0))) __PYX_ERR(0, 58, __pyx_L1_error)
         #else
-        __pyx_t_1 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       }
@@ -4981,7 +5050,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_4model_freeze(CYTHON_UNUSED PyObject *
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 56, __pyx_L1_error)
+          else __PYX_ERR(0, 58, __pyx_L1_error)
         }
         break;
       }
@@ -4990,16 +5059,16 @@ static PyObject *__pyx_pf_5Model_7MyModel_4model_freeze(CYTHON_UNUSED PyObject *
     __Pyx_XDECREF_SET(__pyx_v_param, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "Model.py":57
+    /* "AImodelInference.py":59
  * 
  *         for param in self.model.parameters():
  *             param.requires_grad = False             # <<<<<<<<<<<<<<
  * 
  *         for param in self.model.classifier[0:].parameters():
  */
-    if (__Pyx_PyObject_SetAttrStr(__pyx_v_param, __pyx_n_s_requires_grad, Py_False) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
+    if (__Pyx_PyObject_SetAttrStr(__pyx_v_param, __pyx_n_s_requires_grad, Py_False) < 0) __PYX_ERR(0, 59, __pyx_L1_error)
 
-    /* "Model.py":56
+    /* "AImodelInference.py":58
  *         """
  * 
  *         for param in self.model.parameters():             # <<<<<<<<<<<<<<
@@ -5009,22 +5078,22 @@ static PyObject *__pyx_pf_5Model_7MyModel_4model_freeze(CYTHON_UNUSED PyObject *
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "Model.py":59
+  /* "AImodelInference.py":61
  *             param.requires_grad = False
  * 
  *         for param in self.model.classifier[0:].parameters():             # <<<<<<<<<<<<<<
  *             param.requires_grad = True
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 59, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_classifier); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 59, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_classifier); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_t_2, 0, 0, NULL, NULL, &__pyx_slice__3, 1, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 59, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_t_2, 0, 0, NULL, NULL, &__pyx_slice__3, 1, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_parameters); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 59, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_parameters); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_1 = NULL;
@@ -5045,7 +5114,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_4model_freeze(CYTHON_UNUSED PyObject *
     PyObject *__pyx_callargs[2] = {__pyx_t_1, NULL};
     __pyx_t_3 = __Pyx_PyObject_FastCall(__pyx_t_2, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
     __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 59, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 61, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   }
@@ -5054,9 +5123,9 @@ static PyObject *__pyx_pf_5Model_7MyModel_4model_freeze(CYTHON_UNUSED PyObject *
     __pyx_t_5 = 0;
     __pyx_t_6 = NULL;
   } else {
-    __pyx_t_5 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 59, __pyx_L1_error)
+    __pyx_t_5 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 61, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_6 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 59, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 61, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   for (;;) {
@@ -5065,28 +5134,28 @@ static PyObject *__pyx_pf_5Model_7MyModel_4model_freeze(CYTHON_UNUSED PyObject *
         {
           Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_2);
           #if !CYTHON_ASSUME_SAFE_MACROS
-          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 59, __pyx_L1_error)
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 61, __pyx_L1_error)
           #endif
           if (__pyx_t_5 >= __pyx_temp) break;
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_3 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_5); __Pyx_INCREF(__pyx_t_3); __pyx_t_5++; if (unlikely((0 < 0))) __PYX_ERR(0, 59, __pyx_L1_error)
+        __pyx_t_3 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_5); __Pyx_INCREF(__pyx_t_3); __pyx_t_5++; if (unlikely((0 < 0))) __PYX_ERR(0, 61, __pyx_L1_error)
         #else
-        __pyx_t_3 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 59, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 61, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         #endif
       } else {
         {
           Py_ssize_t __pyx_temp = __Pyx_PyTuple_GET_SIZE(__pyx_t_2);
           #if !CYTHON_ASSUME_SAFE_MACROS
-          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 59, __pyx_L1_error)
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 61, __pyx_L1_error)
           #endif
           if (__pyx_t_5 >= __pyx_temp) break;
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_5); __Pyx_INCREF(__pyx_t_3); __pyx_t_5++; if (unlikely((0 < 0))) __PYX_ERR(0, 59, __pyx_L1_error)
+        __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_5); __Pyx_INCREF(__pyx_t_3); __pyx_t_5++; if (unlikely((0 < 0))) __PYX_ERR(0, 61, __pyx_L1_error)
         #else
-        __pyx_t_3 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 59, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 61, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         #endif
       }
@@ -5096,7 +5165,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_4model_freeze(CYTHON_UNUSED PyObject *
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 59, __pyx_L1_error)
+          else __PYX_ERR(0, 61, __pyx_L1_error)
         }
         break;
       }
@@ -5105,16 +5174,16 @@ static PyObject *__pyx_pf_5Model_7MyModel_4model_freeze(CYTHON_UNUSED PyObject *
     __Pyx_XDECREF_SET(__pyx_v_param, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "Model.py":60
+    /* "AImodelInference.py":62
  * 
  *         for param in self.model.classifier[0:].parameters():
  *             param.requires_grad = True             # <<<<<<<<<<<<<<
  * 
  * 
  */
-    if (__Pyx_PyObject_SetAttrStr(__pyx_v_param, __pyx_n_s_requires_grad, Py_True) < 0) __PYX_ERR(0, 60, __pyx_L1_error)
+    if (__Pyx_PyObject_SetAttrStr(__pyx_v_param, __pyx_n_s_requires_grad, Py_True) < 0) __PYX_ERR(0, 62, __pyx_L1_error)
 
-    /* "Model.py":59
+    /* "AImodelInference.py":61
  *             param.requires_grad = False
  * 
  *         for param in self.model.classifier[0:].parameters():             # <<<<<<<<<<<<<<
@@ -5124,7 +5193,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_4model_freeze(CYTHON_UNUSED PyObject *
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":51
+  /* "AImodelInference.py":53
  *         # print(self.model)
  * 
  *     def model_freeze(self):             # <<<<<<<<<<<<<<
@@ -5139,7 +5208,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_4model_freeze(CYTHON_UNUSED PyObject *
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("Model.MyModel.model_freeze", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.model_freeze", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_param);
@@ -5148,7 +5217,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_4model_freeze(CYTHON_UNUSED PyObject *
   return __pyx_r;
 }
 
-/* "Model.py":63
+/* "AImodelInference.py":65
  * 
  * 
  *     def load_single_img(self, image_path):             # <<<<<<<<<<<<<<
@@ -5157,16 +5226,16 @@ static PyObject *__pyx_pf_5Model_7MyModel_4model_freeze(CYTHON_UNUSED PyObject *
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5Model_7MyModel_7load_single_img(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_7load_single_img(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_5Model_7MyModel_6load_single_img, "\n        load single image \n        ");
-static PyMethodDef __pyx_mdef_5Model_7MyModel_7load_single_img = {"load_single_img", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5Model_7MyModel_7load_single_img, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5Model_7MyModel_6load_single_img};
-static PyObject *__pyx_pw_5Model_7MyModel_7load_single_img(PyObject *__pyx_self, 
+PyDoc_STRVAR(__pyx_doc_16AImodelInference_7MyModel_6load_single_img, "\n        load single image \n        ");
+static PyMethodDef __pyx_mdef_16AImodelInference_7MyModel_7load_single_img = {"load_single_img", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_16AImodelInference_7MyModel_7load_single_img, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_16AImodelInference_7MyModel_6load_single_img};
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_7load_single_img(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -5213,7 +5282,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 63, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 65, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -5221,14 +5290,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 63, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 65, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("load_single_img", 1, 2, 2, 1); __PYX_ERR(0, 63, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("load_single_img", 1, 2, 2, 1); __PYX_ERR(0, 65, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "load_single_img") < 0)) __PYX_ERR(0, 63, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "load_single_img") < 0)) __PYX_ERR(0, 65, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
@@ -5241,7 +5310,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("load_single_img", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 63, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("load_single_img", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 65, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -5251,11 +5320,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("Model.MyModel.load_single_img", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.load_single_img", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5Model_7MyModel_6load_single_img(__pyx_self, __pyx_v_self, __pyx_v_image_path);
+  __pyx_r = __pyx_pf_16AImodelInference_7MyModel_6load_single_img(__pyx_self, __pyx_v_self, __pyx_v_image_path);
 
   /* function exit code */
   {
@@ -5268,7 +5337,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5Model_7MyModel_6load_single_img(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_image_path) {
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_6load_single_img(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_image_path) {
   PyObject *__pyx_v_transform = NULL;
   PyObject *__pyx_v_image = NULL;
   PyObject *__pyx_v_input_tensor = NULL;
@@ -5287,29 +5356,29 @@ static PyObject *__pyx_pf_5Model_7MyModel_6load_single_img(CYTHON_UNUSED PyObjec
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("load_single_img", 1);
 
-  /* "Model.py":67
+  /* "AImodelInference.py":69
  *         load single image
  *         """
  *         transform = transforms.Compose([             # <<<<<<<<<<<<<<
  *             transforms.Resize((224, 224)),
  *             transforms.ToTensor(),
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_transforms); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_transforms); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Compose); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Compose); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":68
+  /* "AImodelInference.py":70
  *         """
  *         transform = transforms.Compose([
  *             transforms.Resize((224, 224)),             # <<<<<<<<<<<<<<
  *             transforms.ToTensor(),
  *             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_transforms); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_transforms); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_Resize); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_Resize); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -5330,21 +5399,21 @@ static PyObject *__pyx_pf_5Model_7MyModel_6load_single_img(CYTHON_UNUSED PyObjec
     PyObject *__pyx_callargs[2] = {__pyx_t_4, __pyx_tuple__4};
     __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_5, __pyx_callargs+1-__pyx_t_6, 1+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 68, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 70, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   }
 
-  /* "Model.py":69
+  /* "AImodelInference.py":71
  *         transform = transforms.Compose([
  *             transforms.Resize((224, 224)),
  *             transforms.ToTensor(),             # <<<<<<<<<<<<<<
  *             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
  *         ])
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_transforms); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_transforms); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_ToTensor); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_ToTensor); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -5365,71 +5434,71 @@ static PyObject *__pyx_pf_5Model_7MyModel_6load_single_img(CYTHON_UNUSED PyObjec
     PyObject *__pyx_callargs[2] = {__pyx_t_4, NULL};
     __pyx_t_5 = __Pyx_PyObject_FastCall(__pyx_t_7, __pyx_callargs+1-__pyx_t_6, 0+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
+    if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 71, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
 
-  /* "Model.py":70
+  /* "AImodelInference.py":72
  *             transforms.Resize((224, 224)),
  *             transforms.ToTensor(),
  *             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])             # <<<<<<<<<<<<<<
  *         ])
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_transforms); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 70, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_transforms); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_Normalize); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 70, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_Normalize); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 70, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_8 = PyList_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 70, __pyx_L1_error)
+  __pyx_t_8 = PyList_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_INCREF(__pyx_float_0_485);
   __Pyx_GIVEREF(__pyx_float_0_485);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 0, __pyx_float_0_485)) __PYX_ERR(0, 70, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 0, __pyx_float_0_485)) __PYX_ERR(0, 72, __pyx_L1_error);
   __Pyx_INCREF(__pyx_float_0_456);
   __Pyx_GIVEREF(__pyx_float_0_456);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 1, __pyx_float_0_456)) __PYX_ERR(0, 70, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 1, __pyx_float_0_456)) __PYX_ERR(0, 72, __pyx_L1_error);
   __Pyx_INCREF(__pyx_float_0_406);
   __Pyx_GIVEREF(__pyx_float_0_406);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 2, __pyx_float_0_406)) __PYX_ERR(0, 70, __pyx_L1_error);
-  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_mean, __pyx_t_8) < 0) __PYX_ERR(0, 70, __pyx_L1_error)
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 2, __pyx_float_0_406)) __PYX_ERR(0, 72, __pyx_L1_error);
+  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_mean, __pyx_t_8) < 0) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  __pyx_t_8 = PyList_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 70, __pyx_L1_error)
+  __pyx_t_8 = PyList_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_INCREF(__pyx_float_0_229);
   __Pyx_GIVEREF(__pyx_float_0_229);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 0, __pyx_float_0_229)) __PYX_ERR(0, 70, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 0, __pyx_float_0_229)) __PYX_ERR(0, 72, __pyx_L1_error);
   __Pyx_INCREF(__pyx_float_0_224);
   __Pyx_GIVEREF(__pyx_float_0_224);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 1, __pyx_float_0_224)) __PYX_ERR(0, 70, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 1, __pyx_float_0_224)) __PYX_ERR(0, 72, __pyx_L1_error);
   __Pyx_INCREF(__pyx_float_0_225);
   __Pyx_GIVEREF(__pyx_float_0_225);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 2, __pyx_float_0_225)) __PYX_ERR(0, 70, __pyx_L1_error);
-  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_std, __pyx_t_8) < 0) __PYX_ERR(0, 70, __pyx_L1_error)
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 2, __pyx_float_0_225)) __PYX_ERR(0, 72, __pyx_L1_error);
+  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_std, __pyx_t_8) < 0) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_empty_tuple, __pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 70, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_empty_tuple, __pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "Model.py":67
+  /* "AImodelInference.py":69
  *         load single image
  *         """
  *         transform = transforms.Compose([             # <<<<<<<<<<<<<<
  *             transforms.Resize((224, 224)),
  *             transforms.ToTensor(),
  */
-  __pyx_t_7 = PyList_New(3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_7 = PyList_New(3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_GIVEREF(__pyx_t_2);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 0, __pyx_t_2)) __PYX_ERR(0, 67, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 0, __pyx_t_2)) __PYX_ERR(0, 69, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_5);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 1, __pyx_t_5)) __PYX_ERR(0, 67, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 1, __pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_8);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 2, __pyx_t_8)) __PYX_ERR(0, 67, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 2, __pyx_t_8)) __PYX_ERR(0, 69, __pyx_L1_error);
   __pyx_t_2 = 0;
   __pyx_t_5 = 0;
   __pyx_t_8 = 0;
@@ -5452,23 +5521,23 @@ static PyObject *__pyx_pf_5Model_7MyModel_6load_single_img(CYTHON_UNUSED PyObjec
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_6, 1+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 67, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
   __pyx_v_transform = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "Model.py":74
+  /* "AImodelInference.py":76
  * 
  *         #
  *         image = Image.open(image_path).convert('RGB')             # <<<<<<<<<<<<<<
  *         input_tensor = transform(image).unsqueeze(0)  #  batch
  *         input_tensor = input_tensor.to(self.training_device)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_Image); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 74, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_Image); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_open); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 74, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_open); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __pyx_t_7 = NULL;
@@ -5489,11 +5558,11 @@ static PyObject *__pyx_pf_5Model_7MyModel_6load_single_img(CYTHON_UNUSED PyObjec
     PyObject *__pyx_callargs[2] = {__pyx_t_7, __pyx_v_image_path};
     __pyx_t_3 = __Pyx_PyObject_FastCall(__pyx_t_8, __pyx_callargs+1-__pyx_t_6, 1+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 74, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 76, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   }
-  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_convert); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 74, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_convert); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -5514,14 +5583,14 @@ static PyObject *__pyx_pf_5Model_7MyModel_6load_single_img(CYTHON_UNUSED PyObjec
     PyObject *__pyx_callargs[2] = {__pyx_t_3, __pyx_n_u_RGB};
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_8, __pyx_callargs+1-__pyx_t_6, 1+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 74, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   }
   __pyx_v_image = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "Model.py":75
+  /* "AImodelInference.py":77
  *         #
  *         image = Image.open(image_path).convert('RGB')
  *         input_tensor = transform(image).unsqueeze(0)  #  batch             # <<<<<<<<<<<<<<
@@ -5547,11 +5616,11 @@ static PyObject *__pyx_pf_5Model_7MyModel_6load_single_img(CYTHON_UNUSED PyObjec
     PyObject *__pyx_callargs[2] = {__pyx_t_7, __pyx_v_image};
     __pyx_t_8 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_6, 1+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 75, __pyx_L1_error)
+    if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_unsqueeze); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_unsqueeze); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 77, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __pyx_t_8 = NULL;
@@ -5572,23 +5641,23 @@ static PyObject *__pyx_pf_5Model_7MyModel_6load_single_img(CYTHON_UNUSED PyObjec
     PyObject *__pyx_callargs[2] = {__pyx_t_8, __pyx_int_0};
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_6, 1+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
   __pyx_v_input_tensor = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "Model.py":76
+  /* "AImodelInference.py":78
  *         image = Image.open(image_path).convert('RGB')
  *         input_tensor = transform(image).unsqueeze(0)  #  batch
  *         input_tensor = input_tensor.to(self.training_device)             # <<<<<<<<<<<<<<
  *         return input_tensor
  * 
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_input_tensor, __pyx_n_s_to); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 76, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_input_tensor, __pyx_n_s_to); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_training_device); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 76, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_training_device); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __pyx_t_7 = NULL;
   __pyx_t_6 = 0;
@@ -5609,14 +5678,14 @@ static PyObject *__pyx_pf_5Model_7MyModel_6load_single_img(CYTHON_UNUSED PyObjec
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_6, 1+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 78, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
   __Pyx_DECREF_SET(__pyx_v_input_tensor, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "Model.py":77
+  /* "AImodelInference.py":79
  *         input_tensor = transform(image).unsqueeze(0)  #  batch
  *         input_tensor = input_tensor.to(self.training_device)
  *         return input_tensor             # <<<<<<<<<<<<<<
@@ -5628,7 +5697,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_6load_single_img(CYTHON_UNUSED PyObjec
   __pyx_r = __pyx_v_input_tensor;
   goto __pyx_L0;
 
-  /* "Model.py":63
+  /* "AImodelInference.py":65
  * 
  * 
  *     def load_single_img(self, image_path):             # <<<<<<<<<<<<<<
@@ -5645,7 +5714,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_6load_single_img(CYTHON_UNUSED PyObjec
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_8);
-  __Pyx_AddTraceback("Model.MyModel.load_single_img", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.load_single_img", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_transform);
@@ -5656,7 +5725,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_6load_single_img(CYTHON_UNUSED PyObjec
   return __pyx_r;
 }
 
-/* "Model.py":119
+/* "AImodelInference.py":121
  * 
  * 
  *     def load_dataset(self, root_dir_train):             # <<<<<<<<<<<<<<
@@ -5665,16 +5734,16 @@ static PyObject *__pyx_pf_5Model_7MyModel_6load_single_img(CYTHON_UNUSED PyObjec
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5Model_7MyModel_9load_dataset(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_9load_dataset(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_5Model_7MyModel_8load_dataset, "\n        setup train and valadation data loader\n        train data with augmentation\n        \n        ");
-static PyMethodDef __pyx_mdef_5Model_7MyModel_9load_dataset = {"load_dataset", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5Model_7MyModel_9load_dataset, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5Model_7MyModel_8load_dataset};
-static PyObject *__pyx_pw_5Model_7MyModel_9load_dataset(PyObject *__pyx_self, 
+PyDoc_STRVAR(__pyx_doc_16AImodelInference_7MyModel_8load_dataset, "\n        setup train and valadation data loader\n        train data with augmentation\n        \n        ");
+static PyMethodDef __pyx_mdef_16AImodelInference_7MyModel_9load_dataset = {"load_dataset", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_16AImodelInference_7MyModel_9load_dataset, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_16AImodelInference_7MyModel_8load_dataset};
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_9load_dataset(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -5721,7 +5790,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 119, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 121, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -5729,14 +5798,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 119, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 121, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("load_dataset", 1, 2, 2, 1); __PYX_ERR(0, 119, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("load_dataset", 1, 2, 2, 1); __PYX_ERR(0, 121, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "load_dataset") < 0)) __PYX_ERR(0, 119, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "load_dataset") < 0)) __PYX_ERR(0, 121, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
@@ -5749,7 +5818,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("load_dataset", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 119, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("load_dataset", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 121, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -5759,11 +5828,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("Model.MyModel.load_dataset", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.load_dataset", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5Model_7MyModel_8load_dataset(__pyx_self, __pyx_v_self, __pyx_v_root_dir_train);
+  __pyx_r = __pyx_pf_16AImodelInference_7MyModel_8load_dataset(__pyx_self, __pyx_v_self, __pyx_v_root_dir_train);
 
   /* function exit code */
   {
@@ -5776,7 +5845,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5Model_7MyModel_8load_dataset(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_root_dir_train) {
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_8load_dataset(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_root_dir_train) {
   PyObject *__pyx_v_train_augmentation = NULL;
   PyObject *__pyx_v_full_train = NULL;
   PyObject *__pyx_v_train_dataset = NULL;
@@ -5799,29 +5868,29 @@ static PyObject *__pyx_pf_5Model_7MyModel_8load_dataset(CYTHON_UNUSED PyObject *
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("load_dataset", 1);
 
-  /* "Model.py":126
+  /* "AImodelInference.py":128
  *         """
  * 
  *         train_augmentation = transforms.Compose(             # <<<<<<<<<<<<<<
  *             [
  *                 transforms.Resize((224,224)),
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_transforms); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 126, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_transforms); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Compose); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 126, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Compose); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":128
+  /* "AImodelInference.py":130
  *         train_augmentation = transforms.Compose(
  *             [
  *                 transforms.Resize((224,224)),             # <<<<<<<<<<<<<<
  *                 transforms.RandomRotation(15),
  *                 transforms.ToTensor(),
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_transforms); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 128, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_transforms); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_Resize); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 128, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_Resize); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -5842,21 +5911,21 @@ static PyObject *__pyx_pf_5Model_7MyModel_8load_dataset(CYTHON_UNUSED PyObject *
     PyObject *__pyx_callargs[2] = {__pyx_t_4, __pyx_tuple__4};
     __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_5, __pyx_callargs+1-__pyx_t_6, 1+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 128, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 130, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   }
 
-  /* "Model.py":129
+  /* "AImodelInference.py":131
  *             [
  *                 transforms.Resize((224,224)),
  *                 transforms.RandomRotation(15),             # <<<<<<<<<<<<<<
  *                 transforms.ToTensor(),
  *                 transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_transforms); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_transforms); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_RandomRotation); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_RandomRotation); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -5877,21 +5946,21 @@ static PyObject *__pyx_pf_5Model_7MyModel_8load_dataset(CYTHON_UNUSED PyObject *
     PyObject *__pyx_callargs[2] = {__pyx_t_4, __pyx_int_15};
     __pyx_t_5 = __Pyx_PyObject_FastCall(__pyx_t_7, __pyx_callargs+1-__pyx_t_6, 1+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 129, __pyx_L1_error)
+    if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 131, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
 
-  /* "Model.py":130
+  /* "AImodelInference.py":132
  *                 transforms.Resize((224,224)),
  *                 transforms.RandomRotation(15),
  *                 transforms.ToTensor(),             # <<<<<<<<<<<<<<
  *                 transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
  *             ]
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_transforms); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 130, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_transforms); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_ToTensor); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 130, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_ToTensor); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -5912,73 +5981,73 @@ static PyObject *__pyx_pf_5Model_7MyModel_8load_dataset(CYTHON_UNUSED PyObject *
     PyObject *__pyx_callargs[2] = {__pyx_t_4, NULL};
     __pyx_t_7 = __Pyx_PyObject_FastCall(__pyx_t_8, __pyx_callargs+1-__pyx_t_6, 0+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 130, __pyx_L1_error)
+    if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   }
 
-  /* "Model.py":131
+  /* "AImodelInference.py":133
  *                 transforms.RandomRotation(15),
  *                 transforms.ToTensor(),
  *                 transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])             # <<<<<<<<<<<<<<
  *             ]
  *         )
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_transforms); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_transforms); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_Normalize); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_Normalize); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  __pyx_t_8 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_9 = PyList_New(3); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __pyx_t_9 = PyList_New(3); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_INCREF(__pyx_float_0_485);
   __Pyx_GIVEREF(__pyx_float_0_485);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_9, 0, __pyx_float_0_485)) __PYX_ERR(0, 131, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_9, 0, __pyx_float_0_485)) __PYX_ERR(0, 133, __pyx_L1_error);
   __Pyx_INCREF(__pyx_float_0_456);
   __Pyx_GIVEREF(__pyx_float_0_456);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_9, 1, __pyx_float_0_456)) __PYX_ERR(0, 131, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_9, 1, __pyx_float_0_456)) __PYX_ERR(0, 133, __pyx_L1_error);
   __Pyx_INCREF(__pyx_float_0_406);
   __Pyx_GIVEREF(__pyx_float_0_406);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_9, 2, __pyx_float_0_406)) __PYX_ERR(0, 131, __pyx_L1_error);
-  if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_mean, __pyx_t_9) < 0) __PYX_ERR(0, 131, __pyx_L1_error)
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_9, 2, __pyx_float_0_406)) __PYX_ERR(0, 133, __pyx_L1_error);
+  if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_mean, __pyx_t_9) < 0) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  __pyx_t_9 = PyList_New(3); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __pyx_t_9 = PyList_New(3); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_INCREF(__pyx_float_0_229);
   __Pyx_GIVEREF(__pyx_float_0_229);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_9, 0, __pyx_float_0_229)) __PYX_ERR(0, 131, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_9, 0, __pyx_float_0_229)) __PYX_ERR(0, 133, __pyx_L1_error);
   __Pyx_INCREF(__pyx_float_0_224);
   __Pyx_GIVEREF(__pyx_float_0_224);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_9, 1, __pyx_float_0_224)) __PYX_ERR(0, 131, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_9, 1, __pyx_float_0_224)) __PYX_ERR(0, 133, __pyx_L1_error);
   __Pyx_INCREF(__pyx_float_0_225);
   __Pyx_GIVEREF(__pyx_float_0_225);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_9, 2, __pyx_float_0_225)) __PYX_ERR(0, 131, __pyx_L1_error);
-  if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_std, __pyx_t_9) < 0) __PYX_ERR(0, 131, __pyx_L1_error)
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_9, 2, __pyx_float_0_225)) __PYX_ERR(0, 133, __pyx_L1_error);
+  if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_std, __pyx_t_9) < 0) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_empty_tuple, __pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_empty_tuple, __pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-  /* "Model.py":127
+  /* "AImodelInference.py":129
  * 
  *         train_augmentation = transforms.Compose(
  *             [             # <<<<<<<<<<<<<<
  *                 transforms.Resize((224,224)),
  *                 transforms.RandomRotation(15),
  */
-  __pyx_t_8 = PyList_New(4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 127, __pyx_L1_error)
+  __pyx_t_8 = PyList_New(4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_GIVEREF(__pyx_t_2);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 0, __pyx_t_2)) __PYX_ERR(0, 127, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 0, __pyx_t_2)) __PYX_ERR(0, 129, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_5);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 1, __pyx_t_5)) __PYX_ERR(0, 127, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 1, __pyx_t_5)) __PYX_ERR(0, 129, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_7);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 2, __pyx_t_7)) __PYX_ERR(0, 127, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 2, __pyx_t_7)) __PYX_ERR(0, 129, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_9);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 3, __pyx_t_9)) __PYX_ERR(0, 127, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 3, __pyx_t_9)) __PYX_ERR(0, 129, __pyx_L1_error);
   __pyx_t_2 = 0;
   __pyx_t_5 = 0;
   __pyx_t_7 = 0;
@@ -6002,31 +6071,31 @@ static PyObject *__pyx_pf_5Model_7MyModel_8load_dataset(CYTHON_UNUSED PyObject *
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_6, 1+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 126, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 128, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
   __pyx_v_train_augmentation = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "Model.py":135
+  /* "AImodelInference.py":137
  *         )
  * 
  *         full_train = MyImageDataset(root_dir_train, transform=train_augmentation)             # <<<<<<<<<<<<<<
  *         self.train_size = int(self.data_split_rate * len(full_train))
  *         self.val_size = len(full_train) - self.train_size
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_MyImageDataset); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_MyImageDataset); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_INCREF(__pyx_v_root_dir_train);
   __Pyx_GIVEREF(__pyx_v_root_dir_train);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_v_root_dir_train)) __PYX_ERR(0, 135, __pyx_L1_error);
-  __pyx_t_8 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 135, __pyx_L1_error)
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_v_root_dir_train)) __PYX_ERR(0, 137, __pyx_L1_error);
+  __pyx_t_8 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_transform, __pyx_v_train_augmentation) < 0) __PYX_ERR(0, 135, __pyx_L1_error)
-  __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_3, __pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 135, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_transform, __pyx_v_train_augmentation) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_3, __pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -6034,66 +6103,66 @@ static PyObject *__pyx_pf_5Model_7MyModel_8load_dataset(CYTHON_UNUSED PyObject *
   __pyx_v_full_train = __pyx_t_9;
   __pyx_t_9 = 0;
 
-  /* "Model.py":136
+  /* "AImodelInference.py":138
  * 
  *         full_train = MyImageDataset(root_dir_train, transform=train_augmentation)
  *         self.train_size = int(self.data_split_rate * len(full_train))             # <<<<<<<<<<<<<<
  *         self.val_size = len(full_train) - self.train_size
  *         train_dataset, val_dataset = random_split(full_train, [self.train_size, self.val_size])
  */
-  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_data_split_rate); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 136, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_data_split_rate); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_10 = PyObject_Length(__pyx_v_full_train); if (unlikely(__pyx_t_10 == ((Py_ssize_t)-1))) __PYX_ERR(0, 136, __pyx_L1_error)
-  __pyx_t_8 = PyInt_FromSsize_t(__pyx_t_10); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 136, __pyx_L1_error)
+  __pyx_t_10 = PyObject_Length(__pyx_v_full_train); if (unlikely(__pyx_t_10 == ((Py_ssize_t)-1))) __PYX_ERR(0, 138, __pyx_L1_error)
+  __pyx_t_8 = PyInt_FromSsize_t(__pyx_t_10); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_9, __pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 136, __pyx_L1_error)
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_9, __pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  __pyx_t_8 = __Pyx_PyNumber_Int(__pyx_t_3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 136, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyNumber_Int(__pyx_t_3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_train_size, __pyx_t_8) < 0) __PYX_ERR(0, 136, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_train_size, __pyx_t_8) < 0) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-  /* "Model.py":137
+  /* "AImodelInference.py":139
  *         full_train = MyImageDataset(root_dir_train, transform=train_augmentation)
  *         self.train_size = int(self.data_split_rate * len(full_train))
  *         self.val_size = len(full_train) - self.train_size             # <<<<<<<<<<<<<<
  *         train_dataset, val_dataset = random_split(full_train, [self.train_size, self.val_size])
  * 
  */
-  __pyx_t_10 = PyObject_Length(__pyx_v_full_train); if (unlikely(__pyx_t_10 == ((Py_ssize_t)-1))) __PYX_ERR(0, 137, __pyx_L1_error)
-  __pyx_t_8 = PyInt_FromSsize_t(__pyx_t_10); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_10 = PyObject_Length(__pyx_v_full_train); if (unlikely(__pyx_t_10 == ((Py_ssize_t)-1))) __PYX_ERR(0, 139, __pyx_L1_error)
+  __pyx_t_8 = PyInt_FromSsize_t(__pyx_t_10); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_train_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_train_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_9 = PyNumber_Subtract(__pyx_t_8, __pyx_t_3); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_9 = PyNumber_Subtract(__pyx_t_8, __pyx_t_3); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_val_size, __pyx_t_9) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_val_size, __pyx_t_9) < 0) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-  /* "Model.py":138
+  /* "AImodelInference.py":140
  *         self.train_size = int(self.data_split_rate * len(full_train))
  *         self.val_size = len(full_train) - self.train_size
  *         train_dataset, val_dataset = random_split(full_train, [self.train_size, self.val_size])             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_random_split); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 138, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_random_split); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_train_size); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 138, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_train_size); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_val_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 138, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_val_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_7 = PyList_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 138, __pyx_L1_error)
+  __pyx_t_7 = PyList_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_GIVEREF(__pyx_t_8);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 0, __pyx_t_8)) __PYX_ERR(0, 138, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 0, __pyx_t_8)) __PYX_ERR(0, 140, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_1);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 1, __pyx_t_1)) __PYX_ERR(0, 138, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 1, __pyx_t_1)) __PYX_ERR(0, 140, __pyx_L1_error);
   __pyx_t_8 = 0;
   __pyx_t_1 = 0;
   __pyx_t_1 = NULL;
@@ -6115,7 +6184,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_8load_dataset(CYTHON_UNUSED PyObject *
     __pyx_t_9 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_6, 2+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 138, __pyx_L1_error)
+    if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 140, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
@@ -6125,7 +6194,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_8load_dataset(CYTHON_UNUSED PyObject *
     if (unlikely(size != 2)) {
       if (size > 2) __Pyx_RaiseTooManyValuesError(2);
       else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-      __PYX_ERR(0, 138, __pyx_L1_error)
+      __PYX_ERR(0, 140, __pyx_L1_error)
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
@@ -6138,15 +6207,15 @@ static PyObject *__pyx_pf_5Model_7MyModel_8load_dataset(CYTHON_UNUSED PyObject *
     __Pyx_INCREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_t_7);
     #else
-    __pyx_t_3 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 138, __pyx_L1_error)
+    __pyx_t_3 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 140, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_7 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 138, __pyx_L1_error)
+    __pyx_t_7 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 140, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     #endif
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   } else {
     Py_ssize_t index = -1;
-    __pyx_t_1 = PyObject_GetIter(__pyx_t_9); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 138, __pyx_L1_error)
+    __pyx_t_1 = PyObject_GetIter(__pyx_t_9); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 140, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     __pyx_t_11 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_1);
@@ -6154,7 +6223,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_8load_dataset(CYTHON_UNUSED PyObject *
     __Pyx_GOTREF(__pyx_t_3);
     index = 1; __pyx_t_7 = __pyx_t_11(__pyx_t_1); if (unlikely(!__pyx_t_7)) goto __pyx_L3_unpacking_failed;
     __Pyx_GOTREF(__pyx_t_7);
-    if (__Pyx_IternextUnpackEndCheck(__pyx_t_11(__pyx_t_1), 2) < 0) __PYX_ERR(0, 138, __pyx_L1_error)
+    if (__Pyx_IternextUnpackEndCheck(__pyx_t_11(__pyx_t_1), 2) < 0) __PYX_ERR(0, 140, __pyx_L1_error)
     __pyx_t_11 = NULL;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     goto __pyx_L4_unpacking_done;
@@ -6162,7 +6231,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_8load_dataset(CYTHON_UNUSED PyObject *
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_t_11 = NULL;
     if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-    __PYX_ERR(0, 138, __pyx_L1_error)
+    __PYX_ERR(0, 140, __pyx_L1_error)
     __pyx_L4_unpacking_done:;
   }
   __pyx_v_train_dataset = __pyx_t_3;
@@ -6170,14 +6239,14 @@ static PyObject *__pyx_pf_5Model_7MyModel_8load_dataset(CYTHON_UNUSED PyObject *
   __pyx_v_val_dataset = __pyx_t_7;
   __pyx_t_7 = 0;
 
-  /* "Model.py":141
+  /* "AImodelInference.py":143
  * 
  * 
  *         full_train.save_label_pare() # save train label and class name pare             # <<<<<<<<<<<<<<
  *         self.train_loader = DataLoader(train_dataset, batch_size=self.batch_size, shuffle=True)
  *         self.val_loader = DataLoader(val_dataset, batch_size=self.batch_size, shuffle=False)
  */
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_full_train, __pyx_n_s_save_label_pare); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 141, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_full_train, __pyx_n_s_save_label_pare); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 143, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __pyx_t_3 = NULL;
   __pyx_t_6 = 0;
@@ -6197,107 +6266,107 @@ static PyObject *__pyx_pf_5Model_7MyModel_8load_dataset(CYTHON_UNUSED PyObject *
     PyObject *__pyx_callargs[2] = {__pyx_t_3, NULL};
     __pyx_t_9 = __Pyx_PyObject_FastCall(__pyx_t_7, __pyx_callargs+1-__pyx_t_6, 0+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 141, __pyx_L1_error)
+    if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 143, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-  /* "Model.py":142
+  /* "AImodelInference.py":144
  * 
  *         full_train.save_label_pare() # save train label and class name pare
  *         self.train_loader = DataLoader(train_dataset, batch_size=self.batch_size, shuffle=True)             # <<<<<<<<<<<<<<
  *         self.val_loader = DataLoader(val_dataset, batch_size=self.batch_size, shuffle=False)
  *         print(f"Train dataset size: {len(train_dataset)}")
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_DataLoader); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 142, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_DataLoader); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 144, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_7 = PyTuple_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 142, __pyx_L1_error)
+  __pyx_t_7 = PyTuple_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 144, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_INCREF(__pyx_v_train_dataset);
   __Pyx_GIVEREF(__pyx_v_train_dataset);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_v_train_dataset)) __PYX_ERR(0, 142, __pyx_L1_error);
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 142, __pyx_L1_error)
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_v_train_dataset)) __PYX_ERR(0, 144, __pyx_L1_error);
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 144, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_batch_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_batch_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 144, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_batch_size, __pyx_t_1) < 0) __PYX_ERR(0, 142, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_batch_size, __pyx_t_1) < 0) __PYX_ERR(0, 144, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_shuffle, Py_True) < 0) __PYX_ERR(0, 142, __pyx_L1_error)
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_7, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_shuffle, Py_True) < 0) __PYX_ERR(0, 144, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_7, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 144, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_train_loader, __pyx_t_1) < 0) __PYX_ERR(0, 142, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_train_loader, __pyx_t_1) < 0) __PYX_ERR(0, 144, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":143
+  /* "AImodelInference.py":145
  *         full_train.save_label_pare() # save train label and class name pare
  *         self.train_loader = DataLoader(train_dataset, batch_size=self.batch_size, shuffle=True)
  *         self.val_loader = DataLoader(val_dataset, batch_size=self.batch_size, shuffle=False)             # <<<<<<<<<<<<<<
  *         print(f"Train dataset size: {len(train_dataset)}")
  *         print(f"Validation dataset size: {len(val_dataset)}")
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_DataLoader); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 143, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_DataLoader); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 143, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_INCREF(__pyx_v_val_dataset);
   __Pyx_GIVEREF(__pyx_v_val_dataset);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_v_val_dataset)) __PYX_ERR(0, 143, __pyx_L1_error);
-  __pyx_t_7 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 143, __pyx_L1_error)
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_v_val_dataset)) __PYX_ERR(0, 145, __pyx_L1_error);
+  __pyx_t_7 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_batch_size); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 143, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_batch_size); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_batch_size, __pyx_t_9) < 0) __PYX_ERR(0, 143, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_batch_size, __pyx_t_9) < 0) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_shuffle, Py_False) < 0) __PYX_ERR(0, 143, __pyx_L1_error)
-  __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_3, __pyx_t_7); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 143, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_shuffle, Py_False) < 0) __PYX_ERR(0, 145, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_3, __pyx_t_7); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_val_loader, __pyx_t_9) < 0) __PYX_ERR(0, 143, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_val_loader, __pyx_t_9) < 0) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-  /* "Model.py":144
+  /* "AImodelInference.py":146
  *         self.train_loader = DataLoader(train_dataset, batch_size=self.batch_size, shuffle=True)
  *         self.val_loader = DataLoader(val_dataset, batch_size=self.batch_size, shuffle=False)
  *         print(f"Train dataset size: {len(train_dataset)}")             # <<<<<<<<<<<<<<
  *         print(f"Validation dataset size: {len(val_dataset)}")
  * 
  */
-  __pyx_t_10 = PyObject_Length(__pyx_v_train_dataset); if (unlikely(__pyx_t_10 == ((Py_ssize_t)-1))) __PYX_ERR(0, 144, __pyx_L1_error)
-  __pyx_t_9 = __Pyx_PyUnicode_From_Py_ssize_t(__pyx_t_10, 0, ' ', 'd'); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 144, __pyx_L1_error)
+  __pyx_t_10 = PyObject_Length(__pyx_v_train_dataset); if (unlikely(__pyx_t_10 == ((Py_ssize_t)-1))) __PYX_ERR(0, 146, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyUnicode_From_Py_ssize_t(__pyx_t_10, 0, ' ', 'd'); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_7 = __Pyx_PyUnicode_Concat(__pyx_kp_u_Train_dataset_size, __pyx_t_9); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 144, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyUnicode_Concat(__pyx_kp_u_Train_dataset_size, __pyx_t_9); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  __pyx_t_9 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_7); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 144, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_7); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-  /* "Model.py":145
+  /* "AImodelInference.py":147
  *         self.val_loader = DataLoader(val_dataset, batch_size=self.batch_size, shuffle=False)
  *         print(f"Train dataset size: {len(train_dataset)}")
  *         print(f"Validation dataset size: {len(val_dataset)}")             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_10 = PyObject_Length(__pyx_v_val_dataset); if (unlikely(__pyx_t_10 == ((Py_ssize_t)-1))) __PYX_ERR(0, 145, __pyx_L1_error)
-  __pyx_t_9 = __Pyx_PyUnicode_From_Py_ssize_t(__pyx_t_10, 0, ' ', 'd'); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 145, __pyx_L1_error)
+  __pyx_t_10 = PyObject_Length(__pyx_v_val_dataset); if (unlikely(__pyx_t_10 == ((Py_ssize_t)-1))) __PYX_ERR(0, 147, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyUnicode_From_Py_ssize_t(__pyx_t_10, 0, ' ', 'd'); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 147, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_7 = __Pyx_PyUnicode_Concat(__pyx_kp_u_Validation_dataset_size, __pyx_t_9); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 145, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyUnicode_Concat(__pyx_kp_u_Validation_dataset_size, __pyx_t_9); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 147, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  __pyx_t_9 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_7); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 145, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_7); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 147, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-  /* "Model.py":119
+  /* "AImodelInference.py":121
  * 
  * 
  *     def load_dataset(self, root_dir_train):             # <<<<<<<<<<<<<<
@@ -6317,7 +6386,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_8load_dataset(CYTHON_UNUSED PyObject *
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_8);
   __Pyx_XDECREF(__pyx_t_9);
-  __Pyx_AddTraceback("Model.MyModel.load_dataset", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.load_dataset", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_train_augmentation);
@@ -6329,7 +6398,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_8load_dataset(CYTHON_UNUSED PyObject *
   return __pyx_r;
 }
 
-/* "Model.py":149
+/* "AImodelInference.py":151
  * 
  * 
  *     def load_testdata(self, root_dir_test):             # <<<<<<<<<<<<<<
@@ -6338,15 +6407,15 @@ static PyObject *__pyx_pf_5Model_7MyModel_8load_dataset(CYTHON_UNUSED PyObject *
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5Model_7MyModel_11load_testdata(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_11load_testdata(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_5Model_7MyModel_11load_testdata = {"load_testdata", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5Model_7MyModel_11load_testdata, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5Model_7MyModel_11load_testdata(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_16AImodelInference_7MyModel_11load_testdata = {"load_testdata", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_16AImodelInference_7MyModel_11load_testdata, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_11load_testdata(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -6393,7 +6462,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 149, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 151, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -6401,14 +6470,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 149, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 151, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("load_testdata", 1, 2, 2, 1); __PYX_ERR(0, 149, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("load_testdata", 1, 2, 2, 1); __PYX_ERR(0, 151, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "load_testdata") < 0)) __PYX_ERR(0, 149, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "load_testdata") < 0)) __PYX_ERR(0, 151, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
@@ -6421,7 +6490,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("load_testdata", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 149, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("load_testdata", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 151, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -6431,11 +6500,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("Model.MyModel.load_testdata", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.load_testdata", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5Model_7MyModel_10load_testdata(__pyx_self, __pyx_v_self, __pyx_v_root_dir_test);
+  __pyx_r = __pyx_pf_16AImodelInference_7MyModel_10load_testdata(__pyx_self, __pyx_v_self, __pyx_v_root_dir_test);
 
   /* function exit code */
   {
@@ -6448,7 +6517,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5Model_7MyModel_10load_testdata(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_root_dir_test) {
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_10load_testdata(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_root_dir_test) {
   PyObject *__pyx_v_test_augmentation = NULL;
   PyObject *__pyx_v_test = NULL;
   PyObject *__pyx_r = NULL;
@@ -6466,29 +6535,29 @@ static PyObject *__pyx_pf_5Model_7MyModel_10load_testdata(CYTHON_UNUSED PyObject
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("load_testdata", 1);
 
-  /* "Model.py":151
+  /* "AImodelInference.py":153
  *     def load_testdata(self, root_dir_test):
  * 
  *         test_augmentation = transforms.Compose(             # <<<<<<<<<<<<<<
  *             [
  *                 transforms.Resize((224,224)),
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_transforms); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 151, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_transforms); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Compose); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 151, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Compose); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":153
+  /* "AImodelInference.py":155
  *         test_augmentation = transforms.Compose(
  *             [
  *                 transforms.Resize((224,224)),             # <<<<<<<<<<<<<<
  *                 transforms.ToTensor(),
  *                 transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_transforms); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 153, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_transforms); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_Resize); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 153, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_Resize); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -6509,21 +6578,21 @@ static PyObject *__pyx_pf_5Model_7MyModel_10load_testdata(CYTHON_UNUSED PyObject
     PyObject *__pyx_callargs[2] = {__pyx_t_4, __pyx_tuple__4};
     __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_5, __pyx_callargs+1-__pyx_t_6, 1+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 153, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 155, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   }
 
-  /* "Model.py":154
+  /* "AImodelInference.py":156
  *             [
  *                 transforms.Resize((224,224)),
  *                 transforms.ToTensor(),             # <<<<<<<<<<<<<<
  *                 transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
  *             ]
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_transforms); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 154, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_transforms); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_ToTensor); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 154, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_ToTensor); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -6544,71 +6613,71 @@ static PyObject *__pyx_pf_5Model_7MyModel_10load_testdata(CYTHON_UNUSED PyObject
     PyObject *__pyx_callargs[2] = {__pyx_t_4, NULL};
     __pyx_t_5 = __Pyx_PyObject_FastCall(__pyx_t_7, __pyx_callargs+1-__pyx_t_6, 0+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 154, __pyx_L1_error)
+    if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 156, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
 
-  /* "Model.py":155
+  /* "AImodelInference.py":157
  *                 transforms.Resize((224,224)),
  *                 transforms.ToTensor(),
  *                 transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])             # <<<<<<<<<<<<<<
  *             ]
  *         )
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_transforms); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 155, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_transforms); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 157, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_Normalize); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 155, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_Normalize); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 157, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 155, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 157, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_8 = PyList_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 155, __pyx_L1_error)
+  __pyx_t_8 = PyList_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 157, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_INCREF(__pyx_float_0_485);
   __Pyx_GIVEREF(__pyx_float_0_485);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 0, __pyx_float_0_485)) __PYX_ERR(0, 155, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 0, __pyx_float_0_485)) __PYX_ERR(0, 157, __pyx_L1_error);
   __Pyx_INCREF(__pyx_float_0_456);
   __Pyx_GIVEREF(__pyx_float_0_456);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 1, __pyx_float_0_456)) __PYX_ERR(0, 155, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 1, __pyx_float_0_456)) __PYX_ERR(0, 157, __pyx_L1_error);
   __Pyx_INCREF(__pyx_float_0_406);
   __Pyx_GIVEREF(__pyx_float_0_406);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 2, __pyx_float_0_406)) __PYX_ERR(0, 155, __pyx_L1_error);
-  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_mean, __pyx_t_8) < 0) __PYX_ERR(0, 155, __pyx_L1_error)
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 2, __pyx_float_0_406)) __PYX_ERR(0, 157, __pyx_L1_error);
+  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_mean, __pyx_t_8) < 0) __PYX_ERR(0, 157, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  __pyx_t_8 = PyList_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 155, __pyx_L1_error)
+  __pyx_t_8 = PyList_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 157, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_INCREF(__pyx_float_0_229);
   __Pyx_GIVEREF(__pyx_float_0_229);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 0, __pyx_float_0_229)) __PYX_ERR(0, 155, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 0, __pyx_float_0_229)) __PYX_ERR(0, 157, __pyx_L1_error);
   __Pyx_INCREF(__pyx_float_0_224);
   __Pyx_GIVEREF(__pyx_float_0_224);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 1, __pyx_float_0_224)) __PYX_ERR(0, 155, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 1, __pyx_float_0_224)) __PYX_ERR(0, 157, __pyx_L1_error);
   __Pyx_INCREF(__pyx_float_0_225);
   __Pyx_GIVEREF(__pyx_float_0_225);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 2, __pyx_float_0_225)) __PYX_ERR(0, 155, __pyx_L1_error);
-  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_std, __pyx_t_8) < 0) __PYX_ERR(0, 155, __pyx_L1_error)
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_8, 2, __pyx_float_0_225)) __PYX_ERR(0, 157, __pyx_L1_error);
+  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_std, __pyx_t_8) < 0) __PYX_ERR(0, 157, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_empty_tuple, __pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 155, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_empty_tuple, __pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 157, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "Model.py":152
+  /* "AImodelInference.py":154
  * 
  *         test_augmentation = transforms.Compose(
  *             [             # <<<<<<<<<<<<<<
  *                 transforms.Resize((224,224)),
  *                 transforms.ToTensor(),
  */
-  __pyx_t_7 = PyList_New(3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 152, __pyx_L1_error)
+  __pyx_t_7 = PyList_New(3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 154, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_GIVEREF(__pyx_t_2);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 0, __pyx_t_2)) __PYX_ERR(0, 152, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 0, __pyx_t_2)) __PYX_ERR(0, 154, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_5);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 1, __pyx_t_5)) __PYX_ERR(0, 152, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 1, __pyx_t_5)) __PYX_ERR(0, 154, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_8);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 2, __pyx_t_8)) __PYX_ERR(0, 152, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 2, __pyx_t_8)) __PYX_ERR(0, 154, __pyx_L1_error);
   __pyx_t_2 = 0;
   __pyx_t_5 = 0;
   __pyx_t_8 = 0;
@@ -6631,31 +6700,31 @@ static PyObject *__pyx_pf_5Model_7MyModel_10load_testdata(CYTHON_UNUSED PyObject
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_6, 1+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 151, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 153, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
   __pyx_v_test_augmentation = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "Model.py":158
+  /* "AImodelInference.py":160
  *             ]
  *         )
  *         test = MyImageDataset(root_dir_test, transform=test_augmentation)             # <<<<<<<<<<<<<<
  *         self.val_loader = DataLoader(test, batch_size=self.batch_size)
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_MyImageDataset); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 158, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_MyImageDataset); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 158, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_INCREF(__pyx_v_root_dir_test);
   __Pyx_GIVEREF(__pyx_v_root_dir_test);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_v_root_dir_test)) __PYX_ERR(0, 158, __pyx_L1_error);
-  __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 158, __pyx_L1_error)
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_v_root_dir_test)) __PYX_ERR(0, 160, __pyx_L1_error);
+  __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_transform, __pyx_v_test_augmentation) < 0) __PYX_ERR(0, 158, __pyx_L1_error)
-  __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_3, __pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 158, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_transform, __pyx_v_test_augmentation) < 0) __PYX_ERR(0, 160, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_3, __pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -6663,35 +6732,35 @@ static PyObject *__pyx_pf_5Model_7MyModel_10load_testdata(CYTHON_UNUSED PyObject
   __pyx_v_test = __pyx_t_8;
   __pyx_t_8 = 0;
 
-  /* "Model.py":159
+  /* "AImodelInference.py":161
  *         )
  *         test = MyImageDataset(root_dir_test, transform=test_augmentation)
  *         self.val_loader = DataLoader(test, batch_size=self.batch_size)             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_DataLoader); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 159, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_DataLoader); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 161, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_7 = PyTuple_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 159, __pyx_L1_error)
+  __pyx_t_7 = PyTuple_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 161, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_INCREF(__pyx_v_test);
   __Pyx_GIVEREF(__pyx_v_test);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_v_test)) __PYX_ERR(0, 159, __pyx_L1_error);
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 159, __pyx_L1_error)
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_v_test)) __PYX_ERR(0, 161, __pyx_L1_error);
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 161, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_batch_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 159, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_batch_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 161, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_batch_size, __pyx_t_1) < 0) __PYX_ERR(0, 159, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_batch_size, __pyx_t_1) < 0) __PYX_ERR(0, 161, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_7, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 159, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_7, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 161, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_val_loader, __pyx_t_1) < 0) __PYX_ERR(0, 159, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_val_loader, __pyx_t_1) < 0) __PYX_ERR(0, 161, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":149
+  /* "AImodelInference.py":151
  * 
  * 
  *     def load_testdata(self, root_dir_test):             # <<<<<<<<<<<<<<
@@ -6710,7 +6779,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_10load_testdata(CYTHON_UNUSED PyObject
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_8);
-  __Pyx_AddTraceback("Model.MyModel.load_testdata", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.load_testdata", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_test_augmentation);
@@ -6720,7 +6789,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_10load_testdata(CYTHON_UNUSED PyObject
   return __pyx_r;
 }
 
-/* "Model.py":162
+/* "AImodelInference.py":164
  * 
  * 
  *     def init_loss_optimizer(self):             # <<<<<<<<<<<<<<
@@ -6729,15 +6798,15 @@ static PyObject *__pyx_pf_5Model_7MyModel_10load_testdata(CYTHON_UNUSED PyObject
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5Model_7MyModel_13init_loss_optimizer(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_13init_loss_optimizer(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_5Model_7MyModel_13init_loss_optimizer = {"init_loss_optimizer", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5Model_7MyModel_13init_loss_optimizer, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5Model_7MyModel_13init_loss_optimizer(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_16AImodelInference_7MyModel_13init_loss_optimizer = {"init_loss_optimizer", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_16AImodelInference_7MyModel_13init_loss_optimizer, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_13init_loss_optimizer(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -6781,12 +6850,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 162, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 164, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "init_loss_optimizer") < 0)) __PYX_ERR(0, 162, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "init_loss_optimizer") < 0)) __PYX_ERR(0, 164, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 1)) {
       goto __pyx_L5_argtuple_error;
@@ -6797,7 +6866,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("init_loss_optimizer", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 162, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("init_loss_optimizer", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 164, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -6807,11 +6876,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("Model.MyModel.init_loss_optimizer", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.init_loss_optimizer", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5Model_7MyModel_12init_loss_optimizer(__pyx_self, __pyx_v_self);
+  __pyx_r = __pyx_pf_16AImodelInference_7MyModel_12init_loss_optimizer(__pyx_self, __pyx_v_self);
 
   /* function exit code */
   {
@@ -6824,7 +6893,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5Model_7MyModel_12init_loss_optimizer(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_12init_loss_optimizer(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6837,16 +6906,16 @@ static PyObject *__pyx_pf_5Model_7MyModel_12init_loss_optimizer(CYTHON_UNUSED Py
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("init_loss_optimizer", 1);
 
-  /* "Model.py":163
+  /* "AImodelInference.py":165
  * 
  *     def init_loss_optimizer(self):
  *         self.loss_fn = nn.CrossEntropyLoss()             # <<<<<<<<<<<<<<
  *         self.optimizer = torch.optim.Adam(self.model.parameters(), lr=self.learningrate)
  *         self.scheduler = torch.optim.lr_scheduler.StepLR(self.optimizer, step_size=100, gamma=0.1)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_nn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 163, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_nn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_CrossEntropyLoss); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 163, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_CrossEntropyLoss); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -6867,31 +6936,31 @@ static PyObject *__pyx_pf_5Model_7MyModel_12init_loss_optimizer(CYTHON_UNUSED Py
     PyObject *__pyx_callargs[2] = {__pyx_t_2, NULL};
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 163, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 165, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_loss_fn, __pyx_t_1) < 0) __PYX_ERR(0, 163, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_loss_fn, __pyx_t_1) < 0) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":164
+  /* "AImodelInference.py":166
  *     def init_loss_optimizer(self):
  *         self.loss_fn = nn.CrossEntropyLoss()
  *         self.optimizer = torch.optim.Adam(self.model.parameters(), lr=self.learningrate)             # <<<<<<<<<<<<<<
  *         self.scheduler = torch.optim.lr_scheduler.StepLR(self.optimizer, step_size=100, gamma=0.1)
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_torch); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_torch); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_optim); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_optim); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_Adam); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_Adam); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_parameters); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_parameters); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -6912,67 +6981,67 @@ static PyObject *__pyx_pf_5Model_7MyModel_12init_loss_optimizer(CYTHON_UNUSED Py
     PyObject *__pyx_callargs[2] = {__pyx_t_2, NULL};
     __pyx_t_3 = __Pyx_PyObject_FastCall(__pyx_t_5, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 164, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 166, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   }
-  __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_3);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_3)) __PYX_ERR(0, 164, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_3)) __PYX_ERR(0, 166, __pyx_L1_error);
   __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_learningrate); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_learningrate); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_lr, __pyx_t_2) < 0) __PYX_ERR(0, 164, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_lr, __pyx_t_2) < 0) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_optimizer, __pyx_t_2) < 0) __PYX_ERR(0, 164, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_optimizer, __pyx_t_2) < 0) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":165
+  /* "AImodelInference.py":167
  *         self.loss_fn = nn.CrossEntropyLoss()
  *         self.optimizer = torch.optim.Adam(self.model.parameters(), lr=self.learningrate)
  *         self.scheduler = torch.optim.lr_scheduler.StepLR(self.optimizer, step_size=100, gamma=0.1)             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_torch); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 165, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_torch); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 167, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_optim); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 165, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_optim); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 167, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_lr_scheduler); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 165, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_lr_scheduler); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 167, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_StepLR); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 165, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_StepLR); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 167, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_optimizer); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 165, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_optimizer); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 167, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 165, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 167, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_2);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_2)) __PYX_ERR(0, 165, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_2)) __PYX_ERR(0, 167, __pyx_L1_error);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 165, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 167, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_step_size, __pyx_int_100) < 0) __PYX_ERR(0, 165, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_gamma, __pyx_float_0_1) < 0) __PYX_ERR(0, 165, __pyx_L1_error)
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 165, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_step_size, __pyx_int_100) < 0) __PYX_ERR(0, 167, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_gamma, __pyx_float_0_1) < 0) __PYX_ERR(0, 167, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 167, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_scheduler, __pyx_t_1) < 0) __PYX_ERR(0, 165, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_scheduler, __pyx_t_1) < 0) __PYX_ERR(0, 167, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":162
+  /* "AImodelInference.py":164
  * 
  * 
  *     def init_loss_optimizer(self):             # <<<<<<<<<<<<<<
@@ -6988,7 +7057,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_12init_loss_optimizer(CYTHON_UNUSED Py
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("Model.MyModel.init_loss_optimizer", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.init_loss_optimizer", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -6996,7 +7065,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_12init_loss_optimizer(CYTHON_UNUSED Py
   return __pyx_r;
 }
 
-/* "Model.py":168
+/* "AImodelInference.py":170
  * 
  * 
  *     def train(self, dataloader, model, loss_fn, optimizer):             # <<<<<<<<<<<<<<
@@ -7005,15 +7074,15 @@ static PyObject *__pyx_pf_5Model_7MyModel_12init_loss_optimizer(CYTHON_UNUSED Py
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5Model_7MyModel_15train(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_15train(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_5Model_7MyModel_15train = {"train", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5Model_7MyModel_15train, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5Model_7MyModel_15train(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_16AImodelInference_7MyModel_15train = {"train", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_16AImodelInference_7MyModel_15train, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_15train(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -7069,7 +7138,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 168, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 170, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -7077,9 +7146,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 168, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 170, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("train", 1, 5, 5, 1); __PYX_ERR(0, 168, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("train", 1, 5, 5, 1); __PYX_ERR(0, 170, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -7087,9 +7156,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[2]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 168, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 170, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("train", 1, 5, 5, 2); __PYX_ERR(0, 168, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("train", 1, 5, 5, 2); __PYX_ERR(0, 170, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
@@ -7097,9 +7166,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[3]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 168, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 170, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("train", 1, 5, 5, 3); __PYX_ERR(0, 168, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("train", 1, 5, 5, 3); __PYX_ERR(0, 170, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
@@ -7107,14 +7176,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[4]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 168, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 170, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("train", 1, 5, 5, 4); __PYX_ERR(0, 168, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("train", 1, 5, 5, 4); __PYX_ERR(0, 170, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "train") < 0)) __PYX_ERR(0, 168, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "train") < 0)) __PYX_ERR(0, 170, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 5)) {
       goto __pyx_L5_argtuple_error;
@@ -7133,7 +7202,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("train", 1, 5, 5, __pyx_nargs); __PYX_ERR(0, 168, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("train", 1, 5, 5, __pyx_nargs); __PYX_ERR(0, 170, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -7143,11 +7212,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("Model.MyModel.train", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.train", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5Model_7MyModel_14train(__pyx_self, __pyx_v_self, __pyx_v_dataloader, __pyx_v_model, __pyx_v_loss_fn, __pyx_v_optimizer);
+  __pyx_r = __pyx_pf_16AImodelInference_7MyModel_14train(__pyx_self, __pyx_v_self, __pyx_v_dataloader, __pyx_v_model, __pyx_v_loss_fn, __pyx_v_optimizer);
 
   /* function exit code */
   {
@@ -7160,7 +7229,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_dataloader, PyObject *__pyx_v_model, PyObject *__pyx_v_loss_fn, PyObject *__pyx_v_optimizer) {
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_dataloader, PyObject *__pyx_v_model, PyObject *__pyx_v_loss_fn, PyObject *__pyx_v_optimizer) {
   Py_ssize_t __pyx_v_size;
   PyObject *__pyx_v_batch = NULL;
   PyObject *__pyx_v_X = NULL;
@@ -7190,29 +7259,29 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
   __Pyx_RefNannySetupContext("train", 0);
   __Pyx_INCREF(__pyx_v_model);
 
-  /* "Model.py":169
+  /* "AImodelInference.py":171
  * 
  *     def train(self, dataloader, model, loss_fn, optimizer):
  *         size = len(dataloader.dataset)             # <<<<<<<<<<<<<<
  *         model = model.to(self.training_device)
  *         model.train()
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dataloader, __pyx_n_s_dataset); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 169, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dataloader, __pyx_n_s_dataset); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyObject_Length(__pyx_t_1); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 169, __pyx_L1_error)
+  __pyx_t_2 = PyObject_Length(__pyx_t_1); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_size = __pyx_t_2;
 
-  /* "Model.py":170
+  /* "AImodelInference.py":172
  *     def train(self, dataloader, model, loss_fn, optimizer):
  *         size = len(dataloader.dataset)
  *         model = model.to(self.training_device)             # <<<<<<<<<<<<<<
  *         model.train()
  *         for batch, (X, y) in enumerate(dataloader):
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_model, __pyx_n_s_to); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 170, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_model, __pyx_n_s_to); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_training_device); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 170, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_training_device); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_5 = NULL;
   __pyx_t_6 = 0;
@@ -7233,21 +7302,21 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_6, 1+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 170, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 172, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
   __Pyx_DECREF_SET(__pyx_v_model, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "Model.py":171
+  /* "AImodelInference.py":173
  *         size = len(dataloader.dataset)
  *         model = model.to(self.training_device)
  *         model.train()             # <<<<<<<<<<<<<<
  *         for batch, (X, y) in enumerate(dataloader):
  *             X, y = X.to(self.training_device), y.to(self.training_device)
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_model, __pyx_n_s_train); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 171, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_model, __pyx_n_s_train); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 173, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   __pyx_t_6 = 0;
@@ -7267,13 +7336,13 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
     PyObject *__pyx_callargs[2] = {__pyx_t_4, NULL};
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_6, 0+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 171, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 173, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":172
+  /* "AImodelInference.py":174
  *         model = model.to(self.training_device)
  *         model.train()
  *         for batch, (X, y) in enumerate(dataloader):             # <<<<<<<<<<<<<<
@@ -7287,9 +7356,9 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
     __pyx_t_2 = 0;
     __pyx_t_7 = NULL;
   } else {
-    __pyx_t_2 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_v_dataloader); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 172, __pyx_L1_error)
+    __pyx_t_2 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_v_dataloader); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 174, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_7 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 172, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 174, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_7)) {
@@ -7297,28 +7366,28 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
         {
           Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_3);
           #if !CYTHON_ASSUME_SAFE_MACROS
-          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 172, __pyx_L1_error)
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 174, __pyx_L1_error)
           #endif
           if (__pyx_t_2 >= __pyx_temp) break;
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely((0 < 0))) __PYX_ERR(0, 172, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely((0 < 0))) __PYX_ERR(0, 174, __pyx_L1_error)
         #else
-        __pyx_t_4 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 172, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 174, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         {
           Py_ssize_t __pyx_temp = __Pyx_PyTuple_GET_SIZE(__pyx_t_3);
           #if !CYTHON_ASSUME_SAFE_MACROS
-          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 172, __pyx_L1_error)
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 174, __pyx_L1_error)
           #endif
           if (__pyx_t_2 >= __pyx_temp) break;
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely((0 < 0))) __PYX_ERR(0, 172, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely((0 < 0))) __PYX_ERR(0, 174, __pyx_L1_error)
         #else
-        __pyx_t_4 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 172, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 174, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -7328,7 +7397,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 172, __pyx_L1_error)
+          else __PYX_ERR(0, 174, __pyx_L1_error)
         }
         break;
       }
@@ -7340,7 +7409,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 172, __pyx_L1_error)
+        __PYX_ERR(0, 174, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -7353,15 +7422,15 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_8);
       #else
-      __pyx_t_5 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 172, __pyx_L1_error)
+      __pyx_t_5 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 174, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_8 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 172, __pyx_L1_error)
+      __pyx_t_8 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 174, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       #endif
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_9 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 172, __pyx_L1_error)
+      __pyx_t_9 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 174, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __pyx_t_10 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_9);
@@ -7369,7 +7438,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
       __Pyx_GOTREF(__pyx_t_5);
       index = 1; __pyx_t_8 = __pyx_t_10(__pyx_t_9); if (unlikely(!__pyx_t_8)) goto __pyx_L5_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_8);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_10(__pyx_t_9), 2) < 0) __PYX_ERR(0, 172, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_10(__pyx_t_9), 2) < 0) __PYX_ERR(0, 174, __pyx_L1_error)
       __pyx_t_10 = NULL;
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       goto __pyx_L6_unpacking_done;
@@ -7377,7 +7446,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       __pyx_t_10 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 172, __pyx_L1_error)
+      __PYX_ERR(0, 174, __pyx_L1_error)
       __pyx_L6_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_X, __pyx_t_5);
@@ -7386,22 +7455,22 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
     __pyx_t_8 = 0;
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_XDECREF_SET(__pyx_v_batch, __pyx_t_1);
-    __pyx_t_4 = __Pyx_PyInt_AddObjC(__pyx_t_1, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 172, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_AddObjC(__pyx_t_1, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 174, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1);
     __pyx_t_1 = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "Model.py":173
+    /* "AImodelInference.py":175
  *         model.train()
  *         for batch, (X, y) in enumerate(dataloader):
  *             X, y = X.to(self.training_device), y.to(self.training_device)             # <<<<<<<<<<<<<<
  * 
  *             # Compute prediction error
  */
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_X, __pyx_n_s_to); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 173, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_X, __pyx_n_s_to); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 175, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_training_device); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 173, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_training_device); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 175, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __pyx_t_9 = NULL;
     __pyx_t_6 = 0;
@@ -7422,13 +7491,13 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
       __pyx_t_4 = __Pyx_PyObject_FastCall(__pyx_t_8, __pyx_callargs+1-__pyx_t_6, 1+__pyx_t_6);
       __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 173, __pyx_L1_error)
+      if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 175, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     }
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_y, __pyx_n_s_to); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 173, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_y, __pyx_n_s_to); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 175, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_training_device); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 173, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_training_device); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 175, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __pyx_t_11 = NULL;
     __pyx_t_6 = 0;
@@ -7449,7 +7518,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
       __pyx_t_8 = __Pyx_PyObject_FastCall(__pyx_t_5, __pyx_callargs+1-__pyx_t_6, 1+__pyx_t_6);
       __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-      if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 173, __pyx_L1_error)
+      if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 175, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     }
@@ -7458,7 +7527,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
     __Pyx_DECREF_SET(__pyx_v_y, __pyx_t_8);
     __pyx_t_8 = 0;
 
-    /* "Model.py":176
+    /* "AImodelInference.py":178
  * 
  *             # Compute prediction error
  *             pred = model(X)             # <<<<<<<<<<<<<<
@@ -7484,14 +7553,14 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
       PyObject *__pyx_callargs[2] = {__pyx_t_5, __pyx_v_X};
       __pyx_t_8 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_6, 1+__pyx_t_6);
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-      if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 176, __pyx_L1_error)
+      if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 178, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     }
     __Pyx_XDECREF_SET(__pyx_v_pred, __pyx_t_8);
     __pyx_t_8 = 0;
 
-    /* "Model.py":177
+    /* "AImodelInference.py":179
  *             # Compute prediction error
  *             pred = model(X)
  *             loss = loss_fn(pred, y)             # <<<<<<<<<<<<<<
@@ -7517,87 +7586,21 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
       PyObject *__pyx_callargs[3] = {__pyx_t_5, __pyx_v_pred, __pyx_v_y};
       __pyx_t_8 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_6, 2+__pyx_t_6);
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-      if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 177, __pyx_L1_error)
+      if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 179, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     }
     __Pyx_XDECREF_SET(__pyx_v_loss, __pyx_t_8);
     __pyx_t_8 = 0;
 
-    /* "Model.py":180
+    /* "AImodelInference.py":182
  * 
  *             # Backpropagation
  *             loss.backward()             # <<<<<<<<<<<<<<
  *             optimizer.step()
  *             optimizer.zero_grad()
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_loss, __pyx_n_s_backward); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 180, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = NULL;
-    __pyx_t_6 = 0;
-    #if CYTHON_UNPACK_METHODS
-    if (likely(PyMethod_Check(__pyx_t_4))) {
-      __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_4);
-      if (likely(__pyx_t_5)) {
-        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
-        __Pyx_INCREF(__pyx_t_5);
-        __Pyx_INCREF(function);
-        __Pyx_DECREF_SET(__pyx_t_4, function);
-        __pyx_t_6 = 1;
-      }
-    }
-    #endif
-    {
-      PyObject *__pyx_callargs[2] = {__pyx_t_5, NULL};
-      __pyx_t_8 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_6, 0+__pyx_t_6);
-      __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-      if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 180, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_8);
-      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    }
-    __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-
-    /* "Model.py":181
- *             # Backpropagation
- *             loss.backward()
- *             optimizer.step()             # <<<<<<<<<<<<<<
- *             optimizer.zero_grad()
- *             print("123-123",batch)
- */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_optimizer, __pyx_n_s_step); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 181, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = NULL;
-    __pyx_t_6 = 0;
-    #if CYTHON_UNPACK_METHODS
-    if (likely(PyMethod_Check(__pyx_t_4))) {
-      __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_4);
-      if (likely(__pyx_t_5)) {
-        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
-        __Pyx_INCREF(__pyx_t_5);
-        __Pyx_INCREF(function);
-        __Pyx_DECREF_SET(__pyx_t_4, function);
-        __pyx_t_6 = 1;
-      }
-    }
-    #endif
-    {
-      PyObject *__pyx_callargs[2] = {__pyx_t_5, NULL};
-      __pyx_t_8 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_6, 0+__pyx_t_6);
-      __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-      if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 181, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_8);
-      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    }
-    __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-
-    /* "Model.py":182
- *             loss.backward()
- *             optimizer.step()
- *             optimizer.zero_grad()             # <<<<<<<<<<<<<<
- *             print("123-123",batch)
- *             if batch % 100 == 0:
- */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_optimizer, __pyx_n_s_zero_grad); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 182, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_loss, __pyx_n_s_backward); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 182, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_5 = NULL;
     __pyx_t_6 = 0;
@@ -7623,47 +7626,113 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
     }
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-    /* "Model.py":183
+    /* "AImodelInference.py":183
+ *             # Backpropagation
+ *             loss.backward()
+ *             optimizer.step()             # <<<<<<<<<<<<<<
+ *             optimizer.zero_grad()
+ *             print("123-123",batch)
+ */
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_optimizer, __pyx_n_s_step); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 183, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __pyx_t_5 = NULL;
+    __pyx_t_6 = 0;
+    #if CYTHON_UNPACK_METHODS
+    if (likely(PyMethod_Check(__pyx_t_4))) {
+      __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_4);
+      if (likely(__pyx_t_5)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
+        __Pyx_INCREF(__pyx_t_5);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_4, function);
+        __pyx_t_6 = 1;
+      }
+    }
+    #endif
+    {
+      PyObject *__pyx_callargs[2] = {__pyx_t_5, NULL};
+      __pyx_t_8 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_6, 0+__pyx_t_6);
+      __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+      if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 183, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_8);
+      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    }
+    __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+
+    /* "AImodelInference.py":184
+ *             loss.backward()
+ *             optimizer.step()
+ *             optimizer.zero_grad()             # <<<<<<<<<<<<<<
+ *             print("123-123",batch)
+ *             if batch % 100 == 0:
+ */
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_optimizer, __pyx_n_s_zero_grad); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 184, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __pyx_t_5 = NULL;
+    __pyx_t_6 = 0;
+    #if CYTHON_UNPACK_METHODS
+    if (likely(PyMethod_Check(__pyx_t_4))) {
+      __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_4);
+      if (likely(__pyx_t_5)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
+        __Pyx_INCREF(__pyx_t_5);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_4, function);
+        __pyx_t_6 = 1;
+      }
+    }
+    #endif
+    {
+      PyObject *__pyx_callargs[2] = {__pyx_t_5, NULL};
+      __pyx_t_8 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_6, 0+__pyx_t_6);
+      __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+      if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 184, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_8);
+      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    }
+    __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+
+    /* "AImodelInference.py":185
  *             optimizer.step()
  *             optimizer.zero_grad()
  *             print("123-123",batch)             # <<<<<<<<<<<<<<
  *             if batch % 100 == 0:
  *                 loss, current = loss.item(), (batch + 1) * len(X)
  */
-    __pyx_t_8 = PyTuple_New(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 183, __pyx_L1_error)
+    __pyx_t_8 = PyTuple_New(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 185, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_INCREF(__pyx_kp_u_123_123);
     __Pyx_GIVEREF(__pyx_kp_u_123_123);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_kp_u_123_123)) __PYX_ERR(0, 183, __pyx_L1_error);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_kp_u_123_123)) __PYX_ERR(0, 185, __pyx_L1_error);
     __Pyx_INCREF(__pyx_v_batch);
     __Pyx_GIVEREF(__pyx_v_batch);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_8, 1, __pyx_v_batch)) __PYX_ERR(0, 183, __pyx_L1_error);
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_8, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 183, __pyx_L1_error)
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_8, 1, __pyx_v_batch)) __PYX_ERR(0, 185, __pyx_L1_error);
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_8, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 185, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "Model.py":184
+    /* "AImodelInference.py":186
  *             optimizer.zero_grad()
  *             print("123-123",batch)
  *             if batch % 100 == 0:             # <<<<<<<<<<<<<<
  *                 loss, current = loss.item(), (batch + 1) * len(X)
  *                 print(f"loss: {loss:>7f}  [{current:>5d}/{size:>5d}]")
  */
-    __pyx_t_4 = __Pyx_PyInt_RemainderObjC(__pyx_v_batch, __pyx_int_100, 0x64, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 184, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_RemainderObjC(__pyx_v_batch, __pyx_int_100, 0x64, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 186, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_12 = (__Pyx_PyInt_BoolEqObjC(__pyx_t_4, __pyx_int_0, 0, 0)); if (unlikely((__pyx_t_12 < 0))) __PYX_ERR(0, 184, __pyx_L1_error)
+    __pyx_t_12 = (__Pyx_PyInt_BoolEqObjC(__pyx_t_4, __pyx_int_0, 0, 0)); if (unlikely((__pyx_t_12 < 0))) __PYX_ERR(0, 186, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     if (__pyx_t_12) {
 
-      /* "Model.py":185
+      /* "AImodelInference.py":187
  *             print("123-123",batch)
  *             if batch % 100 == 0:
  *                 loss, current = loss.item(), (batch + 1) * len(X)             # <<<<<<<<<<<<<<
  *                 print(f"loss: {loss:>7f}  [{current:>5d}/{size:>5d}]")
  *         return loss
  */
-      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_loss, __pyx_n_s_item); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 185, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_loss, __pyx_n_s_item); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 187, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __pyx_t_5 = NULL;
       __pyx_t_6 = 0;
@@ -7683,16 +7752,16 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
         PyObject *__pyx_callargs[2] = {__pyx_t_5, NULL};
         __pyx_t_4 = __Pyx_PyObject_FastCall(__pyx_t_8, __pyx_callargs+1-__pyx_t_6, 0+__pyx_t_6);
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-        if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 185, __pyx_L1_error)
+        if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 187, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       }
-      __pyx_t_8 = __Pyx_PyInt_AddObjC(__pyx_v_batch, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 185, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyInt_AddObjC(__pyx_v_batch, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 187, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_13 = PyObject_Length(__pyx_v_X); if (unlikely(__pyx_t_13 == ((Py_ssize_t)-1))) __PYX_ERR(0, 185, __pyx_L1_error)
-      __pyx_t_5 = PyInt_FromSsize_t(__pyx_t_13); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 185, __pyx_L1_error)
+      __pyx_t_13 = PyObject_Length(__pyx_v_X); if (unlikely(__pyx_t_13 == ((Py_ssize_t)-1))) __PYX_ERR(0, 187, __pyx_L1_error)
+      __pyx_t_5 = PyInt_FromSsize_t(__pyx_t_13); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 187, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_9 = PyNumber_Multiply(__pyx_t_8, __pyx_t_5); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 185, __pyx_L1_error)
+      __pyx_t_9 = PyNumber_Multiply(__pyx_t_8, __pyx_t_5); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 187, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -7701,14 +7770,14 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
       __Pyx_XDECREF_SET(__pyx_v_current, __pyx_t_9);
       __pyx_t_9 = 0;
 
-      /* "Model.py":186
+      /* "AImodelInference.py":188
  *             if batch % 100 == 0:
  *                 loss, current = loss.item(), (batch + 1) * len(X)
  *                 print(f"loss: {loss:>7f}  [{current:>5d}/{size:>5d}]")             # <<<<<<<<<<<<<<
  *         return loss
  * 
  */
-      __pyx_t_9 = PyTuple_New(7); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 186, __pyx_L1_error)
+      __pyx_t_9 = PyTuple_New(7); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 188, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __pyx_t_13 = 0;
       __pyx_t_14 = 127;
@@ -7716,7 +7785,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
       __pyx_t_13 += 6;
       __Pyx_GIVEREF(__pyx_kp_u_loss);
       PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_kp_u_loss);
-      __pyx_t_4 = __Pyx_PyObject_Format(__pyx_v_loss, __pyx_kp_u_7f); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 186, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_Format(__pyx_v_loss, __pyx_kp_u_7f); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 188, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __pyx_t_14 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) > __pyx_t_14) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) : __pyx_t_14;
       __pyx_t_13 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_4);
@@ -7727,7 +7796,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
       __pyx_t_13 += 3;
       __Pyx_GIVEREF(__pyx_kp_u__5);
       PyTuple_SET_ITEM(__pyx_t_9, 2, __pyx_kp_u__5);
-      __pyx_t_4 = __Pyx_PyObject_Format(__pyx_v_current, __pyx_kp_u_5d); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 186, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_Format(__pyx_v_current, __pyx_kp_u_5d); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 188, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __pyx_t_14 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) > __pyx_t_14) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) : __pyx_t_14;
       __pyx_t_13 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_4);
@@ -7738,9 +7807,9 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
       __pyx_t_13 += 1;
       __Pyx_GIVEREF(__pyx_kp_u__6);
       PyTuple_SET_ITEM(__pyx_t_9, 4, __pyx_kp_u__6);
-      __pyx_t_4 = PyInt_FromSsize_t(__pyx_v_size); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 186, __pyx_L1_error)
+      __pyx_t_4 = PyInt_FromSsize_t(__pyx_v_size); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 188, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_5 = __Pyx_PyObject_Format(__pyx_t_4, __pyx_kp_u_5d); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 186, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_Format(__pyx_t_4, __pyx_kp_u_5d); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 188, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __pyx_t_14 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) > __pyx_t_14) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) : __pyx_t_14;
@@ -7752,15 +7821,15 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
       __pyx_t_13 += 1;
       __Pyx_GIVEREF(__pyx_kp_u__7);
       PyTuple_SET_ITEM(__pyx_t_9, 6, __pyx_kp_u__7);
-      __pyx_t_5 = __Pyx_PyUnicode_Join(__pyx_t_9, 7, __pyx_t_13, __pyx_t_14); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 186, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyUnicode_Join(__pyx_t_9, 7, __pyx_t_13, __pyx_t_14); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 188, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-      __pyx_t_9 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_5); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 186, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_5); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 188, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-      /* "Model.py":184
+      /* "AImodelInference.py":186
  *             optimizer.zero_grad()
  *             print("123-123",batch)
  *             if batch % 100 == 0:             # <<<<<<<<<<<<<<
@@ -7769,7 +7838,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
  */
     }
 
-    /* "Model.py":172
+    /* "AImodelInference.py":174
  *         model = model.to(self.training_device)
  *         model.train()
  *         for batch, (X, y) in enumerate(dataloader):             # <<<<<<<<<<<<<<
@@ -7780,7 +7849,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":187
+  /* "AImodelInference.py":189
  *                 loss, current = loss.item(), (batch + 1) * len(X)
  *                 print(f"loss: {loss:>7f}  [{current:>5d}/{size:>5d}]")
  *         return loss             # <<<<<<<<<<<<<<
@@ -7788,12 +7857,12 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  if (unlikely(!__pyx_v_loss)) { __Pyx_RaiseUnboundLocalError("loss"); __PYX_ERR(0, 187, __pyx_L1_error) }
+  if (unlikely(!__pyx_v_loss)) { __Pyx_RaiseUnboundLocalError("loss"); __PYX_ERR(0, 189, __pyx_L1_error) }
   __Pyx_INCREF(__pyx_v_loss);
   __pyx_r = __pyx_v_loss;
   goto __pyx_L0;
 
-  /* "Model.py":168
+  /* "AImodelInference.py":170
  * 
  * 
  *     def train(self, dataloader, model, loss_fn, optimizer):             # <<<<<<<<<<<<<<
@@ -7810,7 +7879,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
   __Pyx_XDECREF(__pyx_t_8);
   __Pyx_XDECREF(__pyx_t_9);
   __Pyx_XDECREF(__pyx_t_11);
-  __Pyx_AddTraceback("Model.MyModel.train", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.train", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_batch);
@@ -7825,7 +7894,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
   return __pyx_r;
 }
 
-/* "Model.py":190
+/* "AImodelInference.py":192
  * 
  * 
  *     def validation(self, dataloader, model, loss_fn):             # <<<<<<<<<<<<<<
@@ -7834,15 +7903,15 @@ static PyObject *__pyx_pf_5Model_7MyModel_14train(CYTHON_UNUSED PyObject *__pyx_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5Model_7MyModel_17validation(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_17validation(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_5Model_7MyModel_17validation = {"validation", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5Model_7MyModel_17validation, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5Model_7MyModel_17validation(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_16AImodelInference_7MyModel_17validation = {"validation", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_16AImodelInference_7MyModel_17validation, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_17validation(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -7895,7 +7964,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 190, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 192, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -7903,9 +7972,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 190, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 192, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("validation", 1, 4, 4, 1); __PYX_ERR(0, 190, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("validation", 1, 4, 4, 1); __PYX_ERR(0, 192, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -7913,9 +7982,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[2]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 190, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 192, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("validation", 1, 4, 4, 2); __PYX_ERR(0, 190, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("validation", 1, 4, 4, 2); __PYX_ERR(0, 192, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
@@ -7923,14 +7992,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[3]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 190, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 192, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("validation", 1, 4, 4, 3); __PYX_ERR(0, 190, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("validation", 1, 4, 4, 3); __PYX_ERR(0, 192, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "validation") < 0)) __PYX_ERR(0, 190, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "validation") < 0)) __PYX_ERR(0, 192, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 4)) {
       goto __pyx_L5_argtuple_error;
@@ -7947,7 +8016,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("validation", 1, 4, 4, __pyx_nargs); __PYX_ERR(0, 190, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("validation", 1, 4, 4, __pyx_nargs); __PYX_ERR(0, 192, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -7957,11 +8026,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("Model.MyModel.validation", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.validation", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5Model_7MyModel_16validation(__pyx_self, __pyx_v_self, __pyx_v_dataloader, __pyx_v_model, __pyx_v_loss_fn);
+  __pyx_r = __pyx_pf_16AImodelInference_7MyModel_16validation(__pyx_self, __pyx_v_self, __pyx_v_dataloader, __pyx_v_model, __pyx_v_loss_fn);
 
   /* function exit code */
   {
@@ -7974,7 +8043,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_dataloader, PyObject *__pyx_v_model, PyObject *__pyx_v_loss_fn) {
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_16validation(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_dataloader, PyObject *__pyx_v_model, PyObject *__pyx_v_loss_fn) {
   PyObject *__pyx_v_size = NULL;
   PyObject *__pyx_v_num_batches = NULL;
   PyObject *__pyx_v_test_loss = NULL;
@@ -8008,43 +8077,43 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("validation", 1);
 
-  /* "Model.py":191
+  /* "AImodelInference.py":193
  * 
  *     def validation(self, dataloader, model, loss_fn):
  *         size = len(dataloader.dataset)             # <<<<<<<<<<<<<<
  *         num_batches = len(dataloader)
  *         model.eval()
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dataloader, __pyx_n_s_dataset); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 191, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dataloader, __pyx_n_s_dataset); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 193, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyObject_Length(__pyx_t_1); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 191, __pyx_L1_error)
+  __pyx_t_2 = PyObject_Length(__pyx_t_1); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 193, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyInt_FromSsize_t(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 191, __pyx_L1_error)
+  __pyx_t_1 = PyInt_FromSsize_t(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 193, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_size = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "Model.py":192
+  /* "AImodelInference.py":194
  *     def validation(self, dataloader, model, loss_fn):
  *         size = len(dataloader.dataset)
  *         num_batches = len(dataloader)             # <<<<<<<<<<<<<<
  *         model.eval()
  *         test_loss, correct = 0, 0
  */
-  __pyx_t_2 = PyObject_Length(__pyx_v_dataloader); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 192, __pyx_L1_error)
-  __pyx_t_1 = PyInt_FromSsize_t(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 192, __pyx_L1_error)
+  __pyx_t_2 = PyObject_Length(__pyx_v_dataloader); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 194, __pyx_L1_error)
+  __pyx_t_1 = PyInt_FromSsize_t(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 194, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_num_batches = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "Model.py":193
+  /* "AImodelInference.py":195
  *         size = len(dataloader.dataset)
  *         num_batches = len(dataloader)
  *         model.eval()             # <<<<<<<<<<<<<<
  *         test_loss, correct = 0, 0
  *         with torch.no_grad():
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_model, __pyx_n_s_eval); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 193, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_model, __pyx_n_s_eval); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 195, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   __pyx_t_5 = 0;
@@ -8064,13 +8133,13 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
     PyObject *__pyx_callargs[2] = {__pyx_t_4, NULL};
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_5, 0+__pyx_t_5);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 193, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 195, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":194
+  /* "AImodelInference.py":196
  *         num_batches = len(dataloader)
  *         model.eval()
  *         test_loss, correct = 0, 0             # <<<<<<<<<<<<<<
@@ -8086,7 +8155,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
   __pyx_v_correct = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "Model.py":195
+  /* "AImodelInference.py":197
  *         model.eval()
  *         test_loss, correct = 0, 0
  *         with torch.no_grad():             # <<<<<<<<<<<<<<
@@ -8094,9 +8163,9 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
  *                 X, y = X.to(self.training_device), y.to(self.training_device)
  */
   /*with:*/ {
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_torch); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 195, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_torch); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 197, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_no_grad); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 195, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_no_grad); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 197, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_t_1 = NULL;
@@ -8117,13 +8186,13 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
       PyObject *__pyx_callargs[2] = {__pyx_t_1, NULL};
       __pyx_t_3 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_5, 0+__pyx_t_5);
       __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-      if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 195, __pyx_L1_error)
+      if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 197, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     }
-    __pyx_t_6 = __Pyx_PyObject_LookupSpecial(__pyx_t_3, __pyx_n_s_exit); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 195, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_LookupSpecial(__pyx_t_3, __pyx_n_s_exit); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 197, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_1 = __Pyx_PyObject_LookupSpecial(__pyx_t_3, __pyx_n_s_enter); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 195, __pyx_L3_error)
+    __pyx_t_1 = __Pyx_PyObject_LookupSpecial(__pyx_t_3, __pyx_n_s_enter); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 197, __pyx_L3_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_t_7 = NULL;
     __pyx_t_5 = 0;
@@ -8143,7 +8212,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
       PyObject *__pyx_callargs[2] = {__pyx_t_7, NULL};
       __pyx_t_4 = __Pyx_PyObject_FastCall(__pyx_t_1, __pyx_callargs+1-__pyx_t_5, 0+__pyx_t_5);
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-      if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 195, __pyx_L3_error)
+      if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 197, __pyx_L3_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     }
@@ -8159,7 +8228,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
         __Pyx_XGOTREF(__pyx_t_10);
         /*try:*/ {
 
-          /* "Model.py":196
+          /* "AImodelInference.py":198
  *         test_loss, correct = 0, 0
  *         with torch.no_grad():
  *             for X, y in dataloader:             # <<<<<<<<<<<<<<
@@ -8171,9 +8240,9 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
             __pyx_t_2 = 0;
             __pyx_t_11 = NULL;
           } else {
-            __pyx_t_2 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_v_dataloader); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 196, __pyx_L7_error)
+            __pyx_t_2 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_v_dataloader); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 198, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_3);
-            __pyx_t_11 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_3); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 196, __pyx_L7_error)
+            __pyx_t_11 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_3); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 198, __pyx_L7_error)
           }
           for (;;) {
             if (likely(!__pyx_t_11)) {
@@ -8181,28 +8250,28 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
                 {
                   Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_3);
                   #if !CYTHON_ASSUME_SAFE_MACROS
-                  if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 196, __pyx_L7_error)
+                  if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 198, __pyx_L7_error)
                   #endif
                   if (__pyx_t_2 >= __pyx_temp) break;
                 }
                 #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-                __pyx_t_4 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely((0 < 0))) __PYX_ERR(0, 196, __pyx_L7_error)
+                __pyx_t_4 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely((0 < 0))) __PYX_ERR(0, 198, __pyx_L7_error)
                 #else
-                __pyx_t_4 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 196, __pyx_L7_error)
+                __pyx_t_4 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 198, __pyx_L7_error)
                 __Pyx_GOTREF(__pyx_t_4);
                 #endif
               } else {
                 {
                   Py_ssize_t __pyx_temp = __Pyx_PyTuple_GET_SIZE(__pyx_t_3);
                   #if !CYTHON_ASSUME_SAFE_MACROS
-                  if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 196, __pyx_L7_error)
+                  if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 198, __pyx_L7_error)
                   #endif
                   if (__pyx_t_2 >= __pyx_temp) break;
                 }
                 #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-                __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely((0 < 0))) __PYX_ERR(0, 196, __pyx_L7_error)
+                __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely((0 < 0))) __PYX_ERR(0, 198, __pyx_L7_error)
                 #else
-                __pyx_t_4 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 196, __pyx_L7_error)
+                __pyx_t_4 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 198, __pyx_L7_error)
                 __Pyx_GOTREF(__pyx_t_4);
                 #endif
               }
@@ -8212,7 +8281,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
                 PyObject* exc_type = PyErr_Occurred();
                 if (exc_type) {
                   if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-                  else __PYX_ERR(0, 196, __pyx_L7_error)
+                  else __PYX_ERR(0, 198, __pyx_L7_error)
                 }
                 break;
               }
@@ -8224,7 +8293,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
               if (unlikely(size != 2)) {
                 if (size > 2) __Pyx_RaiseTooManyValuesError(2);
                 else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-                __PYX_ERR(0, 196, __pyx_L7_error)
+                __PYX_ERR(0, 198, __pyx_L7_error)
               }
               #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
               if (likely(PyTuple_CheckExact(sequence))) {
@@ -8237,15 +8306,15 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
               __Pyx_INCREF(__pyx_t_1);
               __Pyx_INCREF(__pyx_t_7);
               #else
-              __pyx_t_1 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 196, __pyx_L7_error)
+              __pyx_t_1 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 198, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_1);
-              __pyx_t_7 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 196, __pyx_L7_error)
+              __pyx_t_7 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 198, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_7);
               #endif
               __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
             } else {
               Py_ssize_t index = -1;
-              __pyx_t_12 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 196, __pyx_L7_error)
+              __pyx_t_12 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 198, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_12);
               __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
               __pyx_t_13 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_12);
@@ -8253,7 +8322,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
               __Pyx_GOTREF(__pyx_t_1);
               index = 1; __pyx_t_7 = __pyx_t_13(__pyx_t_12); if (unlikely(!__pyx_t_7)) goto __pyx_L15_unpacking_failed;
               __Pyx_GOTREF(__pyx_t_7);
-              if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_12), 2) < 0) __PYX_ERR(0, 196, __pyx_L7_error)
+              if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_12), 2) < 0) __PYX_ERR(0, 198, __pyx_L7_error)
               __pyx_t_13 = NULL;
               __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
               goto __pyx_L16_unpacking_done;
@@ -8261,7 +8330,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
               __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
               __pyx_t_13 = NULL;
               if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-              __PYX_ERR(0, 196, __pyx_L7_error)
+              __PYX_ERR(0, 198, __pyx_L7_error)
               __pyx_L16_unpacking_done:;
             }
             __Pyx_XDECREF_SET(__pyx_v_X, __pyx_t_1);
@@ -8269,16 +8338,16 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
             __Pyx_XDECREF_SET(__pyx_v_y, __pyx_t_7);
             __pyx_t_7 = 0;
 
-            /* "Model.py":197
+            /* "AImodelInference.py":199
  *         with torch.no_grad():
  *             for X, y in dataloader:
  *                 X, y = X.to(self.training_device), y.to(self.training_device)             # <<<<<<<<<<<<<<
  *                 pred = model(X)
  *                 test_loss += loss_fn(pred, y).item()
  */
-            __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_X, __pyx_n_s_to); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 197, __pyx_L7_error)
+            __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_X, __pyx_n_s_to); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 199, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_7);
-            __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_training_device); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 197, __pyx_L7_error)
+            __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_training_device); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 199, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_1);
             __pyx_t_12 = NULL;
             __pyx_t_5 = 0;
@@ -8299,13 +8368,13 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
               __pyx_t_4 = __Pyx_PyObject_FastCall(__pyx_t_7, __pyx_callargs+1-__pyx_t_5, 1+__pyx_t_5);
               __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
               __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-              if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 197, __pyx_L7_error)
+              if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 199, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_4);
               __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
             }
-            __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_y, __pyx_n_s_to); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 197, __pyx_L7_error)
+            __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_y, __pyx_n_s_to); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 199, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_1);
-            __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_training_device); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 197, __pyx_L7_error)
+            __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_training_device); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 199, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_12);
             __pyx_t_14 = NULL;
             __pyx_t_5 = 0;
@@ -8326,7 +8395,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
               __pyx_t_7 = __Pyx_PyObject_FastCall(__pyx_t_1, __pyx_callargs+1-__pyx_t_5, 1+__pyx_t_5);
               __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
               __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-              if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 197, __pyx_L7_error)
+              if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 199, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_7);
               __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
             }
@@ -8335,7 +8404,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
             __Pyx_DECREF_SET(__pyx_v_y, __pyx_t_7);
             __pyx_t_7 = 0;
 
-            /* "Model.py":198
+            /* "AImodelInference.py":200
  *             for X, y in dataloader:
  *                 X, y = X.to(self.training_device), y.to(self.training_device)
  *                 pred = model(X)             # <<<<<<<<<<<<<<
@@ -8361,14 +8430,14 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
               PyObject *__pyx_callargs[2] = {__pyx_t_1, __pyx_v_X};
               __pyx_t_7 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_5, 1+__pyx_t_5);
               __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-              if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 198, __pyx_L7_error)
+              if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 200, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_7);
               __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
             }
             __Pyx_XDECREF_SET(__pyx_v_pred, __pyx_t_7);
             __pyx_t_7 = 0;
 
-            /* "Model.py":199
+            /* "AImodelInference.py":201
  *                 X, y = X.to(self.training_device), y.to(self.training_device)
  *                 pred = model(X)
  *                 test_loss += loss_fn(pred, y).item()             # <<<<<<<<<<<<<<
@@ -8394,11 +8463,11 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
               PyObject *__pyx_callargs[3] = {__pyx_t_12, __pyx_v_pred, __pyx_v_y};
               __pyx_t_4 = __Pyx_PyObject_FastCall(__pyx_t_1, __pyx_callargs+1-__pyx_t_5, 2+__pyx_t_5);
               __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
-              if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 199, __pyx_L7_error)
+              if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 201, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_4);
               __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
             }
-            __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_item); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 199, __pyx_L7_error)
+            __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_item); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 201, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_1);
             __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
             __pyx_t_4 = NULL;
@@ -8419,24 +8488,24 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
               PyObject *__pyx_callargs[2] = {__pyx_t_4, NULL};
               __pyx_t_7 = __Pyx_PyObject_FastCall(__pyx_t_1, __pyx_callargs+1-__pyx_t_5, 0+__pyx_t_5);
               __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-              if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 199, __pyx_L7_error)
+              if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 201, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_7);
               __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
             }
-            __pyx_t_1 = PyNumber_InPlaceAdd(__pyx_v_test_loss, __pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 199, __pyx_L7_error)
+            __pyx_t_1 = PyNumber_InPlaceAdd(__pyx_v_test_loss, __pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 201, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_1);
             __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
             __Pyx_DECREF_SET(__pyx_v_test_loss, __pyx_t_1);
             __pyx_t_1 = 0;
 
-            /* "Model.py":200
+            /* "AImodelInference.py":202
  *                 pred = model(X)
  *                 test_loss += loss_fn(pred, y).item()
  *                 correct += (pred.argmax(1) == y).type(torch.float).sum().item()             # <<<<<<<<<<<<<<
  *         test_loss /= num_batches
  *         correct /= size
  */
-            __pyx_t_14 = __Pyx_PyObject_GetAttrStr(__pyx_v_pred, __pyx_n_s_argmax); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 200, __pyx_L7_error)
+            __pyx_t_14 = __Pyx_PyObject_GetAttrStr(__pyx_v_pred, __pyx_n_s_argmax); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 202, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_14);
             __pyx_t_15 = NULL;
             __pyx_t_5 = 0;
@@ -8456,18 +8525,18 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
               PyObject *__pyx_callargs[2] = {__pyx_t_15, __pyx_int_1};
               __pyx_t_12 = __Pyx_PyObject_FastCall(__pyx_t_14, __pyx_callargs+1-__pyx_t_5, 1+__pyx_t_5);
               __Pyx_XDECREF(__pyx_t_15); __pyx_t_15 = 0;
-              if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 200, __pyx_L7_error)
+              if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 202, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_12);
               __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
             }
-            __pyx_t_14 = PyObject_RichCompare(__pyx_t_12, __pyx_v_y, Py_EQ); __Pyx_XGOTREF(__pyx_t_14); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 200, __pyx_L7_error)
+            __pyx_t_14 = PyObject_RichCompare(__pyx_t_12, __pyx_v_y, Py_EQ); __Pyx_XGOTREF(__pyx_t_14); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 202, __pyx_L7_error)
             __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-            __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_14, __pyx_n_s_type); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 200, __pyx_L7_error)
+            __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_14, __pyx_n_s_type); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 202, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_12);
             __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
-            __Pyx_GetModuleGlobalName(__pyx_t_14, __pyx_n_s_torch); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 200, __pyx_L7_error)
+            __Pyx_GetModuleGlobalName(__pyx_t_14, __pyx_n_s_torch); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 202, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_14);
-            __pyx_t_15 = __Pyx_PyObject_GetAttrStr(__pyx_t_14, __pyx_n_s_float); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 200, __pyx_L7_error)
+            __pyx_t_15 = __Pyx_PyObject_GetAttrStr(__pyx_t_14, __pyx_n_s_float); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 202, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_15);
             __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
             __pyx_t_14 = NULL;
@@ -8489,11 +8558,11 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
               __pyx_t_4 = __Pyx_PyObject_FastCall(__pyx_t_12, __pyx_callargs+1-__pyx_t_5, 1+__pyx_t_5);
               __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
               __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
-              if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 200, __pyx_L7_error)
+              if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 202, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_4);
               __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
             }
-            __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_sum); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 200, __pyx_L7_error)
+            __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_sum); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 202, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_12);
             __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
             __pyx_t_4 = NULL;
@@ -8514,11 +8583,11 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
               PyObject *__pyx_callargs[2] = {__pyx_t_4, NULL};
               __pyx_t_7 = __Pyx_PyObject_FastCall(__pyx_t_12, __pyx_callargs+1-__pyx_t_5, 0+__pyx_t_5);
               __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-              if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 200, __pyx_L7_error)
+              if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 202, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_7);
               __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
             }
-            __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_item); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 200, __pyx_L7_error)
+            __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_item); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 202, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_12);
             __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
             __pyx_t_7 = NULL;
@@ -8539,17 +8608,17 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
               PyObject *__pyx_callargs[2] = {__pyx_t_7, NULL};
               __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_12, __pyx_callargs+1-__pyx_t_5, 0+__pyx_t_5);
               __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-              if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 200, __pyx_L7_error)
+              if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 202, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_1);
               __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
             }
-            __pyx_t_12 = PyNumber_InPlaceAdd(__pyx_v_correct, __pyx_t_1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 200, __pyx_L7_error)
+            __pyx_t_12 = PyNumber_InPlaceAdd(__pyx_v_correct, __pyx_t_1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 202, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_12);
             __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
             __Pyx_DECREF_SET(__pyx_v_correct, __pyx_t_12);
             __pyx_t_12 = 0;
 
-            /* "Model.py":196
+            /* "AImodelInference.py":198
  *         test_loss, correct = 0, 0
  *         with torch.no_grad():
  *             for X, y in dataloader:             # <<<<<<<<<<<<<<
@@ -8559,7 +8628,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
           }
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-          /* "Model.py":195
+          /* "AImodelInference.py":197
  *         model.eval()
  *         test_loss, correct = 0, 0
  *         with torch.no_grad():             # <<<<<<<<<<<<<<
@@ -8580,21 +8649,21 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
         /*except:*/ {
-          __Pyx_AddTraceback("Model.MyModel.validation", __pyx_clineno, __pyx_lineno, __pyx_filename);
-          if (__Pyx_GetException(&__pyx_t_3, &__pyx_t_12, &__pyx_t_1) < 0) __PYX_ERR(0, 195, __pyx_L9_except_error)
+          __Pyx_AddTraceback("AImodelInference.MyModel.validation", __pyx_clineno, __pyx_lineno, __pyx_filename);
+          if (__Pyx_GetException(&__pyx_t_3, &__pyx_t_12, &__pyx_t_1) < 0) __PYX_ERR(0, 197, __pyx_L9_except_error)
           __Pyx_XGOTREF(__pyx_t_3);
           __Pyx_XGOTREF(__pyx_t_12);
           __Pyx_XGOTREF(__pyx_t_1);
-          __pyx_t_7 = PyTuple_Pack(3, __pyx_t_3, __pyx_t_12, __pyx_t_1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 195, __pyx_L9_except_error)
+          __pyx_t_7 = PyTuple_Pack(3, __pyx_t_3, __pyx_t_12, __pyx_t_1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 197, __pyx_L9_except_error)
           __Pyx_GOTREF(__pyx_t_7);
           __pyx_t_16 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_7, NULL);
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
           __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-          if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 195, __pyx_L9_except_error)
+          if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 197, __pyx_L9_except_error)
           __Pyx_GOTREF(__pyx_t_16);
           __pyx_t_17 = __Pyx_PyObject_IsTrue(__pyx_t_16);
           __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
-          if (__pyx_t_17 < 0) __PYX_ERR(0, 195, __pyx_L9_except_error)
+          if (__pyx_t_17 < 0) __PYX_ERR(0, 197, __pyx_L9_except_error)
           __pyx_t_18 = (!__pyx_t_17);
           if (unlikely(__pyx_t_18)) {
             __Pyx_GIVEREF(__pyx_t_3);
@@ -8602,7 +8671,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
             __Pyx_XGIVEREF(__pyx_t_1);
             __Pyx_ErrRestoreWithState(__pyx_t_3, __pyx_t_12, __pyx_t_1);
             __pyx_t_3 = 0; __pyx_t_12 = 0; __pyx_t_1 = 0; 
-            __PYX_ERR(0, 195, __pyx_L9_except_error)
+            __PYX_ERR(0, 197, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
           __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
@@ -8628,7 +8697,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
         if (__pyx_t_6) {
           __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_tuple__8, NULL);
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-          if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 195, __pyx_L1_error)
+          if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 197, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_10);
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
         }
@@ -8643,38 +8712,38 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
     __pyx_L21:;
   }
 
-  /* "Model.py":201
+  /* "AImodelInference.py":203
  *                 test_loss += loss_fn(pred, y).item()
  *                 correct += (pred.argmax(1) == y).type(torch.float).sum().item()
  *         test_loss /= num_batches             # <<<<<<<<<<<<<<
  *         correct /= size
  *         print(f"Validation: \n Accuracy: {(100*correct):>0.1f}%, Avg loss: {test_loss:>8f} \n")
  */
-  __pyx_t_1 = __Pyx_PyNumber_InPlaceDivide(__pyx_v_test_loss, __pyx_v_num_batches); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 201, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyNumber_InPlaceDivide(__pyx_v_test_loss, __pyx_v_num_batches); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 203, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF_SET(__pyx_v_test_loss, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "Model.py":202
+  /* "AImodelInference.py":204
  *                 correct += (pred.argmax(1) == y).type(torch.float).sum().item()
  *         test_loss /= num_batches
  *         correct /= size             # <<<<<<<<<<<<<<
  *         print(f"Validation: \n Accuracy: {(100*correct):>0.1f}%, Avg loss: {test_loss:>8f} \n")
  *         return (100*correct)
  */
-  __pyx_t_1 = __Pyx_PyNumber_InPlaceDivide(__pyx_v_correct, __pyx_v_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 202, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyNumber_InPlaceDivide(__pyx_v_correct, __pyx_v_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 204, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF_SET(__pyx_v_correct, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "Model.py":203
+  /* "AImodelInference.py":205
  *         test_loss /= num_batches
  *         correct /= size
  *         print(f"Validation: \n Accuracy: {(100*correct):>0.1f}%, Avg loss: {test_loss:>8f} \n")             # <<<<<<<<<<<<<<
  *         return (100*correct)
  * 
  */
-  __pyx_t_1 = PyTuple_New(5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 203, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = 0;
   __pyx_t_19 = 127;
@@ -8682,9 +8751,9 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
   __pyx_t_2 += 24;
   __Pyx_GIVEREF(__pyx_kp_u_Validation_Accuracy);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_kp_u_Validation_Accuracy);
-  __pyx_t_12 = __Pyx_PyInt_MultiplyCObj(__pyx_int_100, __pyx_v_correct, 0x64, 0, 0); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 203, __pyx_L1_error)
+  __pyx_t_12 = __Pyx_PyInt_MultiplyCObj(__pyx_int_100, __pyx_v_correct, 0x64, 0, 0); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 205, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
-  __pyx_t_3 = __Pyx_PyObject_Format(__pyx_t_12, __pyx_kp_u_0_1f); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 203, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Format(__pyx_t_12, __pyx_kp_u_0_1f); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 205, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
   __pyx_t_19 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_3) > __pyx_t_19) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_3) : __pyx_t_19;
@@ -8696,7 +8765,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
   __pyx_t_2 += 13;
   __Pyx_GIVEREF(__pyx_kp_u_Avg_loss);
   PyTuple_SET_ITEM(__pyx_t_1, 2, __pyx_kp_u_Avg_loss);
-  __pyx_t_3 = __Pyx_PyObject_Format(__pyx_v_test_loss, __pyx_kp_u_8f); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 203, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Format(__pyx_v_test_loss, __pyx_kp_u_8f); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 205, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_19 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_3) > __pyx_t_19) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_3) : __pyx_t_19;
   __pyx_t_2 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_3);
@@ -8707,15 +8776,15 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
   __pyx_t_2 += 2;
   __Pyx_GIVEREF(__pyx_kp_u__9);
   PyTuple_SET_ITEM(__pyx_t_1, 4, __pyx_kp_u__9);
-  __pyx_t_3 = __Pyx_PyUnicode_Join(__pyx_t_1, 5, __pyx_t_2, __pyx_t_19); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 203, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyUnicode_Join(__pyx_t_1, 5, __pyx_t_2, __pyx_t_19); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 205, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 203, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":204
+  /* "AImodelInference.py":206
  *         correct /= size
  *         print(f"Validation: \n Accuracy: {(100*correct):>0.1f}%, Avg loss: {test_loss:>8f} \n")
  *         return (100*correct)             # <<<<<<<<<<<<<<
@@ -8723,13 +8792,13 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_MultiplyCObj(__pyx_int_100, __pyx_v_correct, 0x64, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 204, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_MultiplyCObj(__pyx_int_100, __pyx_v_correct, 0x64, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "Model.py":190
+  /* "AImodelInference.py":192
  * 
  * 
  *     def validation(self, dataloader, model, loss_fn):             # <<<<<<<<<<<<<<
@@ -8746,7 +8815,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
   __Pyx_XDECREF(__pyx_t_12);
   __Pyx_XDECREF(__pyx_t_14);
   __Pyx_XDECREF(__pyx_t_15);
-  __Pyx_AddTraceback("Model.MyModel.validation", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.validation", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_size);
@@ -8761,7 +8830,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
   return __pyx_r;
 }
 
-/* "Model.py":207
+/* "AImodelInference.py":209
  * 
  * 
  *     def inference_test(self, dataloader, model, loss_fn):             # <<<<<<<<<<<<<<
@@ -8770,16 +8839,16 @@ static PyObject *__pyx_pf_5Model_7MyModel_16validation(CYTHON_UNUSED PyObject *_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5Model_7MyModel_19inference_test(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_19inference_test(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_5Model_7MyModel_18inference_test, "\n        batch inference calculate acc\n        ");
-static PyMethodDef __pyx_mdef_5Model_7MyModel_19inference_test = {"inference_test", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5Model_7MyModel_19inference_test, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5Model_7MyModel_18inference_test};
-static PyObject *__pyx_pw_5Model_7MyModel_19inference_test(PyObject *__pyx_self, 
+PyDoc_STRVAR(__pyx_doc_16AImodelInference_7MyModel_18inference_test, "\n        batch inference calculate acc\n        ");
+static PyMethodDef __pyx_mdef_16AImodelInference_7MyModel_19inference_test = {"inference_test", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_16AImodelInference_7MyModel_19inference_test, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_16AImodelInference_7MyModel_18inference_test};
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_19inference_test(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -8832,7 +8901,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 207, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 209, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -8840,9 +8909,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 207, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 209, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("inference_test", 1, 4, 4, 1); __PYX_ERR(0, 207, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("inference_test", 1, 4, 4, 1); __PYX_ERR(0, 209, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -8850,9 +8919,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[2]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 207, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 209, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("inference_test", 1, 4, 4, 2); __PYX_ERR(0, 207, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("inference_test", 1, 4, 4, 2); __PYX_ERR(0, 209, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
@@ -8860,14 +8929,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[3]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 207, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 209, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("inference_test", 1, 4, 4, 3); __PYX_ERR(0, 207, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("inference_test", 1, 4, 4, 3); __PYX_ERR(0, 209, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "inference_test") < 0)) __PYX_ERR(0, 207, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "inference_test") < 0)) __PYX_ERR(0, 209, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 4)) {
       goto __pyx_L5_argtuple_error;
@@ -8884,7 +8953,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("inference_test", 1, 4, 4, __pyx_nargs); __PYX_ERR(0, 207, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("inference_test", 1, 4, 4, __pyx_nargs); __PYX_ERR(0, 209, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -8894,11 +8963,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("Model.MyModel.inference_test", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.inference_test", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5Model_7MyModel_18inference_test(__pyx_self, __pyx_v_self, __pyx_v_dataloader, __pyx_v_model, __pyx_v_loss_fn);
+  __pyx_r = __pyx_pf_16AImodelInference_7MyModel_18inference_test(__pyx_self, __pyx_v_self, __pyx_v_dataloader, __pyx_v_model, __pyx_v_loss_fn);
 
   /* function exit code */
   {
@@ -8911,7 +8980,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_dataloader, PyObject *__pyx_v_model, PyObject *__pyx_v_loss_fn) {
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_18inference_test(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_dataloader, PyObject *__pyx_v_model, PyObject *__pyx_v_loss_fn) {
   PyObject *__pyx_v_size = NULL;
   PyObject *__pyx_v_num_batches = NULL;
   PyObject *__pyx_v_test_loss = NULL;
@@ -8948,45 +9017,45 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
   __Pyx_RefNannySetupContext("inference_test", 0);
   __Pyx_INCREF(__pyx_v_model);
 
-  /* "Model.py":211
+  /* "AImodelInference.py":213
  *         batch inference calculate acc
  *         """
  *         size = len(dataloader.dataset)             # <<<<<<<<<<<<<<
  *         num_batches = len(dataloader)
  *         model = model.to(self.training_device)
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dataloader, __pyx_n_s_dataset); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 211, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dataloader, __pyx_n_s_dataset); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 213, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyObject_Length(__pyx_t_1); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 211, __pyx_L1_error)
+  __pyx_t_2 = PyObject_Length(__pyx_t_1); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 213, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyInt_FromSsize_t(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 211, __pyx_L1_error)
+  __pyx_t_1 = PyInt_FromSsize_t(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 213, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_size = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "Model.py":212
+  /* "AImodelInference.py":214
  *         """
  *         size = len(dataloader.dataset)
  *         num_batches = len(dataloader)             # <<<<<<<<<<<<<<
  *         model = model.to(self.training_device)
  *         model.eval()
  */
-  __pyx_t_2 = PyObject_Length(__pyx_v_dataloader); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 212, __pyx_L1_error)
-  __pyx_t_1 = PyInt_FromSsize_t(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 212, __pyx_L1_error)
+  __pyx_t_2 = PyObject_Length(__pyx_v_dataloader); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 214, __pyx_L1_error)
+  __pyx_t_1 = PyInt_FromSsize_t(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 214, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_num_batches = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "Model.py":213
+  /* "AImodelInference.py":215
  *         size = len(dataloader.dataset)
  *         num_batches = len(dataloader)
  *         model = model.to(self.training_device)             # <<<<<<<<<<<<<<
  *         model.eval()
  *         test_loss, correct = 0, 0
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_model, __pyx_n_s_to); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 213, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_model, __pyx_n_s_to); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_training_device); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 213, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_training_device); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_5 = NULL;
   __pyx_t_6 = 0;
@@ -9007,21 +9076,21 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_6, 1+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 213, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 215, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
   __Pyx_DECREF_SET(__pyx_v_model, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "Model.py":214
+  /* "AImodelInference.py":216
  *         num_batches = len(dataloader)
  *         model = model.to(self.training_device)
  *         model.eval()             # <<<<<<<<<<<<<<
  *         test_loss, correct = 0, 0
  * 
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_model, __pyx_n_s_eval); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 214, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_model, __pyx_n_s_eval); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 216, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   __pyx_t_6 = 0;
@@ -9041,13 +9110,13 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
     PyObject *__pyx_callargs[2] = {__pyx_t_4, NULL};
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_6, 0+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 214, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 216, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":215
+  /* "AImodelInference.py":217
  *         model = model.to(self.training_device)
  *         model.eval()
  *         test_loss, correct = 0, 0             # <<<<<<<<<<<<<<
@@ -9063,7 +9132,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
   __pyx_v_correct = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "Model.py":217
+  /* "AImodelInference.py":219
  *         test_loss, correct = 0, 0
  * 
  *         with torch.no_grad():             # <<<<<<<<<<<<<<
@@ -9071,9 +9140,9 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
  *             # for batch in dataloader:
  */
   /*with:*/ {
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_torch); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 217, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_torch); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 219, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_no_grad); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 217, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_no_grad); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 219, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_t_1 = NULL;
@@ -9094,13 +9163,13 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
       PyObject *__pyx_callargs[2] = {__pyx_t_1, NULL};
       __pyx_t_3 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_6, 0+__pyx_t_6);
       __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-      if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 217, __pyx_L1_error)
+      if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 219, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     }
-    __pyx_t_7 = __Pyx_PyObject_LookupSpecial(__pyx_t_3, __pyx_n_s_exit); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 217, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_LookupSpecial(__pyx_t_3, __pyx_n_s_exit); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 219, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_1 = __Pyx_PyObject_LookupSpecial(__pyx_t_3, __pyx_n_s_enter); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 217, __pyx_L3_error)
+    __pyx_t_1 = __Pyx_PyObject_LookupSpecial(__pyx_t_3, __pyx_n_s_enter); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 219, __pyx_L3_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_t_5 = NULL;
     __pyx_t_6 = 0;
@@ -9120,7 +9189,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
       PyObject *__pyx_callargs[2] = {__pyx_t_5, NULL};
       __pyx_t_4 = __Pyx_PyObject_FastCall(__pyx_t_1, __pyx_callargs+1-__pyx_t_6, 0+__pyx_t_6);
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-      if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 217, __pyx_L3_error)
+      if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 219, __pyx_L3_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     }
@@ -9136,7 +9205,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
         __Pyx_XGOTREF(__pyx_t_10);
         /*try:*/ {
 
-          /* "Model.py":230
+          /* "AImodelInference.py":232
  * 
  * 
  *             for X, y, image_name in dataloader:             # <<<<<<<<<<<<<<
@@ -9148,9 +9217,9 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
             __pyx_t_2 = 0;
             __pyx_t_11 = NULL;
           } else {
-            __pyx_t_2 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_v_dataloader); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 230, __pyx_L7_error)
+            __pyx_t_2 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_v_dataloader); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 232, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_3);
-            __pyx_t_11 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_3); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 230, __pyx_L7_error)
+            __pyx_t_11 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_3); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 232, __pyx_L7_error)
           }
           for (;;) {
             if (likely(!__pyx_t_11)) {
@@ -9158,28 +9227,28 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
                 {
                   Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_3);
                   #if !CYTHON_ASSUME_SAFE_MACROS
-                  if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 230, __pyx_L7_error)
+                  if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 232, __pyx_L7_error)
                   #endif
                   if (__pyx_t_2 >= __pyx_temp) break;
                 }
                 #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-                __pyx_t_4 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely((0 < 0))) __PYX_ERR(0, 230, __pyx_L7_error)
+                __pyx_t_4 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely((0 < 0))) __PYX_ERR(0, 232, __pyx_L7_error)
                 #else
-                __pyx_t_4 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 230, __pyx_L7_error)
+                __pyx_t_4 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 232, __pyx_L7_error)
                 __Pyx_GOTREF(__pyx_t_4);
                 #endif
               } else {
                 {
                   Py_ssize_t __pyx_temp = __Pyx_PyTuple_GET_SIZE(__pyx_t_3);
                   #if !CYTHON_ASSUME_SAFE_MACROS
-                  if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 230, __pyx_L7_error)
+                  if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 232, __pyx_L7_error)
                   #endif
                   if (__pyx_t_2 >= __pyx_temp) break;
                 }
                 #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-                __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely((0 < 0))) __PYX_ERR(0, 230, __pyx_L7_error)
+                __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely((0 < 0))) __PYX_ERR(0, 232, __pyx_L7_error)
                 #else
-                __pyx_t_4 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 230, __pyx_L7_error)
+                __pyx_t_4 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 232, __pyx_L7_error)
                 __Pyx_GOTREF(__pyx_t_4);
                 #endif
               }
@@ -9189,7 +9258,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
                 PyObject* exc_type = PyErr_Occurred();
                 if (exc_type) {
                   if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-                  else __PYX_ERR(0, 230, __pyx_L7_error)
+                  else __PYX_ERR(0, 232, __pyx_L7_error)
                 }
                 break;
               }
@@ -9201,7 +9270,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
               if (unlikely(size != 3)) {
                 if (size > 3) __Pyx_RaiseTooManyValuesError(3);
                 else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-                __PYX_ERR(0, 230, __pyx_L7_error)
+                __PYX_ERR(0, 232, __pyx_L7_error)
               }
               #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
               if (likely(PyTuple_CheckExact(sequence))) {
@@ -9217,17 +9286,17 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
               __Pyx_INCREF(__pyx_t_5);
               __Pyx_INCREF(__pyx_t_12);
               #else
-              __pyx_t_1 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 230, __pyx_L7_error)
+              __pyx_t_1 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 232, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_1);
-              __pyx_t_5 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 230, __pyx_L7_error)
+              __pyx_t_5 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 232, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_5);
-              __pyx_t_12 = PySequence_ITEM(sequence, 2); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 230, __pyx_L7_error)
+              __pyx_t_12 = PySequence_ITEM(sequence, 2); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 232, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_12);
               #endif
               __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
             } else {
               Py_ssize_t index = -1;
-              __pyx_t_13 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 230, __pyx_L7_error)
+              __pyx_t_13 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 232, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_13);
               __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
               __pyx_t_14 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_13);
@@ -9237,7 +9306,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
               __Pyx_GOTREF(__pyx_t_5);
               index = 2; __pyx_t_12 = __pyx_t_14(__pyx_t_13); if (unlikely(!__pyx_t_12)) goto __pyx_L15_unpacking_failed;
               __Pyx_GOTREF(__pyx_t_12);
-              if (__Pyx_IternextUnpackEndCheck(__pyx_t_14(__pyx_t_13), 3) < 0) __PYX_ERR(0, 230, __pyx_L7_error)
+              if (__Pyx_IternextUnpackEndCheck(__pyx_t_14(__pyx_t_13), 3) < 0) __PYX_ERR(0, 232, __pyx_L7_error)
               __pyx_t_14 = NULL;
               __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
               goto __pyx_L16_unpacking_done;
@@ -9245,7 +9314,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
               __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
               __pyx_t_14 = NULL;
               if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-              __PYX_ERR(0, 230, __pyx_L7_error)
+              __PYX_ERR(0, 232, __pyx_L7_error)
               __pyx_L16_unpacking_done:;
             }
             __Pyx_XDECREF_SET(__pyx_v_X, __pyx_t_1);
@@ -9255,16 +9324,16 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
             __Pyx_XDECREF_SET(__pyx_v_image_name, __pyx_t_12);
             __pyx_t_12 = 0;
 
-            /* "Model.py":231
+            /* "AImodelInference.py":233
  * 
  *             for X, y, image_name in dataloader:
  *                 X, y = X.to(self.training_device), y.to(self.training_device)             # <<<<<<<<<<<<<<
  *                 pred = model(X)
  *                 probabilities = torch.softmax(pred,dim = 1)
  */
-            __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_X, __pyx_n_s_to); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 231, __pyx_L7_error)
+            __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_X, __pyx_n_s_to); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 233, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_12);
-            __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_training_device); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 231, __pyx_L7_error)
+            __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_training_device); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 233, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_5);
             __pyx_t_1 = NULL;
             __pyx_t_6 = 0;
@@ -9285,13 +9354,13 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
               __pyx_t_4 = __Pyx_PyObject_FastCall(__pyx_t_12, __pyx_callargs+1-__pyx_t_6, 1+__pyx_t_6);
               __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
               __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-              if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 231, __pyx_L7_error)
+              if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 233, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_4);
               __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
             }
-            __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_y, __pyx_n_s_to); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 231, __pyx_L7_error)
+            __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_y, __pyx_n_s_to); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 233, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_5);
-            __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_training_device); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 231, __pyx_L7_error)
+            __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_training_device); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 233, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_1);
             __pyx_t_13 = NULL;
             __pyx_t_6 = 0;
@@ -9312,7 +9381,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
               __pyx_t_12 = __Pyx_PyObject_FastCall(__pyx_t_5, __pyx_callargs+1-__pyx_t_6, 1+__pyx_t_6);
               __Pyx_XDECREF(__pyx_t_13); __pyx_t_13 = 0;
               __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-              if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 231, __pyx_L7_error)
+              if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 233, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_12);
               __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
             }
@@ -9321,7 +9390,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
             __Pyx_DECREF_SET(__pyx_v_y, __pyx_t_12);
             __pyx_t_12 = 0;
 
-            /* "Model.py":232
+            /* "AImodelInference.py":234
  *             for X, y, image_name in dataloader:
  *                 X, y = X.to(self.training_device), y.to(self.training_device)
  *                 pred = model(X)             # <<<<<<<<<<<<<<
@@ -9347,34 +9416,34 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
               PyObject *__pyx_callargs[2] = {__pyx_t_5, __pyx_v_X};
               __pyx_t_12 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_6, 1+__pyx_t_6);
               __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-              if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 232, __pyx_L7_error)
+              if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 234, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_12);
               __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
             }
             __Pyx_XDECREF_SET(__pyx_v_pred, __pyx_t_12);
             __pyx_t_12 = 0;
 
-            /* "Model.py":233
+            /* "AImodelInference.py":235
  *                 X, y = X.to(self.training_device), y.to(self.training_device)
  *                 pred = model(X)
  *                 probabilities = torch.softmax(pred,dim = 1)             # <<<<<<<<<<<<<<
  *                 test_loss += loss_fn(pred, y).item()
  *                 correct += (pred.argmax(1) == y).type(torch.float).sum().item()
  */
-            __Pyx_GetModuleGlobalName(__pyx_t_12, __pyx_n_s_torch); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 233, __pyx_L7_error)
+            __Pyx_GetModuleGlobalName(__pyx_t_12, __pyx_n_s_torch); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 235, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_12);
-            __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_12, __pyx_n_s_softmax); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 233, __pyx_L7_error)
+            __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_12, __pyx_n_s_softmax); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 235, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_4);
             __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-            __pyx_t_12 = PyTuple_New(1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 233, __pyx_L7_error)
+            __pyx_t_12 = PyTuple_New(1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 235, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_12);
             __Pyx_INCREF(__pyx_v_pred);
             __Pyx_GIVEREF(__pyx_v_pred);
-            if (__Pyx_PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_v_pred)) __PYX_ERR(0, 233, __pyx_L7_error);
-            __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 233, __pyx_L7_error)
+            if (__Pyx_PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_v_pred)) __PYX_ERR(0, 235, __pyx_L7_error);
+            __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 235, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_5);
-            if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dim, __pyx_int_1) < 0) __PYX_ERR(0, 233, __pyx_L7_error)
-            __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_12, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 233, __pyx_L7_error)
+            if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dim, __pyx_int_1) < 0) __PYX_ERR(0, 235, __pyx_L7_error)
+            __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_12, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 235, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_1);
             __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
             __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
@@ -9382,7 +9451,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
             __Pyx_XDECREF_SET(__pyx_v_probabilities, __pyx_t_1);
             __pyx_t_1 = 0;
 
-            /* "Model.py":234
+            /* "AImodelInference.py":236
  *                 pred = model(X)
  *                 probabilities = torch.softmax(pred,dim = 1)
  *                 test_loss += loss_fn(pred, y).item()             # <<<<<<<<<<<<<<
@@ -9408,11 +9477,11 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
               PyObject *__pyx_callargs[3] = {__pyx_t_4, __pyx_v_pred, __pyx_v_y};
               __pyx_t_5 = __Pyx_PyObject_FastCall(__pyx_t_12, __pyx_callargs+1-__pyx_t_6, 2+__pyx_t_6);
               __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-              if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 234, __pyx_L7_error)
+              if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 236, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_5);
               __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
             }
-            __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_item); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 234, __pyx_L7_error)
+            __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_item); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 236, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_12);
             __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
             __pyx_t_5 = NULL;
@@ -9433,24 +9502,24 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
               PyObject *__pyx_callargs[2] = {__pyx_t_5, NULL};
               __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_12, __pyx_callargs+1-__pyx_t_6, 0+__pyx_t_6);
               __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-              if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 234, __pyx_L7_error)
+              if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 236, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_1);
               __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
             }
-            __pyx_t_12 = PyNumber_InPlaceAdd(__pyx_v_test_loss, __pyx_t_1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 234, __pyx_L7_error)
+            __pyx_t_12 = PyNumber_InPlaceAdd(__pyx_v_test_loss, __pyx_t_1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 236, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_12);
             __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
             __Pyx_DECREF_SET(__pyx_v_test_loss, __pyx_t_12);
             __pyx_t_12 = 0;
 
-            /* "Model.py":235
+            /* "AImodelInference.py":237
  *                 probabilities = torch.softmax(pred,dim = 1)
  *                 test_loss += loss_fn(pred, y).item()
  *                 correct += (pred.argmax(1) == y).type(torch.float).sum().item()             # <<<<<<<<<<<<<<
  * 
  *         test_loss /= num_batches
  */
-            __pyx_t_13 = __Pyx_PyObject_GetAttrStr(__pyx_v_pred, __pyx_n_s_argmax); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 235, __pyx_L7_error)
+            __pyx_t_13 = __Pyx_PyObject_GetAttrStr(__pyx_v_pred, __pyx_n_s_argmax); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 237, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_13);
             __pyx_t_15 = NULL;
             __pyx_t_6 = 0;
@@ -9470,18 +9539,18 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
               PyObject *__pyx_callargs[2] = {__pyx_t_15, __pyx_int_1};
               __pyx_t_4 = __Pyx_PyObject_FastCall(__pyx_t_13, __pyx_callargs+1-__pyx_t_6, 1+__pyx_t_6);
               __Pyx_XDECREF(__pyx_t_15); __pyx_t_15 = 0;
-              if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 235, __pyx_L7_error)
+              if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 237, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_4);
               __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
             }
-            __pyx_t_13 = PyObject_RichCompare(__pyx_t_4, __pyx_v_y, Py_EQ); __Pyx_XGOTREF(__pyx_t_13); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 235, __pyx_L7_error)
+            __pyx_t_13 = PyObject_RichCompare(__pyx_t_4, __pyx_v_y, Py_EQ); __Pyx_XGOTREF(__pyx_t_13); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 237, __pyx_L7_error)
             __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-            __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_13, __pyx_n_s_type); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 235, __pyx_L7_error)
+            __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_13, __pyx_n_s_type); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 237, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_4);
             __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
-            __Pyx_GetModuleGlobalName(__pyx_t_13, __pyx_n_s_torch); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 235, __pyx_L7_error)
+            __Pyx_GetModuleGlobalName(__pyx_t_13, __pyx_n_s_torch); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 237, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_13);
-            __pyx_t_15 = __Pyx_PyObject_GetAttrStr(__pyx_t_13, __pyx_n_s_float); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 235, __pyx_L7_error)
+            __pyx_t_15 = __Pyx_PyObject_GetAttrStr(__pyx_t_13, __pyx_n_s_float); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 237, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_15);
             __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
             __pyx_t_13 = NULL;
@@ -9503,11 +9572,11 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
               __pyx_t_5 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_6, 1+__pyx_t_6);
               __Pyx_XDECREF(__pyx_t_13); __pyx_t_13 = 0;
               __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
-              if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 235, __pyx_L7_error)
+              if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 237, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_5);
               __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
             }
-            __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_sum); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 235, __pyx_L7_error)
+            __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_sum); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 237, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_4);
             __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
             __pyx_t_5 = NULL;
@@ -9528,11 +9597,11 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
               PyObject *__pyx_callargs[2] = {__pyx_t_5, NULL};
               __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_6, 0+__pyx_t_6);
               __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-              if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 235, __pyx_L7_error)
+              if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 237, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_1);
               __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
             }
-            __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_item); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 235, __pyx_L7_error)
+            __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_item); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 237, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_4);
             __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
             __pyx_t_1 = NULL;
@@ -9553,17 +9622,17 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
               PyObject *__pyx_callargs[2] = {__pyx_t_1, NULL};
               __pyx_t_12 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_6, 0+__pyx_t_6);
               __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-              if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 235, __pyx_L7_error)
+              if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 237, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_12);
               __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
             }
-            __pyx_t_4 = PyNumber_InPlaceAdd(__pyx_v_correct, __pyx_t_12); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 235, __pyx_L7_error)
+            __pyx_t_4 = PyNumber_InPlaceAdd(__pyx_v_correct, __pyx_t_12); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 237, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_4);
             __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
             __Pyx_DECREF_SET(__pyx_v_correct, __pyx_t_4);
             __pyx_t_4 = 0;
 
-            /* "Model.py":230
+            /* "AImodelInference.py":232
  * 
  * 
  *             for X, y, image_name in dataloader:             # <<<<<<<<<<<<<<
@@ -9573,7 +9642,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
           }
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-          /* "Model.py":217
+          /* "AImodelInference.py":219
  *         test_loss, correct = 0, 0
  * 
  *         with torch.no_grad():             # <<<<<<<<<<<<<<
@@ -9594,21 +9663,21 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         /*except:*/ {
-          __Pyx_AddTraceback("Model.MyModel.inference_test", __pyx_clineno, __pyx_lineno, __pyx_filename);
-          if (__Pyx_GetException(&__pyx_t_3, &__pyx_t_4, &__pyx_t_12) < 0) __PYX_ERR(0, 217, __pyx_L9_except_error)
+          __Pyx_AddTraceback("AImodelInference.MyModel.inference_test", __pyx_clineno, __pyx_lineno, __pyx_filename);
+          if (__Pyx_GetException(&__pyx_t_3, &__pyx_t_4, &__pyx_t_12) < 0) __PYX_ERR(0, 219, __pyx_L9_except_error)
           __Pyx_XGOTREF(__pyx_t_3);
           __Pyx_XGOTREF(__pyx_t_4);
           __Pyx_XGOTREF(__pyx_t_12);
-          __pyx_t_1 = PyTuple_Pack(3, __pyx_t_3, __pyx_t_4, __pyx_t_12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 217, __pyx_L9_except_error)
+          __pyx_t_1 = PyTuple_Pack(3, __pyx_t_3, __pyx_t_4, __pyx_t_12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 219, __pyx_L9_except_error)
           __Pyx_GOTREF(__pyx_t_1);
           __pyx_t_16 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_1, NULL);
           __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-          if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 217, __pyx_L9_except_error)
+          if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 219, __pyx_L9_except_error)
           __Pyx_GOTREF(__pyx_t_16);
           __pyx_t_17 = __Pyx_PyObject_IsTrue(__pyx_t_16);
           __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
-          if (__pyx_t_17 < 0) __PYX_ERR(0, 217, __pyx_L9_except_error)
+          if (__pyx_t_17 < 0) __PYX_ERR(0, 219, __pyx_L9_except_error)
           __pyx_t_18 = (!__pyx_t_17);
           if (unlikely(__pyx_t_18)) {
             __Pyx_GIVEREF(__pyx_t_3);
@@ -9616,7 +9685,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
             __Pyx_XGIVEREF(__pyx_t_12);
             __Pyx_ErrRestoreWithState(__pyx_t_3, __pyx_t_4, __pyx_t_12);
             __pyx_t_3 = 0; __pyx_t_4 = 0; __pyx_t_12 = 0; 
-            __PYX_ERR(0, 217, __pyx_L9_except_error)
+            __PYX_ERR(0, 219, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -9642,7 +9711,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
         if (__pyx_t_7) {
           __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_tuple__8, NULL);
           __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-          if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 217, __pyx_L1_error)
+          if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 219, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_10);
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
         }
@@ -9657,38 +9726,38 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
     __pyx_L21:;
   }
 
-  /* "Model.py":237
+  /* "AImodelInference.py":239
  *                 correct += (pred.argmax(1) == y).type(torch.float).sum().item()
  * 
  *         test_loss /= num_batches             # <<<<<<<<<<<<<<
  *         correct /= size
  *         print(f"Test Error: \n Accuracy: {(100*correct):>0.1f}%, Avg loss: {test_loss:>8f} \n")
  */
-  __pyx_t_12 = __Pyx_PyNumber_InPlaceDivide(__pyx_v_test_loss, __pyx_v_num_batches); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 237, __pyx_L1_error)
+  __pyx_t_12 = __Pyx_PyNumber_InPlaceDivide(__pyx_v_test_loss, __pyx_v_num_batches); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 239, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
   __Pyx_DECREF_SET(__pyx_v_test_loss, __pyx_t_12);
   __pyx_t_12 = 0;
 
-  /* "Model.py":238
+  /* "AImodelInference.py":240
  * 
  *         test_loss /= num_batches
  *         correct /= size             # <<<<<<<<<<<<<<
  *         print(f"Test Error: \n Accuracy: {(100*correct):>0.1f}%, Avg loss: {test_loss:>8f} \n")
  *         return (100*correct)
  */
-  __pyx_t_12 = __Pyx_PyNumber_InPlaceDivide(__pyx_v_correct, __pyx_v_size); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 238, __pyx_L1_error)
+  __pyx_t_12 = __Pyx_PyNumber_InPlaceDivide(__pyx_v_correct, __pyx_v_size); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 240, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
   __Pyx_DECREF_SET(__pyx_v_correct, __pyx_t_12);
   __pyx_t_12 = 0;
 
-  /* "Model.py":239
+  /* "AImodelInference.py":241
  *         test_loss /= num_batches
  *         correct /= size
  *         print(f"Test Error: \n Accuracy: {(100*correct):>0.1f}%, Avg loss: {test_loss:>8f} \n")             # <<<<<<<<<<<<<<
  *         return (100*correct)
  * 
  */
-  __pyx_t_12 = PyTuple_New(5); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 239, __pyx_L1_error)
+  __pyx_t_12 = PyTuple_New(5); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
   __pyx_t_2 = 0;
   __pyx_t_19 = 127;
@@ -9696,9 +9765,9 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
   __pyx_t_2 += 24;
   __Pyx_GIVEREF(__pyx_kp_u_Test_Error_Accuracy);
   PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_kp_u_Test_Error_Accuracy);
-  __pyx_t_4 = __Pyx_PyInt_MultiplyCObj(__pyx_int_100, __pyx_v_correct, 0x64, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 239, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_MultiplyCObj(__pyx_int_100, __pyx_v_correct, 0x64, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = __Pyx_PyObject_Format(__pyx_t_4, __pyx_kp_u_0_1f); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 239, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Format(__pyx_t_4, __pyx_kp_u_0_1f); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_19 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_3) > __pyx_t_19) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_3) : __pyx_t_19;
@@ -9710,7 +9779,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
   __pyx_t_2 += 13;
   __Pyx_GIVEREF(__pyx_kp_u_Avg_loss);
   PyTuple_SET_ITEM(__pyx_t_12, 2, __pyx_kp_u_Avg_loss);
-  __pyx_t_3 = __Pyx_PyObject_Format(__pyx_v_test_loss, __pyx_kp_u_8f); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 239, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Format(__pyx_v_test_loss, __pyx_kp_u_8f); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_19 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_3) > __pyx_t_19) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_3) : __pyx_t_19;
   __pyx_t_2 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_3);
@@ -9721,15 +9790,15 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
   __pyx_t_2 += 2;
   __Pyx_GIVEREF(__pyx_kp_u__9);
   PyTuple_SET_ITEM(__pyx_t_12, 4, __pyx_kp_u__9);
-  __pyx_t_3 = __Pyx_PyUnicode_Join(__pyx_t_12, 5, __pyx_t_2, __pyx_t_19); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 239, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyUnicode_Join(__pyx_t_12, 5, __pyx_t_2, __pyx_t_19); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-  __pyx_t_12 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_3); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 239, __pyx_L1_error)
+  __pyx_t_12 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_3); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
 
-  /* "Model.py":240
+  /* "AImodelInference.py":242
  *         correct /= size
  *         print(f"Test Error: \n Accuracy: {(100*correct):>0.1f}%, Avg loss: {test_loss:>8f} \n")
  *         return (100*correct)             # <<<<<<<<<<<<<<
@@ -9737,13 +9806,13 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_12 = __Pyx_PyInt_MultiplyCObj(__pyx_int_100, __pyx_v_correct, 0x64, 0, 0); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 240, __pyx_L1_error)
+  __pyx_t_12 = __Pyx_PyInt_MultiplyCObj(__pyx_int_100, __pyx_v_correct, 0x64, 0, 0); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 242, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
   __pyx_r = __pyx_t_12;
   __pyx_t_12 = 0;
   goto __pyx_L0;
 
-  /* "Model.py":207
+  /* "AImodelInference.py":209
  * 
  * 
  *     def inference_test(self, dataloader, model, loss_fn):             # <<<<<<<<<<<<<<
@@ -9760,7 +9829,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
   __Pyx_XDECREF(__pyx_t_12);
   __Pyx_XDECREF(__pyx_t_13);
   __Pyx_XDECREF(__pyx_t_15);
-  __Pyx_AddTraceback("Model.MyModel.inference_test", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.inference_test", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_size);
@@ -9778,7 +9847,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
   return __pyx_r;
 }
 
-/* "Model.py":243
+/* "AImodelInference.py":245
  * 
  * 
  *     def save_model(self, model_name):             # <<<<<<<<<<<<<<
@@ -9787,15 +9856,15 @@ static PyObject *__pyx_pf_5Model_7MyModel_18inference_test(CYTHON_UNUSED PyObjec
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5Model_7MyModel_21save_model(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_21save_model(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_5Model_7MyModel_21save_model = {"save_model", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5Model_7MyModel_21save_model, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5Model_7MyModel_21save_model(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_16AImodelInference_7MyModel_21save_model = {"save_model", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_16AImodelInference_7MyModel_21save_model, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_21save_model(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -9842,7 +9911,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 243, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 245, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -9850,14 +9919,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 243, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 245, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("save_model", 1, 2, 2, 1); __PYX_ERR(0, 243, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("save_model", 1, 2, 2, 1); __PYX_ERR(0, 245, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "save_model") < 0)) __PYX_ERR(0, 243, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "save_model") < 0)) __PYX_ERR(0, 245, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
@@ -9870,7 +9939,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("save_model", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 243, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("save_model", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 245, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -9880,11 +9949,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("Model.MyModel.save_model", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.save_model", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5Model_7MyModel_20save_model(__pyx_self, __pyx_v_self, __pyx_v_model_name);
+  __pyx_r = __pyx_pf_16AImodelInference_7MyModel_20save_model(__pyx_self, __pyx_v_self, __pyx_v_model_name);
 
   /* function exit code */
   {
@@ -9897,7 +9966,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5Model_7MyModel_20save_model(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_model_name) {
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_20save_model(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_model_name) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -9912,33 +9981,33 @@ static PyObject *__pyx_pf_5Model_7MyModel_20save_model(CYTHON_UNUSED PyObject *_
   __Pyx_RefNannySetupContext("save_model", 0);
   __Pyx_INCREF(__pyx_v_model_name);
 
-  /* "Model.py":244
+  /* "AImodelInference.py":246
  * 
  *     def save_model(self, model_name):
  *         model_name = model_name + ".pth"             # <<<<<<<<<<<<<<
  *         torch.save(self.model.state_dict(), model_name)
  *         print("save model")
  */
-  __pyx_t_1 = PyNumber_Add(__pyx_v_model_name, __pyx_kp_u_pth); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 244, __pyx_L1_error)
+  __pyx_t_1 = PyNumber_Add(__pyx_v_model_name, __pyx_kp_u_pth); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 246, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF_SET(__pyx_v_model_name, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "Model.py":245
+  /* "AImodelInference.py":247
  *     def save_model(self, model_name):
  *         model_name = model_name + ".pth"
  *         torch.save(self.model.state_dict(), model_name)             # <<<<<<<<<<<<<<
  *         print("save model")
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_torch); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 245, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_torch); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 247, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_save); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 245, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_save); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 247, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 245, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 247, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_state_dict); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 245, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_state_dict); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 247, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -9959,7 +10028,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_20save_model(CYTHON_UNUSED PyObject *_
     PyObject *__pyx_callargs[2] = {__pyx_t_4, NULL};
     __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_5, __pyx_callargs+1-__pyx_t_6, 0+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 245, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 247, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   }
@@ -9982,24 +10051,24 @@ static PyObject *__pyx_pf_5Model_7MyModel_20save_model(CYTHON_UNUSED PyObject *_
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_6, 2+__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 245, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 247, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":246
+  /* "AImodelInference.py":248
  *         model_name = model_name + ".pth"
  *         torch.save(self.model.state_dict(), model_name)
  *         print("save model")             # <<<<<<<<<<<<<<
  * 
  *     def start_train(self,train_dataset, epoch, model_name):
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__10, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 246, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__10, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":243
+  /* "AImodelInference.py":245
  * 
  * 
  *     def save_model(self, model_name):             # <<<<<<<<<<<<<<
@@ -10016,7 +10085,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_20save_model(CYTHON_UNUSED PyObject *_
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("Model.MyModel.save_model", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.save_model", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_model_name);
@@ -10025,7 +10094,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_20save_model(CYTHON_UNUSED PyObject *_
   return __pyx_r;
 }
 
-/* "Model.py":248
+/* "AImodelInference.py":250
  *         print("save model")
  * 
  *     def start_train(self,train_dataset, epoch, model_name):             # <<<<<<<<<<<<<<
@@ -10034,15 +10103,15 @@ static PyObject *__pyx_pf_5Model_7MyModel_20save_model(CYTHON_UNUSED PyObject *_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5Model_7MyModel_23start_train(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_23start_train(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_5Model_7MyModel_23start_train = {"start_train", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5Model_7MyModel_23start_train, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5Model_7MyModel_23start_train(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_16AImodelInference_7MyModel_23start_train = {"start_train", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_16AImodelInference_7MyModel_23start_train, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_23start_train(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -10095,7 +10164,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 248, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 250, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -10103,9 +10172,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 248, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 250, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("start_train", 1, 4, 4, 1); __PYX_ERR(0, 248, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("start_train", 1, 4, 4, 1); __PYX_ERR(0, 250, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -10113,9 +10182,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[2]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 248, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 250, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("start_train", 1, 4, 4, 2); __PYX_ERR(0, 248, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("start_train", 1, 4, 4, 2); __PYX_ERR(0, 250, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
@@ -10123,14 +10192,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[3]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 248, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 250, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("start_train", 1, 4, 4, 3); __PYX_ERR(0, 248, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("start_train", 1, 4, 4, 3); __PYX_ERR(0, 250, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "start_train") < 0)) __PYX_ERR(0, 248, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "start_train") < 0)) __PYX_ERR(0, 250, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 4)) {
       goto __pyx_L5_argtuple_error;
@@ -10147,7 +10216,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("start_train", 1, 4, 4, __pyx_nargs); __PYX_ERR(0, 248, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("start_train", 1, 4, 4, __pyx_nargs); __PYX_ERR(0, 250, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -10157,11 +10226,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("Model.MyModel.start_train", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.start_train", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5Model_7MyModel_22start_train(__pyx_self, __pyx_v_self, __pyx_v_train_dataset, __pyx_v_epoch, __pyx_v_model_name);
+  __pyx_r = __pyx_pf_16AImodelInference_7MyModel_22start_train(__pyx_self, __pyx_v_self, __pyx_v_train_dataset, __pyx_v_epoch, __pyx_v_model_name);
 
   /* function exit code */
   {
@@ -10174,7 +10243,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_train_dataset, PyObject *__pyx_v_epoch, PyObject *__pyx_v_model_name) {
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_22start_train(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_train_dataset, PyObject *__pyx_v_epoch, PyObject *__pyx_v_model_name) {
   PyObject *__pyx_v_t = NULL;
   PyObject *__pyx_v_t1 = NULL;
   PyObject *__pyx_v_loss = NULL;
@@ -10200,14 +10269,14 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("start_train", 1);
 
-  /* "Model.py":249
+  /* "AImodelInference.py":251
  * 
  *     def start_train(self,train_dataset, epoch, model_name):
  *         self.load_model()             # <<<<<<<<<<<<<<
  *         self.model_freeze()
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_load_model); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 249, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_load_model); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 251, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   __pyx_t_4 = 0;
@@ -10227,20 +10296,20 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
     PyObject *__pyx_callargs[2] = {__pyx_t_3, NULL};
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_2, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 249, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 251, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":250
+  /* "AImodelInference.py":252
  *     def start_train(self,train_dataset, epoch, model_name):
  *         self.load_model()
  *         self.model_freeze()             # <<<<<<<<<<<<<<
  * 
  *         self.load_dataset(train_dataset)
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model_freeze); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 250, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model_freeze); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 252, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   __pyx_t_4 = 0;
@@ -10260,20 +10329,20 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
     PyObject *__pyx_callargs[2] = {__pyx_t_3, NULL};
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_2, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 250, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 252, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":252
+  /* "AImodelInference.py":254
  *         self.model_freeze()
  * 
  *         self.load_dataset(train_dataset)             # <<<<<<<<<<<<<<
  *         self.init_loss_optimizer()
  *         self.acc_pre = 0
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_load_dataset); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 252, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_load_dataset); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 254, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   __pyx_t_4 = 0;
@@ -10293,20 +10362,20 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
     PyObject *__pyx_callargs[2] = {__pyx_t_3, __pyx_v_train_dataset};
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_2, __pyx_callargs+1-__pyx_t_4, 1+__pyx_t_4);
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 252, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 254, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":253
+  /* "AImodelInference.py":255
  * 
  *         self.load_dataset(train_dataset)
  *         self.init_loss_optimizer()             # <<<<<<<<<<<<<<
  *         self.acc_pre = 0
  *         for t in range(epoch):
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_init_loss_optimizer); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 253, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_init_loss_optimizer); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 255, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   __pyx_t_4 = 0;
@@ -10326,38 +10395,38 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
     PyObject *__pyx_callargs[2] = {__pyx_t_3, NULL};
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_2, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 253, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 255, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":254
+  /* "AImodelInference.py":256
  *         self.load_dataset(train_dataset)
  *         self.init_loss_optimizer()
  *         self.acc_pre = 0             # <<<<<<<<<<<<<<
  *         for t in range(epoch):
  *             t1 = time.time()
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_acc_pre, __pyx_int_0) < 0) __PYX_ERR(0, 254, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_acc_pre, __pyx_int_0) < 0) __PYX_ERR(0, 256, __pyx_L1_error)
 
-  /* "Model.py":255
+  /* "AImodelInference.py":257
  *         self.init_loss_optimizer()
  *         self.acc_pre = 0
  *         for t in range(epoch):             # <<<<<<<<<<<<<<
  *             t1 = time.time()
  *             print(f"Epoch {t+1}\n-------------------------------")
  */
-  __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_epoch); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 255, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_epoch); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 257, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
     __pyx_t_2 = __pyx_t_1; __Pyx_INCREF(__pyx_t_2);
     __pyx_t_5 = 0;
     __pyx_t_6 = NULL;
   } else {
-    __pyx_t_5 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 255, __pyx_L1_error)
+    __pyx_t_5 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 257, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_6 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 255, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 257, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   for (;;) {
@@ -10366,28 +10435,28 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
         {
           Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_2);
           #if !CYTHON_ASSUME_SAFE_MACROS
-          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 255, __pyx_L1_error)
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 257, __pyx_L1_error)
           #endif
           if (__pyx_t_5 >= __pyx_temp) break;
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_5); __Pyx_INCREF(__pyx_t_1); __pyx_t_5++; if (unlikely((0 < 0))) __PYX_ERR(0, 255, __pyx_L1_error)
+        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_5); __Pyx_INCREF(__pyx_t_1); __pyx_t_5++; if (unlikely((0 < 0))) __PYX_ERR(0, 257, __pyx_L1_error)
         #else
-        __pyx_t_1 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 255, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 257, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       } else {
         {
           Py_ssize_t __pyx_temp = __Pyx_PyTuple_GET_SIZE(__pyx_t_2);
           #if !CYTHON_ASSUME_SAFE_MACROS
-          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 255, __pyx_L1_error)
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 257, __pyx_L1_error)
           #endif
           if (__pyx_t_5 >= __pyx_temp) break;
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_5); __Pyx_INCREF(__pyx_t_1); __pyx_t_5++; if (unlikely((0 < 0))) __PYX_ERR(0, 255, __pyx_L1_error)
+        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_5); __Pyx_INCREF(__pyx_t_1); __pyx_t_5++; if (unlikely((0 < 0))) __PYX_ERR(0, 257, __pyx_L1_error)
         #else
-        __pyx_t_1 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 255, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 257, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       }
@@ -10397,7 +10466,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 255, __pyx_L1_error)
+          else __PYX_ERR(0, 257, __pyx_L1_error)
         }
         break;
       }
@@ -10406,16 +10475,16 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
     __Pyx_XDECREF_SET(__pyx_v_t, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "Model.py":256
+    /* "AImodelInference.py":258
  *         self.acc_pre = 0
  *         for t in range(epoch):
  *             t1 = time.time()             # <<<<<<<<<<<<<<
  *             print(f"Epoch {t+1}\n-------------------------------")
  *             loss = self.train(self.train_loader, self.model, self.loss_fn, self.optimizer)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_time); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 256, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_time); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 258, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_time); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 256, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_time); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 258, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_t_3 = NULL;
@@ -10436,21 +10505,21 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
       PyObject *__pyx_callargs[2] = {__pyx_t_3, NULL};
       __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_7, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 256, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 258, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     }
     __Pyx_XDECREF_SET(__pyx_v_t1, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "Model.py":257
+    /* "AImodelInference.py":259
  *         for t in range(epoch):
  *             t1 = time.time()
  *             print(f"Epoch {t+1}\n-------------------------------")             # <<<<<<<<<<<<<<
  *             loss = self.train(self.train_loader, self.model, self.loss_fn, self.optimizer)
  * 
  */
-    __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 257, __pyx_L1_error)
+    __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 259, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_t_8 = 0;
     __pyx_t_9 = 127;
@@ -10458,9 +10527,9 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
     __pyx_t_8 += 6;
     __Pyx_GIVEREF(__pyx_kp_u_Epoch);
     PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_kp_u_Epoch);
-    __pyx_t_7 = __Pyx_PyInt_AddObjC(__pyx_v_t, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 257, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyInt_AddObjC(__pyx_v_t, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 259, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_3 = __Pyx_PyObject_FormatSimple(__pyx_t_7, __pyx_empty_unicode); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 257, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_FormatSimple(__pyx_t_7, __pyx_empty_unicode); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 259, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __pyx_t_9 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_3) > __pyx_t_9) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_3) : __pyx_t_9;
@@ -10472,30 +10541,30 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
     __pyx_t_8 += 32;
     __Pyx_GIVEREF(__pyx_kp_u__11);
     PyTuple_SET_ITEM(__pyx_t_1, 2, __pyx_kp_u__11);
-    __pyx_t_3 = __Pyx_PyUnicode_Join(__pyx_t_1, 3, __pyx_t_8, __pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 257, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyUnicode_Join(__pyx_t_1, 3, __pyx_t_8, __pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 259, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 257, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 259, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "Model.py":258
+    /* "AImodelInference.py":260
  *             t1 = time.time()
  *             print(f"Epoch {t+1}\n-------------------------------")
  *             loss = self.train(self.train_loader, self.model, self.loss_fn, self.optimizer)             # <<<<<<<<<<<<<<
  * 
  *             if t%20==0:
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_train); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 258, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_train); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 260, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_train_loader); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 258, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_train_loader); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 260, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 258, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 260, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
-    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_loss_fn); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 258, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_loss_fn); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 260, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
-    __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_optimizer); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 258, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_optimizer); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 260, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_12);
     __pyx_t_13 = NULL;
     __pyx_t_4 = 0;
@@ -10519,40 +10588,40 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 258, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 260, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     }
     __Pyx_XDECREF_SET(__pyx_v_loss, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "Model.py":260
+    /* "AImodelInference.py":262
  *             loss = self.train(self.train_loader, self.model, self.loss_fn, self.optimizer)
  * 
  *             if t%20==0:             # <<<<<<<<<<<<<<
  *                 acc = self.validation(self.val_loader, self.model, self.loss_fn)
  *                 if self.acc_pre<= acc:
  */
-    __pyx_t_1 = __Pyx_PyInt_RemainderObjC(__pyx_v_t, __pyx_int_20, 20, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 260, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_RemainderObjC(__pyx_v_t, __pyx_int_20, 20, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 262, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_14 = (__Pyx_PyInt_BoolEqObjC(__pyx_t_1, __pyx_int_0, 0, 0)); if (unlikely((__pyx_t_14 < 0))) __PYX_ERR(0, 260, __pyx_L1_error)
+    __pyx_t_14 = (__Pyx_PyInt_BoolEqObjC(__pyx_t_1, __pyx_int_0, 0, 0)); if (unlikely((__pyx_t_14 < 0))) __PYX_ERR(0, 262, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     if (__pyx_t_14) {
 
-      /* "Model.py":261
+      /* "AImodelInference.py":263
  * 
  *             if t%20==0:
  *                 acc = self.validation(self.val_loader, self.model, self.loss_fn)             # <<<<<<<<<<<<<<
  *                 if self.acc_pre<= acc:
  *                     self.save_model(model_name)
  */
-      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_validation); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 261, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_validation); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 263, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_val_loader); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 261, __pyx_L1_error)
+      __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_val_loader); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 263, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
-      __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 261, __pyx_L1_error)
+      __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 263, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
-      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_loss_fn); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 261, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_loss_fn); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 263, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __pyx_t_7 = NULL;
       __pyx_t_4 = 0;
@@ -10575,36 +10644,36 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
         __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-        if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 261, __pyx_L1_error)
+        if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 263, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       }
       __Pyx_XDECREF_SET(__pyx_v_acc, __pyx_t_1);
       __pyx_t_1 = 0;
 
-      /* "Model.py":262
+      /* "AImodelInference.py":264
  *             if t%20==0:
  *                 acc = self.validation(self.val_loader, self.model, self.loss_fn)
  *                 if self.acc_pre<= acc:             # <<<<<<<<<<<<<<
  *                     self.save_model(model_name)
  *                     self.acc_pre = acc
  */
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_acc_pre); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 262, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_acc_pre); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 264, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_3 = PyObject_RichCompare(__pyx_t_1, __pyx_v_acc, Py_LE); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 262, __pyx_L1_error)
+      __pyx_t_3 = PyObject_RichCompare(__pyx_t_1, __pyx_v_acc, Py_LE); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 264, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __pyx_t_14 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely((__pyx_t_14 < 0))) __PYX_ERR(0, 262, __pyx_L1_error)
+      __pyx_t_14 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely((__pyx_t_14 < 0))) __PYX_ERR(0, 264, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       if (__pyx_t_14) {
 
-        /* "Model.py":263
+        /* "AImodelInference.py":265
  *                 acc = self.validation(self.val_loader, self.model, self.loss_fn)
  *                 if self.acc_pre<= acc:
  *                     self.save_model(model_name)             # <<<<<<<<<<<<<<
  *                     self.acc_pre = acc
  * 
  */
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_save_model_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 263, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_save_model_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 265, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __pyx_t_10 = NULL;
         __pyx_t_4 = 0;
@@ -10624,22 +10693,22 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
           PyObject *__pyx_callargs[2] = {__pyx_t_10, __pyx_v_model_name};
           __pyx_t_3 = __Pyx_PyObject_FastCall(__pyx_t_1, __pyx_callargs+1-__pyx_t_4, 1+__pyx_t_4);
           __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
-          if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 263, __pyx_L1_error)
+          if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 265, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_3);
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         }
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-        /* "Model.py":264
+        /* "AImodelInference.py":266
  *                 if self.acc_pre<= acc:
  *                     self.save_model(model_name)
  *                     self.acc_pre = acc             # <<<<<<<<<<<<<<
  * 
  *                 self.writer.add_scalar("accuracy", acc, t)
  */
-        if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_acc_pre, __pyx_v_acc) < 0) __PYX_ERR(0, 264, __pyx_L1_error)
+        if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_acc_pre, __pyx_v_acc) < 0) __PYX_ERR(0, 266, __pyx_L1_error)
 
-        /* "Model.py":262
+        /* "AImodelInference.py":264
  *             if t%20==0:
  *                 acc = self.validation(self.val_loader, self.model, self.loss_fn)
  *                 if self.acc_pre<= acc:             # <<<<<<<<<<<<<<
@@ -10648,16 +10717,16 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
  */
       }
 
-      /* "Model.py":266
+      /* "AImodelInference.py":268
  *                     self.acc_pre = acc
  * 
  *                 self.writer.add_scalar("accuracy", acc, t)             # <<<<<<<<<<<<<<
  * 
  *             self.writer.add_scalar("loss", loss, t)
  */
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_writer); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 266, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_writer); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 268, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_add_scalar); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 266, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_add_scalar); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 268, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_1 = NULL;
@@ -10678,13 +10747,13 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
         PyObject *__pyx_callargs[4] = {__pyx_t_1, __pyx_n_u_accuracy, __pyx_v_acc, __pyx_v_t};
         __pyx_t_3 = __Pyx_PyObject_FastCall(__pyx_t_10, __pyx_callargs+1-__pyx_t_4, 3+__pyx_t_4);
         __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-        if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 266, __pyx_L1_error)
+        if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 268, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       }
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "Model.py":260
+      /* "AImodelInference.py":262
  *             loss = self.train(self.train_loader, self.model, self.loss_fn, self.optimizer)
  * 
  *             if t%20==0:             # <<<<<<<<<<<<<<
@@ -10693,16 +10762,16 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
  */
     }
 
-    /* "Model.py":268
+    /* "AImodelInference.py":270
  *                 self.writer.add_scalar("accuracy", acc, t)
  * 
  *             self.writer.add_scalar("loss", loss, t)             # <<<<<<<<<<<<<<
  * 
  *             self.scheduler.step()
  */
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_writer); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 268, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_writer); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 270, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_add_scalar); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 268, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_add_scalar); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __pyx_t_10 = NULL;
@@ -10723,22 +10792,22 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
       PyObject *__pyx_callargs[4] = {__pyx_t_10, __pyx_n_u_loss_2, __pyx_v_loss, __pyx_v_t};
       __pyx_t_3 = __Pyx_PyObject_FastCall(__pyx_t_1, __pyx_callargs+1-__pyx_t_4, 3+__pyx_t_4);
       __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
-      if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 268, __pyx_L1_error)
+      if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 270, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     }
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "Model.py":270
+    /* "AImodelInference.py":272
  *             self.writer.add_scalar("loss", loss, t)
  * 
  *             self.scheduler.step()             # <<<<<<<<<<<<<<
  *             self.iterate_time = time.time() - t1 # for estimating training time
  *         print("Done!")
  */
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_scheduler); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_scheduler); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 272, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_step); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_step); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 272, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_t_1 = NULL;
@@ -10759,22 +10828,22 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
       PyObject *__pyx_callargs[2] = {__pyx_t_1, NULL};
       __pyx_t_3 = __Pyx_PyObject_FastCall(__pyx_t_10, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
       __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-      if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 270, __pyx_L1_error)
+      if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 272, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     }
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "Model.py":271
+    /* "AImodelInference.py":273
  * 
  *             self.scheduler.step()
  *             self.iterate_time = time.time() - t1 # for estimating training time             # <<<<<<<<<<<<<<
  *         print("Done!")
  *         self.writer.close()
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_time); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 271, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_time); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 273, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_time); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 271, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_time); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 273, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __pyx_t_10 = NULL;
@@ -10795,17 +10864,17 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
       PyObject *__pyx_callargs[2] = {__pyx_t_10, NULL};
       __pyx_t_3 = __Pyx_PyObject_FastCall(__pyx_t_1, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
       __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
-      if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 271, __pyx_L1_error)
+      if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 273, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     }
-    __pyx_t_1 = PyNumber_Subtract(__pyx_t_3, __pyx_v_t1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 271, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_Subtract(__pyx_t_3, __pyx_v_t1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 273, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_iterate_time, __pyx_t_1) < 0) __PYX_ERR(0, 271, __pyx_L1_error)
+    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_iterate_time, __pyx_t_1) < 0) __PYX_ERR(0, 273, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "Model.py":255
+    /* "AImodelInference.py":257
  *         self.init_loss_optimizer()
  *         self.acc_pre = 0
  *         for t in range(epoch):             # <<<<<<<<<<<<<<
@@ -10815,27 +10884,27 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":272
+  /* "AImodelInference.py":274
  *             self.scheduler.step()
  *             self.iterate_time = time.time() - t1 # for estimating training time
  *         print("Done!")             # <<<<<<<<<<<<<<
  *         self.writer.close()
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__12, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 272, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__12, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 274, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":273
+  /* "AImodelInference.py":275
  *             self.iterate_time = time.time() - t1 # for estimating training time
  *         print("Done!")
  *         self.writer.close()             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_writer); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 273, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_writer); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 275, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_close); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 273, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_close); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 275, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_1 = NULL;
@@ -10856,13 +10925,13 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
     PyObject *__pyx_callargs[2] = {__pyx_t_1, NULL};
     __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
     __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 273, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 275, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":248
+  /* "AImodelInference.py":250
  *         print("save model")
  * 
  *     def start_train(self,train_dataset, epoch, model_name):             # <<<<<<<<<<<<<<
@@ -10882,7 +10951,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
   __Pyx_XDECREF(__pyx_t_11);
   __Pyx_XDECREF(__pyx_t_12);
   __Pyx_XDECREF(__pyx_t_13);
-  __Pyx_AddTraceback("Model.MyModel.start_train", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.start_train", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_t);
@@ -10894,7 +10963,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
   return __pyx_r;
 }
 
-/* "Model.py":277
+/* "AImodelInference.py":279
  * 
  * 
  *     def start_inference(self, model_path, test_Dataset):             # <<<<<<<<<<<<<<
@@ -10903,16 +10972,16 @@ static PyObject *__pyx_pf_5Model_7MyModel_22start_train(CYTHON_UNUSED PyObject *
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5Model_7MyModel_25start_inference(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_25start_inference(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_5Model_7MyModel_24start_inference, "\n        batch inference\n        ");
-static PyMethodDef __pyx_mdef_5Model_7MyModel_25start_inference = {"start_inference", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5Model_7MyModel_25start_inference, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5Model_7MyModel_24start_inference};
-static PyObject *__pyx_pw_5Model_7MyModel_25start_inference(PyObject *__pyx_self, 
+PyDoc_STRVAR(__pyx_doc_16AImodelInference_7MyModel_24start_inference, "\n        batch inference\n        ");
+static PyMethodDef __pyx_mdef_16AImodelInference_7MyModel_25start_inference = {"start_inference", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_16AImodelInference_7MyModel_25start_inference, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_16AImodelInference_7MyModel_24start_inference};
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_25start_inference(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -10962,7 +11031,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 277, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 279, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -10970,9 +11039,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 277, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 279, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("start_inference", 1, 3, 3, 1); __PYX_ERR(0, 277, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("start_inference", 1, 3, 3, 1); __PYX_ERR(0, 279, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -10980,14 +11049,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[2]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 277, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 279, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("start_inference", 1, 3, 3, 2); __PYX_ERR(0, 277, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("start_inference", 1, 3, 3, 2); __PYX_ERR(0, 279, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "start_inference") < 0)) __PYX_ERR(0, 277, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "start_inference") < 0)) __PYX_ERR(0, 279, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 3)) {
       goto __pyx_L5_argtuple_error;
@@ -11002,7 +11071,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("start_inference", 1, 3, 3, __pyx_nargs); __PYX_ERR(0, 277, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("start_inference", 1, 3, 3, __pyx_nargs); __PYX_ERR(0, 279, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -11012,11 +11081,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("Model.MyModel.start_inference", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.start_inference", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5Model_7MyModel_24start_inference(__pyx_self, __pyx_v_self, __pyx_v_model_path, __pyx_v_test_Dataset);
+  __pyx_r = __pyx_pf_16AImodelInference_7MyModel_24start_inference(__pyx_self, __pyx_v_self, __pyx_v_model_path, __pyx_v_test_Dataset);
 
   /* function exit code */
   {
@@ -11029,7 +11098,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5Model_7MyModel_24start_inference(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_model_path, PyObject *__pyx_v_test_Dataset) {
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_24start_inference(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_model_path, PyObject *__pyx_v_test_Dataset) {
   PyObject *__pyx_v_acc = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -11045,14 +11114,14 @@ static PyObject *__pyx_pf_5Model_7MyModel_24start_inference(CYTHON_UNUSED PyObje
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("start_inference", 1);
 
-  /* "Model.py":282
+  /* "AImodelInference.py":284
  *         """
  * 
  *         self.load_model()             # <<<<<<<<<<<<<<
  *         self.model.load_state_dict(torch.load(model_path, weights_only=True))
  *         self.init_loss_optimizer()
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_load_model); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 282, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_load_model); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 284, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   __pyx_t_4 = 0;
@@ -11072,38 +11141,38 @@ static PyObject *__pyx_pf_5Model_7MyModel_24start_inference(CYTHON_UNUSED PyObje
     PyObject *__pyx_callargs[2] = {__pyx_t_3, NULL};
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_2, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 282, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 284, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":283
+  /* "AImodelInference.py":285
  * 
  *         self.load_model()
  *         self.model.load_state_dict(torch.load(model_path, weights_only=True))             # <<<<<<<<<<<<<<
  *         self.init_loss_optimizer()
  *         self.load_testdata(test_Dataset)
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 283, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 285, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_load_state_dict); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 283, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_load_state_dict); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 285, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_torch); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 283, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_torch); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 285, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_load); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 283, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_load); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 285, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 283, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 285, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_model_path);
   __Pyx_GIVEREF(__pyx_v_model_path);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_v_model_path)) __PYX_ERR(0, 283, __pyx_L1_error);
-  __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 283, __pyx_L1_error)
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_v_model_path)) __PYX_ERR(0, 285, __pyx_L1_error);
+  __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 285, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_weights_only, Py_True) < 0) __PYX_ERR(0, 283, __pyx_L1_error)
-  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_2, __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 283, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_weights_only, Py_True) < 0) __PYX_ERR(0, 285, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_2, __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 285, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -11127,20 +11196,20 @@ static PyObject *__pyx_pf_5Model_7MyModel_24start_inference(CYTHON_UNUSED PyObje
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_4, 1+__pyx_t_4);
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 283, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 285, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":284
+  /* "AImodelInference.py":286
  *         self.load_model()
  *         self.model.load_state_dict(torch.load(model_path, weights_only=True))
  *         self.init_loss_optimizer()             # <<<<<<<<<<<<<<
  *         self.load_testdata(test_Dataset)
  *         acc = self.inference_test(self.val_loader, self.model, self.loss_fn)
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_init_loss_optimizer); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 284, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_init_loss_optimizer); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 286, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_7 = NULL;
   __pyx_t_4 = 0;
@@ -11160,20 +11229,20 @@ static PyObject *__pyx_pf_5Model_7MyModel_24start_inference(CYTHON_UNUSED PyObje
     PyObject *__pyx_callargs[2] = {__pyx_t_7, NULL};
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 284, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 286, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":285
+  /* "AImodelInference.py":287
  *         self.model.load_state_dict(torch.load(model_path, weights_only=True))
  *         self.init_loss_optimizer()
  *         self.load_testdata(test_Dataset)             # <<<<<<<<<<<<<<
  *         acc = self.inference_test(self.val_loader, self.model, self.loss_fn)
  *         print(acc)
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_load_testdata); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 285, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_load_testdata); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 287, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_7 = NULL;
   __pyx_t_4 = 0;
@@ -11193,26 +11262,26 @@ static PyObject *__pyx_pf_5Model_7MyModel_24start_inference(CYTHON_UNUSED PyObje
     PyObject *__pyx_callargs[2] = {__pyx_t_7, __pyx_v_test_Dataset};
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_4, 1+__pyx_t_4);
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 285, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 287, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":286
+  /* "AImodelInference.py":288
  *         self.init_loss_optimizer()
  *         self.load_testdata(test_Dataset)
  *         acc = self.inference_test(self.val_loader, self.model, self.loss_fn)             # <<<<<<<<<<<<<<
  *         print(acc)
  * 
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_inference_test); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 286, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_inference_test); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 288, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_val_loader); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 286, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_val_loader); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 288, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 286, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 288, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_loss_fn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 286, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_loss_fn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 288, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_5 = NULL;
   __pyx_t_4 = 0;
@@ -11235,25 +11304,25 @@ static PyObject *__pyx_pf_5Model_7MyModel_24start_inference(CYTHON_UNUSED PyObje
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 286, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 288, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
   __pyx_v_acc = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "Model.py":287
+  /* "AImodelInference.py":289
  *         self.load_testdata(test_Dataset)
  *         acc = self.inference_test(self.val_loader, self.model, self.loss_fn)
  *         print(acc)             # <<<<<<<<<<<<<<
  * 
- *     def start_inference_single(self, test_image, model_path):
+ * 
  */
-  __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_v_acc); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 287, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_v_acc); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 289, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":277
+  /* "AImodelInference.py":279
  * 
  * 
  *     def start_inference(self, model_path, test_Dataset):             # <<<<<<<<<<<<<<
@@ -11271,7 +11340,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_24start_inference(CYTHON_UNUSED PyObje
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("Model.MyModel.start_inference", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.start_inference", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_acc);
@@ -11280,25 +11349,25 @@ static PyObject *__pyx_pf_5Model_7MyModel_24start_inference(CYTHON_UNUSED PyObje
   return __pyx_r;
 }
 
-/* "Model.py":289
- *         print(acc)
+/* "AImodelInference.py":292
  * 
- *     def start_inference_single(self, test_image, model_path):             # <<<<<<<<<<<<<<
+ * 
+ *     def load_inference_model(self, model_path):             # <<<<<<<<<<<<<<
  *         """
- *         single inference
+ *         preload model for inference
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5Model_7MyModel_27start_inference_single(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_27load_inference_model(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_5Model_7MyModel_26start_inference_single, "\n        single inference\n        \n        ");
-static PyMethodDef __pyx_mdef_5Model_7MyModel_27start_inference_single = {"start_inference_single", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5Model_7MyModel_27start_inference_single, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5Model_7MyModel_26start_inference_single};
-static PyObject *__pyx_pw_5Model_7MyModel_27start_inference_single(PyObject *__pyx_self, 
+PyDoc_STRVAR(__pyx_doc_16AImodelInference_7MyModel_26load_inference_model, "\n        preload model for inference\n\n        ");
+static PyMethodDef __pyx_mdef_16AImodelInference_7MyModel_27load_inference_model = {"load_inference_model", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_16AImodelInference_7MyModel_27load_inference_model, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_16AImodelInference_7MyModel_26load_inference_model};
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_27load_inference_model(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -11306,19 +11375,18 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ) {
   PyObject *__pyx_v_self = 0;
-  PyObject *__pyx_v_test_image = 0;
   PyObject *__pyx_v_model_path = 0;
   #if !CYTHON_METH_FASTCALL
   CYTHON_UNUSED Py_ssize_t __pyx_nargs;
   #endif
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
-  PyObject* values[3] = {0,0,0};
+  PyObject* values[2] = {0,0};
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("start_inference_single (wrapper)", 0);
+  __Pyx_RefNannySetupContext("load_inference_model (wrapper)", 0);
   #if !CYTHON_METH_FASTCALL
   #if CYTHON_ASSUME_SAFE_MACROS
   __pyx_nargs = PyTuple_GET_SIZE(__pyx_args);
@@ -11328,12 +11396,10 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   #endif
   __pyx_kwvalues = __Pyx_KwValues_FASTCALL(__pyx_args, __pyx_nargs);
   {
-    PyObject **__pyx_pyargnames[] = {&__pyx_n_s_self,&__pyx_n_s_test_image,&__pyx_n_s_model_path,0};
+    PyObject **__pyx_pyargnames[] = {&__pyx_n_s_self,&__pyx_n_s_model_path,0};
     if (__pyx_kwds) {
       Py_ssize_t kw_args;
       switch (__pyx_nargs) {
-        case  3: values[2] = __Pyx_Arg_FASTCALL(__pyx_args, 2);
-        CYTHON_FALLTHROUGH;
         case  2: values[1] = __Pyx_Arg_FASTCALL(__pyx_args, 1);
         CYTHON_FALLTHROUGH;
         case  1: values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
@@ -11348,47 +11414,35 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 289, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 292, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
-        if (likely((values[1] = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_test_image)) != 0)) {
+        if (likely((values[1] = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_model_path)) != 0)) {
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 289, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 292, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("start_inference_single", 1, 3, 3, 1); __PYX_ERR(0, 289, __pyx_L3_error)
-        }
-        CYTHON_FALLTHROUGH;
-        case  2:
-        if (likely((values[2] = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_model_path)) != 0)) {
-          (void)__Pyx_Arg_NewRef_FASTCALL(values[2]);
-          kw_args--;
-        }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 289, __pyx_L3_error)
-        else {
-          __Pyx_RaiseArgtupleInvalid("start_inference_single", 1, 3, 3, 2); __PYX_ERR(0, 289, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("load_inference_model", 1, 2, 2, 1); __PYX_ERR(0, 292, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "start_inference_single") < 0)) __PYX_ERR(0, 289, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "load_inference_model") < 0)) __PYX_ERR(0, 292, __pyx_L3_error)
       }
-    } else if (unlikely(__pyx_nargs != 3)) {
+    } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
       values[1] = __Pyx_Arg_FASTCALL(__pyx_args, 1);
-      values[2] = __Pyx_Arg_FASTCALL(__pyx_args, 2);
     }
     __pyx_v_self = values[0];
-    __pyx_v_test_image = values[1];
-    __pyx_v_model_path = values[2];
+    __pyx_v_model_path = values[1];
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("start_inference_single", 1, 3, 3, __pyx_nargs); __PYX_ERR(0, 289, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("load_inference_model", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 292, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -11398,11 +11452,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("Model.MyModel.start_inference_single", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.load_inference_model", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5Model_7MyModel_26start_inference_single(__pyx_self, __pyx_v_self, __pyx_v_test_image, __pyx_v_model_path);
+  __pyx_r = __pyx_pf_16AImodelInference_7MyModel_26load_inference_model(__pyx_self, __pyx_v_self, __pyx_v_model_path);
 
   /* function exit code */
   {
@@ -11415,13 +11469,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5Model_7MyModel_26start_inference_single(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_test_image, PyObject *__pyx_v_model_path) {
-  PyObject *__pyx_v_img_tensor = NULL;
-  PyObject *__pyx_v_s1 = NULL;
-  PyObject *__pyx_v_output = NULL;
-  CYTHON_UNUSED PyObject *__pyx_v__ = NULL;
-  PyObject *__pyx_v_predicted_class = NULL;
-  PyObject *__pyx_v_result = NULL;
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_26load_inference_model(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_model_path) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -11431,56 +11479,14 @@ static PyObject *__pyx_pf_5Model_7MyModel_26start_inference_single(CYTHON_UNUSED
   PyObject *__pyx_t_5 = NULL;
   PyObject *__pyx_t_6 = NULL;
   PyObject *__pyx_t_7 = NULL;
-  PyObject *__pyx_t_8 = NULL;
-  PyObject *__pyx_t_9 = NULL;
-  PyObject *__pyx_t_10 = NULL;
-  PyObject *__pyx_t_11 = NULL;
-  PyObject *(*__pyx_t_12)(PyObject *);
-  PyObject *__pyx_t_13 = NULL;
-  int __pyx_t_14;
-  int __pyx_t_15;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
-  __Pyx_RefNannySetupContext("start_inference_single", 1);
+  __Pyx_RefNannySetupContext("load_inference_model", 1);
 
-  /* "Model.py":295
+  /* "AImodelInference.py":297
+ * 
  *         """
- * 
- *         img_tensor = self.load_single_img(test_image)             # <<<<<<<<<<<<<<
- * 
- *         self.load_model()
- */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_load_single_img); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 295, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = NULL;
-  __pyx_t_4 = 0;
-  #if CYTHON_UNPACK_METHODS
-  if (likely(PyMethod_Check(__pyx_t_2))) {
-    __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_2);
-    if (likely(__pyx_t_3)) {
-      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
-      __Pyx_INCREF(__pyx_t_3);
-      __Pyx_INCREF(function);
-      __Pyx_DECREF_SET(__pyx_t_2, function);
-      __pyx_t_4 = 1;
-    }
-  }
-  #endif
-  {
-    PyObject *__pyx_callargs[2] = {__pyx_t_3, __pyx_v_test_image};
-    __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_2, __pyx_callargs+1-__pyx_t_4, 1+__pyx_t_4);
-    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 295, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  }
-  __pyx_v_img_tensor = __pyx_t_1;
-  __pyx_t_1 = 0;
-
-  /* "Model.py":297
- *         img_tensor = self.load_single_img(test_image)
- * 
  *         self.load_model()             # <<<<<<<<<<<<<<
  *         self.model.load_state_dict(torch.load(model_path, weights_only=True))
  *         self.model.to(self.training_device)
@@ -11511,8 +11517,8 @@ static PyObject *__pyx_pf_5Model_7MyModel_26start_inference_single(CYTHON_UNUSED
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":298
- * 
+  /* "AImodelInference.py":298
+ *         """
  *         self.load_model()
  *         self.model.load_state_dict(torch.load(model_path, weights_only=True))             # <<<<<<<<<<<<<<
  *         self.model.to(self.training_device)
@@ -11566,7 +11572,7 @@ static PyObject *__pyx_pf_5Model_7MyModel_26start_inference_single(CYTHON_UNUSED
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":299
+  /* "AImodelInference.py":299
  *         self.load_model()
  *         self.model.load_state_dict(torch.load(model_path, weights_only=True))
  *         self.model.to(self.training_device)             # <<<<<<<<<<<<<<
@@ -11605,12 +11611,12 @@ static PyObject *__pyx_pf_5Model_7MyModel_26start_inference_single(CYTHON_UNUSED
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":300
+  /* "AImodelInference.py":300
  *         self.model.load_state_dict(torch.load(model_path, weights_only=True))
  *         self.model.to(self.training_device)
  *         self.model.eval()             # <<<<<<<<<<<<<<
  * 
- *         with torch.no_grad():  #
+ * 
  */
   __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 300, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -11641,53 +11647,234 @@ static PyObject *__pyx_pf_5Model_7MyModel_26start_inference_single(CYTHON_UNUSED
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":302
- *         self.model.eval()
+  /* "AImodelInference.py":292
  * 
+ * 
+ *     def load_inference_model(self, model_path):             # <<<<<<<<<<<<<<
+ *         """
+ *         preload model for inference
+ */
+
+  /* function exit code */
+  __pyx_r = Py_None; __Pyx_INCREF(Py_None);
+  goto __pyx_L0;
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_5);
+  __Pyx_XDECREF(__pyx_t_6);
+  __Pyx_XDECREF(__pyx_t_7);
+  __Pyx_AddTraceback("AImodelInference.MyModel.load_inference_model", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "AImodelInference.py":303
+ * 
+ * 
+ *     def start_inference_single(self, test_image):             # <<<<<<<<<<<<<<
+ *         """
+ *         single inference
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_29start_inference_single(PyObject *__pyx_self, 
+#if CYTHON_METH_FASTCALL
+PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
+#else
+PyObject *__pyx_args, PyObject *__pyx_kwds
+#endif
+); /*proto*/
+PyDoc_STRVAR(__pyx_doc_16AImodelInference_7MyModel_28start_inference_single, "\n        single inference\n        \n        ");
+static PyMethodDef __pyx_mdef_16AImodelInference_7MyModel_29start_inference_single = {"start_inference_single", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_16AImodelInference_7MyModel_29start_inference_single, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_16AImodelInference_7MyModel_28start_inference_single};
+static PyObject *__pyx_pw_16AImodelInference_7MyModel_29start_inference_single(PyObject *__pyx_self, 
+#if CYTHON_METH_FASTCALL
+PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
+#else
+PyObject *__pyx_args, PyObject *__pyx_kwds
+#endif
+) {
+  PyObject *__pyx_v_self = 0;
+  PyObject *__pyx_v_test_image = 0;
+  #if !CYTHON_METH_FASTCALL
+  CYTHON_UNUSED Py_ssize_t __pyx_nargs;
+  #endif
+  CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
+  PyObject* values[2] = {0,0};
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("start_inference_single (wrapper)", 0);
+  #if !CYTHON_METH_FASTCALL
+  #if CYTHON_ASSUME_SAFE_MACROS
+  __pyx_nargs = PyTuple_GET_SIZE(__pyx_args);
+  #else
+  __pyx_nargs = PyTuple_Size(__pyx_args); if (unlikely(__pyx_nargs < 0)) return NULL;
+  #endif
+  #endif
+  __pyx_kwvalues = __Pyx_KwValues_FASTCALL(__pyx_args, __pyx_nargs);
+  {
+    PyObject **__pyx_pyargnames[] = {&__pyx_n_s_self,&__pyx_n_s_test_image,0};
+    if (__pyx_kwds) {
+      Py_ssize_t kw_args;
+      switch (__pyx_nargs) {
+        case  2: values[1] = __Pyx_Arg_FASTCALL(__pyx_args, 1);
+        CYTHON_FALLTHROUGH;
+        case  1: values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
+        CYTHON_FALLTHROUGH;
+        case  0: break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+      kw_args = __Pyx_NumKwargs_FASTCALL(__pyx_kwds);
+      switch (__pyx_nargs) {
+        case  0:
+        if (likely((values[0] = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_self)) != 0)) {
+          (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
+          kw_args--;
+        }
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 303, __pyx_L3_error)
+        else goto __pyx_L5_argtuple_error;
+        CYTHON_FALLTHROUGH;
+        case  1:
+        if (likely((values[1] = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_test_image)) != 0)) {
+          (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
+          kw_args--;
+        }
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 303, __pyx_L3_error)
+        else {
+          __Pyx_RaiseArgtupleInvalid("start_inference_single", 1, 2, 2, 1); __PYX_ERR(0, 303, __pyx_L3_error)
+        }
+      }
+      if (unlikely(kw_args > 0)) {
+        const Py_ssize_t kwd_pos_args = __pyx_nargs;
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "start_inference_single") < 0)) __PYX_ERR(0, 303, __pyx_L3_error)
+      }
+    } else if (unlikely(__pyx_nargs != 2)) {
+      goto __pyx_L5_argtuple_error;
+    } else {
+      values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
+      values[1] = __Pyx_Arg_FASTCALL(__pyx_args, 1);
+    }
+    __pyx_v_self = values[0];
+    __pyx_v_test_image = values[1];
+  }
+  goto __pyx_L6_skip;
+  __pyx_L5_argtuple_error:;
+  __Pyx_RaiseArgtupleInvalid("start_inference_single", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 303, __pyx_L3_error)
+  __pyx_L6_skip:;
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L3_error:;
+  {
+    Py_ssize_t __pyx_temp;
+    for (__pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
+      __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
+    }
+  }
+  __Pyx_AddTraceback("AImodelInference.MyModel.start_inference_single", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_16AImodelInference_7MyModel_28start_inference_single(__pyx_self, __pyx_v_self, __pyx_v_test_image);
+
+  /* function exit code */
+  {
+    Py_ssize_t __pyx_temp;
+    for (__pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
+      __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
+    }
+  }
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_16AImodelInference_7MyModel_28start_inference_single(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_test_image) {
+  PyObject *__pyx_v_img_tensor = NULL;
+  PyObject *__pyx_v_s1 = NULL;
+  PyObject *__pyx_v_output = NULL;
+  CYTHON_UNUSED PyObject *__pyx_v__ = NULL;
+  PyObject *__pyx_v_predicted_class = NULL;
+  PyObject *__pyx_v_result = NULL;
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  PyObject *__pyx_t_1 = NULL;
+  PyObject *__pyx_t_2 = NULL;
+  PyObject *__pyx_t_3 = NULL;
+  unsigned int __pyx_t_4;
+  PyObject *__pyx_t_5 = NULL;
+  PyObject *__pyx_t_6 = NULL;
+  PyObject *__pyx_t_7 = NULL;
+  PyObject *__pyx_t_8 = NULL;
+  PyObject *__pyx_t_9 = NULL;
+  PyObject *(*__pyx_t_10)(PyObject *);
+  PyObject *__pyx_t_11 = NULL;
+  int __pyx_t_12;
+  int __pyx_t_13;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  __Pyx_RefNannySetupContext("start_inference_single", 1);
+
+  /* "AImodelInference.py":309
+ *         """
+ * 
+ *         img_tensor = self.load_single_img(test_image)             # <<<<<<<<<<<<<<
+ *         with torch.no_grad():  #
+ * 
+ */
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_load_single_img); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 309, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = NULL;
+  __pyx_t_4 = 0;
+  #if CYTHON_UNPACK_METHODS
+  if (likely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_2);
+    if (likely(__pyx_t_3)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      __Pyx_INCREF(__pyx_t_3);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
+      __pyx_t_4 = 1;
+    }
+  }
+  #endif
+  {
+    PyObject *__pyx_callargs[2] = {__pyx_t_3, __pyx_v_test_image};
+    __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_2, __pyx_callargs+1-__pyx_t_4, 1+__pyx_t_4);
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 309, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  }
+  __pyx_v_img_tensor = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "AImodelInference.py":310
+ * 
+ *         img_tensor = self.load_single_img(test_image)
  *         with torch.no_grad():  #             # <<<<<<<<<<<<<<
  * 
  *             s1 = time.time()
  */
   /*with:*/ {
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_torch); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 302, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_torch); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 310, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_no_grad); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 310, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_no_grad); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 302, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_7);
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = NULL;
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_2 = NULL;
     __pyx_t_4 = 0;
     #if CYTHON_UNPACK_METHODS
-    if (unlikely(PyMethod_Check(__pyx_t_7))) {
-      __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_7);
-      if (likely(__pyx_t_3)) {
-        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_7);
-        __Pyx_INCREF(__pyx_t_3);
-        __Pyx_INCREF(function);
-        __Pyx_DECREF_SET(__pyx_t_7, function);
-        __pyx_t_4 = 1;
-      }
-    }
-    #endif
-    {
-      PyObject *__pyx_callargs[2] = {__pyx_t_3, NULL};
-      __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_7, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
-      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 302, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_1);
-      __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    }
-    __pyx_t_8 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_exit); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 302, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_3 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_enter); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 302, __pyx_L3_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_6 = NULL;
-    __pyx_t_4 = 0;
-    #if CYTHON_UNPACK_METHODS
-    if (likely(PyMethod_Check(__pyx_t_3))) {
-      __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_3);
-      if (likely(__pyx_t_6)) {
+    if (unlikely(PyMethod_Check(__pyx_t_3))) {
+      __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
+      if (likely(__pyx_t_2)) {
         PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
-        __Pyx_INCREF(__pyx_t_6);
+        __Pyx_INCREF(__pyx_t_2);
         __Pyx_INCREF(function);
         __Pyx_DECREF_SET(__pyx_t_3, function);
         __pyx_t_4 = 1;
@@ -11695,79 +11882,142 @@ static PyObject *__pyx_pf_5Model_7MyModel_26start_inference_single(CYTHON_UNUSED
     }
     #endif
     {
-      PyObject *__pyx_callargs[2] = {__pyx_t_6, NULL};
-      __pyx_t_7 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
-      __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-      if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 302, __pyx_L3_error)
-      __Pyx_GOTREF(__pyx_t_7);
+      PyObject *__pyx_callargs[2] = {__pyx_t_2, NULL};
+      __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
+      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 310, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     }
-    __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+    __pyx_t_5 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_exit); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 310, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __pyx_t_2 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_enter); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 310, __pyx_L3_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_6 = NULL;
+    __pyx_t_4 = 0;
+    #if CYTHON_UNPACK_METHODS
+    if (likely(PyMethod_Check(__pyx_t_2))) {
+      __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_2);
+      if (likely(__pyx_t_6)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+        __Pyx_INCREF(__pyx_t_6);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_2, function);
+        __pyx_t_4 = 1;
+      }
+    }
+    #endif
+    {
+      PyObject *__pyx_callargs[2] = {__pyx_t_6, NULL};
+      __pyx_t_3 = __Pyx_PyObject_FastCall(__pyx_t_2, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
+      __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
+      if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 310, __pyx_L3_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    }
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     /*try:*/ {
       {
         __Pyx_PyThreadState_declare
         __Pyx_PyThreadState_assign
-        __Pyx_ExceptionSave(&__pyx_t_9, &__pyx_t_10, &__pyx_t_11);
+        __Pyx_ExceptionSave(&__pyx_t_7, &__pyx_t_8, &__pyx_t_9);
+        __Pyx_XGOTREF(__pyx_t_7);
+        __Pyx_XGOTREF(__pyx_t_8);
         __Pyx_XGOTREF(__pyx_t_9);
-        __Pyx_XGOTREF(__pyx_t_10);
-        __Pyx_XGOTREF(__pyx_t_11);
         /*try:*/ {
 
-          /* "Model.py":304
+          /* "AImodelInference.py":312
  *         with torch.no_grad():  #
  * 
  *             s1 = time.time()             # <<<<<<<<<<<<<<
  *             output = self.model(img_tensor)
  *             _, predicted_class = torch.max(output, 1)
  */
-          __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_time); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 304, __pyx_L7_error)
-          __Pyx_GOTREF(__pyx_t_7);
-          __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_time); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 304, __pyx_L7_error)
+          __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_time); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 312, __pyx_L7_error)
           __Pyx_GOTREF(__pyx_t_3);
-          __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-          __pyx_t_7 = NULL;
+          __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_time); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 312, __pyx_L7_error)
+          __Pyx_GOTREF(__pyx_t_2);
+          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+          __pyx_t_3 = NULL;
           __pyx_t_4 = 0;
           #if CYTHON_UNPACK_METHODS
-          if (unlikely(PyMethod_Check(__pyx_t_3))) {
-            __pyx_t_7 = PyMethod_GET_SELF(__pyx_t_3);
-            if (likely(__pyx_t_7)) {
-              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
-              __Pyx_INCREF(__pyx_t_7);
+          if (unlikely(PyMethod_Check(__pyx_t_2))) {
+            __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_2);
+            if (likely(__pyx_t_3)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+              __Pyx_INCREF(__pyx_t_3);
               __Pyx_INCREF(function);
-              __Pyx_DECREF_SET(__pyx_t_3, function);
+              __Pyx_DECREF_SET(__pyx_t_2, function);
               __pyx_t_4 = 1;
             }
           }
           #endif
           {
-            PyObject *__pyx_callargs[2] = {__pyx_t_7, NULL};
-            __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
-            __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-            if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 304, __pyx_L7_error)
+            PyObject *__pyx_callargs[2] = {__pyx_t_3, NULL};
+            __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_2, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
+            __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+            if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 312, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_1);
-            __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+            __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
           }
           __pyx_v_s1 = __pyx_t_1;
           __pyx_t_1 = 0;
 
-          /* "Model.py":305
+          /* "AImodelInference.py":313
  * 
  *             s1 = time.time()
  *             output = self.model(img_tensor)             # <<<<<<<<<<<<<<
  *             _, predicted_class = torch.max(output, 1)
  *             result = str(predicted_class[0].item())
  */
-          __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 305, __pyx_L7_error)
-          __Pyx_GOTREF(__pyx_t_3);
-          __pyx_t_7 = NULL;
+          __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_model); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 313, __pyx_L7_error)
+          __Pyx_GOTREF(__pyx_t_2);
+          __pyx_t_3 = NULL;
           __pyx_t_4 = 0;
           #if CYTHON_UNPACK_METHODS
-          if (likely(PyMethod_Check(__pyx_t_3))) {
-            __pyx_t_7 = PyMethod_GET_SELF(__pyx_t_3);
-            if (likely(__pyx_t_7)) {
+          if (likely(PyMethod_Check(__pyx_t_2))) {
+            __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_2);
+            if (likely(__pyx_t_3)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+              __Pyx_INCREF(__pyx_t_3);
+              __Pyx_INCREF(function);
+              __Pyx_DECREF_SET(__pyx_t_2, function);
+              __pyx_t_4 = 1;
+            }
+          }
+          #endif
+          {
+            PyObject *__pyx_callargs[2] = {__pyx_t_3, __pyx_v_img_tensor};
+            __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_2, __pyx_callargs+1-__pyx_t_4, 1+__pyx_t_4);
+            __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+            if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 313, __pyx_L7_error)
+            __Pyx_GOTREF(__pyx_t_1);
+            __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+          }
+          __pyx_v_output = __pyx_t_1;
+          __pyx_t_1 = 0;
+
+          /* "AImodelInference.py":314
+ *             s1 = time.time()
+ *             output = self.model(img_tensor)
+ *             _, predicted_class = torch.max(output, 1)             # <<<<<<<<<<<<<<
+ *             result = str(predicted_class[0].item())
+ *             print("class = ", result)
+ */
+          __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_torch); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 314, __pyx_L7_error)
+          __Pyx_GOTREF(__pyx_t_2);
+          __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_max); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 314, __pyx_L7_error)
+          __Pyx_GOTREF(__pyx_t_3);
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+          __pyx_t_2 = NULL;
+          __pyx_t_4 = 0;
+          #if CYTHON_UNPACK_METHODS
+          if (unlikely(PyMethod_Check(__pyx_t_3))) {
+            __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
+            if (likely(__pyx_t_2)) {
               PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
-              __Pyx_INCREF(__pyx_t_7);
+              __Pyx_INCREF(__pyx_t_2);
               __Pyx_INCREF(function);
               __Pyx_DECREF_SET(__pyx_t_3, function);
               __pyx_t_4 = 1;
@@ -11775,49 +12025,12 @@ static PyObject *__pyx_pf_5Model_7MyModel_26start_inference_single(CYTHON_UNUSED
           }
           #endif
           {
-            PyObject *__pyx_callargs[2] = {__pyx_t_7, __pyx_v_img_tensor};
-            __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_4, 1+__pyx_t_4);
-            __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-            if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 305, __pyx_L7_error)
+            PyObject *__pyx_callargs[3] = {__pyx_t_2, __pyx_v_output, __pyx_int_1};
+            __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_4, 2+__pyx_t_4);
+            __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+            if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 314, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_1);
             __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-          }
-          __pyx_v_output = __pyx_t_1;
-          __pyx_t_1 = 0;
-
-          /* "Model.py":306
- *             s1 = time.time()
- *             output = self.model(img_tensor)
- *             _, predicted_class = torch.max(output, 1)             # <<<<<<<<<<<<<<
- *             result = str(predicted_class[0].item())
- *             print("class = ", result)
- */
-          __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_torch); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 306, __pyx_L7_error)
-          __Pyx_GOTREF(__pyx_t_3);
-          __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_max); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 306, __pyx_L7_error)
-          __Pyx_GOTREF(__pyx_t_7);
-          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-          __pyx_t_3 = NULL;
-          __pyx_t_4 = 0;
-          #if CYTHON_UNPACK_METHODS
-          if (unlikely(PyMethod_Check(__pyx_t_7))) {
-            __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_7);
-            if (likely(__pyx_t_3)) {
-              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_7);
-              __Pyx_INCREF(__pyx_t_3);
-              __Pyx_INCREF(function);
-              __Pyx_DECREF_SET(__pyx_t_7, function);
-              __pyx_t_4 = 1;
-            }
-          }
-          #endif
-          {
-            PyObject *__pyx_callargs[3] = {__pyx_t_3, __pyx_v_output, __pyx_int_1};
-            __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_7, __pyx_callargs+1-__pyx_t_4, 2+__pyx_t_4);
-            __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-            if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L7_error)
-            __Pyx_GOTREF(__pyx_t_1);
-            __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
           }
           if ((likely(PyTuple_CheckExact(__pyx_t_1))) || (PyList_CheckExact(__pyx_t_1))) {
             PyObject* sequence = __pyx_t_1;
@@ -11825,182 +12038,180 @@ static PyObject *__pyx_pf_5Model_7MyModel_26start_inference_single(CYTHON_UNUSED
             if (unlikely(size != 2)) {
               if (size > 2) __Pyx_RaiseTooManyValuesError(2);
               else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-              __PYX_ERR(0, 306, __pyx_L7_error)
+              __PYX_ERR(0, 314, __pyx_L7_error)
             }
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
             if (likely(PyTuple_CheckExact(sequence))) {
-              __pyx_t_7 = PyTuple_GET_ITEM(sequence, 0); 
-              __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+              __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
+              __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
             } else {
-              __pyx_t_7 = PyList_GET_ITEM(sequence, 0); 
-              __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+              __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
+              __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
             }
-            __Pyx_INCREF(__pyx_t_7);
             __Pyx_INCREF(__pyx_t_3);
+            __Pyx_INCREF(__pyx_t_2);
             #else
-            __pyx_t_7 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 306, __pyx_L7_error)
-            __Pyx_GOTREF(__pyx_t_7);
-            __pyx_t_3 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 306, __pyx_L7_error)
+            __pyx_t_3 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 314, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_3);
+            __pyx_t_2 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 314, __pyx_L7_error)
+            __Pyx_GOTREF(__pyx_t_2);
             #endif
             __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
           } else {
             Py_ssize_t index = -1;
-            __pyx_t_6 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 306, __pyx_L7_error)
+            __pyx_t_6 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 314, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_6);
             __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-            __pyx_t_12 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_6);
-            index = 0; __pyx_t_7 = __pyx_t_12(__pyx_t_6); if (unlikely(!__pyx_t_7)) goto __pyx_L13_unpacking_failed;
-            __Pyx_GOTREF(__pyx_t_7);
-            index = 1; __pyx_t_3 = __pyx_t_12(__pyx_t_6); if (unlikely(!__pyx_t_3)) goto __pyx_L13_unpacking_failed;
+            __pyx_t_10 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_6);
+            index = 0; __pyx_t_3 = __pyx_t_10(__pyx_t_6); if (unlikely(!__pyx_t_3)) goto __pyx_L13_unpacking_failed;
             __Pyx_GOTREF(__pyx_t_3);
-            if (__Pyx_IternextUnpackEndCheck(__pyx_t_12(__pyx_t_6), 2) < 0) __PYX_ERR(0, 306, __pyx_L7_error)
-            __pyx_t_12 = NULL;
+            index = 1; __pyx_t_2 = __pyx_t_10(__pyx_t_6); if (unlikely(!__pyx_t_2)) goto __pyx_L13_unpacking_failed;
+            __Pyx_GOTREF(__pyx_t_2);
+            if (__Pyx_IternextUnpackEndCheck(__pyx_t_10(__pyx_t_6), 2) < 0) __PYX_ERR(0, 314, __pyx_L7_error)
+            __pyx_t_10 = NULL;
             __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
             goto __pyx_L14_unpacking_done;
             __pyx_L13_unpacking_failed:;
             __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-            __pyx_t_12 = NULL;
+            __pyx_t_10 = NULL;
             if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-            __PYX_ERR(0, 306, __pyx_L7_error)
+            __PYX_ERR(0, 314, __pyx_L7_error)
             __pyx_L14_unpacking_done:;
           }
-          __pyx_v__ = __pyx_t_7;
-          __pyx_t_7 = 0;
-          __pyx_v_predicted_class = __pyx_t_3;
+          __pyx_v__ = __pyx_t_3;
           __pyx_t_3 = 0;
+          __pyx_v_predicted_class = __pyx_t_2;
+          __pyx_t_2 = 0;
 
-          /* "Model.py":307
+          /* "AImodelInference.py":315
  *             output = self.model(img_tensor)
  *             _, predicted_class = torch.max(output, 1)
  *             result = str(predicted_class[0].item())             # <<<<<<<<<<<<<<
  *             print("class = ", result)
  *         print("InferenceTime:",time.time()-s1)
  */
-          __pyx_t_3 = __Pyx_GetItemInt(__pyx_v_predicted_class, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 307, __pyx_L7_error)
+          __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_predicted_class, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 315, __pyx_L7_error)
+          __Pyx_GOTREF(__pyx_t_2);
+          __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_item); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 315, __pyx_L7_error)
           __Pyx_GOTREF(__pyx_t_3);
-          __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_item); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 307, __pyx_L7_error)
-          __Pyx_GOTREF(__pyx_t_7);
-          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-          __pyx_t_3 = NULL;
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+          __pyx_t_2 = NULL;
           __pyx_t_4 = 0;
           #if CYTHON_UNPACK_METHODS
-          if (likely(PyMethod_Check(__pyx_t_7))) {
-            __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_7);
-            if (likely(__pyx_t_3)) {
-              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_7);
-              __Pyx_INCREF(__pyx_t_3);
+          if (likely(PyMethod_Check(__pyx_t_3))) {
+            __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
+            if (likely(__pyx_t_2)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+              __Pyx_INCREF(__pyx_t_2);
               __Pyx_INCREF(function);
-              __Pyx_DECREF_SET(__pyx_t_7, function);
+              __Pyx_DECREF_SET(__pyx_t_3, function);
               __pyx_t_4 = 1;
             }
           }
           #endif
           {
-            PyObject *__pyx_callargs[2] = {__pyx_t_3, NULL};
-            __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_7, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
-            __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-            if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 307, __pyx_L7_error)
+            PyObject *__pyx_callargs[2] = {__pyx_t_2, NULL};
+            __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
+            __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+            if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 315, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_1);
-            __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+            __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
           }
-          __pyx_t_7 = __Pyx_PyObject_Unicode(__pyx_t_1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 307, __pyx_L7_error)
-          __Pyx_GOTREF(__pyx_t_7);
+          __pyx_t_3 = __Pyx_PyObject_Unicode(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 315, __pyx_L7_error)
+          __Pyx_GOTREF(__pyx_t_3);
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-          __pyx_v_result = __pyx_t_7;
-          __pyx_t_7 = 0;
+          __pyx_v_result = __pyx_t_3;
+          __pyx_t_3 = 0;
 
-          /* "Model.py":308
+          /* "AImodelInference.py":316
  *             _, predicted_class = torch.max(output, 1)
  *             result = str(predicted_class[0].item())
  *             print("class = ", result)             # <<<<<<<<<<<<<<
  *         print("InferenceTime:",time.time()-s1)
  *         return result
  */
-          __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 308, __pyx_L7_error)
-          __Pyx_GOTREF(__pyx_t_7);
+          __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 316, __pyx_L7_error)
+          __Pyx_GOTREF(__pyx_t_3);
           __Pyx_INCREF(__pyx_kp_u_class);
           __Pyx_GIVEREF(__pyx_kp_u_class);
-          if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_kp_u_class)) __PYX_ERR(0, 308, __pyx_L7_error);
+          if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_kp_u_class)) __PYX_ERR(0, 316, __pyx_L7_error);
           __Pyx_INCREF(__pyx_v_result);
           __Pyx_GIVEREF(__pyx_v_result);
-          if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_v_result)) __PYX_ERR(0, 308, __pyx_L7_error);
-          __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 308, __pyx_L7_error)
+          if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_v_result)) __PYX_ERR(0, 316, __pyx_L7_error);
+          __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 316, __pyx_L7_error)
           __Pyx_GOTREF(__pyx_t_1);
-          __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-          /* "Model.py":302
- *         self.model.eval()
+          /* "AImodelInference.py":310
  * 
+ *         img_tensor = self.load_single_img(test_image)
  *         with torch.no_grad():  #             # <<<<<<<<<<<<<<
  * 
  *             s1 = time.time()
  */
         }
+        __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
+        __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
         __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
-        __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
-        __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
         goto __pyx_L12_try_end;
         __pyx_L7_error:;
         __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
         __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
         __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-        __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-        __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
         /*except:*/ {
-          __Pyx_AddTraceback("Model.MyModel.start_inference_single", __pyx_clineno, __pyx_lineno, __pyx_filename);
-          if (__Pyx_GetException(&__pyx_t_1, &__pyx_t_7, &__pyx_t_3) < 0) __PYX_ERR(0, 302, __pyx_L9_except_error)
+          __Pyx_AddTraceback("AImodelInference.MyModel.start_inference_single", __pyx_clineno, __pyx_lineno, __pyx_filename);
+          if (__Pyx_GetException(&__pyx_t_1, &__pyx_t_3, &__pyx_t_2) < 0) __PYX_ERR(0, 310, __pyx_L9_except_error)
           __Pyx_XGOTREF(__pyx_t_1);
-          __Pyx_XGOTREF(__pyx_t_7);
           __Pyx_XGOTREF(__pyx_t_3);
-          __pyx_t_6 = PyTuple_Pack(3, __pyx_t_1, __pyx_t_7, __pyx_t_3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 302, __pyx_L9_except_error)
+          __Pyx_XGOTREF(__pyx_t_2);
+          __pyx_t_6 = PyTuple_Pack(3, __pyx_t_1, __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 310, __pyx_L9_except_error)
           __Pyx_GOTREF(__pyx_t_6);
-          __pyx_t_13 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_6, NULL);
-          __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+          __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_6, NULL);
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-          if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 302, __pyx_L9_except_error)
-          __Pyx_GOTREF(__pyx_t_13);
-          __pyx_t_14 = __Pyx_PyObject_IsTrue(__pyx_t_13);
-          __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
-          if (__pyx_t_14 < 0) __PYX_ERR(0, 302, __pyx_L9_except_error)
-          __pyx_t_15 = (!__pyx_t_14);
-          if (unlikely(__pyx_t_15)) {
+          if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 310, __pyx_L9_except_error)
+          __Pyx_GOTREF(__pyx_t_11);
+          __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_11);
+          __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
+          if (__pyx_t_12 < 0) __PYX_ERR(0, 310, __pyx_L9_except_error)
+          __pyx_t_13 = (!__pyx_t_12);
+          if (unlikely(__pyx_t_13)) {
             __Pyx_GIVEREF(__pyx_t_1);
-            __Pyx_GIVEREF(__pyx_t_7);
-            __Pyx_XGIVEREF(__pyx_t_3);
-            __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_7, __pyx_t_3);
-            __pyx_t_1 = 0; __pyx_t_7 = 0; __pyx_t_3 = 0; 
-            __PYX_ERR(0, 302, __pyx_L9_except_error)
+            __Pyx_GIVEREF(__pyx_t_3);
+            __Pyx_XGIVEREF(__pyx_t_2);
+            __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_3, __pyx_t_2);
+            __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0; 
+            __PYX_ERR(0, 310, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-          __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
           __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+          __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
           goto __pyx_L8_exception_handled;
         }
         __pyx_L9_except_error:;
+        __Pyx_XGIVEREF(__pyx_t_7);
+        __Pyx_XGIVEREF(__pyx_t_8);
         __Pyx_XGIVEREF(__pyx_t_9);
-        __Pyx_XGIVEREF(__pyx_t_10);
-        __Pyx_XGIVEREF(__pyx_t_11);
-        __Pyx_ExceptionReset(__pyx_t_9, __pyx_t_10, __pyx_t_11);
+        __Pyx_ExceptionReset(__pyx_t_7, __pyx_t_8, __pyx_t_9);
         goto __pyx_L1_error;
         __pyx_L8_exception_handled:;
+        __Pyx_XGIVEREF(__pyx_t_7);
+        __Pyx_XGIVEREF(__pyx_t_8);
         __Pyx_XGIVEREF(__pyx_t_9);
-        __Pyx_XGIVEREF(__pyx_t_10);
-        __Pyx_XGIVEREF(__pyx_t_11);
-        __Pyx_ExceptionReset(__pyx_t_9, __pyx_t_10, __pyx_t_11);
+        __Pyx_ExceptionReset(__pyx_t_7, __pyx_t_8, __pyx_t_9);
         __pyx_L12_try_end:;
       }
     }
     /*finally:*/ {
       /*normal exit:*/{
-        if (__pyx_t_8) {
-          __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_tuple__8, NULL);
-          __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-          if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 302, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_11);
-          __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
+        if (__pyx_t_5) {
+          __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__8, NULL);
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 310, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_9);
+          __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         }
         goto __pyx_L6;
       }
@@ -12008,31 +12219,31 @@ static PyObject *__pyx_pf_5Model_7MyModel_26start_inference_single(CYTHON_UNUSED
     }
     goto __pyx_L18;
     __pyx_L3_error:;
-    __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     goto __pyx_L1_error;
     __pyx_L18:;
   }
 
-  /* "Model.py":309
+  /* "AImodelInference.py":317
  *             result = str(predicted_class[0].item())
  *             print("class = ", result)
  *         print("InferenceTime:",time.time()-s1)             # <<<<<<<<<<<<<<
  *         return result
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_time); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 309, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_time); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 309, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_time); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 317, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_time); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 317, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = NULL;
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_t_3 = NULL;
   __pyx_t_4 = 0;
   #if CYTHON_UNPACK_METHODS
   if (unlikely(PyMethod_Check(__pyx_t_1))) {
-    __pyx_t_7 = PyMethod_GET_SELF(__pyx_t_1);
-    if (likely(__pyx_t_7)) {
+    __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_1);
+    if (likely(__pyx_t_3)) {
       PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
-      __Pyx_INCREF(__pyx_t_7);
+      __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(function);
       __Pyx_DECREF_SET(__pyx_t_1, function);
       __pyx_t_4 = 1;
@@ -12040,31 +12251,31 @@ static PyObject *__pyx_pf_5Model_7MyModel_26start_inference_single(CYTHON_UNUSED
   }
   #endif
   {
-    PyObject *__pyx_callargs[2] = {__pyx_t_7, NULL};
-    __pyx_t_3 = __Pyx_PyObject_FastCall(__pyx_t_1, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
-    __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 309, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
+    PyObject *__pyx_callargs[2] = {__pyx_t_3, NULL};
+    __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_1, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 317, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
-  if (unlikely(!__pyx_v_s1)) { __Pyx_RaiseUnboundLocalError("s1"); __PYX_ERR(0, 309, __pyx_L1_error) }
-  __pyx_t_1 = PyNumber_Subtract(__pyx_t_3, __pyx_v_s1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 309, __pyx_L1_error)
+  if (unlikely(!__pyx_v_s1)) { __Pyx_RaiseUnboundLocalError("s1"); __PYX_ERR(0, 317, __pyx_L1_error) }
+  __pyx_t_1 = PyNumber_Subtract(__pyx_t_2, __pyx_v_s1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 317, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 309, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 317, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_kp_u_InferenceTime);
   __Pyx_GIVEREF(__pyx_kp_u_InferenceTime);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_kp_u_InferenceTime)) __PYX_ERR(0, 309, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_kp_u_InferenceTime)) __PYX_ERR(0, 317, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_1);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_t_1)) __PYX_ERR(0, 309, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_1)) __PYX_ERR(0, 317, __pyx_L1_error);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 309, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 317, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Model.py":310
+  /* "AImodelInference.py":318
  *             print("class = ", result)
  *         print("InferenceTime:",time.time()-s1)
  *         return result             # <<<<<<<<<<<<<<
@@ -12072,15 +12283,15 @@ static PyObject *__pyx_pf_5Model_7MyModel_26start_inference_single(CYTHON_UNUSED
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  if (unlikely(!__pyx_v_result)) { __Pyx_RaiseUnboundLocalError("result"); __PYX_ERR(0, 310, __pyx_L1_error) }
+  if (unlikely(!__pyx_v_result)) { __Pyx_RaiseUnboundLocalError("result"); __PYX_ERR(0, 318, __pyx_L1_error) }
   __Pyx_INCREF(__pyx_v_result);
   __pyx_r = __pyx_v_result;
   goto __pyx_L0;
 
-  /* "Model.py":289
- *         print(acc)
+  /* "AImodelInference.py":303
  * 
- *     def start_inference_single(self, test_image, model_path):             # <<<<<<<<<<<<<<
+ * 
+ *     def start_inference_single(self, test_image):             # <<<<<<<<<<<<<<
  *         """
  *         single inference
  */
@@ -12090,10 +12301,8 @@ static PyObject *__pyx_pf_5Model_7MyModel_26start_inference_single(CYTHON_UNUSED
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("Model.MyModel.start_inference_single", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AImodelInference.MyModel.start_inference_single", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_img_tensor);
@@ -12128,8 +12337,12 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_kp_u_5d, __pyx_k_5d, sizeof(__pyx_k_5d), 0, 1, 0, 0},
     {&__pyx_kp_u_7f, __pyx_k_7f, sizeof(__pyx_k_7f), 0, 1, 0, 0},
     {&__pyx_kp_u_8f, __pyx_k_8f, sizeof(__pyx_k_8f), 0, 1, 0, 0},
+    {&__pyx_n_s_AImodelInference, __pyx_k_AImodelInference, sizeof(__pyx_k_AImodelInference), 0, 0, 1, 1},
+    {&__pyx_kp_s_AImodelInference_py, __pyx_k_AImodelInference_py, sizeof(__pyx_k_AImodelInference_py), 0, 0, 1, 0},
     {&__pyx_n_s_Adam, __pyx_k_Adam, sizeof(__pyx_k_Adam), 0, 0, 1, 1},
     {&__pyx_kp_u_Avg_loss, __pyx_k_Avg_loss, sizeof(__pyx_k_Avg_loss), 0, 1, 0, 0},
+    {&__pyx_kp_u_C_Users_USER_Desktop_project_ft, __pyx_k_C_Users_USER_Desktop_project_ft, sizeof(__pyx_k_C_Users_USER_Desktop_project_ft), 0, 1, 0, 0},
+    {&__pyx_kp_u_C_Users_USER_Desktop_project_ima, __pyx_k_C_Users_USER_Desktop_project_ima, sizeof(__pyx_k_C_Users_USER_Desktop_project_ima), 0, 1, 0, 0},
     {&__pyx_n_s_Compose, __pyx_k_Compose, sizeof(__pyx_k_Compose), 0, 0, 1, 1},
     {&__pyx_n_s_CrossEntropyLoss, __pyx_k_CrossEntropyLoss, sizeof(__pyx_k_CrossEntropyLoss), 0, 0, 1, 1},
     {&__pyx_n_s_DEFAULT, __pyx_k_DEFAULT, sizeof(__pyx_k_DEFAULT), 0, 0, 1, 1},
@@ -12143,8 +12356,6 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_kp_u_Layer, __pyx_k_Layer, sizeof(__pyx_k_Layer), 0, 1, 0, 0},
     {&__pyx_n_s_Linear, __pyx_k_Linear, sizeof(__pyx_k_Linear), 0, 0, 1, 1},
     {&__pyx_n_s_MM, __pyx_k_MM, sizeof(__pyx_k_MM), 0, 0, 1, 1},
-    {&__pyx_n_s_Model, __pyx_k_Model, sizeof(__pyx_k_Model), 0, 0, 1, 1},
-    {&__pyx_kp_s_Model_py, __pyx_k_Model_py, sizeof(__pyx_k_Model_py), 0, 0, 1, 0},
     {&__pyx_n_s_MyDataset, __pyx_k_MyDataset, sizeof(__pyx_k_MyDataset), 0, 0, 1, 1},
     {&__pyx_n_s_MyImageDataset, __pyx_k_MyImageDataset, sizeof(__pyx_k_MyImageDataset), 0, 0, 1, 1},
     {&__pyx_n_s_MyModel, __pyx_k_MyModel, sizeof(__pyx_k_MyModel), 0, 0, 1, 1},
@@ -12152,6 +12363,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_MyModel_inference_test, __pyx_k_MyModel_inference_test, sizeof(__pyx_k_MyModel_inference_test), 0, 0, 1, 1},
     {&__pyx_n_s_MyModel_init_loss_optimizer, __pyx_k_MyModel_init_loss_optimizer, sizeof(__pyx_k_MyModel_init_loss_optimizer), 0, 0, 1, 1},
     {&__pyx_n_s_MyModel_load_dataset, __pyx_k_MyModel_load_dataset, sizeof(__pyx_k_MyModel_load_dataset), 0, 0, 1, 1},
+    {&__pyx_n_s_MyModel_load_inference_model, __pyx_k_MyModel_load_inference_model, sizeof(__pyx_k_MyModel_load_inference_model), 0, 0, 1, 1},
     {&__pyx_n_s_MyModel_load_model, __pyx_k_MyModel_load_model, sizeof(__pyx_k_MyModel_load_model), 0, 0, 1, 1},
     {&__pyx_n_s_MyModel_load_single_img, __pyx_k_MyModel_load_single_img, sizeof(__pyx_k_MyModel_load_single_img), 0, 0, 1, 1},
     {&__pyx_n_s_MyModel_load_testdata, __pyx_k_MyModel_load_testdata, sizeof(__pyx_k_MyModel_load_testdata), 0, 0, 1, 1},
@@ -12181,8 +12393,8 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_kp_u__11, __pyx_k__11, sizeof(__pyx_k__11), 0, 1, 0, 0},
     {&__pyx_kp_u__13, __pyx_k__13, sizeof(__pyx_k__13), 0, 1, 0, 0},
     {&__pyx_n_s__14, __pyx_k__14, sizeof(__pyx_k__14), 0, 0, 1, 1},
-    {&__pyx_n_s__43, __pyx_k__43, sizeof(__pyx_k__43), 0, 0, 1, 1},
-    {&__pyx_n_s__46, __pyx_k__46, sizeof(__pyx_k__46), 0, 0, 1, 1},
+    {&__pyx_n_s__44, __pyx_k__44, sizeof(__pyx_k__44), 0, 0, 1, 1},
+    {&__pyx_n_s__47, __pyx_k__47, sizeof(__pyx_k__47), 0, 0, 1, 1},
     {&__pyx_kp_u__5, __pyx_k__5, sizeof(__pyx_k__5), 0, 1, 0, 0},
     {&__pyx_kp_u__6, __pyx_k__6, sizeof(__pyx_k__6), 0, 1, 0, 0},
     {&__pyx_kp_u__7, __pyx_k__7, sizeof(__pyx_k__7), 0, 1, 0, 0},
@@ -12223,13 +12435,12 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_full_train, __pyx_k_full_train, sizeof(__pyx_k_full_train), 0, 0, 1, 1},
     {&__pyx_n_s_gamma, __pyx_k_gamma, sizeof(__pyx_k_gamma), 0, 0, 1, 1},
     {&__pyx_kp_u_has_zero_parameters, __pyx_k_has_zero_parameters, sizeof(__pyx_k_has_zero_parameters), 0, 1, 0, 0},
-    {&__pyx_kp_u_home_trx50_project_image_classi, __pyx_k_home_trx50_project_image_classi, sizeof(__pyx_k_home_trx50_project_image_classi), 0, 1, 0, 0},
-    {&__pyx_kp_u_home_trx50_project_mytrainingGU, __pyx_k_home_trx50_project_mytrainingGU, sizeof(__pyx_k_home_trx50_project_mytrainingGU), 0, 1, 0, 0},
     {&__pyx_n_s_image, __pyx_k_image, sizeof(__pyx_k_image), 0, 0, 1, 1},
     {&__pyx_n_s_image_name, __pyx_k_image_name, sizeof(__pyx_k_image_name), 0, 0, 1, 1},
     {&__pyx_n_s_image_path, __pyx_k_image_path, sizeof(__pyx_k_image_path), 0, 0, 1, 1},
     {&__pyx_n_s_img_tensor, __pyx_k_img_tensor, sizeof(__pyx_k_img_tensor), 0, 0, 1, 1},
     {&__pyx_n_s_import, __pyx_k_import, sizeof(__pyx_k_import), 0, 0, 1, 1},
+    {&__pyx_n_s_inference_model, __pyx_k_inference_model, sizeof(__pyx_k_inference_model), 0, 0, 1, 1},
     {&__pyx_n_s_inference_test, __pyx_k_inference_test, sizeof(__pyx_k_inference_test), 0, 0, 1, 1},
     {&__pyx_n_s_init, __pyx_k_init, sizeof(__pyx_k_init), 0, 0, 1, 1},
     {&__pyx_n_s_init_loss_optimizer, __pyx_k_init_loss_optimizer, sizeof(__pyx_k_init_loss_optimizer), 0, 0, 1, 1},
@@ -12242,6 +12453,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_learningrate, __pyx_k_learningrate, sizeof(__pyx_k_learningrate), 0, 0, 1, 1},
     {&__pyx_n_s_load, __pyx_k_load, sizeof(__pyx_k_load), 0, 0, 1, 1},
     {&__pyx_n_s_load_dataset, __pyx_k_load_dataset, sizeof(__pyx_k_load_dataset), 0, 0, 1, 1},
+    {&__pyx_n_s_load_inference_model, __pyx_k_load_inference_model, sizeof(__pyx_k_load_inference_model), 0, 0, 1, 1},
     {&__pyx_n_s_load_model, __pyx_k_load_model, sizeof(__pyx_k_load_model), 0, 0, 1, 1},
     {&__pyx_n_s_load_single_img, __pyx_k_load_single_img, sizeof(__pyx_k_load_single_img), 0, 0, 1, 1},
     {&__pyx_n_s_load_state_dict, __pyx_k_load_state_dict, sizeof(__pyx_k_load_state_dict), 0, 0, 1, 1},
@@ -12255,8 +12467,6 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_lr_scheduler, __pyx_k_lr_scheduler, sizeof(__pyx_k_lr_scheduler), 0, 0, 1, 1},
     {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
     {&__pyx_n_u_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 1, 0, 1},
-    {&__pyx_n_s_matplotlib, __pyx_k_matplotlib, sizeof(__pyx_k_matplotlib), 0, 0, 1, 1},
-    {&__pyx_n_s_matplotlib_pyplot, __pyx_k_matplotlib_pyplot, sizeof(__pyx_k_matplotlib_pyplot), 0, 0, 1, 1},
     {&__pyx_n_s_max, __pyx_k_max, sizeof(__pyx_k_max), 0, 0, 1, 1},
     {&__pyx_n_s_mean, __pyx_k_mean, sizeof(__pyx_k_mean), 0, 0, 1, 1},
     {&__pyx_n_s_metaclass, __pyx_k_metaclass, sizeof(__pyx_k_metaclass), 0, 0, 1, 1},
@@ -12281,14 +12491,12 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_output_class, __pyx_k_output_class, sizeof(__pyx_k_output_class), 0, 0, 1, 1},
     {&__pyx_n_s_param, __pyx_k_param, sizeof(__pyx_k_param), 0, 0, 1, 1},
     {&__pyx_n_s_parameters, __pyx_k_parameters, sizeof(__pyx_k_parameters), 0, 0, 1, 1},
-    {&__pyx_n_s_plt, __pyx_k_plt, sizeof(__pyx_k_plt), 0, 0, 1, 1},
     {&__pyx_n_s_pred, __pyx_k_pred, sizeof(__pyx_k_pred), 0, 0, 1, 1},
     {&__pyx_n_s_predicted_class, __pyx_k_predicted_class, sizeof(__pyx_k_predicted_class), 0, 0, 1, 1},
     {&__pyx_n_s_prepare, __pyx_k_prepare, sizeof(__pyx_k_prepare), 0, 0, 1, 1},
     {&__pyx_n_s_print, __pyx_k_print, sizeof(__pyx_k_print), 0, 0, 1, 1},
     {&__pyx_n_s_probabilities, __pyx_k_probabilities, sizeof(__pyx_k_probabilities), 0, 0, 1, 1},
     {&__pyx_kp_u_pth, __pyx_k_pth, sizeof(__pyx_k_pth), 0, 1, 0, 0},
-    {&__pyx_n_s_pyplot, __pyx_k_pyplot, sizeof(__pyx_k_pyplot), 0, 0, 1, 1},
     {&__pyx_n_s_qualname, __pyx_k_qualname, sizeof(__pyx_k_qualname), 0, 0, 1, 1},
     {&__pyx_n_s_random_split, __pyx_k_random_split, sizeof(__pyx_k_random_split), 0, 0, 1, 1},
     {&__pyx_n_s_range, __pyx_k_range, sizeof(__pyx_k_range), 0, 0, 1, 1},
@@ -12358,9 +12566,9 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
 }
 /* #### Code section: cached_builtins ### */
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 31, __pyx_L1_error)
-  __pyx_builtin_enumerate = __Pyx_GetBuiltinName(__pyx_n_s_enumerate); if (!__pyx_builtin_enumerate) __PYX_ERR(0, 172, __pyx_L1_error)
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 255, __pyx_L1_error)
+  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 33, __pyx_L1_error)
+  __pyx_builtin_enumerate = __Pyx_GetBuiltinName(__pyx_n_s_enumerate); if (!__pyx_builtin_enumerate) __PYX_ERR(0, 174, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 257, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -12371,264 +12579,265 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "Model.py":38
+  /* "AImodelInference.py":40
  *         self.model = efficientnet_v2_l(weights=EfficientNet_V2_L_Weights.DEFAULT)
  *         self.model.classifier = nn.Sequential(
  *             nn.Linear(1280, 1024),             # <<<<<<<<<<<<<<
  *             nn.ReLU(),
  *             nn.Dropout(0.5),
  */
-  __pyx_tuple_ = PyTuple_Pack(2, __pyx_int_1280, __pyx_int_1024); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 38, __pyx_L1_error)
+  __pyx_tuple_ = PyTuple_Pack(2, __pyx_int_1280, __pyx_int_1024); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
 
-  /* "Model.py":41
+  /* "AImodelInference.py":43
  *             nn.ReLU(),
  *             nn.Dropout(0.5),
  *             nn.Linear(1024, 256),             # <<<<<<<<<<<<<<
  *             nn.ReLU(),
  *             nn.Dropout(0.5),
  */
-  __pyx_tuple__2 = PyTuple_Pack(2, __pyx_int_1024, __pyx_int_256); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 41, __pyx_L1_error)
+  __pyx_tuple__2 = PyTuple_Pack(2, __pyx_int_1024, __pyx_int_256); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
-  /* "Model.py":59
+  /* "AImodelInference.py":61
  *             param.requires_grad = False
  * 
  *         for param in self.model.classifier[0:].parameters():             # <<<<<<<<<<<<<<
  *             param.requires_grad = True
  * 
  */
-  __pyx_slice__3 = PySlice_New(__pyx_int_0, Py_None, Py_None); if (unlikely(!__pyx_slice__3)) __PYX_ERR(0, 59, __pyx_L1_error)
+  __pyx_slice__3 = PySlice_New(__pyx_int_0, Py_None, Py_None); if (unlikely(!__pyx_slice__3)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__3);
   __Pyx_GIVEREF(__pyx_slice__3);
 
-  /* "Model.py":68
+  /* "AImodelInference.py":70
  *         """
  *         transform = transforms.Compose([
  *             transforms.Resize((224, 224)),             # <<<<<<<<<<<<<<
  *             transforms.ToTensor(),
  *             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
  */
-  __pyx_tuple__4 = PyTuple_Pack(2, __pyx_int_224, __pyx_int_224); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_tuple__4 = PyTuple_Pack(2, __pyx_int_224, __pyx_int_224); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
 
-  /* "Model.py":195
+  /* "AImodelInference.py":197
  *         model.eval()
  *         test_loss, correct = 0, 0
  *         with torch.no_grad():             # <<<<<<<<<<<<<<
  *             for X, y in dataloader:
  *                 X, y = X.to(self.training_device), y.to(self.training_device)
  */
-  __pyx_tuple__8 = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 195, __pyx_L1_error)
+  __pyx_tuple__8 = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 197, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
 
-  /* "Model.py":246
+  /* "AImodelInference.py":248
  *         model_name = model_name + ".pth"
  *         torch.save(self.model.state_dict(), model_name)
  *         print("save model")             # <<<<<<<<<<<<<<
  * 
  *     def start_train(self,train_dataset, epoch, model_name):
  */
-  __pyx_tuple__10 = PyTuple_Pack(1, __pyx_kp_u_save_model); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 246, __pyx_L1_error)
+  __pyx_tuple__10 = PyTuple_Pack(1, __pyx_kp_u_save_model); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
 
-  /* "Model.py":272
+  /* "AImodelInference.py":274
  *             self.scheduler.step()
  *             self.iterate_time = time.time() - t1 # for estimating training time
  *         print("Done!")             # <<<<<<<<<<<<<<
  *         self.writer.close()
  * 
  */
-  __pyx_tuple__12 = PyTuple_Pack(1, __pyx_kp_u_Done); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 272, __pyx_L1_error)
+  __pyx_tuple__12 = PyTuple_Pack(1, __pyx_kp_u_Done); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 274, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
   __Pyx_GIVEREF(__pyx_tuple__12);
 
-  /* "Model.py":15
- * # from MyDataset import MyImageDataset
- * from .MyDataset import MyImageDataset # for build .DLL
- * import matplotlib.pyplot as plt             # <<<<<<<<<<<<<<
- * from PIL import Image
- * import numpy as np
- */
-  __pyx_tuple__15 = PyTuple_Pack(2, __pyx_n_s_matplotlib, __pyx_n_s_pyplot); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 15, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__15);
-  __Pyx_GIVEREF(__pyx_tuple__15);
-
-  /* "Model.py":21
+  /* "AImodelInference.py":21
  * 
  * class MyModel():
- *     def __init__(self, output_class, batch_size=100, lr=0.01):             # <<<<<<<<<<<<<<
+ *     def __init__(self, output_class, batch_size=100, lr=0.01, inference_model=None):             # <<<<<<<<<<<<<<
  *         self.output_class = output_class
  *         self.batch_size = batch_size
  */
-  __pyx_tuple__16 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_output_class, __pyx_n_s_batch_size, __pyx_n_s_lr); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 21, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__16);
-  __Pyx_GIVEREF(__pyx_tuple__16);
-  __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Model_py, __pyx_n_s_init, 21, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(0, 21, __pyx_L1_error)
-  __pyx_tuple__18 = PyTuple_Pack(2, ((PyObject *)__pyx_int_100), ((PyObject*)__pyx_float_0_01)); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 21, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__18);
-  __Pyx_GIVEREF(__pyx_tuple__18);
+  __pyx_tuple__15 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_output_class, __pyx_n_s_batch_size, __pyx_n_s_lr, __pyx_n_s_inference_model); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 21, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__15);
+  __Pyx_GIVEREF(__pyx_tuple__15);
+  __pyx_codeobj__16 = (PyObject*)__Pyx_PyCode_New(5, 0, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__15, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_AImodelInference_py, __pyx_n_s_init, 21, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__16)) __PYX_ERR(0, 21, __pyx_L1_error)
+  __pyx_tuple__17 = PyTuple_Pack(3, ((PyObject *)__pyx_int_100), ((PyObject*)__pyx_float_0_01), Py_None); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 21, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__17);
+  __Pyx_GIVEREF(__pyx_tuple__17);
 
-  /* "Model.py":34
+  /* "AImodelInference.py":36
  * 
  * 
  *     def load_model(self):             # <<<<<<<<<<<<<<
  *         # Load model
  *         self.model = efficientnet_v2_l(weights=EfficientNet_V2_L_Weights.DEFAULT)
  */
-  __pyx_tuple__19 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_name_2, __pyx_n_s_param); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 34, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__19);
-  __Pyx_GIVEREF(__pyx_tuple__19);
-  __pyx_codeobj__20 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__19, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Model_py, __pyx_n_s_load_model, 34, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__20)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __pyx_tuple__18 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_name_2, __pyx_n_s_param); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 36, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__18);
+  __Pyx_GIVEREF(__pyx_tuple__18);
+  __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_AImodelInference_py, __pyx_n_s_load_model, 36, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 36, __pyx_L1_error)
 
-  /* "Model.py":51
+  /* "AImodelInference.py":53
  *         # print(self.model)
  * 
  *     def model_freeze(self):             # <<<<<<<<<<<<<<
  *         """
  *         unfreeze last few layer for transfer learning
  */
-  __pyx_tuple__21 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_param); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 51, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__21);
-  __Pyx_GIVEREF(__pyx_tuple__21);
-  __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Model_py, __pyx_n_s_model_freeze, 51, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_tuple__20 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_param); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__20);
+  __Pyx_GIVEREF(__pyx_tuple__20);
+  __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_AImodelInference_py, __pyx_n_s_model_freeze, 53, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) __PYX_ERR(0, 53, __pyx_L1_error)
 
-  /* "Model.py":63
+  /* "AImodelInference.py":65
  * 
  * 
  *     def load_single_img(self, image_path):             # <<<<<<<<<<<<<<
  *         """
  *         load single image
  */
-  __pyx_tuple__23 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_image_path, __pyx_n_s_transform, __pyx_n_s_image, __pyx_n_s_input_tensor); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 63, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__23);
-  __Pyx_GIVEREF(__pyx_tuple__23);
-  __pyx_codeobj__24 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__23, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Model_py, __pyx_n_s_load_single_img, 63, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__24)) __PYX_ERR(0, 63, __pyx_L1_error)
+  __pyx_tuple__22 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_image_path, __pyx_n_s_transform, __pyx_n_s_image, __pyx_n_s_input_tensor); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 65, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__22);
+  __Pyx_GIVEREF(__pyx_tuple__22);
+  __pyx_codeobj__23 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__22, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_AImodelInference_py, __pyx_n_s_load_single_img, 65, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__23)) __PYX_ERR(0, 65, __pyx_L1_error)
 
-  /* "Model.py":119
+  /* "AImodelInference.py":121
  * 
  * 
  *     def load_dataset(self, root_dir_train):             # <<<<<<<<<<<<<<
  *         """
  *         setup train and valadation data loader
  */
-  __pyx_tuple__25 = PyTuple_Pack(6, __pyx_n_s_self, __pyx_n_s_root_dir_train, __pyx_n_s_train_augmentation, __pyx_n_s_full_train, __pyx_n_s_train_dataset, __pyx_n_s_val_dataset); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 119, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__25);
-  __Pyx_GIVEREF(__pyx_tuple__25);
-  __pyx_codeobj__26 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__25, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Model_py, __pyx_n_s_load_dataset, 119, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__26)) __PYX_ERR(0, 119, __pyx_L1_error)
+  __pyx_tuple__24 = PyTuple_Pack(6, __pyx_n_s_self, __pyx_n_s_root_dir_train, __pyx_n_s_train_augmentation, __pyx_n_s_full_train, __pyx_n_s_train_dataset, __pyx_n_s_val_dataset); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 121, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__24);
+  __Pyx_GIVEREF(__pyx_tuple__24);
+  __pyx_codeobj__25 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_AImodelInference_py, __pyx_n_s_load_dataset, 121, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__25)) __PYX_ERR(0, 121, __pyx_L1_error)
 
-  /* "Model.py":149
+  /* "AImodelInference.py":151
  * 
  * 
  *     def load_testdata(self, root_dir_test):             # <<<<<<<<<<<<<<
  * 
  *         test_augmentation = transforms.Compose(
  */
-  __pyx_tuple__27 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_root_dir_test, __pyx_n_s_test_augmentation, __pyx_n_s_test); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 149, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__27);
-  __Pyx_GIVEREF(__pyx_tuple__27);
-  __pyx_codeobj__28 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__27, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Model_py, __pyx_n_s_load_testdata, 149, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__28)) __PYX_ERR(0, 149, __pyx_L1_error)
+  __pyx_tuple__26 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_root_dir_test, __pyx_n_s_test_augmentation, __pyx_n_s_test); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 151, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__26);
+  __Pyx_GIVEREF(__pyx_tuple__26);
+  __pyx_codeobj__27 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__26, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_AImodelInference_py, __pyx_n_s_load_testdata, 151, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__27)) __PYX_ERR(0, 151, __pyx_L1_error)
 
-  /* "Model.py":162
+  /* "AImodelInference.py":164
  * 
  * 
  *     def init_loss_optimizer(self):             # <<<<<<<<<<<<<<
  *         self.loss_fn = nn.CrossEntropyLoss()
  *         self.optimizer = torch.optim.Adam(self.model.parameters(), lr=self.learningrate)
  */
-  __pyx_tuple__29 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 162, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__29);
-  __Pyx_GIVEREF(__pyx_tuple__29);
-  __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Model_py, __pyx_n_s_init_loss_optimizer, 162, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 162, __pyx_L1_error)
+  __pyx_tuple__28 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__28);
+  __Pyx_GIVEREF(__pyx_tuple__28);
+  __pyx_codeobj__29 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__28, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_AImodelInference_py, __pyx_n_s_init_loss_optimizer, 164, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__29)) __PYX_ERR(0, 164, __pyx_L1_error)
 
-  /* "Model.py":168
+  /* "AImodelInference.py":170
  * 
  * 
  *     def train(self, dataloader, model, loss_fn, optimizer):             # <<<<<<<<<<<<<<
  *         size = len(dataloader.dataset)
  *         model = model.to(self.training_device)
  */
-  __pyx_tuple__31 = PyTuple_Pack(12, __pyx_n_s_self, __pyx_n_s_dataloader, __pyx_n_s_model, __pyx_n_s_loss_fn, __pyx_n_s_optimizer, __pyx_n_s_size, __pyx_n_s_batch, __pyx_n_s_X, __pyx_n_s_y, __pyx_n_s_pred, __pyx_n_s_loss_2, __pyx_n_s_current); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 168, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__31);
-  __Pyx_GIVEREF(__pyx_tuple__31);
-  __pyx_codeobj__32 = (PyObject*)__Pyx_PyCode_New(5, 0, 0, 12, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Model_py, __pyx_n_s_train, 168, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__32)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_tuple__30 = PyTuple_Pack(12, __pyx_n_s_self, __pyx_n_s_dataloader, __pyx_n_s_model, __pyx_n_s_loss_fn, __pyx_n_s_optimizer, __pyx_n_s_size, __pyx_n_s_batch, __pyx_n_s_X, __pyx_n_s_y, __pyx_n_s_pred, __pyx_n_s_loss_2, __pyx_n_s_current); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 170, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__30);
+  __Pyx_GIVEREF(__pyx_tuple__30);
+  __pyx_codeobj__31 = (PyObject*)__Pyx_PyCode_New(5, 0, 0, 12, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__30, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_AImodelInference_py, __pyx_n_s_train, 170, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__31)) __PYX_ERR(0, 170, __pyx_L1_error)
 
-  /* "Model.py":190
+  /* "AImodelInference.py":192
  * 
  * 
  *     def validation(self, dataloader, model, loss_fn):             # <<<<<<<<<<<<<<
  *         size = len(dataloader.dataset)
  *         num_batches = len(dataloader)
  */
-  __pyx_tuple__33 = PyTuple_Pack(11, __pyx_n_s_self, __pyx_n_s_dataloader, __pyx_n_s_model, __pyx_n_s_loss_fn, __pyx_n_s_size, __pyx_n_s_num_batches, __pyx_n_s_test_loss, __pyx_n_s_correct, __pyx_n_s_X, __pyx_n_s_y, __pyx_n_s_pred); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 190, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__33);
-  __Pyx_GIVEREF(__pyx_tuple__33);
-  __pyx_codeobj__34 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__33, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Model_py, __pyx_n_s_validation, 190, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__34)) __PYX_ERR(0, 190, __pyx_L1_error)
+  __pyx_tuple__32 = PyTuple_Pack(11, __pyx_n_s_self, __pyx_n_s_dataloader, __pyx_n_s_model, __pyx_n_s_loss_fn, __pyx_n_s_size, __pyx_n_s_num_batches, __pyx_n_s_test_loss, __pyx_n_s_correct, __pyx_n_s_X, __pyx_n_s_y, __pyx_n_s_pred); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 192, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__32);
+  __Pyx_GIVEREF(__pyx_tuple__32);
+  __pyx_codeobj__33 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_AImodelInference_py, __pyx_n_s_validation, 192, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__33)) __PYX_ERR(0, 192, __pyx_L1_error)
 
-  /* "Model.py":207
+  /* "AImodelInference.py":209
  * 
  * 
  *     def inference_test(self, dataloader, model, loss_fn):             # <<<<<<<<<<<<<<
  *         """
  *         batch inference calculate acc
  */
-  __pyx_tuple__35 = PyTuple_Pack(13, __pyx_n_s_self, __pyx_n_s_dataloader, __pyx_n_s_model, __pyx_n_s_loss_fn, __pyx_n_s_size, __pyx_n_s_num_batches, __pyx_n_s_test_loss, __pyx_n_s_correct, __pyx_n_s_X, __pyx_n_s_y, __pyx_n_s_image_name, __pyx_n_s_pred, __pyx_n_s_probabilities); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 207, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__35);
-  __Pyx_GIVEREF(__pyx_tuple__35);
-  __pyx_codeobj__36 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 13, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__35, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Model_py, __pyx_n_s_inference_test, 207, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__36)) __PYX_ERR(0, 207, __pyx_L1_error)
+  __pyx_tuple__34 = PyTuple_Pack(13, __pyx_n_s_self, __pyx_n_s_dataloader, __pyx_n_s_model, __pyx_n_s_loss_fn, __pyx_n_s_size, __pyx_n_s_num_batches, __pyx_n_s_test_loss, __pyx_n_s_correct, __pyx_n_s_X, __pyx_n_s_y, __pyx_n_s_image_name, __pyx_n_s_pred, __pyx_n_s_probabilities); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 209, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__34);
+  __Pyx_GIVEREF(__pyx_tuple__34);
+  __pyx_codeobj__35 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 13, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__34, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_AImodelInference_py, __pyx_n_s_inference_test, 209, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__35)) __PYX_ERR(0, 209, __pyx_L1_error)
 
-  /* "Model.py":243
+  /* "AImodelInference.py":245
  * 
  * 
  *     def save_model(self, model_name):             # <<<<<<<<<<<<<<
  *         model_name = model_name + ".pth"
  *         torch.save(self.model.state_dict(), model_name)
  */
-  __pyx_tuple__37 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_model_name); if (unlikely(!__pyx_tuple__37)) __PYX_ERR(0, 243, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__37);
-  __Pyx_GIVEREF(__pyx_tuple__37);
-  __pyx_codeobj__38 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__37, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Model_py, __pyx_n_s_save_model_2, 243, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__38)) __PYX_ERR(0, 243, __pyx_L1_error)
+  __pyx_tuple__36 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_model_name); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 245, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__36);
+  __Pyx_GIVEREF(__pyx_tuple__36);
+  __pyx_codeobj__37 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__36, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_AImodelInference_py, __pyx_n_s_save_model_2, 245, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__37)) __PYX_ERR(0, 245, __pyx_L1_error)
 
-  /* "Model.py":248
+  /* "AImodelInference.py":250
  *         print("save model")
  * 
  *     def start_train(self,train_dataset, epoch, model_name):             # <<<<<<<<<<<<<<
  *         self.load_model()
  *         self.model_freeze()
  */
-  __pyx_tuple__39 = PyTuple_Pack(8, __pyx_n_s_self, __pyx_n_s_train_dataset, __pyx_n_s_epoch, __pyx_n_s_model_name, __pyx_n_s_t, __pyx_n_s_t1, __pyx_n_s_loss_2, __pyx_n_s_acc); if (unlikely(!__pyx_tuple__39)) __PYX_ERR(0, 248, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__39);
-  __Pyx_GIVEREF(__pyx_tuple__39);
-  __pyx_codeobj__40 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__39, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Model_py, __pyx_n_s_start_train, 248, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__40)) __PYX_ERR(0, 248, __pyx_L1_error)
+  __pyx_tuple__38 = PyTuple_Pack(8, __pyx_n_s_self, __pyx_n_s_train_dataset, __pyx_n_s_epoch, __pyx_n_s_model_name, __pyx_n_s_t, __pyx_n_s_t1, __pyx_n_s_loss_2, __pyx_n_s_acc); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 250, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__38);
+  __Pyx_GIVEREF(__pyx_tuple__38);
+  __pyx_codeobj__39 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__38, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_AImodelInference_py, __pyx_n_s_start_train, 250, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__39)) __PYX_ERR(0, 250, __pyx_L1_error)
 
-  /* "Model.py":277
+  /* "AImodelInference.py":279
  * 
  * 
  *     def start_inference(self, model_path, test_Dataset):             # <<<<<<<<<<<<<<
  *         """
  *         batch inference
  */
-  __pyx_tuple__41 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_model_path, __pyx_n_s_test_Dataset, __pyx_n_s_acc); if (unlikely(!__pyx_tuple__41)) __PYX_ERR(0, 277, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__41);
-  __Pyx_GIVEREF(__pyx_tuple__41);
-  __pyx_codeobj__42 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__41, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Model_py, __pyx_n_s_start_inference, 277, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__42)) __PYX_ERR(0, 277, __pyx_L1_error)
+  __pyx_tuple__40 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_model_path, __pyx_n_s_test_Dataset, __pyx_n_s_acc); if (unlikely(!__pyx_tuple__40)) __PYX_ERR(0, 279, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__40);
+  __Pyx_GIVEREF(__pyx_tuple__40);
+  __pyx_codeobj__41 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__40, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_AImodelInference_py, __pyx_n_s_start_inference, 279, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__41)) __PYX_ERR(0, 279, __pyx_L1_error)
 
-  /* "Model.py":289
- *         print(acc)
+  /* "AImodelInference.py":292
  * 
- *     def start_inference_single(self, test_image, model_path):             # <<<<<<<<<<<<<<
+ * 
+ *     def load_inference_model(self, model_path):             # <<<<<<<<<<<<<<
+ *         """
+ *         preload model for inference
+ */
+  __pyx_tuple__42 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_model_path); if (unlikely(!__pyx_tuple__42)) __PYX_ERR(0, 292, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__42);
+  __Pyx_GIVEREF(__pyx_tuple__42);
+  __pyx_codeobj__43 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__42, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_AImodelInference_py, __pyx_n_s_load_inference_model, 292, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__43)) __PYX_ERR(0, 292, __pyx_L1_error)
+
+  /* "AImodelInference.py":303
+ * 
+ * 
+ *     def start_inference_single(self, test_image):             # <<<<<<<<<<<<<<
  *         """
  *         single inference
  */
-  __pyx_tuple__44 = PyTuple_Pack(9, __pyx_n_s_self, __pyx_n_s_test_image, __pyx_n_s_model_path, __pyx_n_s_img_tensor, __pyx_n_s_s1, __pyx_n_s_output, __pyx_n_s__43, __pyx_n_s_predicted_class, __pyx_n_s_result); if (unlikely(!__pyx_tuple__44)) __PYX_ERR(0, 289, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__44);
-  __Pyx_GIVEREF(__pyx_tuple__44);
-  __pyx_codeobj__45 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__44, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Model_py, __pyx_n_s_start_inference_single, 289, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__45)) __PYX_ERR(0, 289, __pyx_L1_error)
+  __pyx_tuple__45 = PyTuple_Pack(8, __pyx_n_s_self, __pyx_n_s_test_image, __pyx_n_s_img_tensor, __pyx_n_s_s1, __pyx_n_s_output, __pyx_n_s__44, __pyx_n_s_predicted_class, __pyx_n_s_result); if (unlikely(!__pyx_tuple__45)) __PYX_ERR(0, 303, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__45);
+  __Pyx_GIVEREF(__pyx_tuple__45);
+  __pyx_codeobj__46 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__45, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_AImodelInference_py, __pyx_n_s_start_inference_single, 303, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__46)) __PYX_ERR(0, 303, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -12739,10 +12948,10 @@ static int __Pyx_modinit_function_import_code(void) {
 #if PY_MAJOR_VERSION >= 3
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 static PyObject* __pyx_pymod_create(PyObject *spec, PyModuleDef *def); /*proto*/
-static int __pyx_pymod_exec_Model(PyObject* module); /*proto*/
+static int __pyx_pymod_exec_AImodelInference(PyObject* module); /*proto*/
 static PyModuleDef_Slot __pyx_moduledef_slots[] = {
   {Py_mod_create, (void*)__pyx_pymod_create},
-  {Py_mod_exec, (void*)__pyx_pymod_exec_Model},
+  {Py_mod_exec, (void*)__pyx_pymod_exec_AImodelInference},
   {0, NULL}
 };
 #endif
@@ -12755,7 +12964,7 @@ namespace {
   #endif
   {
       PyModuleDef_HEAD_INIT,
-      "Model",
+      "AImodelInference",
       0, /* m_doc */
     #if CYTHON_PEP489_MULTI_PHASE_INIT
       0, /* m_size */
@@ -12803,11 +13012,11 @@ namespace {
 
 
 #if PY_MAJOR_VERSION < 3
-__Pyx_PyMODINIT_FUNC initModel(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC initModel(void)
+__Pyx_PyMODINIT_FUNC initAImodelInference(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC initAImodelInference(void)
 #else
-__Pyx_PyMODINIT_FUNC PyInit_Model(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC PyInit_Model(void)
+__Pyx_PyMODINIT_FUNC PyInit_AImodelInference(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC PyInit_AImodelInference(void)
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 {
   return PyModuleDef_Init(&__pyx_moduledef);
@@ -12888,7 +13097,7 @@ bad:
 }
 
 
-static CYTHON_SMALL_CODE int __pyx_pymod_exec_Model(PyObject *__pyx_pyinit_module)
+static CYTHON_SMALL_CODE int __pyx_pymod_exec_AImodelInference(PyObject *__pyx_pyinit_module)
 #endif
 #endif
 {
@@ -12903,6 +13112,7 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_Model(PyObject *__pyx_pyinit_modul
   PyObject *__pyx_t_5 = NULL;
   PyObject *__pyx_t_6 = NULL;
   PyObject *__pyx_t_7 = NULL;
+  PyObject *__pyx_t_8 = NULL;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -12910,7 +13120,7 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_Model(PyObject *__pyx_pyinit_modul
   #if CYTHON_PEP489_MULTI_PHASE_INIT
   if (__pyx_m) {
     if (__pyx_m == __pyx_pyinit_module) return 0;
-    PyErr_SetString(PyExc_RuntimeError, "Module 'Model' has already been imported. Re-initialisation is not supported.");
+    PyErr_SetString(PyExc_RuntimeError, "Module 'AImodelInference' has already been imported. Re-initialisation is not supported.");
     return -1;
   }
   #elif PY_MAJOR_VERSION >= 3
@@ -12922,13 +13132,13 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_Model(PyObject *__pyx_pyinit_modul
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("Model", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("AImodelInference", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   if (unlikely(!__pyx_m)) __PYX_ERR(0, 1, __pyx_L1_error)
   #elif CYTHON_USE_MODULE_STATE
   __pyx_t_1 = PyModule_Create(&__pyx_moduledef); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   {
     int add_module_result = PyState_AddModule(__pyx_t_1, &__pyx_moduledef);
-    __pyx_t_1 = 0; /* transfer ownership from __pyx_t_1 to "Model" pseudovariable */
+    __pyx_t_1 = 0; /* transfer ownership from __pyx_t_1 to "AImodelInference" pseudovariable */
     if (unlikely((add_module_result < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
     pystate_addmodule_run = 1;
   }
@@ -12952,7 +13162,7 @@ if (!__Pyx_RefNanny) {
       Py_FatalError("failed to import 'refnanny' module");
 }
 #endif
-  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_Model(void)", 0);
+  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_AImodelInference(void)", 0);
   if (__Pyx_check_binary_version(__PYX_LIMITED_VERSION_HEX, __Pyx_get_runtime_version(), CYTHON_COMPILING_IN_LIMITED_API) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #ifdef __Pxy_PyFrame_Initialize_Offsets
   __Pxy_PyFrame_Initialize_Offsets();
@@ -12990,14 +13200,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_Model) {
+  if (__pyx_module_is_main_AImodelInference) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "Model")) {
-      if (unlikely((PyDict_SetItemString(modules, "Model", __pyx_m) < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "AImodelInference")) {
+      if (unlikely((PyDict_SetItemString(modules, "AImodelInference", __pyx_m) < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -13018,7 +13228,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "Model.py":3
+  /* "AImodelInference.py":3
  * # from torchvision.models import mobilenet_v3_small
  * # from torchvision.models import MobileNet_V3_Small_Weights
  * from torchvision.models import efficientnet_v2_l             # <<<<<<<<<<<<<<
@@ -13039,7 +13249,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "Model.py":4
+  /* "AImodelInference.py":4
  * # from torchvision.models import MobileNet_V3_Small_Weights
  * from torchvision.models import efficientnet_v2_l
  * from torchvision.models import EfficientNet_V2_L_Weights             # <<<<<<<<<<<<<<
@@ -13060,7 +13270,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":5
+  /* "AImodelInference.py":5
  * from torchvision.models import efficientnet_v2_l
  * from torchvision.models import EfficientNet_V2_L_Weights
  * from torch.utils.data import random_split             # <<<<<<<<<<<<<<
@@ -13081,7 +13291,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "Model.py":6
+  /* "AImodelInference.py":6
  * from torchvision.models import EfficientNet_V2_L_Weights
  * from torch.utils.data import random_split
  * from torch import nn             # <<<<<<<<<<<<<<
@@ -13102,7 +13312,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":8
+  /* "AImodelInference.py":8
  * from torch import nn
  * 
  * from torch.utils.data import DataLoader             # <<<<<<<<<<<<<<
@@ -13123,7 +13333,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "Model.py":9
+  /* "AImodelInference.py":9
  * 
  * from torch.utils.data import DataLoader
  * from torchvision import transforms             # <<<<<<<<<<<<<<
@@ -13144,7 +13354,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":10
+  /* "AImodelInference.py":10
  * from torch.utils.data import DataLoader
  * from torchvision import transforms
  * from torch.utils.tensorboard import SummaryWriter             # <<<<<<<<<<<<<<
@@ -13165,7 +13375,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "Model.py":11
+  /* "AImodelInference.py":11
  * from torchvision import transforms
  * from torch.utils.tensorboard import SummaryWriter
  * import torch             # <<<<<<<<<<<<<<
@@ -13177,11 +13387,11 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_torch, __pyx_t_3) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "Model.py":14
+  /* "AImodelInference.py":14
  * 
  * # from MyDataset import MyImageDataset
  * from .MyDataset import MyImageDataset # for build .DLL             # <<<<<<<<<<<<<<
- * import matplotlib.pyplot as plt
+ * # import matplotlib.pyplot as plt
  * from PIL import Image
  */
   __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 14, __pyx_L1_error)
@@ -13198,21 +13408,9 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":15
- * # from MyDataset import MyImageDataset
+  /* "AImodelInference.py":16
  * from .MyDataset import MyImageDataset # for build .DLL
- * import matplotlib.pyplot as plt             # <<<<<<<<<<<<<<
- * from PIL import Image
- * import numpy as np
- */
-  __pyx_t_2 = __Pyx_ImportDottedModule(__pyx_n_s_matplotlib_pyplot, __pyx_tuple__15); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 15, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_plt, __pyx_t_2) < 0) __PYX_ERR(0, 15, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-
-  /* "Model.py":16
- * from .MyDataset import MyImageDataset # for build .DLL
- * import matplotlib.pyplot as plt
+ * # import matplotlib.pyplot as plt
  * from PIL import Image             # <<<<<<<<<<<<<<
  * import numpy as np
  * import time
@@ -13231,8 +13429,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "Model.py":17
- * import matplotlib.pyplot as plt
+  /* "AImodelInference.py":17
+ * # import matplotlib.pyplot as plt
  * from PIL import Image
  * import numpy as np             # <<<<<<<<<<<<<<
  * import time
@@ -13243,7 +13441,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_3) < 0) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "Model.py":18
+  /* "AImodelInference.py":18
  * from PIL import Image
  * import numpy as np
  * import time             # <<<<<<<<<<<<<<
@@ -13255,190 +13453,202 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_time, __pyx_t_3) < 0) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "Model.py":20
+  /* "AImodelInference.py":20
  * import time
  * 
  * class MyModel():             # <<<<<<<<<<<<<<
- *     def __init__(self, output_class, batch_size=100, lr=0.01):
+ *     def __init__(self, output_class, batch_size=100, lr=0.01, inference_model=None):
  *         self.output_class = output_class
  */
-  __pyx_t_3 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_MyModel, __pyx_n_s_MyModel, (PyObject *) NULL, __pyx_n_s_Model, (PyObject *) NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 20, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_MyModel, __pyx_n_s_MyModel, (PyObject *) NULL, __pyx_n_s_AImodelInference, (PyObject *) NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
 
-  /* "Model.py":21
+  /* "AImodelInference.py":21
  * 
  * class MyModel():
- *     def __init__(self, output_class, batch_size=100, lr=0.01):             # <<<<<<<<<<<<<<
+ *     def __init__(self, output_class, batch_size=100, lr=0.01, inference_model=None):             # <<<<<<<<<<<<<<
  *         self.output_class = output_class
  *         self.batch_size = batch_size
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_5Model_7MyModel_1__init__, 0, __pyx_n_s_MyModel___init, NULL, __pyx_n_s_Model, __pyx_d, ((PyObject *)__pyx_codeobj__17)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 21, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_16AImodelInference_7MyModel_1__init__, 0, __pyx_n_s_MyModel___init, NULL, __pyx_n_s_AImodelInference, __pyx_d, ((PyObject *)__pyx_codeobj__16)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 21, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__18);
+  __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__17);
   if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_init, __pyx_t_2) < 0) __PYX_ERR(0, 21, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":34
+  /* "AImodelInference.py":36
  * 
  * 
  *     def load_model(self):             # <<<<<<<<<<<<<<
  *         # Load model
  *         self.model = efficientnet_v2_l(weights=EfficientNet_V2_L_Weights.DEFAULT)
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_5Model_7MyModel_3load_model, 0, __pyx_n_s_MyModel_load_model, NULL, __pyx_n_s_Model, __pyx_d, ((PyObject *)__pyx_codeobj__20)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_16AImodelInference_7MyModel_3load_model, 0, __pyx_n_s_MyModel_load_model, NULL, __pyx_n_s_AImodelInference, __pyx_d, ((PyObject *)__pyx_codeobj__19)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_load_model, __pyx_t_2) < 0) __PYX_ERR(0, 34, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_load_model, __pyx_t_2) < 0) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":51
+  /* "AImodelInference.py":53
  *         # print(self.model)
  * 
  *     def model_freeze(self):             # <<<<<<<<<<<<<<
  *         """
  *         unfreeze last few layer for transfer learning
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_5Model_7MyModel_5model_freeze, 0, __pyx_n_s_MyModel_model_freeze, NULL, __pyx_n_s_Model, __pyx_d, ((PyObject *)__pyx_codeobj__22)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_16AImodelInference_7MyModel_5model_freeze, 0, __pyx_n_s_MyModel_model_freeze, NULL, __pyx_n_s_AImodelInference, __pyx_d, ((PyObject *)__pyx_codeobj__21)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_model_freeze, __pyx_t_2) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_model_freeze, __pyx_t_2) < 0) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":63
+  /* "AImodelInference.py":65
  * 
  * 
  *     def load_single_img(self, image_path):             # <<<<<<<<<<<<<<
  *         """
  *         load single image
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_5Model_7MyModel_7load_single_img, 0, __pyx_n_s_MyModel_load_single_img, NULL, __pyx_n_s_Model, __pyx_d, ((PyObject *)__pyx_codeobj__24)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 63, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_16AImodelInference_7MyModel_7load_single_img, 0, __pyx_n_s_MyModel_load_single_img, NULL, __pyx_n_s_AImodelInference, __pyx_d, ((PyObject *)__pyx_codeobj__23)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_load_single_img, __pyx_t_2) < 0) __PYX_ERR(0, 63, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_load_single_img, __pyx_t_2) < 0) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":119
+  /* "AImodelInference.py":121
  * 
  * 
  *     def load_dataset(self, root_dir_train):             # <<<<<<<<<<<<<<
  *         """
  *         setup train and valadation data loader
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_5Model_7MyModel_9load_dataset, 0, __pyx_n_s_MyModel_load_dataset, NULL, __pyx_n_s_Model, __pyx_d, ((PyObject *)__pyx_codeobj__26)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 119, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_16AImodelInference_7MyModel_9load_dataset, 0, __pyx_n_s_MyModel_load_dataset, NULL, __pyx_n_s_AImodelInference, __pyx_d, ((PyObject *)__pyx_codeobj__25)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_load_dataset, __pyx_t_2) < 0) __PYX_ERR(0, 119, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_load_dataset, __pyx_t_2) < 0) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":149
+  /* "AImodelInference.py":151
  * 
  * 
  *     def load_testdata(self, root_dir_test):             # <<<<<<<<<<<<<<
  * 
  *         test_augmentation = transforms.Compose(
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_5Model_7MyModel_11load_testdata, 0, __pyx_n_s_MyModel_load_testdata, NULL, __pyx_n_s_Model, __pyx_d, ((PyObject *)__pyx_codeobj__28)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 149, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_16AImodelInference_7MyModel_11load_testdata, 0, __pyx_n_s_MyModel_load_testdata, NULL, __pyx_n_s_AImodelInference, __pyx_d, ((PyObject *)__pyx_codeobj__27)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 151, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_load_testdata, __pyx_t_2) < 0) __PYX_ERR(0, 149, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_load_testdata, __pyx_t_2) < 0) __PYX_ERR(0, 151, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":162
+  /* "AImodelInference.py":164
  * 
  * 
  *     def init_loss_optimizer(self):             # <<<<<<<<<<<<<<
  *         self.loss_fn = nn.CrossEntropyLoss()
  *         self.optimizer = torch.optim.Adam(self.model.parameters(), lr=self.learningrate)
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_5Model_7MyModel_13init_loss_optimizer, 0, __pyx_n_s_MyModel_init_loss_optimizer, NULL, __pyx_n_s_Model, __pyx_d, ((PyObject *)__pyx_codeobj__30)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 162, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_16AImodelInference_7MyModel_13init_loss_optimizer, 0, __pyx_n_s_MyModel_init_loss_optimizer, NULL, __pyx_n_s_AImodelInference, __pyx_d, ((PyObject *)__pyx_codeobj__29)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 164, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_init_loss_optimizer, __pyx_t_2) < 0) __PYX_ERR(0, 162, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_init_loss_optimizer, __pyx_t_2) < 0) __PYX_ERR(0, 164, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":168
+  /* "AImodelInference.py":170
  * 
  * 
  *     def train(self, dataloader, model, loss_fn, optimizer):             # <<<<<<<<<<<<<<
  *         size = len(dataloader.dataset)
  *         model = model.to(self.training_device)
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_5Model_7MyModel_15train, 0, __pyx_n_s_MyModel_train, NULL, __pyx_n_s_Model, __pyx_d, ((PyObject *)__pyx_codeobj__32)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_16AImodelInference_7MyModel_15train, 0, __pyx_n_s_MyModel_train, NULL, __pyx_n_s_AImodelInference, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 170, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_train, __pyx_t_2) < 0) __PYX_ERR(0, 168, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_train, __pyx_t_2) < 0) __PYX_ERR(0, 170, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":190
+  /* "AImodelInference.py":192
  * 
  * 
  *     def validation(self, dataloader, model, loss_fn):             # <<<<<<<<<<<<<<
  *         size = len(dataloader.dataset)
  *         num_batches = len(dataloader)
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_5Model_7MyModel_17validation, 0, __pyx_n_s_MyModel_validation, NULL, __pyx_n_s_Model, __pyx_d, ((PyObject *)__pyx_codeobj__34)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 190, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_16AImodelInference_7MyModel_17validation, 0, __pyx_n_s_MyModel_validation, NULL, __pyx_n_s_AImodelInference, __pyx_d, ((PyObject *)__pyx_codeobj__33)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 192, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_validation, __pyx_t_2) < 0) __PYX_ERR(0, 190, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_validation, __pyx_t_2) < 0) __PYX_ERR(0, 192, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":207
+  /* "AImodelInference.py":209
  * 
  * 
  *     def inference_test(self, dataloader, model, loss_fn):             # <<<<<<<<<<<<<<
  *         """
  *         batch inference calculate acc
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_5Model_7MyModel_19inference_test, 0, __pyx_n_s_MyModel_inference_test, NULL, __pyx_n_s_Model, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 207, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_16AImodelInference_7MyModel_19inference_test, 0, __pyx_n_s_MyModel_inference_test, NULL, __pyx_n_s_AImodelInference, __pyx_d, ((PyObject *)__pyx_codeobj__35)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 209, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_inference_test, __pyx_t_2) < 0) __PYX_ERR(0, 207, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_inference_test, __pyx_t_2) < 0) __PYX_ERR(0, 209, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":243
+  /* "AImodelInference.py":245
  * 
  * 
  *     def save_model(self, model_name):             # <<<<<<<<<<<<<<
  *         model_name = model_name + ".pth"
  *         torch.save(self.model.state_dict(), model_name)
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_5Model_7MyModel_21save_model, 0, __pyx_n_s_MyModel_save_model, NULL, __pyx_n_s_Model, __pyx_d, ((PyObject *)__pyx_codeobj__38)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 243, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_16AImodelInference_7MyModel_21save_model, 0, __pyx_n_s_MyModel_save_model, NULL, __pyx_n_s_AImodelInference, __pyx_d, ((PyObject *)__pyx_codeobj__37)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 245, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_save_model_2, __pyx_t_2) < 0) __PYX_ERR(0, 243, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_save_model_2, __pyx_t_2) < 0) __PYX_ERR(0, 245, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":248
+  /* "AImodelInference.py":250
  *         print("save model")
  * 
  *     def start_train(self,train_dataset, epoch, model_name):             # <<<<<<<<<<<<<<
  *         self.load_model()
  *         self.model_freeze()
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_5Model_7MyModel_23start_train, 0, __pyx_n_s_MyModel_start_train, NULL, __pyx_n_s_Model, __pyx_d, ((PyObject *)__pyx_codeobj__40)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 248, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_16AImodelInference_7MyModel_23start_train, 0, __pyx_n_s_MyModel_start_train, NULL, __pyx_n_s_AImodelInference, __pyx_d, ((PyObject *)__pyx_codeobj__39)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 250, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_start_train, __pyx_t_2) < 0) __PYX_ERR(0, 248, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_start_train, __pyx_t_2) < 0) __PYX_ERR(0, 250, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":277
+  /* "AImodelInference.py":279
  * 
  * 
  *     def start_inference(self, model_path, test_Dataset):             # <<<<<<<<<<<<<<
  *         """
  *         batch inference
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_5Model_7MyModel_25start_inference, 0, __pyx_n_s_MyModel_start_inference, NULL, __pyx_n_s_Model, __pyx_d, ((PyObject *)__pyx_codeobj__42)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 277, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_16AImodelInference_7MyModel_25start_inference, 0, __pyx_n_s_MyModel_start_inference, NULL, __pyx_n_s_AImodelInference, __pyx_d, ((PyObject *)__pyx_codeobj__41)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 279, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_start_inference, __pyx_t_2) < 0) __PYX_ERR(0, 277, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_start_inference, __pyx_t_2) < 0) __PYX_ERR(0, 279, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":289
- *         print(acc)
+  /* "AImodelInference.py":292
  * 
- *     def start_inference_single(self, test_image, model_path):             # <<<<<<<<<<<<<<
+ * 
+ *     def load_inference_model(self, model_path):             # <<<<<<<<<<<<<<
+ *         """
+ *         preload model for inference
+ */
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_16AImodelInference_7MyModel_27load_inference_model, 0, __pyx_n_s_MyModel_load_inference_model, NULL, __pyx_n_s_AImodelInference, __pyx_d, ((PyObject *)__pyx_codeobj__43)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 292, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_load_inference_model, __pyx_t_2) < 0) __PYX_ERR(0, 292, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+  /* "AImodelInference.py":303
+ * 
+ * 
+ *     def start_inference_single(self, test_image):             # <<<<<<<<<<<<<<
  *         """
  *         single inference
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_5Model_7MyModel_27start_inference_single, 0, __pyx_n_s_MyModel_start_inference_single, NULL, __pyx_n_s_Model, __pyx_d, ((PyObject *)__pyx_codeobj__45)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 289, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_16AImodelInference_7MyModel_29start_inference_single, 0, __pyx_n_s_MyModel_start_inference_single, NULL, __pyx_n_s_AImodelInference, __pyx_d, ((PyObject *)__pyx_codeobj__46)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 303, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_start_inference_single, __pyx_t_2) < 0) __PYX_ERR(0, 289, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_start_inference_single, __pyx_t_2) < 0) __PYX_ERR(0, 303, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Model.py":20
+  /* "AImodelInference.py":20
  * import time
  * 
  * class MyModel():             # <<<<<<<<<<<<<<
- *     def __init__(self, output_class, batch_size=100, lr=0.01):
+ *     def __init__(self, output_class, batch_size=100, lr=0.01, inference_model=None):
  *         self.output_class = output_class
  */
   __pyx_t_2 = __Pyx_Py3ClassCreate(((PyObject*)&PyType_Type), __pyx_n_s_MyModel, __pyx_empty_tuple, __pyx_t_3, NULL, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 20, __pyx_L1_error)
@@ -13447,138 +13657,196 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "Model.py":316
+  /* "AImodelInference.py":324
  * 
  * 
  * if __name__=="__main__":             # <<<<<<<<<<<<<<
  *     output_class = 5
  *     batch_size = 100
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_name); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 316, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_name); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 324, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = (__Pyx_PyUnicode_Equals(__pyx_t_3, __pyx_n_u_main, Py_EQ)); if (unlikely((__pyx_t_4 < 0))) __PYX_ERR(0, 316, __pyx_L1_error)
+  __pyx_t_4 = (__Pyx_PyUnicode_Equals(__pyx_t_3, __pyx_n_u_main, Py_EQ)); if (unlikely((__pyx_t_4 < 0))) __PYX_ERR(0, 324, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (__pyx_t_4) {
 
-    /* "Model.py":317
+    /* "AImodelInference.py":325
  * 
  * if __name__=="__main__":
  *     output_class = 5             # <<<<<<<<<<<<<<
  *     batch_size = 100
  *     lr = 0.0001
  */
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_output_class, __pyx_int_5) < 0) __PYX_ERR(0, 317, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_output_class, __pyx_int_5) < 0) __PYX_ERR(0, 325, __pyx_L1_error)
 
-    /* "Model.py":318
+    /* "AImodelInference.py":326
  * if __name__=="__main__":
  *     output_class = 5
  *     batch_size = 100             # <<<<<<<<<<<<<<
  *     lr = 0.0001
  *     save_model_name = "ft_model"
  */
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_batch_size, __pyx_int_100) < 0) __PYX_ERR(0, 318, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_batch_size, __pyx_int_100) < 0) __PYX_ERR(0, 326, __pyx_L1_error)
 
-    /* "Model.py":319
+    /* "AImodelInference.py":327
  *     output_class = 5
  *     batch_size = 100
  *     lr = 0.0001             # <<<<<<<<<<<<<<
  *     save_model_name = "ft_model"
- *     MM = MyModel(output_class, batch_size, lr)
+ *     model = "C:\\Users\\USER\\Desktop\\project\\ft_model.pth"
  */
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_lr, __pyx_float_0_0001) < 0) __PYX_ERR(0, 319, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_lr, __pyx_float_0_0001) < 0) __PYX_ERR(0, 327, __pyx_L1_error)
 
-    /* "Model.py":320
+    /* "AImodelInference.py":328
  *     batch_size = 100
  *     lr = 0.0001
  *     save_model_name = "ft_model"             # <<<<<<<<<<<<<<
- *     MM = MyModel(output_class, batch_size, lr)
- * 
+ *     model = "C:\\Users\\USER\\Desktop\\project\\ft_model.pth"
+ *     # if you only want to inference just add model,
  */
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_save_model_name, __pyx_n_u_ft_model) < 0) __PYX_ERR(0, 320, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_save_model_name, __pyx_n_u_ft_model) < 0) __PYX_ERR(0, 328, __pyx_L1_error)
 
-    /* "Model.py":321
+    /* "AImodelInference.py":329
  *     lr = 0.0001
  *     save_model_name = "ft_model"
- *     MM = MyModel(output_class, batch_size, lr)             # <<<<<<<<<<<<<<
+ *     model = "C:\\Users\\USER\\Desktop\\project\\ft_model.pth"             # <<<<<<<<<<<<<<
+ *     # if you only want to inference just add model,
+ *     MM = MyModel(output_class, batch_size, lr, model)
+ */
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_model, __pyx_kp_u_C_Users_USER_Desktop_project_ft) < 0) __PYX_ERR(0, 329, __pyx_L1_error)
+
+    /* "AImodelInference.py":331
+ *     model = "C:\\Users\\USER\\Desktop\\project\\ft_model.pth"
+ *     # if you only want to inference just add model,
+ *     MM = MyModel(output_class, batch_size, lr, model)             # <<<<<<<<<<<<<<
  * 
  *     # root_dir_train = "data/SLT03"
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_MyModel); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 321, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_MyModel); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 331, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_output_class); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 321, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_output_class); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 331, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_batch_size); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 321, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_batch_size); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 331, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_lr); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 321, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_lr); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 331, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_7 = PyTuple_New(3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 321, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_model); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 331, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
+    __pyx_t_8 = PyTuple_New(4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 331, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_8);
     __Pyx_GIVEREF(__pyx_t_2);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_2)) __PYX_ERR(0, 321, __pyx_L1_error);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_2)) __PYX_ERR(0, 331, __pyx_L1_error);
     __Pyx_GIVEREF(__pyx_t_5);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_t_5)) __PYX_ERR(0, 321, __pyx_L1_error);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_8, 1, __pyx_t_5)) __PYX_ERR(0, 331, __pyx_L1_error);
     __Pyx_GIVEREF(__pyx_t_6);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 2, __pyx_t_6)) __PYX_ERR(0, 321, __pyx_L1_error);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_8, 2, __pyx_t_6)) __PYX_ERR(0, 331, __pyx_L1_error);
+    __Pyx_GIVEREF(__pyx_t_7);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_8, 3, __pyx_t_7)) __PYX_ERR(0, 331, __pyx_L1_error);
     __pyx_t_2 = 0;
     __pyx_t_5 = 0;
     __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 321, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_6);
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_MM, __pyx_t_6) < 0) __PYX_ERR(0, 321, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-
-    /* "Model.py":335
- * 
- *     # inference single image
- *     model = "/home/trx50/project/image_classification/ft_model.pth"             # <<<<<<<<<<<<<<
- *     filename = "/home/trx50/project/mytrainingGUI/projects/Myproject/Dataset/mark/Mark (1).jpg"
- *     result = MM.start_inference_single(filename, model)
- */
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_model, __pyx_kp_u_home_trx50_project_image_classi) < 0) __PYX_ERR(0, 335, __pyx_L1_error)
-
-    /* "Model.py":336
- *     # inference single image
- *     model = "/home/trx50/project/image_classification/ft_model.pth"
- *     filename = "/home/trx50/project/mytrainingGUI/projects/Myproject/Dataset/mark/Mark (1).jpg"             # <<<<<<<<<<<<<<
- *     result = MM.start_inference_single(filename, model)
- * 
- */
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_filename, __pyx_kp_u_home_trx50_project_mytrainingGU) < 0) __PYX_ERR(0, 336, __pyx_L1_error)
-
-    /* "Model.py":337
- *     model = "/home/trx50/project/image_classification/ft_model.pth"
- *     filename = "/home/trx50/project/mytrainingGUI/projects/Myproject/Dataset/mark/Mark (1).jpg"
- *     result = MM.start_inference_single(filename, model)             # <<<<<<<<<<<<<<
- * 
- * 
- */
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_MM); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 337, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_start_inference_single); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 337, __pyx_L1_error)
+    __pyx_t_7 = 0;
+    __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_8, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 331, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_filename); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 337, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_6);
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_model); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 337, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 337, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_5);
-    __Pyx_GIVEREF(__pyx_t_6);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_6)) __PYX_ERR(0, 337, __pyx_L1_error);
-    __Pyx_GIVEREF(__pyx_t_3);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_3)) __PYX_ERR(0, 337, __pyx_L1_error);
-    __pyx_t_6 = 0;
-    __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_5, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 337, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_MM, __pyx_t_7) < 0) __PYX_ERR(0, 331, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_result, __pyx_t_3) < 0) __PYX_ERR(0, 337, __pyx_L1_error)
+
+    /* "AImodelInference.py":345
+ *     # inference single image
+ * 
+ *     filename = "C:\\Users\\USER\\Desktop\\project\\image_classification\\data\\2024-12-12_\\\\3649.jpg"             # <<<<<<<<<<<<<<
+ *     result = MM.start_inference_single(filename)
+ *     result = MM.start_inference_single(filename)
+ */
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_filename, __pyx_kp_u_C_Users_USER_Desktop_project_ima) < 0) __PYX_ERR(0, 345, __pyx_L1_error)
+
+    /* "AImodelInference.py":346
+ * 
+ *     filename = "C:\\Users\\USER\\Desktop\\project\\image_classification\\data\\2024-12-12_\\\\3649.jpg"
+ *     result = MM.start_inference_single(filename)             # <<<<<<<<<<<<<<
+ *     result = MM.start_inference_single(filename)
+ *     result = MM.start_inference_single(filename)
+ */
+    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_MM); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 346, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_7);
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_start_inference_single); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 346, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_8);
+    __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_filename); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 346, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_7);
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 346, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+    __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_result, __pyx_t_3) < 0) __PYX_ERR(0, 346, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "Model.py":316
+    /* "AImodelInference.py":347
+ *     filename = "C:\\Users\\USER\\Desktop\\project\\image_classification\\data\\2024-12-12_\\\\3649.jpg"
+ *     result = MM.start_inference_single(filename)
+ *     result = MM.start_inference_single(filename)             # <<<<<<<<<<<<<<
+ *     result = MM.start_inference_single(filename)
+ *     result = MM.start_inference_single(filename)
+ */
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_MM); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 347, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_start_inference_single); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 347, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_7);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_filename); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 347, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __pyx_t_8 = __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_t_3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 347, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_8);
+    __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_result, __pyx_t_8) < 0) __PYX_ERR(0, 347, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+
+    /* "AImodelInference.py":348
+ *     result = MM.start_inference_single(filename)
+ *     result = MM.start_inference_single(filename)
+ *     result = MM.start_inference_single(filename)             # <<<<<<<<<<<<<<
+ *     result = MM.start_inference_single(filename)
+ * 
+ */
+    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_MM); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 348, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_8);
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_start_inference_single); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 348, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_filename); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 348, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_8);
+    __pyx_t_7 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_8); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 348, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_7);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_result, __pyx_t_7) < 0) __PYX_ERR(0, 348, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+
+    /* "AImodelInference.py":349
+ *     result = MM.start_inference_single(filename)
+ *     result = MM.start_inference_single(filename)
+ *     result = MM.start_inference_single(filename)             # <<<<<<<<<<<<<<
+ * 
+ * 
+ */
+    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_MM); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 349, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_7);
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_start_inference_single); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 349, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_8);
+    __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_filename); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 349, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_7);
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 349, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+    __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_result, __pyx_t_3) < 0) __PYX_ERR(0, 349, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+    /* "AImodelInference.py":324
  * 
  * 
  * if __name__=="__main__":             # <<<<<<<<<<<<<<
@@ -13587,7 +13855,7 @@ if (!__Pyx_RefNanny) {
  */
   }
 
-  /* "Model.py":1
+  /* "AImodelInference.py":1
  * # from torchvision.models import mobilenet_v3_small             # <<<<<<<<<<<<<<
  * # from torchvision.models import MobileNet_V3_Small_Weights
  * from torchvision.models import efficientnet_v2_l
@@ -13606,9 +13874,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
+  __Pyx_XDECREF(__pyx_t_8);
   if (__pyx_m) {
     if (__pyx_d && stringtab_initialized) {
-      __Pyx_AddTraceback("init Model", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init AImodelInference", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     #if !CYTHON_USE_MODULE_STATE
     Py_CLEAR(__pyx_m);
@@ -13622,7 +13891,7 @@ if (!__Pyx_RefNanny) {
     }
     #endif
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init Model");
+    PyErr_SetString(PyExc_ImportError, "init AImodelInference");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -17927,7 +18196,7 @@ __Pyx_PyType_GetName(PyTypeObject* tp)
     if (unlikely(name == NULL) || unlikely(!PyUnicode_Check(name))) {
         PyErr_Clear();
         Py_XDECREF(name);
-        name = __Pyx_NewRef(__pyx_n_s__46);
+        name = __Pyx_NewRef(__pyx_n_s__47);
     }
     return name;
 }
