@@ -3,7 +3,7 @@ from Cython.Build import cythonize
 
 # 定義需要編譯的目標文件
 extensions = [
-    Extension("Model", ["Model.py"]),       # 將 model.py 編譯成 model.dll
+    Extension("AImodelInference", ["AImodelInference.py"]),       # 將 model.py 編譯成 model.dll
     Extension("MyDataset", ["MyDataset.py"]),  # 將 dataset.py 編譯成 dataset.dll
 ]
 

@@ -2,7 +2,7 @@ import os
 from PIL import Image
 from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 class MyImageDataset(Dataset):
     def __init__(self, root_dir, transform=None):
@@ -47,15 +47,15 @@ class MyImageDataset(Dataset):
         
         
 
-if __name__=="__main__":
+# if __name__=="__main__":
 
-    root_dir_train = "/home/trx50/project/image_classification/data/vechicles/train"
-    data = MyImageDataset(root_dir_train)
-    image, label, label_list= data[108]
-    data.save_label_pare()
-    # image = image.permute(1, 2, 0).numpy()
-    # print(image.shape)
-    print(label)
-    print(label_list)
-    plt.imshow(image)
-    plt.show()
+#     root_dir_train = "/home/trx50/project/image_classification/data/vechicles/train"
+#     data = MyImageDataset(root_dir_train)
+#     image, label, label_list= data[108]
+#     data.save_label_pare()
+#     # image = image.permute(1, 2, 0).numpy()
+#     # print(image.shape)
+#     print(label)
+#     print(label_list)
+#     plt.imshow(image)
+#     plt.show()

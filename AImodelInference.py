@@ -10,15 +10,15 @@ from torchvision import transforms
 from torch.utils.tensorboard import SummaryWriter
 import torch
 
-from MyDataset import MyImageDataset
-# from .MyDataset import MyImageDataset # for build .DLL
-import matplotlib.pyplot as plt
+# from MyDataset import MyImageDataset
+from .MyDataset import MyImageDataset # for build .DLL
+# import matplotlib.pyplot as plt
 from PIL import Image
 import numpy as np
 import time
 
 class MyModel():
-    def __init__(self, output_class, batch_size=100, lr=0.01):
+    def __init__(self, output_class, batch_size=100, lr=0.01, inference_model=None):
         self.output_class = output_class
         self.batch_size = batch_size
         self.learningrate = lr
@@ -28,6 +28,8 @@ class MyModel():
         self.data_split_rate = 0.8
         self.train_size = 0
         self.val_size = 0
+        if inference_model!=None:
+            self.load_inference_model(inference_model)
         print(f"Using {self.training_device} device")
 
 
@@ -37,10 +39,10 @@ class MyModel():
         self.model.classifier = nn.Sequential(
             nn.Linear(1280, 1024),
             nn.ReLU(),
-            nn.Dropout(0.7),
+            nn.Dropout(0.5),
             nn.Linear(1024, 256),
             nn.ReLU(),
-            nn.Dropout(0.7),
+            nn.Dropout(0.5),
             nn.Linear(256, self.output_class)
         )
         for name, param in self.model.named_parameters():
@@ -180,9 +182,10 @@ class MyModel():
             loss.backward()
             optimizer.step()
             optimizer.zero_grad()
-
-            loss, current = loss.item(), (batch + 1) * len(X)  
-            print(f"loss: {loss:>7f}  [{current:>5d}/{size:>5d}]")
+            print("123-123",batch)
+            if batch % 100 == 0:
+                loss, current = loss.item(), (batch + 1) * len(X)  
+                print(f"loss: {loss:>7f}  [{current:>5d}/{size:>5d}]")
         return loss
 
 
@@ -285,19 +288,25 @@ class MyModel():
         acc = self.inference_test(self.val_loader, self.model, self.loss_fn)
         print(acc)
     
-    def start_inference_single(self, test_image, model_path):
+    
+    def load_inference_model(self, model_path):
+        """
+        preload model for inference
+
+        """
+        self.load_model()
+        self.model.load_state_dict(torch.load(model_path, weights_only=True))
+        self.model.to(self.training_device)
+        self.model.eval()
+        
+    
+    def start_inference_single(self, test_image):
         """
         single inference
         
         """
         
         img_tensor = self.load_single_img(test_image)
-        
-        self.load_model()
-        self.model.load_state_dict(torch.load(model_path, weights_only=True))
-        self.model.to(self.training_device)
-        self.model.eval()
-        
         with torch.no_grad():  # 關閉梯度計算以加速推論
             
             s1 = time.time()
@@ -314,15 +323,17 @@ class MyModel():
 
 if __name__=="__main__":
     output_class = 5
-    batch_size = 200
-    lr = 0.001
+    batch_size = 100
+    lr = 0.0001
     save_model_name = "ft_model"
-    MM = MyModel(output_class, batch_size, lr)
+    model = "C:\\Users\\USER\\Desktop\\project\\ft_model.pth"
+    # if you only want to inference just add model, 
+    MM = MyModel(output_class, batch_size, lr, model)
     
-    root_dir_train = "/home/trx50/project/image_classification/data/SLT03缺點圖片收集/train"
-    root_dir_test = "/home/trx50/project/image_classification/data/vechicles/test"
-    epoch = 1000
-    MM.start_train(root_dir_train, epoch, save_model_name)
+    # root_dir_train = "data/SLT03缺點圖片收集"
+    # root_dir_test = "/home/trx50/project/image_classification/data/vechicles/test"
+    # epoch = 10
+    # MM.start_train(root_dir_train, epoch, save_model_name)
     # model_path = "/home/trx50/project/image_classification/ft_model_01.pth"
     # batch inference
     # test = "/home/trx50/project/image_classification/data/vechicles/test"
@@ -330,9 +341,12 @@ if __name__=="__main__":
     # MM.start_inference(model_path, test)
     
     # inference single image
-    # model = "/home/trx50/project/image_classification/ft_model.pth"
-    # filename = "/home/trx50/project/mytrainingGUI/projects/Myproject/Dataset/mark/Mark (1).jpg"
-    # result = MM.start_inference_single(filename, model)
+    
+    filename = "C:\\Users\\USER\\Desktop\\project\\image_classification\\data\\2024-12-12_缺點圖片收集\\毛絲\\3649.jpg"
+    result = MM.start_inference_single(filename)
+    result = MM.start_inference_single(filename)
+    result = MM.start_inference_single(filename)
+    result = MM.start_inference_single(filename)
     
     
 
