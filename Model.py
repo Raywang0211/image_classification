@@ -10,8 +10,8 @@ from torchvision import transforms
 from torch.utils.tensorboard import SummaryWriter
 import torch
 
-# from MyDataset import MyImageDataset
-from .MyDataset import MyImageDataset # for build .DLL
+from MyDataset import MyImageDataset
+# from .MyDataset import MyImageDataset # for build .DLL
 import matplotlib.pyplot as plt
 from PIL import Image
 import numpy as np
@@ -37,10 +37,10 @@ class MyModel():
         self.model.classifier = nn.Sequential(
             nn.Linear(1280, 1024),
             nn.ReLU(),
-            nn.Dropout(0.5),
+            nn.Dropout(0.7),
             nn.Linear(1024, 256),
             nn.ReLU(),
-            nn.Dropout(0.5),
+            nn.Dropout(0.7),
             nn.Linear(256, self.output_class)
         )
         for name, param in self.model.named_parameters():
@@ -180,10 +180,9 @@ class MyModel():
             loss.backward()
             optimizer.step()
             optimizer.zero_grad()
-            print("123-123",batch)
-            if batch % 100 == 0:
-                loss, current = loss.item(), (batch + 1) * len(X)  
-                print(f"loss: {loss:>7f}  [{current:>5d}/{size:>5d}]")
+
+            loss, current = loss.item(), (batch + 1) * len(X)  
+            print(f"loss: {loss:>7f}  [{current:>5d}/{size:>5d}]")
         return loss
 
 
@@ -315,15 +314,15 @@ class MyModel():
 
 if __name__=="__main__":
     output_class = 5
-    batch_size = 100
-    lr = 0.0001
+    batch_size = 200
+    lr = 0.001
     save_model_name = "ft_model"
     MM = MyModel(output_class, batch_size, lr)
     
-    # root_dir_train = "data/SLT03缺點圖片收集"
-    # root_dir_test = "/home/trx50/project/image_classification/data/vechicles/test"
-    # epoch = 10
-    # MM.start_train(root_dir_train, epoch, save_model_name)
+    root_dir_train = "/home/trx50/project/image_classification/data/SLT03缺點圖片收集/train"
+    root_dir_test = "/home/trx50/project/image_classification/data/vechicles/test"
+    epoch = 1000
+    MM.start_train(root_dir_train, epoch, save_model_name)
     # model_path = "/home/trx50/project/image_classification/ft_model_01.pth"
     # batch inference
     # test = "/home/trx50/project/image_classification/data/vechicles/test"
@@ -332,9 +331,9 @@ if __name__=="__main__":
     
     
     # inference single image
-    model = "/home/trx50/project/image_classification/ft_model.pth"
-    filename = "/home/trx50/project/mytrainingGUI/projects/Myproject/Dataset/mark/Mark (1).jpg"
-    result = MM.start_inference_single(filename, model)
+    # model = "/home/trx50/project/image_classification/ft_model.pth"
+    # filename = "/home/trx50/project/mytrainingGUI/projects/Myproject/Dataset/mark/Mark (1).jpg"
+    # result = MM.start_inference_single(filename, model)
     
     
 
