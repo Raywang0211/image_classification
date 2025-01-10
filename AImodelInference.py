@@ -10,9 +10,10 @@ from torchvision import transforms
 from torch.utils.tensorboard import SummaryWriter
 import torch
 
-# from MyDataset import MyImageDataset
-from .MyDataset import MyImageDataset # for build .DLL
+from MyDataset import MyImageDataset
+# from .MyDataset import MyImageDataset # for build .DLL
 # import matplotlib.pyplot as plt
+import threading
 from PIL import Image
 import numpy as np
 import time
@@ -305,28 +306,63 @@ class MyModel():
         single inference
         
         """
-        
+        print("Inside start_inference_single")
         img_tensor = self.load_single_img(test_image)
+        print("Load image finished")
         with torch.no_grad():  # 關閉梯度計算以加速推論
             
             s1 = time.time()
             output = self.model(img_tensor)
+            print("model inference finished")
             _, predicted_class = torch.max(output, 1)
+            print("torch max finished")
             result = str(predicted_class[0].item())
             print("class = ", result)
         print("InferenceTime:",time.time()-s1)
         return result
 
-    
-    
-    
+    def start_inference_single_withcallback(self, test_image, callback):
+        """
+        single inference callback
+        
+        """
+        print("Inside start_inference_single_withcallback")
+        img_tensor = self.load_single_img(test_image)
+        print("Load image finished")
+        with torch.no_grad():  # 關閉梯度計算以加速推論
+            
+            s1 = time.time()
+            output = self.model(img_tensor)
+            print("model inference finished")
+            _, predicted_class = torch.max(output, 1)
+            print("torch max finished")
+            result = str(predicted_class[0].item())
+            print("torch result get")
+            print("class = ", result)
+            callback(result)
+            
+        print("InferenceTime:",time.time()-s1)
+        return result
+
+    def start_inference_single_thread(self, test_image, callback):
+        """
+        single inference thread inference
+        
+        """
+        
+        inference_threading = threading.Thread(target=self.start_inference_single_withcallback,
+                                               args=(test_image,callback))
+        inference_threading.start()
+        
+        return 0
+
 
 if __name__=="__main__":
     output_class = 5
     batch_size = 100
     lr = 0.0001
     save_model_name = "ft_model"
-    model = "C:\\Users\\USER\\Desktop\\project\\ft_model.pth"
+    model = "/home/trx50/project/image_classification/ft_model.pth"
     # if you only want to inference just add model, 
     MM = MyModel(output_class, batch_size, lr, model)
     
@@ -341,12 +377,17 @@ if __name__=="__main__":
     # MM.start_inference(model_path, test)
     
     # inference single image
-    
-    filename = "C:\\Users\\USER\\Desktop\\project\\image_classification\\data\\2024-12-12_缺點圖片收集\\毛絲\\3649.jpg"
-    result = MM.start_inference_single(filename)
-    result = MM.start_inference_single(filename)
-    result = MM.start_inference_single(filename)
-    result = MM.start_inference_single(filename)
+    def callback(result):
+        print("callback = ",result)
+    filename = "/home/trx50/project/image_classification/data/2024-12-12_缺點圖片收集/毛絲/3649.jpg"
+    # result = MM.start_inference_single(filename)
+    # result = MM.start_inference_single(filename)
+    # result = MM.start_inference_single(filename)
+    # result = MM.start_inference_single(filename)
+    result = MM.start_inference_single_thread(filename,callback)
+    result = MM.start_inference_single_thread(filename,callback)
+    result = MM.start_inference_single_thread(filename,callback)
+    result = MM.start_inference_single_thread(filename,callback)
     
     
 
