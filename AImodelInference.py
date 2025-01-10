@@ -10,8 +10,8 @@ from torchvision import transforms
 from torch.utils.tensorboard import SummaryWriter
 import torch
 
-from MyDataset import MyImageDataset
-# from .MyDataset import MyImageDataset # for build .DLL
+# from MyDataset import MyImageDataset
+from .MyDataset import MyImageDataset # for build .DLL
 # import matplotlib.pyplot as plt
 import threading
 from PIL import Image
