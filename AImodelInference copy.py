@@ -19,6 +19,11 @@ import cv2
 import numpy as np
 import time
 
+stop_event = threading.Event()
+input_image = None
+test_value = "a"
+
+
 class MyModel():
     def __init__(self, output_class, batch_size=100, lr=0.01, inference_model=None):
         self.output_class = output_class
@@ -333,17 +338,67 @@ class MyModel():
         print("InferenceTime:",time.time()-s1)
         return result
 
-    def start_inference_single_thread(self, test_image, callback):
+    def start_inference_single_withcallback_image(self, callback):
+        """
+        single inference callback
+        
+        """
+        global test_value
+        transform = transforms.Compose([
+            transforms.Resize((224, 224)),  
+            transforms.ToTensor(),
+            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+        ])
+        while not stop_event.is_set():
+            if input_image is None:
+                print("Test =",test_value )
+                pass
+            else:
+                print("Inside start_inference_single_withcallback: 1")
+                image = cv2.cvtColor(input_image, cv2.COLOR_BGR2RGB)
+                print("laod_single_imag: 2 ")
+                image = Image.fromarray(image)
+                input_tensor = transform(image).unsqueeze(0)  # 新增 batch 維度
+                print("laod_single_imag: 3")
+                input_tensor = input_tensor.to(self.training_device)
+                print("laod_single_imag: 4")
+                print("Inside start_inference_single_withcallback: 2")
+                with torch.no_grad():  # 關閉梯度計算以加速推論
+                    
+                    s1 = time.time()
+                    output = self.model(input_tensor)
+                    print("Inside start_inference_single_withcallback: 3")
+                    _, predicted_class = torch.max(output, 1)
+                    print("Inside start_inference_single_withcallback: 4")
+                    result = str(predicted_class[0].item())
+                    print("Inside start_inference_single_withcallback: 5")
+                    print("class = ", result)
+                    callback(result)
+                    
+                print("InferenceTime:",time.time()-s1)
+                test_image = None
+        print("Close inference") 
+
+
+
+    def start_inference_single_thread(self, callback):
         """
         single inference thread inference
         
         """
         
-        inference_threading = threading.Thread(target=self.start_inference_single_withcallback,
-                                               args=(test_image,callback))
+        inference_threading = threading.Thread(target=self.start_inference_single_withcallback_image,
+                                               args=(callback,))
         inference_threading.start()
         
         return 0
+    
+    def close_inference(self):
+        stop_event.set()
+    def send_image(self, image, v):
+        input_image = image
+        test_value = v
+        print("send = ",test_value)
 
 
 if __name__=="__main__":
@@ -368,16 +423,22 @@ if __name__=="__main__":
     # inference single image
     def callback(result):
         print("callback = ",result)
-    filename = "/home/trx50/project/image_classification/data/2024-12-12_缺點圖片收集/毛絲/3649.jpg"
-    # result = MM.start_inference_single(filename)
-    # result = MM.start_inference_single(filename)
-    # result = MM.start_inference_single(filename)
-    # result = MM.start_inference_single(filename)
-    result = MM.start_inference_single_thread(filename,callback)
-    result = MM.start_inference_single_thread(filename,callback)
-    result = MM.start_inference_single_thread(filename,callback)
-    result = MM.start_inference_single_thread(filename,callback)
     
+    filename = "/home/trx50/project/image_classification/data/2024-12-12_缺點圖片收集/毛絲/3649.jpg"
+    filename2 = "/home/trx50/project/image_classification/data/2024-12-12_缺點圖片收集/Mark/2597.jpg"
+    # result = MM.start_inference_single(filename)
+    # result = MM.start_inference_single(filename)
+    # result = MM.start_inference_single(filename)
+    # result = MM.start_inference_single(filename)
+    image = cv2.imread(filename)
+    image2 = cv2.imread(filename2)
+    result = MM.start_inference_single_thread(callback)
+    time.sleep(1)
+    MM.send_image(image, "123")
+    time.sleep(1)
+    MM.send_image(image2, "456")
+    time.sleep(1)
+    MM.close_inference()
     
 
 
