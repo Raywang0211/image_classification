@@ -11,17 +11,17 @@ from torch.utils.tensorboard import SummaryWriter
 import torch
 
 # from MyDataset import MyImageDataset
-# from .MyDataset import MyImageDataset # for build .DLL
+from .MyDataset import MyImageDataset # for build .DLL
 import matplotlib.pyplot as plt
 import threading
 from PIL import Image
+import queue
 import cv2
 import numpy as np
 import time
 
 stop_event = threading.Event()
-input_image = None
-test_value = "a"
+
 
 
 class MyModel():
@@ -35,6 +35,8 @@ class MyModel():
         self.data_split_rate = 0.8
         self.train_size = 0
         self.val_size = 0
+        self.input_image = queue.Queue()
+        self.output_result = queue.Queue()
         if inference_model!=None:
             self.load_inference_model(inference_model)
         print(f"Using {self.training_device} device")
@@ -343,19 +345,20 @@ class MyModel():
         single inference callback
         
         """
-        global test_value
+        print("Start inference")
         transform = transforms.Compose([
             transforms.Resize((224, 224)),  
             transforms.ToTensor(),
             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
         ])
+        print("inside = = ",self.input_image.empty())
         while not stop_event.is_set():
-            if input_image is None:
-                print("Test =",test_value )
+            if self.input_image.empty():
+                # print("No image " )
                 pass
             else:
                 print("Inside start_inference_single_withcallback: 1")
-                image = cv2.cvtColor(input_image, cv2.COLOR_BGR2RGB)
+                image = cv2.cvtColor(self.input_image.get(), cv2.COLOR_BGR2RGB)
                 print("laod_single_imag: 2 ")
                 image = Image.fromarray(image)
                 input_tensor = transform(image).unsqueeze(0)  # 新增 batch 維度
@@ -373,10 +376,10 @@ class MyModel():
                     result = str(predicted_class[0].item())
                     print("Inside start_inference_single_withcallback: 5")
                     print("class = ", result)
+                    self.output_result.put(result)
                     callback(result)
                     
                 print("InferenceTime:",time.time()-s1)
-                test_image = None
         print("Close inference") 
 
 
@@ -386,20 +389,16 @@ class MyModel():
         single inference thread inference
         
         """
-        
-        inference_threading = threading.Thread(target=self.start_inference_single_withcallback_image,
+        stop_event.clear()
+        self.inference_threading = threading.Thread(target=self.start_inference_single_withcallback_image,
                                                args=(callback,))
-        inference_threading.start()
+        self.inference_threading.start()
         
-        return 0
+    
     
     def close_inference(self):
         stop_event.set()
-    def send_image(self, image, v):
-        input_image = image
-        test_value = v
-        print("send = ",test_value)
-
+        print("STOP")
 
 if __name__=="__main__":
     output_class = 5
@@ -408,39 +407,31 @@ if __name__=="__main__":
     save_model_name = "ft_model"
     model = "/home/trx50/project/image_classification/ft_model.pth"
     # if you only want to inference just add model, 
-    MM = MyModel(output_class, batch_size, lr, model)
-    
-    # root_dir_train = "data/SLT03缺點圖片收集"
-    # root_dir_test = "/home/trx50/project/image_classification/data/vechicles/test"
-    # epoch = 10
-    # MM.start_train(root_dir_train, epoch, save_model_name)
-    # model_path = "/home/trx50/project/image_classification/ft_model_01.pth"
-    # batch inference
-    # test = "/home/trx50/project/image_classification/data/vechicles/test"
-    # test = "data/ttt"
-    # MM.start_inference(model_path, test)
-    
-    # inference single image
     def callback(result):
         print("callback = ",result)
-    
-    filename = "/home/trx50/project/image_classification/data/2024-12-12_缺點圖片收集/毛絲/3649.jpg"
-    filename2 = "/home/trx50/project/image_classification/data/2024-12-12_缺點圖片收集/Mark/2597.jpg"
-    # result = MM.start_inference_single(filename)
-    # result = MM.start_inference_single(filename)
-    # result = MM.start_inference_single(filename)
-    # result = MM.start_inference_single(filename)
-    image = cv2.imread(filename)
-    image2 = cv2.imread(filename2)
-    result = MM.start_inference_single_thread(callback)
-    time.sleep(1)
-    MM.send_image(image, "123")
-    time.sleep(1)
-    MM.send_image(image2, "456")
-    time.sleep(1)
-    MM.close_inference()
-    
-
-
+    try:
+        MM = MyModel(output_class, batch_size, lr, model)
 
         
+        filename = "/home/trx50/project/image_classification/data/2024-12-12_缺點圖片收集/毛絲/3649.jpg"
+        filename2 = "/home/trx50/project/image_classification/data/2024-12-12_缺點圖片收集/Mark/2597.jpg"
+
+        image = cv2.imread(filename)
+        image2 = cv2.imread(filename2)
+
+        result = MM.start_inference_single_thread(callback)
+        MM.input_image.put(image)
+        MM.input_image.put(image2)
+
+        time.sleep(5)
+        MM.close_inference()
+        while not MM.output_result.empty():
+            print("result = ",MM.output_result.get())
+        
+    except KeyboardInterrupt:
+        MM.close_inference()()
+        
+
+
+
+            
