@@ -316,7 +316,7 @@ class MyModel():
         
         """
         print("Inside start_inference_single_withcallback: 1")
-        img_tensor = self.load_single_img(test_image)
+        img_tensor = self.load_single_img_cv2(test_image)
         print("Inside start_inference_single_withcallback: 2")
         with torch.no_grad():  # 關閉梯度計算以加速推論
             
