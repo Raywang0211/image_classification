@@ -396,6 +396,15 @@ class MyModel():
         
     
     
+    def push_image(self, image):
+        self.input_image.put(image)
+    
+    def get_image_result(self):
+        return self.output_result.get()
+    
+    def is_result_empty(self):
+        return self.output_result.empty()
+    
     def close_inference(self):
         stop_event.set()
         print("STOP")
@@ -420,13 +429,13 @@ if __name__=="__main__":
         image2 = cv2.imread(filename2)
 
         result = MM.start_inference_single_thread(callback)
-        MM.input_image.put(image)
-        MM.input_image.put(image2)
+        MM.push_image(image)
+        MM.push_image(image2)
 
         time.sleep(5)
         MM.close_inference()
-        while not MM.output_result.empty():
-            print("result = ",MM.output_result.get())
+        while not MM.is_result_empty():
+            print("result = ",MM.get_image_result())
         
     except KeyboardInterrupt:
         MM.close_inference()()

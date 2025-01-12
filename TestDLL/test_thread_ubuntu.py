@@ -29,9 +29,10 @@ if __name__=="__main__":
 
     for image in images:
         filename = path + image      
-        input_image = cv2.imread(filename) 
-        MM.input_image.put(input_image)
-        result = MM.output_result.get()
+        input_image = cv2.imread(filename)
+        MM.push_image(input_image)
+        
+        result = MM.get_image_result()
         if result == "0":
             class_dic["class_0"]+=1
         elif result == "1":

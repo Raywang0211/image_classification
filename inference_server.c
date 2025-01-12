@@ -2282,7 +2282,7 @@ static const char __pyx_k__15[] = "\n-------------------------------";
 static const char __pyx_k__29[] = ".";
 static const char __pyx_k__30[] = "*";
 static const char __pyx_k__62[] = "_";
-static const char __pyx_k__75[] = "?";
+static const char __pyx_k__79[] = "?";
 static const char __pyx_k_acc[] = "acc";
 static const char __pyx_k_cv2[] = "cv2";
 static const char __pyx_k_dim[] = "dim";
@@ -2430,6 +2430,7 @@ static const char __pyx_k_matplotlib[] = "matplotlib";
 static const char __pyx_k_model_name[] = "model_name";
 static const char __pyx_k_model_path[] = "model_path";
 static const char __pyx_k_parameters[] = "parameters";
+static const char __pyx_k_push_image[] = "push_image";
 static const char __pyx_k_save_model[] = "save model";
 static const char __pyx_k_state_dict[] = "state_dict";
 static const char __pyx_k_stop_event[] = "stop_event";
@@ -2478,6 +2479,7 @@ static const char __pyx_k_Start_inference[] = "Start inference";
 static const char __pyx_k_close_inference[] = "close_inference";
 static const char __pyx_k_data_split_rate[] = "data_split_rate";
 static const char __pyx_k_inference_model[] = "inference_model";
+static const char __pyx_k_is_result_empty[] = "is_result_empty";
 static const char __pyx_k_load_single_img[] = "load_single_img";
 static const char __pyx_k_load_state_dict[] = "load_state_dict";
 static const char __pyx_k_predicted_class[] = "predicted_class";
@@ -2486,6 +2488,7 @@ static const char __pyx_k_save_model_name[] = "save_model_name";
 static const char __pyx_k_start_inference[] = "start_inference";
 static const char __pyx_k_training_device[] = "training_device";
 static const char __pyx_k_CrossEntropyLoss[] = "CrossEntropyLoss";
+static const char __pyx_k_get_image_result[] = "get_image_result";
 static const char __pyx_k_inference_server[] = "inference_server";
 static const char __pyx_k_named_parameters[] = "named_parameters";
 static const char __pyx_k_torch_utils_data[] = "torch.utils.data";
@@ -2494,6 +2497,7 @@ static const char __pyx_k_efficientnet_v2_l[] = "efficientnet_v2_l";
 static const char __pyx_k_matplotlib_pyplot[] = "matplotlib.pyplot";
 static const char __pyx_k_test_augmentation[] = "test_augmentation";
 static const char __pyx_k_MyModel_load_model[] = "MyModel.load_model";
+static const char __pyx_k_MyModel_push_image[] = "MyModel.push_image";
 static const char __pyx_k_MyModel_save_model[] = "MyModel.save_model";
 static const char __pyx_k_MyModel_validation[] = "MyModel.validation";
 static const char __pyx_k_Train_dataset_size[] = "Train dataset size: ";
@@ -2522,10 +2526,12 @@ static const char __pyx_k_MyModel_load_testdata[] = "MyModel.load_testdata";
 static const char __pyx_k_MyModel_inference_test[] = "MyModel.inference_test";
 static const char __pyx_k_start_inference_single[] = "start_inference_single";
 static const char __pyx_k_MyModel_close_inference[] = "MyModel.close_inference";
+static const char __pyx_k_MyModel_is_result_empty[] = "MyModel.is_result_empty";
 static const char __pyx_k_MyModel_load_single_img[] = "MyModel.load_single_img";
 static const char __pyx_k_MyModel_start_inference[] = "MyModel.start_inference";
 static const char __pyx_k_Validation_dataset_size[] = "Validation dataset size: ";
 static const char __pyx_k_torch_utils_tensorboard[] = "torch.utils.tensorboard";
+static const char __pyx_k_MyModel_get_image_result[] = "MyModel.get_image_result";
 static const char __pyx_k_model_inference_finished[] = "model inference finished";
 static const char __pyx_k_EfficientNet_V2_L_Weights[] = "EfficientNet_V2_L_Weights";
 static const char __pyx_k_MyModel_init_loss_optimizer[] = "MyModel.init_loss_optimizer";
@@ -2567,7 +2573,10 @@ static PyObject *__pyx_pf_16inference_server_7MyModel_30start_inference_single(C
 static PyObject *__pyx_pf_16inference_server_7MyModel_32start_inference_single_withcallback(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_test_image, PyObject *__pyx_v_callback); /* proto */
 static PyObject *__pyx_pf_16inference_server_7MyModel_34start_inference_single_withcallback_image(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_callback); /* proto */
 static PyObject *__pyx_pf_16inference_server_7MyModel_36start_inference_single_thread(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_callback); /* proto */
-static PyObject *__pyx_pf_16inference_server_7MyModel_38close_inference(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_16inference_server_7MyModel_38push_image(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_image); /* proto */
+static PyObject *__pyx_pf_16inference_server_7MyModel_40get_image_result(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_16inference_server_7MyModel_42is_result_empty(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_16inference_server_7MyModel_44close_inference(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf_16inference_server_callback(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_result); /* proto */
 /* #### Code section: late_includes ### */
 /* #### Code section: module_state ### */
@@ -2634,8 +2643,10 @@ typedef struct {
   PyObject *__pyx_n_s_MyModel;
   PyObject *__pyx_n_s_MyModel___init;
   PyObject *__pyx_n_s_MyModel_close_inference;
+  PyObject *__pyx_n_s_MyModel_get_image_result;
   PyObject *__pyx_n_s_MyModel_inference_test;
   PyObject *__pyx_n_s_MyModel_init_loss_optimizer;
+  PyObject *__pyx_n_s_MyModel_is_result_empty;
   PyObject *__pyx_n_s_MyModel_load_dataset;
   PyObject *__pyx_n_s_MyModel_load_inference_model;
   PyObject *__pyx_n_s_MyModel_load_model;
@@ -2643,6 +2654,7 @@ typedef struct {
   PyObject *__pyx_n_s_MyModel_load_single_img_cv2;
   PyObject *__pyx_n_s_MyModel_load_testdata;
   PyObject *__pyx_n_s_MyModel_model_freeze;
+  PyObject *__pyx_n_s_MyModel_push_image;
   PyObject *__pyx_n_s_MyModel_save_model;
   PyObject *__pyx_n_s_MyModel_start_inference;
   PyObject *__pyx_n_s_MyModel_start_inference_single;
@@ -2679,7 +2691,7 @@ typedef struct {
   PyObject *__pyx_kp_u__29;
   PyObject *__pyx_n_s__30;
   PyObject *__pyx_n_s__62;
-  PyObject *__pyx_n_s__75;
+  PyObject *__pyx_n_s__79;
   PyObject *__pyx_kp_u__9;
   PyObject *__pyx_n_s_acc;
   PyObject *__pyx_n_s_acc_pre;
@@ -2727,6 +2739,7 @@ typedef struct {
   PyObject *__pyx_n_s_full_train;
   PyObject *__pyx_n_s_gamma;
   PyObject *__pyx_n_s_get;
+  PyObject *__pyx_n_s_get_image_result;
   PyObject *__pyx_kp_u_has_zero_parameters;
   PyObject *__pyx_kp_u_home_trx50_project_image_classi;
   PyObject *__pyx_kp_u_home_trx50_project_image_classi_2;
@@ -2751,6 +2764,7 @@ typedef struct {
   PyObject *__pyx_n_s_input_tensor;
   PyObject *__pyx_kp_u_inside;
   PyObject *__pyx_n_s_is_coroutine;
+  PyObject *__pyx_n_s_is_result_empty;
   PyObject *__pyx_n_s_is_set;
   PyObject *__pyx_n_s_item;
   PyObject *__pyx_n_s_iterate_time;
@@ -2811,6 +2825,7 @@ typedef struct {
   PyObject *__pyx_n_s_print;
   PyObject *__pyx_n_s_probabilities;
   PyObject *__pyx_kp_u_pth;
+  PyObject *__pyx_n_s_push_image;
   PyObject *__pyx_n_s_put;
   PyObject *__pyx_n_s_pyplot;
   PyObject *__pyx_n_s_qualname;
@@ -2952,8 +2967,9 @@ typedef struct {
   PyObject *__pyx_tuple__65;
   PyObject *__pyx_tuple__67;
   PyObject *__pyx_tuple__69;
-  PyObject *__pyx_tuple__72;
-  PyObject *__pyx_tuple__74;
+  PyObject *__pyx_tuple__71;
+  PyObject *__pyx_tuple__76;
+  PyObject *__pyx_tuple__78;
   PyObject *__pyx_codeobj__33;
   PyObject *__pyx_codeobj__36;
   PyObject *__pyx_codeobj__38;
@@ -2973,8 +2989,11 @@ typedef struct {
   PyObject *__pyx_codeobj__66;
   PyObject *__pyx_codeobj__68;
   PyObject *__pyx_codeobj__70;
-  PyObject *__pyx_codeobj__71;
+  PyObject *__pyx_codeobj__72;
   PyObject *__pyx_codeobj__73;
+  PyObject *__pyx_codeobj__74;
+  PyObject *__pyx_codeobj__75;
+  PyObject *__pyx_codeobj__77;
 } __pyx_mstate;
 
 #if CYTHON_USE_MODULE_STATE
@@ -3053,8 +3072,10 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_MyModel);
   Py_CLEAR(clear_module_state->__pyx_n_s_MyModel___init);
   Py_CLEAR(clear_module_state->__pyx_n_s_MyModel_close_inference);
+  Py_CLEAR(clear_module_state->__pyx_n_s_MyModel_get_image_result);
   Py_CLEAR(clear_module_state->__pyx_n_s_MyModel_inference_test);
   Py_CLEAR(clear_module_state->__pyx_n_s_MyModel_init_loss_optimizer);
+  Py_CLEAR(clear_module_state->__pyx_n_s_MyModel_is_result_empty);
   Py_CLEAR(clear_module_state->__pyx_n_s_MyModel_load_dataset);
   Py_CLEAR(clear_module_state->__pyx_n_s_MyModel_load_inference_model);
   Py_CLEAR(clear_module_state->__pyx_n_s_MyModel_load_model);
@@ -3062,6 +3083,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_MyModel_load_single_img_cv2);
   Py_CLEAR(clear_module_state->__pyx_n_s_MyModel_load_testdata);
   Py_CLEAR(clear_module_state->__pyx_n_s_MyModel_model_freeze);
+  Py_CLEAR(clear_module_state->__pyx_n_s_MyModel_push_image);
   Py_CLEAR(clear_module_state->__pyx_n_s_MyModel_save_model);
   Py_CLEAR(clear_module_state->__pyx_n_s_MyModel_start_inference);
   Py_CLEAR(clear_module_state->__pyx_n_s_MyModel_start_inference_single);
@@ -3098,7 +3120,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_kp_u__29);
   Py_CLEAR(clear_module_state->__pyx_n_s__30);
   Py_CLEAR(clear_module_state->__pyx_n_s__62);
-  Py_CLEAR(clear_module_state->__pyx_n_s__75);
+  Py_CLEAR(clear_module_state->__pyx_n_s__79);
   Py_CLEAR(clear_module_state->__pyx_kp_u__9);
   Py_CLEAR(clear_module_state->__pyx_n_s_acc);
   Py_CLEAR(clear_module_state->__pyx_n_s_acc_pre);
@@ -3146,6 +3168,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_full_train);
   Py_CLEAR(clear_module_state->__pyx_n_s_gamma);
   Py_CLEAR(clear_module_state->__pyx_n_s_get);
+  Py_CLEAR(clear_module_state->__pyx_n_s_get_image_result);
   Py_CLEAR(clear_module_state->__pyx_kp_u_has_zero_parameters);
   Py_CLEAR(clear_module_state->__pyx_kp_u_home_trx50_project_image_classi);
   Py_CLEAR(clear_module_state->__pyx_kp_u_home_trx50_project_image_classi_2);
@@ -3170,6 +3193,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_input_tensor);
   Py_CLEAR(clear_module_state->__pyx_kp_u_inside);
   Py_CLEAR(clear_module_state->__pyx_n_s_is_coroutine);
+  Py_CLEAR(clear_module_state->__pyx_n_s_is_result_empty);
   Py_CLEAR(clear_module_state->__pyx_n_s_is_set);
   Py_CLEAR(clear_module_state->__pyx_n_s_item);
   Py_CLEAR(clear_module_state->__pyx_n_s_iterate_time);
@@ -3230,6 +3254,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_print);
   Py_CLEAR(clear_module_state->__pyx_n_s_probabilities);
   Py_CLEAR(clear_module_state->__pyx_kp_u_pth);
+  Py_CLEAR(clear_module_state->__pyx_n_s_push_image);
   Py_CLEAR(clear_module_state->__pyx_n_s_put);
   Py_CLEAR(clear_module_state->__pyx_n_s_pyplot);
   Py_CLEAR(clear_module_state->__pyx_n_s_qualname);
@@ -3371,8 +3396,9 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_tuple__65);
   Py_CLEAR(clear_module_state->__pyx_tuple__67);
   Py_CLEAR(clear_module_state->__pyx_tuple__69);
-  Py_CLEAR(clear_module_state->__pyx_tuple__72);
-  Py_CLEAR(clear_module_state->__pyx_tuple__74);
+  Py_CLEAR(clear_module_state->__pyx_tuple__71);
+  Py_CLEAR(clear_module_state->__pyx_tuple__76);
+  Py_CLEAR(clear_module_state->__pyx_tuple__78);
   Py_CLEAR(clear_module_state->__pyx_codeobj__33);
   Py_CLEAR(clear_module_state->__pyx_codeobj__36);
   Py_CLEAR(clear_module_state->__pyx_codeobj__38);
@@ -3392,8 +3418,11 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_codeobj__66);
   Py_CLEAR(clear_module_state->__pyx_codeobj__68);
   Py_CLEAR(clear_module_state->__pyx_codeobj__70);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__71);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__72);
   Py_CLEAR(clear_module_state->__pyx_codeobj__73);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__74);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__75);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__77);
   return 0;
 }
 #endif
@@ -3450,8 +3479,10 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_MyModel);
   Py_VISIT(traverse_module_state->__pyx_n_s_MyModel___init);
   Py_VISIT(traverse_module_state->__pyx_n_s_MyModel_close_inference);
+  Py_VISIT(traverse_module_state->__pyx_n_s_MyModel_get_image_result);
   Py_VISIT(traverse_module_state->__pyx_n_s_MyModel_inference_test);
   Py_VISIT(traverse_module_state->__pyx_n_s_MyModel_init_loss_optimizer);
+  Py_VISIT(traverse_module_state->__pyx_n_s_MyModel_is_result_empty);
   Py_VISIT(traverse_module_state->__pyx_n_s_MyModel_load_dataset);
   Py_VISIT(traverse_module_state->__pyx_n_s_MyModel_load_inference_model);
   Py_VISIT(traverse_module_state->__pyx_n_s_MyModel_load_model);
@@ -3459,6 +3490,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_MyModel_load_single_img_cv2);
   Py_VISIT(traverse_module_state->__pyx_n_s_MyModel_load_testdata);
   Py_VISIT(traverse_module_state->__pyx_n_s_MyModel_model_freeze);
+  Py_VISIT(traverse_module_state->__pyx_n_s_MyModel_push_image);
   Py_VISIT(traverse_module_state->__pyx_n_s_MyModel_save_model);
   Py_VISIT(traverse_module_state->__pyx_n_s_MyModel_start_inference);
   Py_VISIT(traverse_module_state->__pyx_n_s_MyModel_start_inference_single);
@@ -3495,7 +3527,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_kp_u__29);
   Py_VISIT(traverse_module_state->__pyx_n_s__30);
   Py_VISIT(traverse_module_state->__pyx_n_s__62);
-  Py_VISIT(traverse_module_state->__pyx_n_s__75);
+  Py_VISIT(traverse_module_state->__pyx_n_s__79);
   Py_VISIT(traverse_module_state->__pyx_kp_u__9);
   Py_VISIT(traverse_module_state->__pyx_n_s_acc);
   Py_VISIT(traverse_module_state->__pyx_n_s_acc_pre);
@@ -3543,6 +3575,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_full_train);
   Py_VISIT(traverse_module_state->__pyx_n_s_gamma);
   Py_VISIT(traverse_module_state->__pyx_n_s_get);
+  Py_VISIT(traverse_module_state->__pyx_n_s_get_image_result);
   Py_VISIT(traverse_module_state->__pyx_kp_u_has_zero_parameters);
   Py_VISIT(traverse_module_state->__pyx_kp_u_home_trx50_project_image_classi);
   Py_VISIT(traverse_module_state->__pyx_kp_u_home_trx50_project_image_classi_2);
@@ -3567,6 +3600,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_input_tensor);
   Py_VISIT(traverse_module_state->__pyx_kp_u_inside);
   Py_VISIT(traverse_module_state->__pyx_n_s_is_coroutine);
+  Py_VISIT(traverse_module_state->__pyx_n_s_is_result_empty);
   Py_VISIT(traverse_module_state->__pyx_n_s_is_set);
   Py_VISIT(traverse_module_state->__pyx_n_s_item);
   Py_VISIT(traverse_module_state->__pyx_n_s_iterate_time);
@@ -3627,6 +3661,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_print);
   Py_VISIT(traverse_module_state->__pyx_n_s_probabilities);
   Py_VISIT(traverse_module_state->__pyx_kp_u_pth);
+  Py_VISIT(traverse_module_state->__pyx_n_s_push_image);
   Py_VISIT(traverse_module_state->__pyx_n_s_put);
   Py_VISIT(traverse_module_state->__pyx_n_s_pyplot);
   Py_VISIT(traverse_module_state->__pyx_n_s_qualname);
@@ -3768,8 +3803,9 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_tuple__65);
   Py_VISIT(traverse_module_state->__pyx_tuple__67);
   Py_VISIT(traverse_module_state->__pyx_tuple__69);
-  Py_VISIT(traverse_module_state->__pyx_tuple__72);
-  Py_VISIT(traverse_module_state->__pyx_tuple__74);
+  Py_VISIT(traverse_module_state->__pyx_tuple__71);
+  Py_VISIT(traverse_module_state->__pyx_tuple__76);
+  Py_VISIT(traverse_module_state->__pyx_tuple__78);
   Py_VISIT(traverse_module_state->__pyx_codeobj__33);
   Py_VISIT(traverse_module_state->__pyx_codeobj__36);
   Py_VISIT(traverse_module_state->__pyx_codeobj__38);
@@ -3789,8 +3825,11 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_codeobj__66);
   Py_VISIT(traverse_module_state->__pyx_codeobj__68);
   Py_VISIT(traverse_module_state->__pyx_codeobj__70);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__71);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__72);
   Py_VISIT(traverse_module_state->__pyx_codeobj__73);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__74);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__75);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__77);
   return 0;
 }
 #endif
@@ -3857,8 +3896,10 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_MyModel __pyx_mstate_global->__pyx_n_s_MyModel
 #define __pyx_n_s_MyModel___init __pyx_mstate_global->__pyx_n_s_MyModel___init
 #define __pyx_n_s_MyModel_close_inference __pyx_mstate_global->__pyx_n_s_MyModel_close_inference
+#define __pyx_n_s_MyModel_get_image_result __pyx_mstate_global->__pyx_n_s_MyModel_get_image_result
 #define __pyx_n_s_MyModel_inference_test __pyx_mstate_global->__pyx_n_s_MyModel_inference_test
 #define __pyx_n_s_MyModel_init_loss_optimizer __pyx_mstate_global->__pyx_n_s_MyModel_init_loss_optimizer
+#define __pyx_n_s_MyModel_is_result_empty __pyx_mstate_global->__pyx_n_s_MyModel_is_result_empty
 #define __pyx_n_s_MyModel_load_dataset __pyx_mstate_global->__pyx_n_s_MyModel_load_dataset
 #define __pyx_n_s_MyModel_load_inference_model __pyx_mstate_global->__pyx_n_s_MyModel_load_inference_model
 #define __pyx_n_s_MyModel_load_model __pyx_mstate_global->__pyx_n_s_MyModel_load_model
@@ -3866,6 +3907,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_MyModel_load_single_img_cv2 __pyx_mstate_global->__pyx_n_s_MyModel_load_single_img_cv2
 #define __pyx_n_s_MyModel_load_testdata __pyx_mstate_global->__pyx_n_s_MyModel_load_testdata
 #define __pyx_n_s_MyModel_model_freeze __pyx_mstate_global->__pyx_n_s_MyModel_model_freeze
+#define __pyx_n_s_MyModel_push_image __pyx_mstate_global->__pyx_n_s_MyModel_push_image
 #define __pyx_n_s_MyModel_save_model __pyx_mstate_global->__pyx_n_s_MyModel_save_model
 #define __pyx_n_s_MyModel_start_inference __pyx_mstate_global->__pyx_n_s_MyModel_start_inference
 #define __pyx_n_s_MyModel_start_inference_single __pyx_mstate_global->__pyx_n_s_MyModel_start_inference_single
@@ -3902,7 +3944,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_kp_u__29 __pyx_mstate_global->__pyx_kp_u__29
 #define __pyx_n_s__30 __pyx_mstate_global->__pyx_n_s__30
 #define __pyx_n_s__62 __pyx_mstate_global->__pyx_n_s__62
-#define __pyx_n_s__75 __pyx_mstate_global->__pyx_n_s__75
+#define __pyx_n_s__79 __pyx_mstate_global->__pyx_n_s__79
 #define __pyx_kp_u__9 __pyx_mstate_global->__pyx_kp_u__9
 #define __pyx_n_s_acc __pyx_mstate_global->__pyx_n_s_acc
 #define __pyx_n_s_acc_pre __pyx_mstate_global->__pyx_n_s_acc_pre
@@ -3950,6 +3992,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_full_train __pyx_mstate_global->__pyx_n_s_full_train
 #define __pyx_n_s_gamma __pyx_mstate_global->__pyx_n_s_gamma
 #define __pyx_n_s_get __pyx_mstate_global->__pyx_n_s_get
+#define __pyx_n_s_get_image_result __pyx_mstate_global->__pyx_n_s_get_image_result
 #define __pyx_kp_u_has_zero_parameters __pyx_mstate_global->__pyx_kp_u_has_zero_parameters
 #define __pyx_kp_u_home_trx50_project_image_classi __pyx_mstate_global->__pyx_kp_u_home_trx50_project_image_classi
 #define __pyx_kp_u_home_trx50_project_image_classi_2 __pyx_mstate_global->__pyx_kp_u_home_trx50_project_image_classi_2
@@ -3974,6 +4017,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_input_tensor __pyx_mstate_global->__pyx_n_s_input_tensor
 #define __pyx_kp_u_inside __pyx_mstate_global->__pyx_kp_u_inside
 #define __pyx_n_s_is_coroutine __pyx_mstate_global->__pyx_n_s_is_coroutine
+#define __pyx_n_s_is_result_empty __pyx_mstate_global->__pyx_n_s_is_result_empty
 #define __pyx_n_s_is_set __pyx_mstate_global->__pyx_n_s_is_set
 #define __pyx_n_s_item __pyx_mstate_global->__pyx_n_s_item
 #define __pyx_n_s_iterate_time __pyx_mstate_global->__pyx_n_s_iterate_time
@@ -4034,6 +4078,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_print __pyx_mstate_global->__pyx_n_s_print
 #define __pyx_n_s_probabilities __pyx_mstate_global->__pyx_n_s_probabilities
 #define __pyx_kp_u_pth __pyx_mstate_global->__pyx_kp_u_pth
+#define __pyx_n_s_push_image __pyx_mstate_global->__pyx_n_s_push_image
 #define __pyx_n_s_put __pyx_mstate_global->__pyx_n_s_put
 #define __pyx_n_s_pyplot __pyx_mstate_global->__pyx_n_s_pyplot
 #define __pyx_n_s_qualname __pyx_mstate_global->__pyx_n_s_qualname
@@ -4175,8 +4220,9 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_tuple__65 __pyx_mstate_global->__pyx_tuple__65
 #define __pyx_tuple__67 __pyx_mstate_global->__pyx_tuple__67
 #define __pyx_tuple__69 __pyx_mstate_global->__pyx_tuple__69
-#define __pyx_tuple__72 __pyx_mstate_global->__pyx_tuple__72
-#define __pyx_tuple__74 __pyx_mstate_global->__pyx_tuple__74
+#define __pyx_tuple__71 __pyx_mstate_global->__pyx_tuple__71
+#define __pyx_tuple__76 __pyx_mstate_global->__pyx_tuple__76
+#define __pyx_tuple__78 __pyx_mstate_global->__pyx_tuple__78
 #define __pyx_codeobj__33 __pyx_mstate_global->__pyx_codeobj__33
 #define __pyx_codeobj__36 __pyx_mstate_global->__pyx_codeobj__36
 #define __pyx_codeobj__38 __pyx_mstate_global->__pyx_codeobj__38
@@ -4196,8 +4242,11 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_codeobj__66 __pyx_mstate_global->__pyx_codeobj__66
 #define __pyx_codeobj__68 __pyx_mstate_global->__pyx_codeobj__68
 #define __pyx_codeobj__70 __pyx_mstate_global->__pyx_codeobj__70
-#define __pyx_codeobj__71 __pyx_mstate_global->__pyx_codeobj__71
+#define __pyx_codeobj__72 __pyx_mstate_global->__pyx_codeobj__72
 #define __pyx_codeobj__73 __pyx_mstate_global->__pyx_codeobj__73
+#define __pyx_codeobj__74 __pyx_mstate_global->__pyx_codeobj__74
+#define __pyx_codeobj__75 __pyx_mstate_global->__pyx_codeobj__75
+#define __pyx_codeobj__77 __pyx_mstate_global->__pyx_codeobj__77
 /* #### Code section: module_code ### */
 
 /* "inference_server.py":28
@@ -15835,21 +15884,563 @@ static PyObject *__pyx_pf_16inference_server_7MyModel_36start_inference_single_t
 /* "inference_server.py":399
  * 
  * 
- *     def close_inference(self):             # <<<<<<<<<<<<<<
- *         stop_event.set()
- *         print("STOP")
+ *     def push_image(self, image):             # <<<<<<<<<<<<<<
+ *         self.input_image.put(image)
+ * 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_16inference_server_7MyModel_39close_inference(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_16inference_server_7MyModel_39push_image(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_16inference_server_7MyModel_39close_inference = {"close_inference", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_16inference_server_7MyModel_39close_inference, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_16inference_server_7MyModel_39close_inference(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_16inference_server_7MyModel_39push_image = {"push_image", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_16inference_server_7MyModel_39push_image, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_16inference_server_7MyModel_39push_image(PyObject *__pyx_self, 
+#if CYTHON_METH_FASTCALL
+PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
+#else
+PyObject *__pyx_args, PyObject *__pyx_kwds
+#endif
+) {
+  PyObject *__pyx_v_self = 0;
+  PyObject *__pyx_v_image = 0;
+  #if !CYTHON_METH_FASTCALL
+  CYTHON_UNUSED Py_ssize_t __pyx_nargs;
+  #endif
+  CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
+  PyObject* values[2] = {0,0};
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("push_image (wrapper)", 0);
+  #if !CYTHON_METH_FASTCALL
+  #if CYTHON_ASSUME_SAFE_MACROS
+  __pyx_nargs = PyTuple_GET_SIZE(__pyx_args);
+  #else
+  __pyx_nargs = PyTuple_Size(__pyx_args); if (unlikely(__pyx_nargs < 0)) return NULL;
+  #endif
+  #endif
+  __pyx_kwvalues = __Pyx_KwValues_FASTCALL(__pyx_args, __pyx_nargs);
+  {
+    PyObject **__pyx_pyargnames[] = {&__pyx_n_s_self,&__pyx_n_s_image,0};
+    if (__pyx_kwds) {
+      Py_ssize_t kw_args;
+      switch (__pyx_nargs) {
+        case  2: values[1] = __Pyx_Arg_FASTCALL(__pyx_args, 1);
+        CYTHON_FALLTHROUGH;
+        case  1: values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
+        CYTHON_FALLTHROUGH;
+        case  0: break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+      kw_args = __Pyx_NumKwargs_FASTCALL(__pyx_kwds);
+      switch (__pyx_nargs) {
+        case  0:
+        if (likely((values[0] = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_self)) != 0)) {
+          (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
+          kw_args--;
+        }
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 399, __pyx_L3_error)
+        else goto __pyx_L5_argtuple_error;
+        CYTHON_FALLTHROUGH;
+        case  1:
+        if (likely((values[1] = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_image)) != 0)) {
+          (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
+          kw_args--;
+        }
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 399, __pyx_L3_error)
+        else {
+          __Pyx_RaiseArgtupleInvalid("push_image", 1, 2, 2, 1); __PYX_ERR(0, 399, __pyx_L3_error)
+        }
+      }
+      if (unlikely(kw_args > 0)) {
+        const Py_ssize_t kwd_pos_args = __pyx_nargs;
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "push_image") < 0)) __PYX_ERR(0, 399, __pyx_L3_error)
+      }
+    } else if (unlikely(__pyx_nargs != 2)) {
+      goto __pyx_L5_argtuple_error;
+    } else {
+      values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
+      values[1] = __Pyx_Arg_FASTCALL(__pyx_args, 1);
+    }
+    __pyx_v_self = values[0];
+    __pyx_v_image = values[1];
+  }
+  goto __pyx_L6_skip;
+  __pyx_L5_argtuple_error:;
+  __Pyx_RaiseArgtupleInvalid("push_image", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 399, __pyx_L3_error)
+  __pyx_L6_skip:;
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L3_error:;
+  {
+    Py_ssize_t __pyx_temp;
+    for (__pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
+      __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
+    }
+  }
+  __Pyx_AddTraceback("inference_server.MyModel.push_image", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_16inference_server_7MyModel_38push_image(__pyx_self, __pyx_v_self, __pyx_v_image);
+
+  /* function exit code */
+  {
+    Py_ssize_t __pyx_temp;
+    for (__pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
+      __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
+    }
+  }
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_16inference_server_7MyModel_38push_image(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_image) {
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  PyObject *__pyx_t_1 = NULL;
+  PyObject *__pyx_t_2 = NULL;
+  PyObject *__pyx_t_3 = NULL;
+  unsigned int __pyx_t_4;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  __Pyx_RefNannySetupContext("push_image", 1);
+
+  /* "inference_server.py":400
+ * 
+ *     def push_image(self, image):
+ *         self.input_image.put(image)             # <<<<<<<<<<<<<<
+ * 
+ *     def get_image_result(self):
+ */
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_input_image); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 400, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_put); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 400, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = NULL;
+  __pyx_t_4 = 0;
+  #if CYTHON_UNPACK_METHODS
+  if (likely(PyMethod_Check(__pyx_t_3))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_3, function);
+      __pyx_t_4 = 1;
+    }
+  }
+  #endif
+  {
+    PyObject *__pyx_callargs[2] = {__pyx_t_2, __pyx_v_image};
+    __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_4, 1+__pyx_t_4);
+    __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 400, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  }
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "inference_server.py":399
+ * 
+ * 
+ *     def push_image(self, image):             # <<<<<<<<<<<<<<
+ *         self.input_image.put(image)
+ * 
+ */
+
+  /* function exit code */
+  __pyx_r = Py_None; __Pyx_INCREF(Py_None);
+  goto __pyx_L0;
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_3);
+  __Pyx_AddTraceback("inference_server.MyModel.push_image", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "inference_server.py":402
+ *         self.input_image.put(image)
+ * 
+ *     def get_image_result(self):             # <<<<<<<<<<<<<<
+ *         return self.output_result.get()
+ * 
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_16inference_server_7MyModel_41get_image_result(PyObject *__pyx_self, 
+#if CYTHON_METH_FASTCALL
+PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
+#else
+PyObject *__pyx_args, PyObject *__pyx_kwds
+#endif
+); /*proto*/
+static PyMethodDef __pyx_mdef_16inference_server_7MyModel_41get_image_result = {"get_image_result", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_16inference_server_7MyModel_41get_image_result, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_16inference_server_7MyModel_41get_image_result(PyObject *__pyx_self, 
+#if CYTHON_METH_FASTCALL
+PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
+#else
+PyObject *__pyx_args, PyObject *__pyx_kwds
+#endif
+) {
+  PyObject *__pyx_v_self = 0;
+  #if !CYTHON_METH_FASTCALL
+  CYTHON_UNUSED Py_ssize_t __pyx_nargs;
+  #endif
+  CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
+  PyObject* values[1] = {0};
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("get_image_result (wrapper)", 0);
+  #if !CYTHON_METH_FASTCALL
+  #if CYTHON_ASSUME_SAFE_MACROS
+  __pyx_nargs = PyTuple_GET_SIZE(__pyx_args);
+  #else
+  __pyx_nargs = PyTuple_Size(__pyx_args); if (unlikely(__pyx_nargs < 0)) return NULL;
+  #endif
+  #endif
+  __pyx_kwvalues = __Pyx_KwValues_FASTCALL(__pyx_args, __pyx_nargs);
+  {
+    PyObject **__pyx_pyargnames[] = {&__pyx_n_s_self,0};
+    if (__pyx_kwds) {
+      Py_ssize_t kw_args;
+      switch (__pyx_nargs) {
+        case  1: values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
+        CYTHON_FALLTHROUGH;
+        case  0: break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+      kw_args = __Pyx_NumKwargs_FASTCALL(__pyx_kwds);
+      switch (__pyx_nargs) {
+        case  0:
+        if (likely((values[0] = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_self)) != 0)) {
+          (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
+          kw_args--;
+        }
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 402, __pyx_L3_error)
+        else goto __pyx_L5_argtuple_error;
+      }
+      if (unlikely(kw_args > 0)) {
+        const Py_ssize_t kwd_pos_args = __pyx_nargs;
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "get_image_result") < 0)) __PYX_ERR(0, 402, __pyx_L3_error)
+      }
+    } else if (unlikely(__pyx_nargs != 1)) {
+      goto __pyx_L5_argtuple_error;
+    } else {
+      values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
+    }
+    __pyx_v_self = values[0];
+  }
+  goto __pyx_L6_skip;
+  __pyx_L5_argtuple_error:;
+  __Pyx_RaiseArgtupleInvalid("get_image_result", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 402, __pyx_L3_error)
+  __pyx_L6_skip:;
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L3_error:;
+  {
+    Py_ssize_t __pyx_temp;
+    for (__pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
+      __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
+    }
+  }
+  __Pyx_AddTraceback("inference_server.MyModel.get_image_result", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_16inference_server_7MyModel_40get_image_result(__pyx_self, __pyx_v_self);
+
+  /* function exit code */
+  {
+    Py_ssize_t __pyx_temp;
+    for (__pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
+      __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
+    }
+  }
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_16inference_server_7MyModel_40get_image_result(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  PyObject *__pyx_t_1 = NULL;
+  PyObject *__pyx_t_2 = NULL;
+  PyObject *__pyx_t_3 = NULL;
+  unsigned int __pyx_t_4;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  __Pyx_RefNannySetupContext("get_image_result", 1);
+
+  /* "inference_server.py":403
+ * 
+ *     def get_image_result(self):
+ *         return self.output_result.get()             # <<<<<<<<<<<<<<
+ * 
+ *     def is_result_empty(self):
+ */
+  __Pyx_XDECREF(__pyx_r);
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_output_result); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 403, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_get); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 403, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = NULL;
+  __pyx_t_4 = 0;
+  #if CYTHON_UNPACK_METHODS
+  if (likely(PyMethod_Check(__pyx_t_3))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_3, function);
+      __pyx_t_4 = 1;
+    }
+  }
+  #endif
+  {
+    PyObject *__pyx_callargs[2] = {__pyx_t_2, NULL};
+    __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
+    __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 403, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  }
+  __pyx_r = __pyx_t_1;
+  __pyx_t_1 = 0;
+  goto __pyx_L0;
+
+  /* "inference_server.py":402
+ *         self.input_image.put(image)
+ * 
+ *     def get_image_result(self):             # <<<<<<<<<<<<<<
+ *         return self.output_result.get()
+ * 
+ */
+
+  /* function exit code */
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_3);
+  __Pyx_AddTraceback("inference_server.MyModel.get_image_result", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "inference_server.py":405
+ *         return self.output_result.get()
+ * 
+ *     def is_result_empty(self):             # <<<<<<<<<<<<<<
+ *         return self.output_result.empty()
+ * 
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_16inference_server_7MyModel_43is_result_empty(PyObject *__pyx_self, 
+#if CYTHON_METH_FASTCALL
+PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
+#else
+PyObject *__pyx_args, PyObject *__pyx_kwds
+#endif
+); /*proto*/
+static PyMethodDef __pyx_mdef_16inference_server_7MyModel_43is_result_empty = {"is_result_empty", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_16inference_server_7MyModel_43is_result_empty, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_16inference_server_7MyModel_43is_result_empty(PyObject *__pyx_self, 
+#if CYTHON_METH_FASTCALL
+PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
+#else
+PyObject *__pyx_args, PyObject *__pyx_kwds
+#endif
+) {
+  PyObject *__pyx_v_self = 0;
+  #if !CYTHON_METH_FASTCALL
+  CYTHON_UNUSED Py_ssize_t __pyx_nargs;
+  #endif
+  CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
+  PyObject* values[1] = {0};
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("is_result_empty (wrapper)", 0);
+  #if !CYTHON_METH_FASTCALL
+  #if CYTHON_ASSUME_SAFE_MACROS
+  __pyx_nargs = PyTuple_GET_SIZE(__pyx_args);
+  #else
+  __pyx_nargs = PyTuple_Size(__pyx_args); if (unlikely(__pyx_nargs < 0)) return NULL;
+  #endif
+  #endif
+  __pyx_kwvalues = __Pyx_KwValues_FASTCALL(__pyx_args, __pyx_nargs);
+  {
+    PyObject **__pyx_pyargnames[] = {&__pyx_n_s_self,0};
+    if (__pyx_kwds) {
+      Py_ssize_t kw_args;
+      switch (__pyx_nargs) {
+        case  1: values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
+        CYTHON_FALLTHROUGH;
+        case  0: break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+      kw_args = __Pyx_NumKwargs_FASTCALL(__pyx_kwds);
+      switch (__pyx_nargs) {
+        case  0:
+        if (likely((values[0] = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_self)) != 0)) {
+          (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
+          kw_args--;
+        }
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 405, __pyx_L3_error)
+        else goto __pyx_L5_argtuple_error;
+      }
+      if (unlikely(kw_args > 0)) {
+        const Py_ssize_t kwd_pos_args = __pyx_nargs;
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "is_result_empty") < 0)) __PYX_ERR(0, 405, __pyx_L3_error)
+      }
+    } else if (unlikely(__pyx_nargs != 1)) {
+      goto __pyx_L5_argtuple_error;
+    } else {
+      values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
+    }
+    __pyx_v_self = values[0];
+  }
+  goto __pyx_L6_skip;
+  __pyx_L5_argtuple_error:;
+  __Pyx_RaiseArgtupleInvalid("is_result_empty", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 405, __pyx_L3_error)
+  __pyx_L6_skip:;
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L3_error:;
+  {
+    Py_ssize_t __pyx_temp;
+    for (__pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
+      __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
+    }
+  }
+  __Pyx_AddTraceback("inference_server.MyModel.is_result_empty", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_16inference_server_7MyModel_42is_result_empty(__pyx_self, __pyx_v_self);
+
+  /* function exit code */
+  {
+    Py_ssize_t __pyx_temp;
+    for (__pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
+      __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
+    }
+  }
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_16inference_server_7MyModel_42is_result_empty(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  PyObject *__pyx_t_1 = NULL;
+  PyObject *__pyx_t_2 = NULL;
+  PyObject *__pyx_t_3 = NULL;
+  unsigned int __pyx_t_4;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  __Pyx_RefNannySetupContext("is_result_empty", 1);
+
+  /* "inference_server.py":406
+ * 
+ *     def is_result_empty(self):
+ *         return self.output_result.empty()             # <<<<<<<<<<<<<<
+ * 
+ *     def close_inference(self):
+ */
+  __Pyx_XDECREF(__pyx_r);
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_output_result); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 406, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_empty); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 406, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = NULL;
+  __pyx_t_4 = 0;
+  #if CYTHON_UNPACK_METHODS
+  if (likely(PyMethod_Check(__pyx_t_3))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_3, function);
+      __pyx_t_4 = 1;
+    }
+  }
+  #endif
+  {
+    PyObject *__pyx_callargs[2] = {__pyx_t_2, NULL};
+    __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
+    __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 406, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  }
+  __pyx_r = __pyx_t_1;
+  __pyx_t_1 = 0;
+  goto __pyx_L0;
+
+  /* "inference_server.py":405
+ *         return self.output_result.get()
+ * 
+ *     def is_result_empty(self):             # <<<<<<<<<<<<<<
+ *         return self.output_result.empty()
+ * 
+ */
+
+  /* function exit code */
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_3);
+  __Pyx_AddTraceback("inference_server.MyModel.is_result_empty", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "inference_server.py":408
+ *         return self.output_result.empty()
+ * 
+ *     def close_inference(self):             # <<<<<<<<<<<<<<
+ *         stop_event.set()
+ *         print("STOP")
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_16inference_server_7MyModel_45close_inference(PyObject *__pyx_self, 
+#if CYTHON_METH_FASTCALL
+PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
+#else
+PyObject *__pyx_args, PyObject *__pyx_kwds
+#endif
+); /*proto*/
+static PyMethodDef __pyx_mdef_16inference_server_7MyModel_45close_inference = {"close_inference", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_16inference_server_7MyModel_45close_inference, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_16inference_server_7MyModel_45close_inference(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -15893,12 +16484,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 399, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 408, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "close_inference") < 0)) __PYX_ERR(0, 399, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "close_inference") < 0)) __PYX_ERR(0, 408, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 1)) {
       goto __pyx_L5_argtuple_error;
@@ -15909,7 +16500,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("close_inference", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 399, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("close_inference", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 408, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -15923,7 +16514,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_16inference_server_7MyModel_38close_inference(__pyx_self, __pyx_v_self);
+  __pyx_r = __pyx_pf_16inference_server_7MyModel_44close_inference(__pyx_self, __pyx_v_self);
 
   /* function exit code */
   {
@@ -15936,7 +16527,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_16inference_server_7MyModel_38close_inference(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_16inference_server_7MyModel_44close_inference(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -15948,16 +16539,16 @@ static PyObject *__pyx_pf_16inference_server_7MyModel_38close_inference(CYTHON_U
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("close_inference", 1);
 
-  /* "inference_server.py":400
+  /* "inference_server.py":409
  * 
  *     def close_inference(self):
  *         stop_event.set()             # <<<<<<<<<<<<<<
  *         print("STOP")
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_stop_event); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 400, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_stop_event); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 409, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_set); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 400, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_set); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 409, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -15978,25 +16569,25 @@ static PyObject *__pyx_pf_16inference_server_7MyModel_38close_inference(CYTHON_U
     PyObject *__pyx_callargs[2] = {__pyx_t_2, NULL};
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_4, 0+__pyx_t_4);
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 400, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 409, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "inference_server.py":401
+  /* "inference_server.py":410
  *     def close_inference(self):
  *         stop_event.set()
  *         print("STOP")             # <<<<<<<<<<<<<<
  * 
  * if __name__=="__main__":
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__28, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 401, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__28, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 410, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "inference_server.py":399
- * 
+  /* "inference_server.py":408
+ *         return self.output_result.empty()
  * 
  *     def close_inference(self):             # <<<<<<<<<<<<<<
  *         stop_event.set()
@@ -16018,7 +16609,7 @@ static PyObject *__pyx_pf_16inference_server_7MyModel_38close_inference(CYTHON_U
   return __pyx_r;
 }
 
-/* "inference_server.py":410
+/* "inference_server.py":419
  *     model = "/home/trx50/project/image_classification/ft_model.pth"
  *     # if you only want to inference just add model,
  *     def callback(result):             # <<<<<<<<<<<<<<
@@ -16079,12 +16670,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 410, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 419, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "callback") < 0)) __PYX_ERR(0, 410, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "callback") < 0)) __PYX_ERR(0, 419, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 1)) {
       goto __pyx_L5_argtuple_error;
@@ -16095,7 +16686,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("callback", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 410, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("callback", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 419, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -16132,27 +16723,27 @@ static PyObject *__pyx_pf_16inference_server_callback(CYTHON_UNUSED PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("callback", 1);
 
-  /* "inference_server.py":411
+  /* "inference_server.py":420
  *     # if you only want to inference just add model,
  *     def callback(result):
  *         print("callback = ",result)             # <<<<<<<<<<<<<<
  *     try:
  *         MM = MyModel(output_class, batch_size, lr, model)
  */
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 411, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 420, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_kp_u_callback_2);
   __Pyx_GIVEREF(__pyx_kp_u_callback_2);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_kp_u_callback_2)) __PYX_ERR(0, 411, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_kp_u_callback_2)) __PYX_ERR(0, 420, __pyx_L1_error);
   __Pyx_INCREF(__pyx_v_result);
   __Pyx_GIVEREF(__pyx_v_result);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_v_result)) __PYX_ERR(0, 411, __pyx_L1_error);
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 411, __pyx_L1_error)
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_v_result)) __PYX_ERR(0, 420, __pyx_L1_error);
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 420, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "inference_server.py":410
+  /* "inference_server.py":419
  *     model = "/home/trx50/project/image_classification/ft_model.pth"
  *     # if you only want to inference just add model,
  *     def callback(result):             # <<<<<<<<<<<<<<
@@ -16226,8 +16817,10 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_MyModel, __pyx_k_MyModel, sizeof(__pyx_k_MyModel), 0, 0, 1, 1},
     {&__pyx_n_s_MyModel___init, __pyx_k_MyModel___init, sizeof(__pyx_k_MyModel___init), 0, 0, 1, 1},
     {&__pyx_n_s_MyModel_close_inference, __pyx_k_MyModel_close_inference, sizeof(__pyx_k_MyModel_close_inference), 0, 0, 1, 1},
+    {&__pyx_n_s_MyModel_get_image_result, __pyx_k_MyModel_get_image_result, sizeof(__pyx_k_MyModel_get_image_result), 0, 0, 1, 1},
     {&__pyx_n_s_MyModel_inference_test, __pyx_k_MyModel_inference_test, sizeof(__pyx_k_MyModel_inference_test), 0, 0, 1, 1},
     {&__pyx_n_s_MyModel_init_loss_optimizer, __pyx_k_MyModel_init_loss_optimizer, sizeof(__pyx_k_MyModel_init_loss_optimizer), 0, 0, 1, 1},
+    {&__pyx_n_s_MyModel_is_result_empty, __pyx_k_MyModel_is_result_empty, sizeof(__pyx_k_MyModel_is_result_empty), 0, 0, 1, 1},
     {&__pyx_n_s_MyModel_load_dataset, __pyx_k_MyModel_load_dataset, sizeof(__pyx_k_MyModel_load_dataset), 0, 0, 1, 1},
     {&__pyx_n_s_MyModel_load_inference_model, __pyx_k_MyModel_load_inference_model, sizeof(__pyx_k_MyModel_load_inference_model), 0, 0, 1, 1},
     {&__pyx_n_s_MyModel_load_model, __pyx_k_MyModel_load_model, sizeof(__pyx_k_MyModel_load_model), 0, 0, 1, 1},
@@ -16235,6 +16828,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_MyModel_load_single_img_cv2, __pyx_k_MyModel_load_single_img_cv2, sizeof(__pyx_k_MyModel_load_single_img_cv2), 0, 0, 1, 1},
     {&__pyx_n_s_MyModel_load_testdata, __pyx_k_MyModel_load_testdata, sizeof(__pyx_k_MyModel_load_testdata), 0, 0, 1, 1},
     {&__pyx_n_s_MyModel_model_freeze, __pyx_k_MyModel_model_freeze, sizeof(__pyx_k_MyModel_model_freeze), 0, 0, 1, 1},
+    {&__pyx_n_s_MyModel_push_image, __pyx_k_MyModel_push_image, sizeof(__pyx_k_MyModel_push_image), 0, 0, 1, 1},
     {&__pyx_n_s_MyModel_save_model, __pyx_k_MyModel_save_model, sizeof(__pyx_k_MyModel_save_model), 0, 0, 1, 1},
     {&__pyx_n_s_MyModel_start_inference, __pyx_k_MyModel_start_inference, sizeof(__pyx_k_MyModel_start_inference), 0, 0, 1, 1},
     {&__pyx_n_s_MyModel_start_inference_single, __pyx_k_MyModel_start_inference_single, sizeof(__pyx_k_MyModel_start_inference_single), 0, 0, 1, 1},
@@ -16271,7 +16865,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_kp_u__29, __pyx_k__29, sizeof(__pyx_k__29), 0, 1, 0, 0},
     {&__pyx_n_s__30, __pyx_k__30, sizeof(__pyx_k__30), 0, 0, 1, 1},
     {&__pyx_n_s__62, __pyx_k__62, sizeof(__pyx_k__62), 0, 0, 1, 1},
-    {&__pyx_n_s__75, __pyx_k__75, sizeof(__pyx_k__75), 0, 0, 1, 1},
+    {&__pyx_n_s__79, __pyx_k__79, sizeof(__pyx_k__79), 0, 0, 1, 1},
     {&__pyx_kp_u__9, __pyx_k__9, sizeof(__pyx_k__9), 0, 1, 0, 0},
     {&__pyx_n_s_acc, __pyx_k_acc, sizeof(__pyx_k_acc), 0, 0, 1, 1},
     {&__pyx_n_s_acc_pre, __pyx_k_acc_pre, sizeof(__pyx_k_acc_pre), 0, 0, 1, 1},
@@ -16319,6 +16913,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_full_train, __pyx_k_full_train, sizeof(__pyx_k_full_train), 0, 0, 1, 1},
     {&__pyx_n_s_gamma, __pyx_k_gamma, sizeof(__pyx_k_gamma), 0, 0, 1, 1},
     {&__pyx_n_s_get, __pyx_k_get, sizeof(__pyx_k_get), 0, 0, 1, 1},
+    {&__pyx_n_s_get_image_result, __pyx_k_get_image_result, sizeof(__pyx_k_get_image_result), 0, 0, 1, 1},
     {&__pyx_kp_u_has_zero_parameters, __pyx_k_has_zero_parameters, sizeof(__pyx_k_has_zero_parameters), 0, 1, 0, 0},
     {&__pyx_kp_u_home_trx50_project_image_classi, __pyx_k_home_trx50_project_image_classi, sizeof(__pyx_k_home_trx50_project_image_classi), 0, 1, 0, 0},
     {&__pyx_kp_u_home_trx50_project_image_classi_2, __pyx_k_home_trx50_project_image_classi_2, sizeof(__pyx_k_home_trx50_project_image_classi_2), 0, 1, 0, 0},
@@ -16343,6 +16938,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_input_tensor, __pyx_k_input_tensor, sizeof(__pyx_k_input_tensor), 0, 0, 1, 1},
     {&__pyx_kp_u_inside, __pyx_k_inside, sizeof(__pyx_k_inside), 0, 1, 0, 0},
     {&__pyx_n_s_is_coroutine, __pyx_k_is_coroutine, sizeof(__pyx_k_is_coroutine), 0, 0, 1, 1},
+    {&__pyx_n_s_is_result_empty, __pyx_k_is_result_empty, sizeof(__pyx_k_is_result_empty), 0, 0, 1, 1},
     {&__pyx_n_s_is_set, __pyx_k_is_set, sizeof(__pyx_k_is_set), 0, 0, 1, 1},
     {&__pyx_n_s_item, __pyx_k_item, sizeof(__pyx_k_item), 0, 0, 1, 1},
     {&__pyx_n_s_iterate_time, __pyx_k_iterate_time, sizeof(__pyx_k_iterate_time), 0, 0, 1, 1},
@@ -16403,6 +16999,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_print, __pyx_k_print, sizeof(__pyx_k_print), 0, 0, 1, 1},
     {&__pyx_n_s_probabilities, __pyx_k_probabilities, sizeof(__pyx_k_probabilities), 0, 0, 1, 1},
     {&__pyx_kp_u_pth, __pyx_k_pth, sizeof(__pyx_k_pth), 0, 1, 0, 0},
+    {&__pyx_n_s_push_image, __pyx_k_push_image, sizeof(__pyx_k_push_image), 0, 0, 1, 1},
     {&__pyx_n_s_put, __pyx_k_put, sizeof(__pyx_k_put), 0, 0, 1, 1},
     {&__pyx_n_s_pyplot, __pyx_k_pyplot, sizeof(__pyx_k_pyplot), 0, 0, 1, 1},
     {&__pyx_n_s_qualname, __pyx_k_qualname, sizeof(__pyx_k_qualname), 0, 0, 1, 1},
@@ -16486,8 +17083,8 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
 }
 /* #### Code section: cached_builtins ### */
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 429, __pyx_L1_error)
-  __pyx_builtin_KeyboardInterrupt = __Pyx_GetBuiltinName(__pyx_n_s_KeyboardInterrupt); if (!__pyx_builtin_KeyboardInterrupt) __PYX_ERR(0, 431, __pyx_L1_error)
+  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 438, __pyx_L1_error)
+  __pyx_builtin_KeyboardInterrupt = __Pyx_GetBuiltinName(__pyx_n_s_KeyboardInterrupt); if (!__pyx_builtin_KeyboardInterrupt) __PYX_ERR(0, 440, __pyx_L1_error)
   __pyx_builtin_enumerate = __Pyx_GetBuiltinName(__pyx_n_s_enumerate); if (!__pyx_builtin_enumerate) __PYX_ERR(0, 171, __pyx_L1_error)
   __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 254, __pyx_L1_error)
   return 0;
@@ -16742,14 +17339,14 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__27);
   __Pyx_GIVEREF(__pyx_tuple__27);
 
-  /* "inference_server.py":401
+  /* "inference_server.py":410
  *     def close_inference(self):
  *         stop_event.set()
  *         print("STOP")             # <<<<<<<<<<<<<<
  * 
  * if __name__=="__main__":
  */
-  __pyx_tuple__28 = PyTuple_Pack(1, __pyx_n_u_STOP); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 401, __pyx_L1_error)
+  __pyx_tuple__28 = PyTuple_Pack(1, __pyx_n_u_STOP); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 410, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__28);
   __Pyx_GIVEREF(__pyx_tuple__28);
 
@@ -16995,34 +17592,64 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "inference_server.py":399
  * 
  * 
+ *     def push_image(self, image):             # <<<<<<<<<<<<<<
+ *         self.input_image.put(image)
+ * 
+ */
+  __pyx_tuple__71 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_image); if (unlikely(!__pyx_tuple__71)) __PYX_ERR(0, 399, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__71);
+  __Pyx_GIVEREF(__pyx_tuple__71);
+  __pyx_codeobj__72 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__71, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_inference_server_py, __pyx_n_s_push_image, 399, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__72)) __PYX_ERR(0, 399, __pyx_L1_error)
+
+  /* "inference_server.py":402
+ *         self.input_image.put(image)
+ * 
+ *     def get_image_result(self):             # <<<<<<<<<<<<<<
+ *         return self.output_result.get()
+ * 
+ */
+  __pyx_codeobj__73 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__46, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_inference_server_py, __pyx_n_s_get_image_result, 402, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__73)) __PYX_ERR(0, 402, __pyx_L1_error)
+
+  /* "inference_server.py":405
+ *         return self.output_result.get()
+ * 
+ *     def is_result_empty(self):             # <<<<<<<<<<<<<<
+ *         return self.output_result.empty()
+ * 
+ */
+  __pyx_codeobj__74 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__46, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_inference_server_py, __pyx_n_s_is_result_empty, 405, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__74)) __PYX_ERR(0, 405, __pyx_L1_error)
+
+  /* "inference_server.py":408
+ *         return self.output_result.empty()
+ * 
  *     def close_inference(self):             # <<<<<<<<<<<<<<
  *         stop_event.set()
  *         print("STOP")
  */
-  __pyx_codeobj__71 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__46, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_inference_server_py, __pyx_n_s_close_inference, 399, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__71)) __PYX_ERR(0, 399, __pyx_L1_error)
+  __pyx_codeobj__75 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__46, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_inference_server_py, __pyx_n_s_close_inference, 408, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__75)) __PYX_ERR(0, 408, __pyx_L1_error)
 
-  /* "inference_server.py":410
+  /* "inference_server.py":419
  *     model = "/home/trx50/project/image_classification/ft_model.pth"
  *     # if you only want to inference just add model,
  *     def callback(result):             # <<<<<<<<<<<<<<
  *         print("callback = ",result)
  *     try:
  */
-  __pyx_tuple__72 = PyTuple_Pack(1, __pyx_n_s_result); if (unlikely(!__pyx_tuple__72)) __PYX_ERR(0, 410, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__72);
-  __Pyx_GIVEREF(__pyx_tuple__72);
-  __pyx_codeobj__73 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__72, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_inference_server_py, __pyx_n_s_callback, 410, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__73)) __PYX_ERR(0, 410, __pyx_L1_error)
+  __pyx_tuple__76 = PyTuple_Pack(1, __pyx_n_s_result); if (unlikely(!__pyx_tuple__76)) __PYX_ERR(0, 419, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__76);
+  __Pyx_GIVEREF(__pyx_tuple__76);
+  __pyx_codeobj__77 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__76, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_inference_server_py, __pyx_n_s_callback, 419, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__77)) __PYX_ERR(0, 419, __pyx_L1_error)
 
-  /* "inference_server.py":426
- *         MM.input_image.put(image2)
+  /* "inference_server.py":435
+ *         MM.push_image(image2)
  * 
  *         time.sleep(5)             # <<<<<<<<<<<<<<
  *         MM.close_inference()
- *         while not MM.output_result.empty():
+ *         while not MM.is_result_empty():
  */
-  __pyx_tuple__74 = PyTuple_Pack(1, __pyx_int_5); if (unlikely(!__pyx_tuple__74)) __PYX_ERR(0, 426, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__74);
-  __Pyx_GIVEREF(__pyx_tuple__74);
+  __pyx_tuple__78 = PyTuple_Pack(1, __pyx_int_5); if (unlikely(!__pyx_tuple__78)) __PYX_ERR(0, 435, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__78);
+  __Pyx_GIVEREF(__pyx_tuple__78);
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -17951,13 +18578,49 @@ if (!__Pyx_RefNanny) {
   /* "inference_server.py":399
  * 
  * 
+ *     def push_image(self, image):             # <<<<<<<<<<<<<<
+ *         self.input_image.put(image)
+ * 
+ */
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_16inference_server_7MyModel_39push_image, 0, __pyx_n_s_MyModel_push_image, NULL, __pyx_n_s_inference_server, __pyx_d, ((PyObject *)__pyx_codeobj__72)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 399, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_push_image, __pyx_t_2) < 0) __PYX_ERR(0, 399, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+  /* "inference_server.py":402
+ *         self.input_image.put(image)
+ * 
+ *     def get_image_result(self):             # <<<<<<<<<<<<<<
+ *         return self.output_result.get()
+ * 
+ */
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_16inference_server_7MyModel_41get_image_result, 0, __pyx_n_s_MyModel_get_image_result, NULL, __pyx_n_s_inference_server, __pyx_d, ((PyObject *)__pyx_codeobj__73)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 402, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_get_image_result, __pyx_t_2) < 0) __PYX_ERR(0, 402, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+  /* "inference_server.py":405
+ *         return self.output_result.get()
+ * 
+ *     def is_result_empty(self):             # <<<<<<<<<<<<<<
+ *         return self.output_result.empty()
+ * 
+ */
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_16inference_server_7MyModel_43is_result_empty, 0, __pyx_n_s_MyModel_is_result_empty, NULL, __pyx_n_s_inference_server, __pyx_d, ((PyObject *)__pyx_codeobj__74)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 405, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_is_result_empty, __pyx_t_2) < 0) __PYX_ERR(0, 405, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+  /* "inference_server.py":408
+ *         return self.output_result.empty()
+ * 
  *     def close_inference(self):             # <<<<<<<<<<<<<<
  *         stop_event.set()
  *         print("STOP")
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_16inference_server_7MyModel_39close_inference, 0, __pyx_n_s_MyModel_close_inference, NULL, __pyx_n_s_inference_server, __pyx_d, ((PyObject *)__pyx_codeobj__71)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 399, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_16inference_server_7MyModel_45close_inference, 0, __pyx_n_s_MyModel_close_inference, NULL, __pyx_n_s_inference_server, __pyx_d, ((PyObject *)__pyx_codeobj__75)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 408, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_close_inference, __pyx_t_2) < 0) __PYX_ERR(0, 399, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_close_inference, __pyx_t_2) < 0) __PYX_ERR(0, 408, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "inference_server.py":27
@@ -17973,77 +18636,77 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "inference_server.py":403
+  /* "inference_server.py":412
  *         print("STOP")
  * 
  * if __name__=="__main__":             # <<<<<<<<<<<<<<
  *     output_class = 5
  *     batch_size = 100
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_name); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 403, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_name); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 412, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = (__Pyx_PyUnicode_Equals(__pyx_t_3, __pyx_n_u_main, Py_EQ)); if (unlikely((__pyx_t_4 < 0))) __PYX_ERR(0, 403, __pyx_L1_error)
+  __pyx_t_4 = (__Pyx_PyUnicode_Equals(__pyx_t_3, __pyx_n_u_main, Py_EQ)); if (unlikely((__pyx_t_4 < 0))) __PYX_ERR(0, 412, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (__pyx_t_4) {
 
-    /* "inference_server.py":404
+    /* "inference_server.py":413
  * 
  * if __name__=="__main__":
  *     output_class = 5             # <<<<<<<<<<<<<<
  *     batch_size = 100
  *     lr = 0.0001
  */
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_output_class, __pyx_int_5) < 0) __PYX_ERR(0, 404, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_output_class, __pyx_int_5) < 0) __PYX_ERR(0, 413, __pyx_L1_error)
 
-    /* "inference_server.py":405
+    /* "inference_server.py":414
  * if __name__=="__main__":
  *     output_class = 5
  *     batch_size = 100             # <<<<<<<<<<<<<<
  *     lr = 0.0001
  *     save_model_name = "ft_model"
  */
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_batch_size, __pyx_int_100) < 0) __PYX_ERR(0, 405, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_batch_size, __pyx_int_100) < 0) __PYX_ERR(0, 414, __pyx_L1_error)
 
-    /* "inference_server.py":406
+    /* "inference_server.py":415
  *     output_class = 5
  *     batch_size = 100
  *     lr = 0.0001             # <<<<<<<<<<<<<<
  *     save_model_name = "ft_model"
  *     model = "/home/trx50/project/image_classification/ft_model.pth"
  */
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_lr, __pyx_float_0_0001) < 0) __PYX_ERR(0, 406, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_lr, __pyx_float_0_0001) < 0) __PYX_ERR(0, 415, __pyx_L1_error)
 
-    /* "inference_server.py":407
+    /* "inference_server.py":416
  *     batch_size = 100
  *     lr = 0.0001
  *     save_model_name = "ft_model"             # <<<<<<<<<<<<<<
  *     model = "/home/trx50/project/image_classification/ft_model.pth"
  *     # if you only want to inference just add model,
  */
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_save_model_name, __pyx_n_u_ft_model) < 0) __PYX_ERR(0, 407, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_save_model_name, __pyx_n_u_ft_model) < 0) __PYX_ERR(0, 416, __pyx_L1_error)
 
-    /* "inference_server.py":408
+    /* "inference_server.py":417
  *     lr = 0.0001
  *     save_model_name = "ft_model"
  *     model = "/home/trx50/project/image_classification/ft_model.pth"             # <<<<<<<<<<<<<<
  *     # if you only want to inference just add model,
  *     def callback(result):
  */
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_model, __pyx_kp_u_home_trx50_project_image_classi) < 0) __PYX_ERR(0, 408, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_model, __pyx_kp_u_home_trx50_project_image_classi) < 0) __PYX_ERR(0, 417, __pyx_L1_error)
 
-    /* "inference_server.py":410
+    /* "inference_server.py":419
  *     model = "/home/trx50/project/image_classification/ft_model.pth"
  *     # if you only want to inference just add model,
  *     def callback(result):             # <<<<<<<<<<<<<<
  *         print("callback = ",result)
  *     try:
  */
-    __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_16inference_server_1callback, 0, __pyx_n_s_callback, NULL, __pyx_n_s_inference_server, __pyx_d, ((PyObject *)__pyx_codeobj__73)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 410, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_16inference_server_1callback, 0, __pyx_n_s_callback, NULL, __pyx_n_s_inference_server, __pyx_d, ((PyObject *)__pyx_codeobj__77)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 419, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_callback, __pyx_t_3) < 0) __PYX_ERR(0, 410, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_callback, __pyx_t_3) < 0) __PYX_ERR(0, 419, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "inference_server.py":412
+    /* "inference_server.py":421
  *     def callback(result):
  *         print("callback = ",result)
  *     try:             # <<<<<<<<<<<<<<
@@ -18059,300 +18722,288 @@ if (!__Pyx_RefNanny) {
       __Pyx_XGOTREF(__pyx_t_6);
       /*try:*/ {
 
-        /* "inference_server.py":413
+        /* "inference_server.py":422
  *         print("callback = ",result)
  *     try:
  *         MM = MyModel(output_class, batch_size, lr, model)             # <<<<<<<<<<<<<<
  * 
  * 
  */
-        __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_MyModel); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 413, __pyx_L3_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_MyModel); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 422, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_3);
-        __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_output_class); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 413, __pyx_L3_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_output_class); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 422, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_2);
-        __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_batch_size); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 413, __pyx_L3_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_batch_size); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 422, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_7);
-        __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_lr); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 413, __pyx_L3_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_lr); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 422, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_8);
-        __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_model); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 413, __pyx_L3_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_model); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 422, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_9);
-        __pyx_t_10 = PyTuple_New(4); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 413, __pyx_L3_error)
+        __pyx_t_10 = PyTuple_New(4); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 422, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_10);
         __Pyx_GIVEREF(__pyx_t_2);
-        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_10, 0, __pyx_t_2)) __PYX_ERR(0, 413, __pyx_L3_error);
+        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_10, 0, __pyx_t_2)) __PYX_ERR(0, 422, __pyx_L3_error);
         __Pyx_GIVEREF(__pyx_t_7);
-        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_10, 1, __pyx_t_7)) __PYX_ERR(0, 413, __pyx_L3_error);
+        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_10, 1, __pyx_t_7)) __PYX_ERR(0, 422, __pyx_L3_error);
         __Pyx_GIVEREF(__pyx_t_8);
-        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_10, 2, __pyx_t_8)) __PYX_ERR(0, 413, __pyx_L3_error);
+        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_10, 2, __pyx_t_8)) __PYX_ERR(0, 422, __pyx_L3_error);
         __Pyx_GIVEREF(__pyx_t_9);
-        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_10, 3, __pyx_t_9)) __PYX_ERR(0, 413, __pyx_L3_error);
+        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_10, 3, __pyx_t_9)) __PYX_ERR(0, 422, __pyx_L3_error);
         __pyx_t_2 = 0;
         __pyx_t_7 = 0;
         __pyx_t_8 = 0;
         __pyx_t_9 = 0;
-        __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_10, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 413, __pyx_L3_error)
+        __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_10, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 422, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-        if (PyDict_SetItem(__pyx_d, __pyx_n_s_MM, __pyx_t_9) < 0) __PYX_ERR(0, 413, __pyx_L3_error)
+        if (PyDict_SetItem(__pyx_d, __pyx_n_s_MM, __pyx_t_9) < 0) __PYX_ERR(0, 422, __pyx_L3_error)
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-        /* "inference_server.py":416
+        /* "inference_server.py":425
  * 
  * 
  *         filename = "/home/trx50/project/image_classification/data/2024-12-12_//3649.jpg"             # <<<<<<<<<<<<<<
  *         filename2 = "/home/trx50/project/image_classification/data/2024-12-12_/Mark/2597.jpg"
  * 
  */
-        if (PyDict_SetItem(__pyx_d, __pyx_n_s_filename, __pyx_kp_u_home_trx50_project_image_classi_2) < 0) __PYX_ERR(0, 416, __pyx_L3_error)
+        if (PyDict_SetItem(__pyx_d, __pyx_n_s_filename, __pyx_kp_u_home_trx50_project_image_classi_2) < 0) __PYX_ERR(0, 425, __pyx_L3_error)
 
-        /* "inference_server.py":417
+        /* "inference_server.py":426
  * 
  *         filename = "/home/trx50/project/image_classification/data/2024-12-12_//3649.jpg"
  *         filename2 = "/home/trx50/project/image_classification/data/2024-12-12_/Mark/2597.jpg"             # <<<<<<<<<<<<<<
  * 
  *         image = cv2.imread(filename)
  */
-        if (PyDict_SetItem(__pyx_d, __pyx_n_s_filename2, __pyx_kp_u_home_trx50_project_image_classi_3) < 0) __PYX_ERR(0, 417, __pyx_L3_error)
+        if (PyDict_SetItem(__pyx_d, __pyx_n_s_filename2, __pyx_kp_u_home_trx50_project_image_classi_3) < 0) __PYX_ERR(0, 426, __pyx_L3_error)
 
-        /* "inference_server.py":419
+        /* "inference_server.py":428
  *         filename2 = "/home/trx50/project/image_classification/data/2024-12-12_/Mark/2597.jpg"
  * 
  *         image = cv2.imread(filename)             # <<<<<<<<<<<<<<
  *         image2 = cv2.imread(filename2)
  * 
  */
-        __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_cv2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 419, __pyx_L3_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_cv2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 428, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_9);
-        __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_imread); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 419, __pyx_L3_error)
+        __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_imread); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 428, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_10);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-        __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_filename); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 419, __pyx_L3_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_filename); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 428, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_9);
-        __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 419, __pyx_L3_error)
+        __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 428, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-        if (PyDict_SetItem(__pyx_d, __pyx_n_s_image, __pyx_t_3) < 0) __PYX_ERR(0, 419, __pyx_L3_error)
+        if (PyDict_SetItem(__pyx_d, __pyx_n_s_image, __pyx_t_3) < 0) __PYX_ERR(0, 428, __pyx_L3_error)
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-        /* "inference_server.py":420
+        /* "inference_server.py":429
  * 
  *         image = cv2.imread(filename)
  *         image2 = cv2.imread(filename2)             # <<<<<<<<<<<<<<
  * 
  *         result = MM.start_inference_single_thread(callback)
  */
-        __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_cv2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 420, __pyx_L3_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_cv2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 429, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_3);
-        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_imread); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 420, __pyx_L3_error)
+        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_imread); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 429, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_filename2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 420, __pyx_L3_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_filename2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 429, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_3);
-        __pyx_t_10 = __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_3); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 420, __pyx_L3_error)
+        __pyx_t_10 = __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_3); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 429, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_10);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        if (PyDict_SetItem(__pyx_d, __pyx_n_s_image2, __pyx_t_10) < 0) __PYX_ERR(0, 420, __pyx_L3_error)
+        if (PyDict_SetItem(__pyx_d, __pyx_n_s_image2, __pyx_t_10) < 0) __PYX_ERR(0, 429, __pyx_L3_error)
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-        /* "inference_server.py":422
+        /* "inference_server.py":431
  *         image2 = cv2.imread(filename2)
  * 
  *         result = MM.start_inference_single_thread(callback)             # <<<<<<<<<<<<<<
- *         MM.input_image.put(image)
- *         MM.input_image.put(image2)
+ *         MM.push_image(image)
+ *         MM.push_image(image2)
  */
-        __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_MM); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 422, __pyx_L3_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_MM); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 431, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_10);
-        __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_start_inference_single_thread); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 422, __pyx_L3_error)
+        __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_start_inference_single_thread); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 431, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-        __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_callback); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 422, __pyx_L3_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_callback); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 431, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_10);
-        __pyx_t_9 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_10); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 422, __pyx_L3_error)
+        __pyx_t_9 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_10); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 431, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-        if (PyDict_SetItem(__pyx_d, __pyx_n_s_result, __pyx_t_9) < 0) __PYX_ERR(0, 422, __pyx_L3_error)
+        if (PyDict_SetItem(__pyx_d, __pyx_n_s_result, __pyx_t_9) < 0) __PYX_ERR(0, 431, __pyx_L3_error)
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-        /* "inference_server.py":423
+        /* "inference_server.py":432
  * 
  *         result = MM.start_inference_single_thread(callback)
- *         MM.input_image.put(image)             # <<<<<<<<<<<<<<
- *         MM.input_image.put(image2)
+ *         MM.push_image(image)             # <<<<<<<<<<<<<<
+ *         MM.push_image(image2)
  * 
  */
-        __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_MM); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 423, __pyx_L3_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_MM); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 432, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_9);
-        __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_input_image); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 423, __pyx_L3_error)
+        __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_push_image); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 432, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_10);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_put); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 423, __pyx_L3_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_image); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 432, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_9);
-        __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-        __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_image); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 423, __pyx_L3_error)
-        __Pyx_GOTREF(__pyx_t_10);
-        __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_10); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 423, __pyx_L3_error)
+        __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 432, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_3);
-        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-        /* "inference_server.py":424
+        /* "inference_server.py":433
  *         result = MM.start_inference_single_thread(callback)
- *         MM.input_image.put(image)
- *         MM.input_image.put(image2)             # <<<<<<<<<<<<<<
+ *         MM.push_image(image)
+ *         MM.push_image(image2)             # <<<<<<<<<<<<<<
  * 
  *         time.sleep(5)
  */
-        __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_MM); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 424, __pyx_L3_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_MM); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 433, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_3);
-        __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_input_image); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 424, __pyx_L3_error)
-        __Pyx_GOTREF(__pyx_t_10);
-        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_put); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 424, __pyx_L3_error)
-        __Pyx_GOTREF(__pyx_t_3);
-        __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-        __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_image2); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 424, __pyx_L3_error)
-        __Pyx_GOTREF(__pyx_t_10);
-        __pyx_t_9 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_10); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 424, __pyx_L3_error)
+        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_push_image); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 433, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
+        __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_image2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 433, __pyx_L3_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_10 = __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_3); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 433, __pyx_L3_error)
+        __Pyx_GOTREF(__pyx_t_10);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-        /* "inference_server.py":426
- *         MM.input_image.put(image2)
+        /* "inference_server.py":435
+ *         MM.push_image(image2)
  * 
  *         time.sleep(5)             # <<<<<<<<<<<<<<
  *         MM.close_inference()
- *         while not MM.output_result.empty():
+ *         while not MM.is_result_empty():
  */
-        __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_time); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 426, __pyx_L3_error)
-        __Pyx_GOTREF(__pyx_t_9);
-        __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_sleep); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 426, __pyx_L3_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_time); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 435, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_10);
-        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-        __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_tuple__74, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 426, __pyx_L3_error)
-        __Pyx_GOTREF(__pyx_t_9);
+        __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_sleep); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 435, __pyx_L3_error)
+        __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+        __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple__78, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 435, __pyx_L3_error)
+        __Pyx_GOTREF(__pyx_t_10);
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-        /* "inference_server.py":427
+        /* "inference_server.py":436
  * 
  *         time.sleep(5)
  *         MM.close_inference()             # <<<<<<<<<<<<<<
- *         while not MM.output_result.empty():
- *             print("result = ",MM.output_result.get())
+ *         while not MM.is_result_empty():
+ *             print("result = ",MM.get_image_result())
  */
-        __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_MM); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 427, __pyx_L3_error)
-        __Pyx_GOTREF(__pyx_t_9);
-        __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_close_inference); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 427, __pyx_L3_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_MM); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 436, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_10);
-        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-        __pyx_t_9 = __Pyx_PyObject_CallNoArg(__pyx_t_10); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 427, __pyx_L3_error)
-        __Pyx_GOTREF(__pyx_t_9);
+        __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_close_inference); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 436, __pyx_L3_error)
+        __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+        __pyx_t_10 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 436, __pyx_L3_error)
+        __Pyx_GOTREF(__pyx_t_10);
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-        /* "inference_server.py":428
+        /* "inference_server.py":437
  *         time.sleep(5)
  *         MM.close_inference()
- *         while not MM.output_result.empty():             # <<<<<<<<<<<<<<
- *             print("result = ",MM.output_result.get())
+ *         while not MM.is_result_empty():             # <<<<<<<<<<<<<<
+ *             print("result = ",MM.get_image_result())
  * 
  */
         while (1) {
-          __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_MM); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 428, __pyx_L3_error)
-          __Pyx_GOTREF(__pyx_t_10);
-          __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_output_result); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 428, __pyx_L3_error)
+          __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_MM); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 437, __pyx_L3_error)
           __Pyx_GOTREF(__pyx_t_3);
-          __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-          __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_empty); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 428, __pyx_L3_error)
-          __Pyx_GOTREF(__pyx_t_10);
+          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_is_result_empty); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 437, __pyx_L3_error)
+          __Pyx_GOTREF(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
           __pyx_t_3 = NULL;
           __pyx_t_11 = 0;
           #if CYTHON_UNPACK_METHODS
-          if (likely(PyMethod_Check(__pyx_t_10))) {
-            __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_10);
+          if (unlikely(PyMethod_Check(__pyx_t_9))) {
+            __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_9);
             if (likely(__pyx_t_3)) {
-              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_10);
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_9);
               __Pyx_INCREF(__pyx_t_3);
               __Pyx_INCREF(function);
-              __Pyx_DECREF_SET(__pyx_t_10, function);
+              __Pyx_DECREF_SET(__pyx_t_9, function);
               __pyx_t_11 = 1;
             }
           }
           #endif
           {
             PyObject *__pyx_callargs[2] = {__pyx_t_3, NULL};
-            __pyx_t_9 = __Pyx_PyObject_FastCall(__pyx_t_10, __pyx_callargs+1-__pyx_t_11, 0+__pyx_t_11);
+            __pyx_t_10 = __Pyx_PyObject_FastCall(__pyx_t_9, __pyx_callargs+1-__pyx_t_11, 0+__pyx_t_11);
             __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-            if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 428, __pyx_L3_error)
-            __Pyx_GOTREF(__pyx_t_9);
-            __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
+            if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 437, __pyx_L3_error)
+            __Pyx_GOTREF(__pyx_t_10);
+            __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
           }
-          __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_9); if (unlikely((__pyx_t_4 < 0))) __PYX_ERR(0, 428, __pyx_L3_error)
-          __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+          __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_10); if (unlikely((__pyx_t_4 < 0))) __PYX_ERR(0, 437, __pyx_L3_error)
+          __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
           __pyx_t_12 = (!__pyx_t_4);
           if (!__pyx_t_12) break;
 
-          /* "inference_server.py":429
+          /* "inference_server.py":438
  *         MM.close_inference()
- *         while not MM.output_result.empty():
- *             print("result = ",MM.output_result.get())             # <<<<<<<<<<<<<<
+ *         while not MM.is_result_empty():
+ *             print("result = ",MM.get_image_result())             # <<<<<<<<<<<<<<
  * 
  *     except KeyboardInterrupt:
  */
-          __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_MM); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 429, __pyx_L3_error)
-          __Pyx_GOTREF(__pyx_t_10);
-          __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_output_result); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 429, __pyx_L3_error)
+          __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_MM); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 438, __pyx_L3_error)
+          __Pyx_GOTREF(__pyx_t_9);
+          __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_get_image_result); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 438, __pyx_L3_error)
           __Pyx_GOTREF(__pyx_t_3);
-          __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-          __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_get); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 429, __pyx_L3_error)
-          __Pyx_GOTREF(__pyx_t_10);
-          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-          __pyx_t_3 = NULL;
+          __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+          __pyx_t_9 = NULL;
           __pyx_t_11 = 0;
           #if CYTHON_UNPACK_METHODS
-          if (likely(PyMethod_Check(__pyx_t_10))) {
-            __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_10);
-            if (likely(__pyx_t_3)) {
-              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_10);
-              __Pyx_INCREF(__pyx_t_3);
+          if (unlikely(PyMethod_Check(__pyx_t_3))) {
+            __pyx_t_9 = PyMethod_GET_SELF(__pyx_t_3);
+            if (likely(__pyx_t_9)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+              __Pyx_INCREF(__pyx_t_9);
               __Pyx_INCREF(function);
-              __Pyx_DECREF_SET(__pyx_t_10, function);
+              __Pyx_DECREF_SET(__pyx_t_3, function);
               __pyx_t_11 = 1;
             }
           }
           #endif
           {
-            PyObject *__pyx_callargs[2] = {__pyx_t_3, NULL};
-            __pyx_t_9 = __Pyx_PyObject_FastCall(__pyx_t_10, __pyx_callargs+1-__pyx_t_11, 0+__pyx_t_11);
-            __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-            if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 429, __pyx_L3_error)
-            __Pyx_GOTREF(__pyx_t_9);
-            __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
+            PyObject *__pyx_callargs[2] = {__pyx_t_9, NULL};
+            __pyx_t_10 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_11, 0+__pyx_t_11);
+            __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
+            if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 438, __pyx_L3_error)
+            __Pyx_GOTREF(__pyx_t_10);
+            __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
           }
-          __pyx_t_10 = PyTuple_New(2); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 429, __pyx_L3_error)
-          __Pyx_GOTREF(__pyx_t_10);
+          __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 438, __pyx_L3_error)
+          __Pyx_GOTREF(__pyx_t_3);
           __Pyx_INCREF(__pyx_kp_u_result_2);
           __Pyx_GIVEREF(__pyx_kp_u_result_2);
-          if (__Pyx_PyTuple_SET_ITEM(__pyx_t_10, 0, __pyx_kp_u_result_2)) __PYX_ERR(0, 429, __pyx_L3_error);
-          __Pyx_GIVEREF(__pyx_t_9);
-          if (__Pyx_PyTuple_SET_ITEM(__pyx_t_10, 1, __pyx_t_9)) __PYX_ERR(0, 429, __pyx_L3_error);
-          __pyx_t_9 = 0;
-          __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_10, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 429, __pyx_L3_error)
-          __Pyx_GOTREF(__pyx_t_9);
+          if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_kp_u_result_2)) __PYX_ERR(0, 438, __pyx_L3_error);
+          __Pyx_GIVEREF(__pyx_t_10);
+          if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_t_10)) __PYX_ERR(0, 438, __pyx_L3_error);
+          __pyx_t_10 = 0;
+          __pyx_t_10 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_3, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 438, __pyx_L3_error)
+          __Pyx_GOTREF(__pyx_t_10);
+          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-          __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         }
 
-        /* "inference_server.py":412
+        /* "inference_server.py":421
  *     def callback(result):
  *         print("callback = ",result)
  *     try:             # <<<<<<<<<<<<<<
@@ -18372,8 +19023,8 @@ if (!__Pyx_RefNanny) {
       __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-      /* "inference_server.py":431
- *             print("result = ",MM.output_result.get())
+      /* "inference_server.py":440
+ *             print("result = ",MM.get_image_result())
  * 
  *     except KeyboardInterrupt:             # <<<<<<<<<<<<<<
  *         MM.close_inference()()
@@ -18382,38 +19033,38 @@ if (!__Pyx_RefNanny) {
       __pyx_t_13 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_KeyboardInterrupt);
       if (__pyx_t_13) {
         __Pyx_AddTraceback("inference_server", __pyx_clineno, __pyx_lineno, __pyx_filename);
-        if (__Pyx_GetException(&__pyx_t_9, &__pyx_t_10, &__pyx_t_3) < 0) __PYX_ERR(0, 431, __pyx_L5_except_error)
-        __Pyx_XGOTREF(__pyx_t_9);
+        if (__Pyx_GetException(&__pyx_t_10, &__pyx_t_3, &__pyx_t_9) < 0) __PYX_ERR(0, 440, __pyx_L5_except_error)
         __Pyx_XGOTREF(__pyx_t_10);
         __Pyx_XGOTREF(__pyx_t_3);
+        __Pyx_XGOTREF(__pyx_t_9);
 
-        /* "inference_server.py":432
+        /* "inference_server.py":441
  * 
  *     except KeyboardInterrupt:
  *         MM.close_inference()()             # <<<<<<<<<<<<<<
  * 
  * 
  */
-        __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_MM); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 432, __pyx_L5_except_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_MM); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 441, __pyx_L5_except_error)
         __Pyx_GOTREF(__pyx_t_8);
-        __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_close_inference); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 432, __pyx_L5_except_error)
+        __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_close_inference); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 441, __pyx_L5_except_error)
         __Pyx_GOTREF(__pyx_t_7);
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-        __pyx_t_8 = __Pyx_PyObject_CallNoArg(__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 432, __pyx_L5_except_error)
+        __pyx_t_8 = __Pyx_PyObject_CallNoArg(__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 441, __pyx_L5_except_error)
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-        __pyx_t_7 = __Pyx_PyObject_CallNoArg(__pyx_t_8); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 432, __pyx_L5_except_error)
+        __pyx_t_7 = __Pyx_PyObject_CallNoArg(__pyx_t_8); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 441, __pyx_L5_except_error)
         __Pyx_GOTREF(__pyx_t_7);
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-        __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
         __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
         __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
         goto __pyx_L4_exception_handled;
       }
       goto __pyx_L5_except_error;
 
-      /* "inference_server.py":412
+      /* "inference_server.py":421
  *     def callback(result):
  *         print("callback = ",result)
  *     try:             # <<<<<<<<<<<<<<
@@ -18434,7 +19085,7 @@ if (!__Pyx_RefNanny) {
       __pyx_L8_try_end:;
     }
 
-    /* "inference_server.py":403
+    /* "inference_server.py":412
  *         print("STOP")
  * 
  * if __name__=="__main__":             # <<<<<<<<<<<<<<
@@ -18448,10 +19099,10 @@ if (!__Pyx_RefNanny) {
  * # from torchvision.models import MobileNet_V3_Small_Weights
  * from torchvision.models import efficientnet_v2_l
  */
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test_2, __pyx_t_3) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_t_9 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_9);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test_2, __pyx_t_9) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
   /*--- Wrapped vars code ---*/
 
@@ -22790,7 +23441,7 @@ __Pyx_PyType_GetName(PyTypeObject* tp)
     if (unlikely(name == NULL) || unlikely(!PyUnicode_Check(name))) {
         PyErr_Clear();
         Py_XDECREF(name);
-        name = __Pyx_NewRef(__pyx_n_s__75);
+        name = __Pyx_NewRef(__pyx_n_s__79);
     }
     return name;
 }
